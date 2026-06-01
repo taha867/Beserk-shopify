@@ -1,0 +1,252 @@
+{% comment %}
+  ** Page content **
+{% endcomment %}
+
+{% assign id = section.id %}
+{% comment %}Layout{% endcomment %}
+{% assign width = section.settings.width %}
+{% assign padding_top = section.settings.padding_top %}
+{% assign padding_bottom = section.settings.padding_bottom %}
+{% assign animation = section.settings.animation | default: 'none' %}
+{% comment %}Advanced{% endcomment %}
+{% assign css_class = section.settings.css_class %}
+{% assign custom_css = section.settings.custom_css %}
+
+{% style %}
+        #shopify-section-{{ id }} {
+          padding-top: {{ padding_top }}px;
+          padding-bottom: {{ padding_bottom }}px;
+          {% if width == 'wide' %}
+            width: 100%;
+          {% endif %}
+        }
+
+        .rewards.heading.h2 {
+        color: red;
+        margin: 10px 0;
+    }
+
+    .rewards.paragraph li {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .rewards.paragraph p {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* Target the rewards block lists */
+
+
+  .rewards ul li {
+      padding-left: 24px;
+      position: relative;
+      margin-top: 0;
+      list-style: none;
+  }
+
+  /* Add heart icon (or change to another FontAwesome icon if needed) */
+  .rewards ul li:before {
+      content: "\f004"; /* FontAwesome heart */
+      font-family: FontAwesome;
+      color: red;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      font-size: 12px;
+      z-index: 1;
+      
+  }
+
+
+
+       {% comment %}
+      CSS loop - creates CSS declarations that are specific to the section or block
+
+      Required values
+      id: <number>
+      css: <string>
+
+      Example use:
+      {% render 'css-loop' %}
+      {% endcomment %}
+
+      {%- if css != blank -%}
+        {%- assign declarations = css | split: '}' -%}
+        {%- for declaration in declarations -%}
+          {%- if declaration != '' -%}
+            #shopify-section-{{ id }} {{ declaration }} }
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+
+      {% comment %}Is the section hidden?{% endcomment %}
+      {%- if section.settings.css_class contains 'is-hidden-desktop-only' -%}
+        @media only screen and (min-width: 481px) {
+          #shopify-section-{{ id }} { display: none; }
+        }
+      {%- endif -%}
+
+      {%- if section.settings.css_class contains 'is-hidden-mobile-only' -%}
+        @media only screen and (max-width: 480px) {
+          #shopify-section-{{ id }} { display: none; }
+        }
+      {%- endif -%}
+{% endstyle %}
+
+<section
+  class="
+    {{ page.title }} bgcolor section
+    {{ css_class }}
+    is-width-{{ width }}
+  "
+  {% if animation != 'none' %}
+    data-scroll-class="{{ animation }}"
+  {% endif %}
+>
+  <div class="container container--lg">
+    <div class="pagedivcstm page__content content {% if settings.table_styles_enabled %} table is-striped is-bordered {% endif %} rewards">
+      {% include 'sweettooth-points-badge' %}
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'text-content' %}
+            {% if block.settings.heading != blank %}
+              <div class="rewards heading h2">{{ block.settings.heading }}</div>
+            {% endif %}
+            {% if block.settings.text_content != blank %}
+              <div class="rewards paragraph">{{ block.settings.text_content }}</div>
+            {% endif %}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<script>
+  $(window).on('load', function () {
+    SweetTooth.fetchCustomer()
+      .then(function (customer) {
+        // Success
+        console.log('Customer points balance is ' + customer.points_balance);
+        $('#point-eq').text('$' + customer.points_balance * 0.05);
+      })
+      .catch(function (err) {
+        // Error
+        console.log('Something went wrong');
+      });
+  });
+</script>
+{% schema %}
+{
+  "name": "rewards",
+  "class": "page-main",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_heading",
+      "label": "Show page title",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "standard",
+      "options": [
+        {
+          "value": "standard",
+          "label": "Standard"
+        },
+        {
+          "value": "wide",
+          "label": "Wide"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top spacing",
+      "min": 0,
+      "max": 80,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom spacing",
+      "min": 0,
+      "max": 80,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Advanced"
+    },
+    {
+      "type": "paragraph",
+      "content": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/360022329373)"
+    },
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text-content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "heading",
+          "label": "heading",
+          "default": "<p>Heading</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "text_content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "rewards"
+    }
+  ]
+}
+{% endschema %}

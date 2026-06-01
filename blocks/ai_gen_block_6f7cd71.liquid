@@ -1,0 +1,125 @@
+{% doc %}
+  @prompt
+    html code
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-html-block-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_horizontal }}px {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-html-block-content-{{ ai_gen_id }} {
+    width: 100%;
+  }
+
+  .ai-html-block-content-{{ ai_gen_id }} * {
+    max-width: 100%;
+  }
+
+  .ai-html-block-content-{{ ai_gen_id }} img {
+    height: auto;
+  }
+
+  .ai-html-block-empty-{{ ai_gen_id }} {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    color: #666;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-html-block-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_top | times: 0.7 }}px {{ block.settings.padding_horizontal | times: 0.7 }}px {{ block.settings.padding_bottom | times: 0.7 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-html-block-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.html_content != blank %}
+    <div class="ai-html-block-content-{{ ai_gen_id }}">
+      {{ block.settings.html_content }}
+    </div>
+  {% else %}
+    <div class="ai-html-block-empty-{{ ai_gen_id }}">
+      Add your custom HTML code in the block settings
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Custom HTML",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "html",
+      "id": "html_content",
+      "label": "HTML code"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 400,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom HTML"
+    }
+  ]
+}
+{% endschema %}

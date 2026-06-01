@@ -1,0 +1,327 @@
+{% doc %}
+  @prompt
+    full width text panel for seo info that can be expanded
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-seo-panel-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+  }
+
+  .ai-seo-panel-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-seo-panel-header-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px;
+  }
+
+  .ai-seo-panel-title-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.title_size }}px;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .ai-seo-panel-toggle-{{ ai_gen_id }} {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: {{ block.settings.text_color }};
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .ai-seo-panel-toggle-{{ ai_gen_id }} svg {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+  }
+
+  .ai-seo-panel-toggle-{{ ai_gen_id }}.expanded {
+    transform: rotate(180deg);
+  }
+
+  .ai-seo-panel-content-{{ ai_gen_id }} {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .ai-seo-panel-content-{{ ai_gen_id }}.expanded {
+    max-height: 2000px;
+  }
+
+  .ai-seo-panel-text-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.content_size }}px;
+    line-height: 1.6;
+    padding-top: {{ block.settings.content_spacing }}px;
+  }
+
+  .ai-seo-panel-text-{{ ai_gen_id }} p {
+    margin: 0 0 16px 0;
+  }
+
+  .ai-seo-panel-text-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-seo-panel-text-{{ ai_gen_id }} h1,
+  .ai-seo-panel-text-{{ ai_gen_id }} h2,
+  .ai-seo-panel-text-{{ ai_gen_id }} h3,
+  .ai-seo-panel-text-{{ ai_gen_id }} h4,
+  .ai-seo-panel-text-{{ ai_gen_id }} h5,
+  .ai-seo-panel-text-{{ ai_gen_id }} h6 {
+    margin: 24px 0 12px 0;
+  }
+
+  .ai-seo-panel-text-{{ ai_gen_id }} h1:first-child,
+  .ai-seo-panel-text-{{ ai_gen_id }} h2:first-child,
+  .ai-seo-panel-text-{{ ai_gen_id }} h3:first-child,
+  .ai-seo-panel-text-{{ ai_gen_id }} h4:first-child,
+  .ai-seo-panel-text-{{ ai_gen_id }} h5:first-child,
+  .ai-seo-panel-text-{{ ai_gen_id }} h6:first-child {
+    margin-top: 0;
+  }
+
+  .ai-seo-panel-text-{{ ai_gen_id }} ul,
+  .ai-seo-panel-text-{{ ai_gen_id }} ol {
+    margin: 0 0 16px 20px;
+    padding: 0;
+  }
+
+  .ai-seo-panel-text-{{ ai_gen_id }} li {
+    margin-bottom: 8px;
+  }
+
+  .ai-seo-panel-text-{{ ai_gen_id }} a {
+    color: {{ block.settings.link_color }};
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-seo-panel-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_vertical | times: 0.7 }}px {{ block.settings.padding_horizontal | times: 0.7 }}px;
+    }
+
+    .ai-seo-panel-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.85 }}px;
+    }
+
+    .ai-seo-panel-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.content_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<seo-panel-{{ ai_gen_id }} class="ai-seo-panel-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-seo-panel-container-{{ ai_gen_id }}">
+    <div class="ai-seo-panel-header-{{ ai_gen_id }}" role="button" aria-expanded="{{ block.settings.default_expanded }}" tabindex="0">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-seo-panel-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+      <button class="ai-seo-panel-toggle-{{ ai_gen_id }} {% if block.settings.default_expanded %}expanded{% endif %}" aria-label="Toggle content">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    </div>
+    <div class="ai-seo-panel-content-{{ ai_gen_id }} {% if block.settings.default_expanded %}expanded{% endif %}">
+      {% if block.settings.content != blank %}
+        <div class="ai-seo-panel-text-{{ ai_gen_id }}">
+          {{ block.settings.content }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</seo-panel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class SeoPanel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.header = this.querySelector('.ai-seo-panel-header-{{ ai_gen_id }}');
+        this.toggle = this.querySelector('.ai-seo-panel-toggle-{{ ai_gen_id }}');
+        this.content = this.querySelector('.ai-seo-panel-content-{{ ai_gen_id }}');
+
+        this.header.addEventListener('click', this.togglePanel.bind(this));
+        this.header.addEventListener('keydown', this.handleKeydown.bind(this));
+      }
+
+      togglePanel() {
+        const isExpanded = this.content.classList.contains('expanded');
+        
+        if (isExpanded) {
+          this.content.classList.remove('expanded');
+          this.toggle.classList.remove('expanded');
+          this.header.setAttribute('aria-expanded', 'false');
+        } else {
+          this.content.classList.add('expanded');
+          this.toggle.classList.add('expanded');
+          this.header.setAttribute('aria-expanded', 'true');
+        }
+      }
+
+      handleKeydown(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          this.togglePanel();
+        }
+      }
+    }
+
+    customElements.define('seo-panel-{{ ai_gen_id }}', SeoPanel{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "SEO text panel",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "About this product"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Add your SEO-optimized content here. This expandable panel helps keep your page clean while providing valuable information for search engines and customers.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "default_expanded",
+      "label": "Expanded by default",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "content_spacing",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Content top spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 14,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "content_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Content size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1c1c"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Links",
+      "default": "#e32c2b"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SEO text panel"
+    }
+  ]
+}
+{% endschema %}

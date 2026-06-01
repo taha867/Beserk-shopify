@@ -1,0 +1,52 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "17630804287338f7ee": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6f7cd71_HPHJXa": {
+          "type": "ai_gen_block_6f7cd71",
+          "settings": {
+            "html_content": "<div class=\"klaviyo-form-URVYSm\"></div>",
+            "max_width": 1200,
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "padding_horizontal": 20,
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6f7cd71_HPHJXa"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "175472109766a45781": {
+      "type": "_blocks",
+      "settings": {}
+    }
+  },
+  "order": [
+    "17630804287338f7ee",
+    "main",
+    "175472109766a45781"
+  ]
+}

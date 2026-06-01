@@ -1,0 +1,137 @@
+{% doc %}
+  @prompt
+    a red spacer bar with a black stripe, make it full width
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-spacer-bar-{{ ai_gen_id }} {
+    width: 99.5vw;
+    height: {{ block.settings.bar_height }}px;
+    background-color: {{ block.settings.red_color }};
+    position: relative;
+    margin: {{ block.settings.vertical_margin }}px 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+
+  .ai-spacer-bar__stripe-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: {{ block.settings.stripe_width }}%;
+    height: {{ block.settings.stripe_height }}px;
+    background-color: {{ block.settings.black_color }};
+  }
+
+  {% if block.settings.stripe_position == 'top' %}
+    .ai-spacer-bar__stripe-{{ ai_gen_id }} {
+      top: 0;
+      transform: translateX(-50%);
+    }
+  {% elsif block.settings.stripe_position == 'bottom' %}
+    .ai-spacer-bar__stripe-{{ ai_gen_id }} {
+      top: auto;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  {% endif %}
+{% endstyle %}
+
+<div class="ai-spacer-bar-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-spacer-bar__stripe-{{ ai_gen_id }}"></div>
+</div>
+
+{% schema %}
+{
+  "name": "Red spacer bar",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Bar settings"
+    },
+    {
+      "type": "range",
+      "id": "bar_height",
+      "min": 10,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Bar height",
+      "default": 60
+    },
+    {
+      "type": "color",
+      "id": "red_color",
+      "label": "Bar color",
+      "default": "#e32c2b"
+    },
+    {
+      "type": "range",
+      "id": "vertical_margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Stripe settings"
+    },
+    {
+      "type": "select",
+      "id": "stripe_position",
+      "label": "Stripe position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "stripe_width",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Stripe width",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "stripe_height",
+      "min": 2,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Stripe height",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "black_color",
+      "label": "Stripe color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Red spacer bar"
+    }
+  ]
+}
+{% endschema %}

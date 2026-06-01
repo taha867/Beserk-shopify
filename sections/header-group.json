@@ -1,0 +1,406 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message_PthtHn": {
+          "type": "message",
+          "name": "PROMO/SALE",
+          "disabled": true,
+          "settings": {
+            "text": "HAPPY INTERNATIONAL NAIL DAY! 💅<strong> </strong>FREE GIFT WITH ALL ORDERS OVER $150! ✨"
+          }
+        },
+        "message_Jr8KdV": {
+          "type": "message",
+          "settings": {
+            "text": "FREE SHIPPING OVER $129 ❤︎ AUSTRALIA WIDE"
+          }
+        }
+      },
+      "block_order": [
+        "message_PthtHn",
+        "message_Jr8KdV"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "enable_sticky": false,
+        "autoplay": true,
+        "cycle_speed": 7,
+        "desktop_font_size": 11,
+        "mobile_font_size": 10
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_4rXjzi": {
+          "type": "mega_menu",
+          "name": "NEW",
+          "settings": {
+            "menu_item": "NEW",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu_Image_315x450_New_c2c453f4-70c9-4e63-8298-5e7cfc87df52.jpg",
+            "image_1_heading": "New Arrivals",
+            "image_1_text": "SHOP NOW",
+            "image_1_link": "shopify://collections/new",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_New-01_6fcefbad-5397-4c4f-9aef-27ea7cbb105a.jpg",
+            "image_2_heading": "RAVE NAILZ ARE Back!",
+            "image_2_text": "Shop Now",
+            "image_2_link": "shopify://collections/rave-nailz"
+          }
+        },
+        "mega_menu_Bb4PAa": {
+          "type": "mega_menu",
+          "name": "CHRISTMAS 🎄",
+          "disabled": true,
+          "settings": {
+            "menu_item": "CHRISTMAS 🎄",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image-_315x450_Christmas_01.jpg",
+            "image_1_heading": "Dress festive",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/christmas",
+            "image_2": "shopify://shop_images/Menu-Image-_315x450_Christmas_02.jpg",
+            "image_2_heading": "Spread Love And Joy",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/christmas-decorations"
+          }
+        },
+        "mega_menu_Y838VA": {
+          "type": "mega_menu",
+          "name": "🎃 HALLOWEEN",
+          "disabled": true,
+          "settings": {
+            "menu_item": "🎃 HALLOWEEN",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image-_315x450_HALLOWEEN-02.jpg",
+            "image_1_heading": "HALLOWEEN HOMEWARES",
+            "image_1_text": "Spooky decor for your home",
+            "image_1_link": "shopify://collections/halloween-homewares",
+            "image_2": "shopify://shop_images/Menu-Image-_315x450_HALLOWEEN-01.jpg",
+            "image_2_heading": "CUTE PLUSHIES",
+            "image_2_text": "GET YOUR PERFECT HALLOWEEN PLUSH",
+            "image_2_link": "shopify://collections/halloween-plush-toys"
+          }
+        },
+        "mega_menu_3BRwPM": {
+          "type": "mega_menu",
+          "name": "VALENTINE'S DAY",
+          "disabled": true,
+          "settings": {
+            "menu_item": "VALENTINE'S DAY 💌",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu_Image_315x450_Valentines_day_005892ac-83d9-4847-afbe-dc9df1a65caa.jpg",
+            "image_1_heading": "spread your love",
+            "image_1_text": "SHOP VALENTINE'S DAY",
+            "image_1_link": "shopify://collections/valentines-day",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/valentines-day"
+          }
+        },
+        "mega_menu_GkpwGJ": {
+          "type": "mega_menu",
+          "name": "EASTER",
+          "disabled": true,
+          "settings": {
+            "menu_item": "EASTER 🐰",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Easter-02_84b9d961-f1f8-49ea-8f59-b72c68d4dc14.jpg",
+            "image_1_heading": "easter outfits you need",
+            "image_1_text": "SHOP NOW",
+            "image_1_link": "shopify://collections/easter-outfits",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Easter-01_fc5e333b-9a35-4d29-a3b8-dd7c60f119ed.jpg",
+            "image_2_heading": "decorate for easter",
+            "image_2_text": "SHOP NOW",
+            "image_2_link": "shopify://collections/easter-gifts"
+          }
+        },
+        "mega_menu_44wH7y": {
+          "type": "mega_menu",
+          "name": "SALE",
+          "settings": {
+            "menu_item": "SALE",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale-02_e38b2ab5-b28e-4fa2-9eb5-0a9a2e975b55.jpg",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/sale",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_sALE-01_29e3dc96-3711-4f88-be05-20c0f31a8b44.jpg",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": "https://www.beserk.com.au/products/beetlejuice-ghost-with-the-most-queen-double-sided-quilt-set"
+          }
+        },
+        "mega_menu_md4C4c": {
+          "type": "mega_menu",
+          "name": "CLOTHING",
+          "settings": {
+            "menu_item": "CLOTHING",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_clothing_01_43f5e0f1-5da3-48e8-85b2-f5b6b37ce397.jpg",
+            "image_1_heading": "The Highly Anticipated Collab is Here!",
+            "image_1_text": "shop Hell bunny",
+            "image_1_link": "shopify://collections/hell-bunny",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_clothing_02_a7c170d9-2aa8-47eb-b313-f259635a1fad.jpg",
+            "image_2_heading": "For the baddies",
+            "image_2_text": "SHOP Forest Ink",
+            "image_2_link": "shopify://collections/forest-ink"
+          }
+        },
+        "mega_menu_KmYXJE": {
+          "type": "mega_menu",
+          "name": "BAND MERCH",
+          "settings": {
+            "menu_item": "BAND MERCH",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Band-Merch_01_405c503a-7245-4df4-b6d2-30b9961de73f.jpg",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/band-merchandise",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Band-Merch_02_dde9d5a1-b6f9-40ee-94d0-1c7600d1f814.jpg",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/band-merchandise"
+          }
+        },
+        "mega_menu_ykEzqz": {
+          "type": "mega_menu",
+          "name": "SHOES",
+          "settings": {
+            "menu_item": "SHOES",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Shoes_02_a81cb44c-5ccf-437b-a96d-1e1439eed7f4.jpg",
+            "image_1_heading": "DEMONIA Classics",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/demonia",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Shoes_01_5057b390-dcc1-4d57-9386-0e56e820f6a1.jpg",
+            "image_2_heading": "SHOES IN STOCK",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/shoes-in-stock"
+          }
+        },
+        "mega_menu_b9wxPQ": {
+          "type": "mega_menu",
+          "name": "HAIR DYE",
+          "settings": {
+            "menu_item": "HAIR DYE",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Hair_01_989b534d-3651-4944-9631-9048cdeccdad.jpg",
+            "image_1_heading": "SHOP ARCTIC FOX",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/arctic-fox",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Hair_02_43510ad9-2fc5-46ab-830e-200d7f93521e.jpg",
+            "image_2_heading": "find your new look",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/hair-colour"
+          }
+        },
+        "mega_menu_eyLXFU": {
+          "type": "mega_menu",
+          "name": "COSMETICS",
+          "settings": {
+            "menu_item": "COSMETICS",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Cosmetics_01_cd0857fc-04e7-4ca4-9e6c-cfcad5733e22.jpg",
+            "image_1_heading": "shop makeup a murder",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/makeup-a-murder",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Cosmetics_02_1653dd66-3fd9-4d41-ba65-9c0cb0e745b6.jpg",
+            "image_2_heading": "NAIL ESSENTIALS",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/nails"
+          }
+        },
+        "mega_menu_mNj4kt": {
+          "type": "mega_menu",
+          "name": "ACCESSORIES",
+          "settings": {
+            "menu_item": "ACCESSORIES",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Accessories_02_a2ac78b2-9c30-4e49-b03f-0efe52e1d2cd.jpg",
+            "image_1_heading": "JUST ARRIVED",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/accessories",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Accessories_01_80ed928a-4af7-470b-aacb-412dfb55fd35.jpg",
+            "image_2_heading": "always a serve",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/black-widow-metal"
+          }
+        },
+        "mega_menu_BVj8zT": {
+          "type": "mega_menu",
+          "name": "HOMEWARES",
+          "settings": {
+            "menu_item": "HOMEWARES",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Homewares_01_322f3f87-bd66-4119-9734-9d201c7fc373.jpg",
+            "image_1_heading": "Homewares Favourites",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/all-homewares",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Homewares_02_c8972c92-8bce-4955-aa5a-0b353df6ba52.jpg",
+            "image_2_heading": "SHOP HELLS BLANKETS",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/hells-blankets"
+          }
+        },
+        "mega_menu_AixFDL": {
+          "type": "mega_menu",
+          "name": "POP CULTURE",
+          "settings": {
+            "menu_item": "POP CULTURE",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_pop-culture_01_9898df8d-888d-4038-9728-6ec317a21164.jpg",
+            "image_1_heading": "JUST LANDED",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/popculture",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_pop-culture_02_86ac8783-9e14-4107-a864-84b043470341.jpg",
+            "image_2_heading": "Cuddle companions",
+            "image_2_text": "",
+            "image_2_link": "https://www.beserk.com.au/collections/plush-toys?brand=Beserk+Clothing"
+          }
+        },
+        "mega_menu_bPgUbq": {
+          "type": "mega_menu",
+          "name": "GIFTS",
+          "settings": {
+            "menu_item": "GIFTS",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Gifts_02_f5c5c72c-80eb-4ec5-829a-172f89b94fd0.jpg",
+            "image_1_heading": "GIFTS UNDER $50",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/gifts-under-50",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Gifts-01_0aa7142a-5c2c-4556-8fd8-9d9b42e949b8.jpg",
+            "image_2_heading": "Alternative gifts",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/gifts"
+          }
+        },
+        "mega_menu_TWYtAJ": {
+          "type": "mega_menu",
+          "name": "SHOP BY ❤️",
+          "settings": {
+            "menu_item": "SHOP BY ❤️",
+            "images_position": "left",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_style_1bfd7306-13dc-4fdd-8cf2-dd18a18f4575.jpg",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "mega_menu_3wHkKn": {
+          "type": "mega_menu",
+          "name": "BRANDS",
+          "disabled": true,
+          "settings": {
+            "menu_item": "BRANDS",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "external_links_zPMAPD": {
+          "type": "external-links",
+          "disabled": true,
+          "settings": {
+            "label": "Search",
+            "label_url": "shopify://collections/search-page"
+          }
+        },
+        "external_links_CRHxeH": {
+          "type": "external-links",
+          "disabled": true,
+          "settings": {
+            "label": "Wishlist",
+            "label_url": "https://www.beserk.com.au/account?p=0#swym-list"
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_4rXjzi",
+        "mega_menu_Bb4PAa",
+        "mega_menu_Y838VA",
+        "mega_menu_3BRwPM",
+        "mega_menu_GkpwGJ",
+        "mega_menu_44wH7y",
+        "mega_menu_md4C4c",
+        "mega_menu_KmYXJE",
+        "mega_menu_ykEzqz",
+        "mega_menu_b9wxPQ",
+        "mega_menu_eyLXFU",
+        "mega_menu_mNj4kt",
+        "mega_menu_BVj8zT",
+        "mega_menu_AixFDL",
+        "mega_menu_bPgUbq",
+        "mega_menu_TWYtAJ",
+        "mega_menu_3wHkKn",
+        "external_links_zPMAPD",
+        "external_links_CRHxeH"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_sticky": true,
+        "hide_on_scroll": true,
+        "show_separation_border": true,
+        "reduce_padding": true,
+        "logo": "shopify://shop_images/beserk-logo9.png",
+        "logo_max_width": 230,
+        "logo_mobile_max_width": 180,
+        "menu": "link-list",
+        "sidebar_menu": "new-mobile",
+        "menu_open_trigger": "hover",
+        "menu_text_font": "heading",
+        "enable_search": true,
+        "sidebar_color_scheme": "scheme-2",
+        "sidebar_text_font": "heading",
+        "sidebar_show_dividers": false,
+        "sidebar_open_second_level_menus": true,
+        "layout": "logo_center_navigation_below",
+        "show_icons": true,
+        "show_country_selector": true,
+        "show_country_name": false,
+        "show_country_flag": true,
+        "show_locale_selector": false,
+        "transparent_header_text_color": "#ffffff"
+      }
+    },
+    "countdown_condensed_q8eD7K": {
+      "type": "countdown-condensed",
+      "disabled": true,
+      "name": "t:sections.countdown_timer.presets.countdown_timer.name",
+      "settings": {
+        "color_scheme": "scheme-44ec0a98-468a-406c-af3a-5b9446ede365",
+        "content": "AUS STANDARD POST XMAS DELIVERY CUT OFF!",
+        "link_text": "*EXCLUDES NT, WA & TAS - LEARN MORE",
+        "link_url": "shopify://blogs/news/2025-christmas-delivery-cut-offs",
+        "expiration_date": "2025-12-19 14:00",
+        "expiration_behavior": "hide",
+        "desktop_justification": "space-between"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "countdown_condensed_q8eD7K"
+  ]
+}

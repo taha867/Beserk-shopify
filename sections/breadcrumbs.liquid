@@ -1,0 +1,117 @@
+<style>
+      .new-breadcrumb ul {
+        list-style: none;
+        padding: 10px 0;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .new-breadcrumb li::after {
+        content: "/";
+        margin: 0 0.8rem;
+        color: rgb(var(--color-foreground));
+      }
+      nav.new-breadcrumb li {
+      font-family: 'Roboto Condensed';
+      }
+
+      .new-breadcrumb li:last-child::after {
+        content: "";
+      }
+
+    .new-breadcrumb a {
+        text-decoration: none;
+        color: rgb(var(--color-foreground));
+        font-size: 12px;
+    }
+
+      .new-breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width:450px){
+          .new-breadcrumb a {
+        font-size: 10px ;
+    }
+
+        .new-breadcrumb ul {
+        gap: 0;
+                margin: 0;
+      }
+
+       .new-breadcrumb li::after {
+        margin: 0 0.2rem;
+    }
+  }
+
+
+      @media screen and (max-width:350px){
+          .new-breadcrumb a {
+        font-size: 8px ;
+    }
+  }
+</style>
+
+<section class="breadcrumbs" id="{{ section.id }}">
+  <div class="container container--xl">
+    <nav class="new-breadcrumb" aria-label="Breadcrumbs">
+      <ul>
+        <li><a href="{{ routes.root_url }}">Home</a></li>
+
+        {% if template contains 'product' %}
+          {% assign breadcrumb_collection = collection %}
+          {% if breadcrumb_collection == null and product.collections.size > 0 %}
+            {% assign breadcrumb_collection = product.collections.first %}
+          {% endif %}
+
+          {% if breadcrumb_collection %}
+            <li>
+              <a href="{{ breadcrumb_collection.url }}">{{ breadcrumb_collection.title }}</a>
+            </li>
+          {% endif %}
+
+          <li>
+            <a href="{{ product.url }}">{{ product.title }}</a>
+          </li>
+
+        {% elsif template contains 'article' %}
+          <li><a href="{{ routes.blogs_url }}">Blog</a></li>
+          <li>
+            <a href="{{ blog.url }}">{{ blog.title }}</a>
+          </li>
+          <li>
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          </li>
+
+        {% elsif template contains 'blog' %}
+          <li><a href="{{ routes.blogs_url }}">Blog</a></li>
+          <li>
+            <a href="{{ blog.url }}">{{ blog.title }}</a>
+          </li>
+
+        {% elsif template contains 'collection' %}
+          <li>
+            <a href="{{ collection.url }}">{{ collection.title }}</a>
+          </li>
+
+        {% elsif template contains 'page' %}
+          <li>
+            <a href="{{ page.url }}">{{ page.title }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "BreadCrumbs",
+  "settings": [],
+  "presets": [
+    {
+      "name": "BreadCrumbs"
+    }
+  ]
+}
+{% endschema %}

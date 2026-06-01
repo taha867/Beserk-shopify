@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image": "{{ collection.metafields.custom.desktop_image.value }}",
+        "mobile_image": "{{ collection.metafields.custom.mobile_image.value }}",
+        "image_size": "xs",
+        "allow_transparent_header": false,
+        "show_image": true,
+        "reveal": false,
+        "enable_parallax": false,
+        "show_collection_title": true,
+        "show_collection_description": false,
+        "show_breadcrumb": true,
+        "content_width": "sm",
+        "overlay_color": "rgba(0,0,0,0)",
+        "overlay_opacity": 0
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "",
+        "hide_product_information": false,
+        "products_per_page": 48,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 0.3,
+        "vertical_spacing_factor": 0.4,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "rich_text_DTiRj4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_arjxdi": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ collection.title }}",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_PcaKeb": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "{{ collection.description }}"
+          }
+        },
+        "description_with_button_hqgrPx": {
+          "type": "description-with-button",
+          "settings": {
+            "description": "{{ collection.description }}",
+            "button_label": "Read More",
+            "read_less": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_arjxdi",
+        "richtext_PcaKeb",
+        "description_with_button_hqgrPx"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "b318b414-6da5-41d2-8e82-4a4c3cbeb681": {
+      "type": "apps",
+      "blocks": {
+        "0282d106-6f40-43ce-a427-68705f3c996c": {
+          "type": "shopify://apps/boost-ai-search-filter/blocks/filter-product-list-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "0282d106-6f40-43ce-a427-68705f3c996c"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "main",
+    "rich_text_DTiRj4",
+    "b318b414-6da5-41d2-8e82-4a4c3cbeb681"
+  ]
+}

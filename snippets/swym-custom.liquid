@@ -1,0 +1,105 @@
+<script defer>
+  function renderWishlistCounter(swat) {
+    var ogWishlistCount = swat.wishlistCount;
+    var ogFetchLists = swat.fetchLists;
+    var customFavCount;
+    var isCollectionsEnabled = swat.retailerSettings.Wishlist.EnableCollections;
+    var counter_elem = document.querySelectorAll(".swym-wishlist-header-counter");
+
+    swat.wishlistCount = function(renderFn) {
+      if (!isCollectionsEnabled) {
+        ogWishlistCount.apply(this, arguments);
+      } else {
+        if (typeof customFavCount === "undefined") {
+          ogFetchLists.apply(this, [{
+            callbackFn: function(lists) {
+              customFavCount = 0;
+              lists.forEach(function(l) {
+                customFavCount = customFavCount + l.listcontents.length;
+              });
+              renderFn(customFavCount);
+            },
+            errorFn: function(er) {
+              console.error(er);
+            }
+          }]);
+        } else {
+          renderFn(customFavCount);
+        }
+      }
+    }
+
+    if (isCollectionsEnabled) {
+      swat.fetchLists = function(opts) {
+        var ogCallbackFn = opts.callbackFn;
+        opts.callbackFn = function(lists) {
+          if (counter_elem) {
+            customFavCount = 0;
+            lists.forEach(function(l) {
+              customFavCount = customFavCount + l.listcontents.length;
+            });
+            updateCounter();
+          }
+          ogCallbackFn.apply(this, arguments);
+        }
+        ogFetchLists.apply(this, arguments);
+      }
+    }
+
+    function updateCounter() {
+      for (var i = 1; i < counter_elem.length; i++) {
+        if (window._swat.renderWishlistCount) {
+          window._swat.renderWishlistCount(counter_elem[i], function(count, element) {
+            console.log("updateCounter - debug - renderWishlistCount", count, element); /* Can be removed after verification */
+          });
+        }
+      }
+    }
+
+    let removeFromWLEvent = "sw:removedfromwishlist";
+    let countUpdateOnRemoval = function(e){
+      console.log("removed event encountered");
+      if (customFavCount !== undefined && customFavCount > 0) {
+        console.log("counter decremented");
+        customFavCount -= 1; // Decrement the count
+        updateCounter();
+    }
+    }
+      swat.evtLayer.addEventListener(removeFromWLEvent, countUpdateOnRemoval);
+
+    // Initial counter rendering
+    updateCounter();
+  }
+
+  if (!window.SwymCallbacks) {
+    window.SwymCallbacks = [];
+  }
+  window.SwymCallbacks.push(renderWishlistCounter);
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.remove-link').forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault(); 
+        console.log('Remove clicked but default navigation stopped', this.href);
+      });
+    });
+  });
+function onSwymLoadCallback(swat) {
+    swat.evtLayer.addEventListener(swat.JSEvents.UIAddedToCart, function() {
+       document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+  bubbles: true
+}));
+    });
+    
+    /* For Move All to Cart buttons - required if SFL/Move All to Cart button is enabled */
+    swat.evtLayer.addEventListener(swat.JSEvents.UIAddedAllToCart, function() {
+       document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+  bubbles: true
+}));
+    });
+}
+
+if (!window.SwymCallbacks) {
+    window.SwymCallbacks = [];
+}
+window.SwymCallbacks.push(onSwymLoadCallback);
+</script>

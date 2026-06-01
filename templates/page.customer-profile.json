@@ -1,0 +1,194 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "new_richtext_8LeBze": {
+      "type": "new-richtext",
+      "blocks": {
+        "button_w99GUH": {
+          "type": "button",
+          "name": "t:blocks.button.name",
+          "settings": {
+            "text": "< BACK",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          },
+          "blocks": {}
+        },
+        "button_BExLzH": {
+          "type": "button",
+          "name": "t:blocks.button.name",
+          "settings": {
+            "text": "Button",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "button_w99GUH",
+        "button_BExLzH"
+      ],
+      "disabled": true,
+      "name": "New Richtext",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_pLt4ey": {
+      "type": "rich-text",
+      "blocks": {
+        "image_W9XdM9": {
+          "type": "image",
+          "settings": {
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "subheading_LLxBgp": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "MY ACCOUNT"
+          }
+        },
+        "heading_QRjg8m": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "WELCOME TO BESERK...",
+            "heading_tag": "h1"
+          }
+        },
+        "customer_name_mE9Rta": {
+          "type": "customer_name",
+          "settings": {
+            "customer_name": ""
+          }
+        },
+        "richtext_h4DNDV": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "button_VwHhXd": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "MY ORDERS",
+            "url": "shopify://pages/orders",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_RAnPXF": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "ADDRESS BOOK",
+            "url": "https://www.beserk.com.au/account/addresses",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_VUimBN": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "REWARDS",
+            "url": "shopify://pages/rewards-old",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_Xi3pmV": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "RETURNS",
+            "url": "shopify://pages/returns-1",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_pkVnGj": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "WISHLIST",
+            "url": "https://www.beserk.com.au/account?p=0#swym-list",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_kYLQrD": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "LOGOUT",
+            "url": "http://beserk.com.au/account/logout",
+            "background": "#ffffff",
+            "text_color": "#1c1c1c"
+          }
+        }
+      },
+      "block_order": [
+        "image_W9XdM9",
+        "subheading_LLxBgp",
+        "heading_QRjg8m",
+        "customer_name_mE9Rta",
+        "richtext_h4DNDV",
+        "button_VwHhXd",
+        "button_RAnPXF",
+        "button_VUimBN",
+        "button_Xi3pmV",
+        "button_pkVnGj",
+        "button_kYLQrD"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "customer_profile_jChVEL": {
+      "type": "customer-profile",
+      "name": "Customer Profile",
+      "settings": {}
+    }
+  },
+  "order": [
+    "new_richtext_8LeBze",
+    "rich_text_pLt4ey",
+    "main",
+    "customer_profile_jChVEL"
+  ]
+}

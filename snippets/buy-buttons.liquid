@@ -1,0 +1,447 @@
+{%- comment -%}
+  ----------------------------------------------------------------------------------------------------------------------
+  BUY BUTTONS
+  ----------------------------------------------------------------------------------------------------------------------
+
+  This component is used to show the buy buttons
+
+  ********************************************
+  Supported variables
+  ********************************************
+
+  * product: the product from which to show the buttons (if empty, a placeholder is displayed)
+  * show_payment_button: if we show or not the dynamic checkout button
+  * show_gift_card_recipient: for gift card products, an optional message/email to be sent to the recipient
+  * atc_button_background: the background of the ATC button
+  * atc_button_text_color: the color of the ATC button
+  * payment_button_background: the background of the dynamic payment button
+  * payment_button_background: the color of the dynamic payment button
+  * form_id: if specified, define the form ID linked to this input
+{%- endcomment -%}
+
+<style>
+  .button__loader {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .button__loader span {
+    width: 15px;
+    height: 15px;
+    background: currentColor;
+    border-radius: 50%;
+    display: inline-block;
+    animation: bounce 1.4s infinite ease-in-out both;
+  }
+
+  .button__loader span:nth-child(1) { animation-delay: -0.32s; }
+  .button__loader span:nth-child(2) { animation-delay: -0.16s; }
+
+  @keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+  }
+</style>
+
+{%- if product != blank -%}
+  {%- liquid
+    assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first
+    assign recipient_feature_active = false
+
+    if product.gift_card? and show_gift_card_recipient
+      assign recipient_feature_active = true
+      assign show_payment_button = false
+    endif
+  -%}
+
+  <product-form>
+    {%- form 'product', product, id: form_id -%}
+      <input
+        type="hidden"
+        {% if variant_picker_block != blank %}
+          disabled
+        {% endif %}
+        name="id"
+        value="{{ product.selected_or_first_available_variant.id }}"
+      >
+
+      {% liquid
+        assign button_disabled = false
+
+        if product.selected_or_first_available_variant == null
+          assign button_disabled = true
+          assign button_content = 'product.general.unavailable_button' | t
+        elsif product.selected_or_first_available_variant.available == false
+          assign button_disabled = true
+          assign button_content = 'product.general.sold_out_button' | t
+        else
+          if product.template_suffix contains 'pre-order'
+            assign button_content = 'product.general.pre_order_button' | t
+          else
+            assign button_content = 'product.general.add_to_cart_button' | t
+          endif
+        endif
+      %}
+
+      <div class="v-stack">
+        {%- if recipient_feature_active -%}
+          <gift-card-recipient class="gift-card-recipient v-stack gap-3">
+            {%- assign checkbox_label = 'gift_card.recipient.checkbox' | t -%}
+            {%- render 'checkbox', label: checkbox_label, name: 'properties[__shopify_send_gift_card_to_recipient]' -%}
+
+            <div class="gift-card-recipient__fields" hidden>
+              <div class="fieldset">
+                {%- liquid
+                  assign recipient_email_label = 'gift_card.recipient.email_label' | t
+                  render 'input', type: 'email', label: recipient_email_label, name: 'properties[Recipient email]', value: form.email, required: true, maxlength: 138
+
+                  assign recipient_name_label = 'gift_card.recipient.name_label' | t
+                  render 'input', label: recipient_name_label, name: 'properties[Recipient name]', value: form.name
+
+                  assign send_on_label = 'gift_card.recipient.send_on_label' | t
+                  render 'input', type: 'date', label: send_on_label, name: 'properties[Send on]', value: form.send_on, pattern: '\d{4}-\d{2}-\d{2}'
+                  render 'input', type: 'hidden', name: 'properties[__shopify_offset]'
+
+                  assign message_label = 'gift_card.recipient.message_label' | t
+                  render 'input', label: message_label, name: 'properties[Message]', value: form.message, multiline: 3, maxlength: 200, show_max_characters_count: true
+                -%}
+              </div>
+            </div>
+          </gift-card-recipient>
+        {%- endif -%}
+
+        <buy-buttons
+          class="buy-buttons {% if show_payment_button %}buy-buttons--has-dynamic{% endif %}"
+          form="{{ form_id }}"
+        >
+          {%- if product.selected_or_first_available_variant.available == false
+            or show_payment_button
+            and atc_button_background == blank
+            and atc_button_text_color == blank
+          -%}
+            {%- assign atc_button_style = 'outline' -%}
+          {%- else -%}
+            {%- assign atc_button_style = 'solid' -%}
+          {%- endif -%}
+
+          {% comment %}
+            {%- render 'button',
+              content: button_content,
+              type: 'submit',
+              disabled: button_disabled,
+              style: atc_button_style,
+              background: atc_button_background,
+              text_color: atc_button_text_color,
+              stretch: true
+            -%}
+          {% endcomment %}
+
+          {%- render 'button',
+            content: button_content,
+            type: 'submit',
+            disabled: button_disabled,
+            style: atc_button_style,
+            background: atc_button_background,
+            text_color: atc_button_text_color,
+            stretch: true
+          -%}
+
+          <div class="atc-loader" style="display:none;"><span></span><span></span><span></span></div>
+
+          {% comment %} {% unless product.available %}
+            <a href="#" class="BIS_trigger button" data-product-data="{{ product | json | escape }}">
+              SIGN-UP FOR RESTOCK NOTIFICATION
+            </a>
+          {% endunless %} {% endcomment %}
+           {% assign current_variant = product.selected_or_first_available_variant %}
+            {% unless current_variant.available %}
+              <a href="#" class="BIS_trigger button" data-product-data="{{ product | json | escape }}">
+                SIGN-UP FOR RESTOCK NOTIFICATION
+              </a>
+            {% endunless %}
+
+
+          {%- if show_payment_button -%}
+            {{- form | payment_button -}}
+
+            <style>
+              {% if template == 'product' %}
+                a#more-payment-options-link {
+                  display: none;
+              }
+              {% endif %}
+                #{{ form_id }} .shopify-payment-button {
+                  {%- if payment_button_background != blank and payment_button_background != 'rgba(0,0,0,0)' -%}
+                    --button-background: {{ payment_button_background.rgb }};
+                  {%- endif -%}
+
+                  {%- if payment_button_text_color != blank and payment_button_text_color != 'rgba(0,0,0,0)' -%}
+                    --button-text-color: {{ payment_button_text_color.rgb }};
+                  {%- endif -%}
+
+                  {%- unless product.selected_or_first_available_variant.available -%}
+                    display: none;
+                  {%- endunless -%}
+                }
+            </style>
+          {%- endif -%}
+        </buy-buttons>
+      </div>
+    {%- endform -%}
+  </product-form>
+{%- else -%}
+  <buy-buttons class="buy-buttons" template="{{ product.template_suffix | escape }}" form="{{ form_id }}">
+    {%- assign button_content = 'product.general.add_to_cart_button' | t -%}
+    {%- render 'button',
+      content: button_content,
+      type: 'submit',
+      background: variant_picker_block.settings.atc_button_background,
+      text_color: variant_picker.settings.atc_button_text_color,
+      stretch: true
+    -%}
+  </buy-buttons>
+{%- endif -%}
+
+{% comment %}
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1) cache each button's original label + disabled state
+      document.querySelectorAll('product-form form button[type="submit"]').forEach((btn) => {
+        btn.dataset.defaultText = (btn.innerText || btn.textContent || '').trim();
+        btn.dataset.defaultDisabled = btn.disabled ? 'true' : 'false';
+      });
+
+      // helper: mark In Cart
+      const markInCart = (btn) => {
+        if (!btn) return;
+        btn.textContent = 'In Cart';
+        btn.disabled = true; // only our state
+        btn.classList.add('is-in-cart');
+      };
+
+      // helper: revert only if we changed it before
+      const revertIfWeChanged = (btn) => {
+        if (!btn) return;
+        if (btn.classList.contains('is-in-cart')) {
+          btn.classList.remove('is-in-cart');
+          // restore original label/state the theme set (e.g., "Add to cart" or "Sold out")
+          if (btn.dataset.defaultText) btn.textContent = btn.dataset.defaultText;
+          btn.disabled = btn.dataset.defaultDisabled === 'true';
+        }
+        // If we didn't change it, do nothing (lets theme handle stock/labels)
+      };
+
+      // update all product-form buttons based on cart contents
+      const updateAtcButtons = (cart) => {
+        document.querySelectorAll('product-form').forEach((pf) => {
+          const form = pf.querySelector('form');
+          if (!form) return;
+          const variantId = form.querySelector("input[name='id']")?.value;
+          const btn = form.querySelector("button[type='submit']");
+          if (!btn || !variantId) return;
+
+          const inCart = Array.isArray(cart?.items) && cart.items.some((i) => String(i.id) === String(variantId));
+          if (inCart) {
+            markInCart(btn);
+          } else {
+            // DON'T force "Add to cart" — just revert if we previously set "In Cart"
+            revertIfWeChanged(btn);
+          }
+        });
+      };
+
+      const refreshCart = () => {
+        fetch('/cart.js')
+          .then((r) => r.json())
+          .then(updateAtcButtons)
+          .catch(() => {});
+      };
+
+      // initial load
+      refreshCart();
+
+      // listen for common theme events; if none fire, we still have initial load state
+      document.addEventListener('product-form:afterAdd', refreshCart);
+      ['cart:updated', 'cart:change'].forEach((ev) => {
+        document.addEventListener(ev, (e) => {
+          if (e?.detail?.cart) updateAtcButtons(e.detail.cart);
+          else refreshCart();
+        });
+      });
+
+      // tiny fallback: after clicking any ATC, poll cart briefly to catch updates in themes with no events
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('product-form form button[type="submit"]');
+        if (!btn) return;
+        setTimeout(refreshCart, 250);
+        setTimeout(refreshCart, 900);
+      });
+    });
+  </script>
+{% endcomment %}
+
+<script>
+  {% comment %} This is commented out because there are duplicate add to cart events if it stays in the theme.
+  document.addEventListener('DOMContentLoaded', function () {
+    const forms = document.querySelectorAll("form[action*='/cart/add']");
+
+    forms.forEach((form) => {
+      const button = form.querySelector("button[type='submit']");
+      if (!button) return;
+
+      // Inject loader + wrap text
+      if (!button.querySelector('.button__loader')) {
+        const textSpan = document.createElement('span');
+        textSpan.classList.add('button__text');
+        textSpan.innerHTML = button.innerHTML;
+
+        const loaderSpan = document.createElement('span');
+        loaderSpan.classList.add('button__loader');
+        loaderSpan.innerHTML = '<span></span><span></span><span></span>';
+
+        button.innerHTML = '';
+        button.appendChild(textSpan);
+        button.appendChild(loaderSpan);
+      }
+
+      form.addEventListener('submit', function (e) {
+        const textEl = button.querySelector('.button__text');
+        const loaderEl = button.querySelector('.button__loader');
+
+        if (textEl && loaderEl) {
+          e.preventDefault();
+
+          // Show loader instead of text
+          textEl.style.display = 'none';
+          loaderEl.style.display = 'flex';
+          button.disabled = true;
+
+          // AJAX add to cart
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'X-Requested-With': 'XMLHttpRequest' },
+          })
+            .then((res) => res.json())
+            .then(() => {
+              // Restore text
+              loaderEl.style.display = 'none';
+              textEl.style.display = 'inline';
+              button.disabled = false;
+
+              // Trigger cart drawer update
+              document.dispatchEvent(new CustomEvent('cart:updated'));
+            });
+        }
+      });
+    });
+  });
+{%  endcomment %}
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // selector for both native ATC + Preorder Me buttons
+    const buttonSelector = 'product-form form button[type="submit"], .preorder-me-button';
+
+    // 1) cache each button's original label + disabled state
+    document.querySelectorAll(buttonSelector).forEach((btn) => {
+      btn.dataset.defaultText = (btn.innerText || btn.textContent || '').trim();
+      btn.dataset.defaultDisabled = btn.disabled ? 'true' : 'false';
+    });
+
+    // helper: mark In Cart
+    const markInCart = (btn) => {
+      if (!btn) return;
+      btn.textContent = 'In Cart';
+      btn.disabled = true;
+      btn.classList.add('is-in-cart');
+    };
+
+    // helper: revert only if we changed it before
+    const revertIfWeChanged = (btn) => {
+      if (!btn) return;
+      if (btn.classList.contains('is-in-cart')) {
+        btn.classList.remove('is-in-cart');
+        if (btn.dataset.defaultText) btn.textContent = btn.dataset.defaultText;
+        btn.disabled = btn.dataset.defaultDisabled === 'true';
+      }
+    };
+
+    // update all buttons based on cart contents
+    const updateAtcButtons = (cart) => {
+      document.querySelectorAll('product-form').forEach((pf) => {
+        const form = pf.querySelector('form');
+        if (!form) return;
+
+        const variantId = form.querySelector("input[name='id']")?.value;
+        if (!variantId) return;
+
+        const btns = form.querySelectorAll(buttonSelector);
+        if (!btns.length) return;
+
+        const inCart = Array.isArray(cart?.items) && cart.items.some((i) => String(i.id) === String(variantId));
+        btns.forEach((btn) => {
+          if (inCart) {
+            markInCart(btn);
+          } else {
+            revertIfWeChanged(btn);
+          }
+        });
+      });
+    };
+
+    const refreshCart = () => {
+      fetch('/cart.js')
+        .then((r) => r.json())
+        .then(updateAtcButtons)
+        .catch(() => {});
+    };
+
+    // initial load
+    refreshCart();
+
+    // listen for Shopify + Preorder events
+    document.addEventListener('product-form:afterAdd', refreshCart);
+    ['cart:updated', 'cart:change'].forEach((ev) => {
+      document.addEventListener(ev, (e) => {
+        if (e?.detail?.cart) updateAtcButtons(e.detail.cart);
+        else refreshCart();
+      });
+    });
+
+    // fallback polling after click (works for preorder buttons too)
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest(buttonSelector);
+      if (!btn) return;
+      setTimeout(refreshCart, 250);
+      setTimeout(refreshCart, 900);
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new MutationObserver(() => {
+      const atcButton = document.querySelector('form[action*="/cart/add"] [type="submit"]');
+
+      // Only force-show checkout if Add to Cart exists and is enabled
+      if (atcButton && !atcButton.disabled) {
+        document.querySelectorAll('.shopify-payment-button').forEach((el) => {
+          el.style.display = 'block'; // show if in stock
+        });
+      } else {
+        document.querySelectorAll('.shopify-payment-button').forEach((el) => {
+          el.style.display = 'none'; // hide if out of stock
+        });
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+    });
+  });
+</script>
+

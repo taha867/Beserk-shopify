@@ -1,0 +1,208 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "new_richtext_aFAKh9": {
+      "type": "new-richtext",
+      "blocks": {
+        "button_3yF7fL": {
+          "type": "button",
+          "name": "t:blocks.button.name",
+          "settings": {
+            "text": "< MY ACCOUNT",
+            "url": "https://www.beserk.com.au/account/login",
+            "background": "",
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "button_3yF7fL"
+      ],
+      "disabled": true,
+      "name": "New Richtext",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_nTQyxm": {
+      "type": "rich-text",
+      "blocks": {
+        "image_RnYVCy": {
+          "type": "image",
+          "settings": {
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "subheading_4qhNBE": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "MY ACCOUNT"
+          }
+        },
+        "heading_UKh3Ch": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "WELCOME TO BESERK...",
+            "heading_tag": "h1"
+          }
+        },
+        "customer_name_zeH3cP": {
+          "type": "customer_name",
+          "settings": {
+            "customer_name": ""
+          }
+        },
+        "richtext_gwNePW": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "button_aWFtzf": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "PROFILE",
+            "url": "shopify://pages/profile",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_h647hq": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "MY ORDERS",
+            "url": "shopify://pages/orders",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_YV7UQT": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "ADDRESS BOOK",
+            "url": "https://www.beserk.com.au/account/addresses",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_QjkLND": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "REWARDS",
+            "url": "shopify://pages/rewards-old",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_VcFEtP": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "RETURNS",
+            "url": "shopify://pages/returns-1",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_4MWCC4": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "NEW WISHLIST",
+            "url": "https://www.beserk.com.au/account?p=0#swym-list",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_mrDqCb": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "OLD WISHLIST",
+            "url": "https://www.beserk.com.au/apps/wishlist",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_Bc77mF": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "LOGOUT",
+            "url": "http://beserk.com.au/account/logout",
+            "background": "#ffffff",
+            "text_color": "#1c1c1c"
+          }
+        }
+      },
+      "block_order": [
+        "image_RnYVCy",
+        "subheading_4qhNBE",
+        "heading_UKh3Ch",
+        "customer_name_zeH3cP",
+        "richtext_gwNePW",
+        "button_aWFtzf",
+        "button_h647hq",
+        "button_YV7UQT",
+        "button_QjkLND",
+        "button_VcFEtP",
+        "button_4MWCC4",
+        "button_mrDqCb",
+        "button_Bc77mF"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "customer_orders_tFXmjq": {
+      "type": "customer-orders",
+      "name": "Customer Orders",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "order-layout": "cards-with-images",
+        "remove_vertical_spacing": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "new_richtext_aFAKh9",
+    "rich_text_nTQyxm",
+    "customer_orders_tFXmjq"
+  ]
+}

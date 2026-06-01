@@ -1,0 +1,647 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_block_Rpxfgm": {
+      "type": "image-with-text-block",
+      "name": "HEADER",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/Animal_Charities_Header_Desktop_01.jpg",
+        "mobile_image": "shopify://shop_images/Animal_Charities_Header_Mobile_01.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_bKWXGU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6ULV8b": {
+          "type": "heading",
+          "settings": {
+            "text": "ANIMAL CHARITIES",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_jtmcxj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We love animals & want to help spread the word of the amazing people and organizations who are doing incredible things preserving the many beautiful animal species on our planet! The startling reality is that over 35-150 species become extinct every day due to inconsiderate human practices such as deforestation, mass culling for commercial activities and poaching for recreational purposes.<br/><br/>We would hate to see a world where animals become extinct due to human interference or a world with only captive animals, and at the rate we are going this is a very scary reality. So we are doing our small bit to help out! If you are interested in finding out more on any of these charities please visit the links below.<br/><br/></p>"
+          }
+        },
+        "image_NTjPmD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Carbon_Neutral_Logo_480x480_5b11d303-293b-47bc-b38c-2bbad35decf7.png",
+            "width_mode": "custom",
+            "max_width": 300,
+            "mobile_max_width": 200
+          }
+        },
+        "richtext_LQKqt4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Beserk, like any business, depends on the environment in many ways. We are proudly an environmentally friendly business that uses resources efficiently to reduce our carbon impact as much as possible. We partner with Carbon Neutral to help fund the planting of biodiverse native trees in degraded areas of Western Australia, helping to restore habitat to threatened flora and fauna.<br/><br/>If you have any suggestions for animal charities that need support we would love to hear from you!<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6ULV8b",
+        "richtext_jtmcxj",
+        "image_NTjPmD",
+        "richtext_LQKqt4"
+      ],
+      "name": "TITLE + INFORMATION",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "175472109766a45781": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "multi_column_HNBzyt": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_heykQw": {
+          "type": "image_with_text",
+          "name": "The Snow Leopard Trust",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Snow-Leopard-Trust.jpg",
+            "title": "The Snow Leopard Trust",
+            "heading_tag": "h3",
+            "content": "<p>The Snow Leopard Trust is a non-profit organisation working to save the snow leopard.</p><p><a href=\"https://www.snowleopard.org/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/snowleopardtrust\" target=\"_blank\" title=\"https://www.facebook.com/snowleopardtrust\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_7Eri77": {
+          "type": "image_with_text",
+          "name": "Maneki Neko Cat Rescue",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Maneki-Neko.jpg",
+            "title": "Maneki Neko Cat Rescue",
+            "heading_tag": "h3",
+            "content": "<p>Maneki Neko Cat Rescue is an all breed cat rescue organisation run entirely by volunteers.<br/><br/><a href=\"https://neko.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><a href=\"https://www.facebook.com/nekorescue/\" target=\"_blank\"><br/>&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_bpkXVU": {
+          "type": "image_with_text",
+          "name": "Shoalhaven Bat Clinic",
+          "settings": {
+            "image": "shopify://shop_images/2024_Animal-Charities_Shoalhaven-Bat-Clinic.jpg",
+            "title": "Shoalhaven Bat Clinic",
+            "heading_tag": "h3",
+            "content": "<p>Shoalhaven Bat Clinic rescues and rehabilitates both Microbats and Megabats.<br/><br/><a href=\"https://www.wildlife-rescue.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/shoalhavenbatclinicwrsc\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_b9diKY": {
+          "type": "image_with_text",
+          "name": "Brisbane Valley Cat Rescue",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Brisbane-Valley-Cat-Rescue_81a9f4d2-c3b3-45d6-9c67-9195039a43dc.jpg",
+            "title": "Brisbane Valley Cat Rescue",
+            "heading_tag": "h3",
+            "content": "<p>The Brisbane Valley Cat Rescue is dedicated to caring for cats in need of a safe haven.<br/><br/><a href=\"https://www.facebook.com/Brisbane-Valley-Cat-Rescue-39456639193/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_wmhdzA": {
+          "type": "image_with_text",
+          "name": "The Asian Rhino Project",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Asian-Rhino-Project.jpg",
+            "title": "The Asian Rhino Project",
+            "heading_tag": "h3",
+            "content": "<p>The Asian Rhino Project raises awareness and support for the three Asian Rhino Species.<br/><br/><a href=\"https://www.wildlifeasia.org.au/\" target=\"_blank\" title=\"https://www.wildlifeasia.org.au/\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/asianrhinoproject\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_BVpVHj": {
+          "type": "image_with_text",
+          "name": "The Sumatran Tiger Trust",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Sumatran-Tiger-Trust.jpg",
+            "title": "The Sumatran Tiger Trust",
+            "heading_tag": "h3",
+            "content": "<p>The Sumatran Tiger Trust is a charity funding the Sumatran Tiger Conservation Programme.<br/><br/><a href=\"https://www.facebook.com/SumatranTigerTrust/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_CXW44y": {
+          "type": "image_with_text",
+          "name": "The Wombat Foundation",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_The-Wombat-Foundation_3f268779-1f7d-4160-aea6-4a2c641eea9d.jpg",
+            "title": "The Wombat Foundation",
+            "heading_tag": "h3",
+            "content": "<p>The Wombat Foundation is dedicated to the conservation of the Northern hairy-nosed wombat.<br/><br/><a href=\"https://www.wombatfoundation.com.au/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/Wombat-Foundation-137682189587059/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Bt3JKQ": {
+          "type": "image_with_text",
+          "name": "Edge Of Existence",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Edge-Of-Existence.jpg",
+            "title": "Edge Of Existence",
+            "heading_tag": "h3",
+            "content": "<p>Edge Of Existence is working to secure the future of threatened species.</p><p><a href=\"https://www.edgeofexistence.org/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/zsledgeofexistence/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_UW87V8": {
+          "type": "image_with_text",
+          "name": "Sea Shepherd",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Sea-Shepherd_a0003325-fd67-4769-b208-2b7e5929ff1a.jpg",
+            "title": "Sea Shepherd",
+            "heading_tag": "h3",
+            "content": "<p>Sea Shepherd is a non-profit, marine wildlife conservation organisation.</p><p><a href=\"http://www.seashepherd.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/seashepherdaustralia\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_4anpNx": {
+          "type": "image_with_text",
+          "name": "Furry Friends Animals Rescue",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Furry-Friends-Animal-Rescue.jpg",
+            "title": "Furry Friends Animals Rescue",
+            "heading_tag": "h3",
+            "content": "<p>Furry Friends re-homes companion animals from surrenders or death row.<br/><br/><a href=\"https://www.furryfriendsqld.org.au/\" target=\"_blank\" title=\"https://www.furryfriendsqld.org.au/\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/furryfriendsanimalrescueqld/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_QNXwhA": {
+          "type": "image_with_text",
+          "name": "Bat Rescue Inc.",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Bat-Rescue-Inc.jpg",
+            "title": "Bat Rescue Inc.",
+            "heading_tag": "h3",
+            "content": "<p>Bat Rescue Inc is a volunteer run organisation caring for sick and injured bats.<br/><br/><a href=\"https://batrescue.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_AdNnej": {
+          "type": "image_with_text",
+          "name": "Free The Bears",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Free-The-Bears.jpg",
+            "title": "Free The Bears",
+            "heading_tag": "h3",
+            "content": "<p>Free The Bears rescues and rehabilitates bears in danger.<br/><br/><a href=\"https://freethebears.org/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/freethebearsfund\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_ytdHM9": {
+          "type": "image_with_text",
+          "name": "Fly By Night",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Fly-By-Night.jpg",
+            "title": "Fly By Night",
+            "heading_tag": "h3",
+            "content": "<p>Fly By Night is a volunteer run wildlife shelter that rescues and rehabilitates threatened bats.<br/><br/><a href=\"https://www.flybynight.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/FlyByNightBats/\" target=\"_blank\" title=\"https://www.facebook.com/FlyByNightBats/\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_xxhQR7": {
+          "type": "image_with_text",
+          "name": "WWF",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_WWF.jpg",
+            "title": "WWF",
+            "heading_tag": "h3",
+            "content": "<p>WWF aims to stop the degradation of the environment and have humans and nature live in harmony.<br/><br/><a href=\"https://www.wwf.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/WWF/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_CLqQEY": {
+          "type": "image_with_text",
+          "name": "Edgar’s Mission",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Edgar_s-Mission.jpg",
+            "title": "Edgar’s Mission",
+            "heading_tag": "h3",
+            "content": "<p>Edgar’s Mission is a haven for rescued farm animals.<br/><br/><a href=\"https://www.edgarsmission.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/edgarsmission\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_kV8hXE": {
+          "type": "image_with_text",
+          "name": "tacugama",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Tacugama-Chimpanzee-Sanctuary.jpg",
+            "title": "tacugama",
+            "heading_tag": "h3",
+            "content": "<p>The Tacugama Chimpanzee Sanctuary provides a safe home for orphaned chimpanzees.<br/><br/><a href=\"http://www.tacugama.com/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/Tacugama\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_whDUyj": {
+          "type": "image_with_text",
+          "name": "Deathrow Unchained",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Deathrow-Unchained.jpg",
+            "title": "Deathrow Unchained",
+            "heading_tag": "h3",
+            "content": "<p>Deathrow Unchained is fighting to save all animals from death row, neglect and abuse.<br/><br/><a href=\"https://www.deathrowunchained.org/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/deathrowunchained/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_hYwwHf": {
+          "type": "image_with_text",
+          "name": "The Swan Animal Haven",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Swan-Animal-Haven.jpg",
+            "title": "The Swan Animal Haven",
+            "heading_tag": "h3",
+            "content": "<p>The Swan Animal Haven rescues and cares for abandoned dogs until homes can be found.<br/><br/><a href=\"http://www.swananimalhaven.asn.au/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/SwanAnimalHaven/\" target=\"_blank\" title=\"https://www.facebook.com/SwanAnimalHaven/\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_bgwJGe": {
+          "type": "image_with_text",
+          "name": "World Animal Protection",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_World-Animal-Protection.jpg",
+            "title": "World Animal Protection",
+            "heading_tag": "h3",
+            "content": "<p>World Animal Protection protects animals in disasters, on farms, in the wild and in communities.<br/><br/><a href=\"https://www.worldanimalprotection.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/WorldAnimalProtectionAustralia\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Y7GBNx": {
+          "type": "image_with_text",
+          "name": "The Deep Peace Trust",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Deep-Peace-Trust.jpg",
+            "title": "The Deep Peace Trust",
+            "heading_tag": "h3",
+            "content": "<p>The Deep Peace Trust is dedicated to the respect of all beings through the arts and compassionate action.<br/><br/><a href=\"https://www.deeppeacetrust.com/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/deeppeacetrust/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_76TE7B": {
+          "type": "image_with_text",
+          "name": "The Handfish Conservation Project",
+          "settings": {
+            "image": "shopify://shop_images/2020_Animal-Charities_Handfish.jpg",
+            "title": "The Handfish Conservation Project",
+            "heading_tag": "h3",
+            "content": "<p>The Handfish Conservation Project is working towards conserving three handfish species within Tasmania: Red, Spotted & Ziebell’s.<br/><br/><a href=\"https://handfish.org.au/\" target=\"_blank\" title=\"https://handfish.org.au/\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/handfishconservationproject/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_6rTqdX": {
+          "type": "image_with_text",
+          "name": "The Gibbon Rehabilitation Project",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Gibbon-Rehabilitation-Project.jpg",
+            "title": "The Gibbon Rehabilitation Project",
+            "heading_tag": "h3",
+            "content": "<p>The Gibbon Rehabilitation Project works to rescue and rehabilitate unwanted or confiscated gibbons.<br/><br/><a href=\"https://www.gibbonproject.org/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/GibbonRehabilitationProject\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_diNmT6": {
+          "type": "image_with_text",
+          "name": "The Cat Protection Society",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Cat-Protection-Society.jpg",
+            "title": "The Cat Protection Society",
+            "heading_tag": "h3",
+            "content": "<p>The Cat Protection Society works tirelessly to desex street cats and find them loving homes.<br/><br/><a href=\"https://catprotection.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/catprotectionsocietynsw\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_fBCEHz": {
+          "type": "image_with_text",
+          "name": "The Sloth Conservation Foundation",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Sloth-Conservation-Foundation.jpg",
+            "title": "The Sloth Conservation Foundation",
+            "heading_tag": "h3",
+            "content": "<p>The Sloth Conservation Foundation is a non-profit organisation working to save wild sloths.<br/><br/><a href=\"https://slothconservation.com/\" target=\"_blank\">&gt;WEBSITE&lt;</a><a href=\"https://www.facebook.com/SlothConservation/\" target=\"_blank\"><br/>&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_EgWXW8": {
+          "type": "image_with_text",
+          "name": "Animals Asia",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Animals-Asia.jpg",
+            "title": "Animals Asia",
+            "heading_tag": "h3",
+            "content": "<p>Animals Asia is devoted to ending the barbaric practice of bear bile farming.<br/><br/><a href=\"https://www.animalsasia.org/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/AnimalsAsia\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_K8ynWV": {
+          "type": "image_with_text",
+          "name": "PETA",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_PETA.jpg",
+            "title": "PETA",
+            "heading_tag": "h3",
+            "content": "<p>PETA is the largest animal rights organization in the world.<br/><br/><a href=\"https://www.peta.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/official.peta/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Kzpi7b": {
+          "type": "image_with_text",
+          "name": "Sleepy Burrows",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Sleepy-Burrows.jpg",
+            "title": "Sleepy Burrows",
+            "heading_tag": "h3",
+            "content": "<p>Sleepy Burrows specialises in the rescue and rehabilitation of injured, orphaned, abused and illegally kept pet wombats.<br/><br/><a href=\"https://www.sleepyburrows.com.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/SleepyBurrows/\" target=\"_blank\">&gt;FACEBOOK&lt;</a><a href=\"https://www.facebook.com/purrsofpointcookinc/\" target=\"_blank\"> </a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_rcf4tF": {
+          "type": "image_with_text",
+          "name": "Stonedeaf Wildlife",
+          "settings": {
+            "image": "shopify://shop_images/2020_Animal-Charities_Stonedeaf.jpg",
+            "title": "Stonedeaf Wildlife",
+            "heading_tag": "h3",
+            "content": "<p>Stonedeaf Wildlife is a volunteer run organisation supporting the rehabilitation of local wildlife based in Townsville.<br/><br/><a href=\"https://www.facebook.com/Stonedeafwildlife/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_zJnw8J": {
+          "type": "image_with_text",
+          "name": "Change.org",
+          "settings": {
+            "image": "shopify://shop_images/2020_Animal-Charities_Change-Org.jpg",
+            "title": "Change.org",
+            "heading_tag": "h3",
+            "content": "<p>Change.org is the world's largest petition platform, empowering hundreds of millions of people to create the change they want to see.<br/><br/><a href=\"https://www.change.org/topic/animals-13\" target=\"_blank\" title=\"https://www.change.org/topic/animals-13\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/Change.orgAustralia/?ref=page_internal\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_wCqRPP": {
+          "type": "image_with_text",
+          "name": "WIRES",
+          "settings": {
+            "image": "shopify://shop_images/2020_Animal-Charities_WIRES.jpg",
+            "title": "WIRES",
+            "heading_tag": "h3",
+            "content": "<p>WIRES rescues & cares for Australian wildlife. Their relief & recovery work is ongoing, made possible by their volunteers & donations by the public.<br/><br/><a href=\"https://www.wires.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/WIRES.wildlife.rescue\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_VEmJDF": {
+          "type": "image_with_text",
+          "name": "Coral Gardeners",
+          "settings": {
+            "image": "shopify://shop_images/2024_Animal-Charities_Coral-Garderners_675bdb62-56bf-429b-80b8-7e07f5c3bb8e.jpg",
+            "title": "Coral Gardeners",
+            "heading_tag": "h3",
+            "content": "<p>Coral Gardeners work to save coral reefs globally through active reef restoration, awareness activities and innovative solutions.<br/><br/><a href=\"https://coralgardeners.org/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/coralgardeners/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_khtCpX": {
+          "type": "image_with_text",
+          "name": "PAWS Cat Rescue",
+          "settings": {
+            "image": "shopify://shop_images/2021_Animal-Charities_Paws-Cat-Rescue.jpg",
+            "title": "PAWS Cat Rescue",
+            "heading_tag": "h3",
+            "content": "<p>PAWS Cat Rescue rescues, rehabilitates & rehomes abandoned, neglected & unwanted cats/kittens.<br/><br/><a href=\"https://pawscatrescue16.wixsite.com/pawscatrescue\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/PawsCatRescuePerth/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_8yTmRG": {
+          "type": "image_with_text",
+          "name": "Purrs of Point Cook Inc.",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_Purrs.jpg",
+            "title": "Purrs of Point Cook Inc.",
+            "heading_tag": "h3",
+            "content": "<p>Purrs of Point Cook Inc. rescues stray, unwanted and unloved cats and kittens from the western suburbs of Melbourne.<br/><br/><a href=\"http://www.purrsofpointcook.com.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/purrsofpointcookinc/\" target=\"_blank\">&gt;FACEBOOK&lt; </a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_UbQdYF": {
+          "type": "image_with_text",
+          "name": "The Mini Kitty Commune",
+          "settings": {
+            "image": "shopify://shop_images/2019_Animal-Charities_The-Mini-Kitty-Commune.jpg",
+            "title": "The Mini Kitty Commune",
+            "heading_tag": "h3",
+            "content": "<p>The Mini Kitty Commune is a rehoming organisation that helps abandoned and neglected cats.<br/><br/><a href=\"https://mkc.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/minikittycommune/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_FGJXjM": {
+          "type": "image_with_text",
+          "name": "Best Friends Felines",
+          "settings": {
+            "image": "shopify://shop_images/2020_Animal-Charities_BFF.jpg",
+            "title": "Best Friends Felines",
+            "heading_tag": "h3",
+            "content": "<p>Best Friends Felines are dedicated to rescuing cats & kittens from all over Brisbane & coastal areas. <br/><br/><a href=\"https://www.bestfriendsfelines.com/\" target=\"_blank\" title=\"https://www.bestfriendsfelines.com/\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/BestFriendsFelines/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_QeKGim": {
+          "type": "image_with_text",
+          "name": "The Orangutan Project",
+          "settings": {
+            "image": "shopify://shop_images/2021_Animal-Charities_The-Orangutan-Project.jpg",
+            "title": "The Orangutan Project",
+            "heading_tag": "h3",
+            "content": "<p>The Orangutan Project is the world's largest non-partisan orangutan conservation organisation.<br/><br/><a href=\"https://www.orangutan.org.au/\" target=\"_blank\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/theorangutanproject.org/\" target=\"_blank\" title=\"https://www.facebook.com/theorangutanproject.org/\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_r4wQwW": {
+          "type": "image_with_text",
+          "name": "NSW Bull Terrier Rescue Inc.",
+          "settings": {
+            "image": "shopify://shop_images/2021_Animal-Charities_NSW-Bull-Terrior-Rescue.jpg",
+            "title": "NSW Bull Terrier Rescue Inc.",
+            "heading_tag": "h3",
+            "content": "<p>NSW Bull Terrier Rescue Inc. are dedicated to making the lives of Bull Terriers in NSW & QLD better.<br/><br/><a href=\"https://nswbtr.com/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.instagram.com/nsw_bull_terrier_rescue_inc/\" target=\"_blank\">&gt;INSTAGRAM&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_BEbexP": {
+          "type": "image_with_text",
+          "name": "Staffy and Bully Breed Rescue Inc.",
+          "settings": {
+            "image": "shopify://shop_images/2022_Animal-Charities_Sabbr.jpg",
+            "title": "Staffy and Bully Breed Rescue Inc.",
+            "heading_tag": "h3",
+            "content": "<p>Sabbr are a volunteer-run rescue group who rescue, rehabilitate, rehome & advocate for staffy & bull breeds.<br/><br/><a href=\"https://www.sabbr.com.au/\" target=\"_blank\" title=\"Sabbr website\">&gt;WEBSITE&lt;</a><br/><a href=\"https://www.facebook.com/staffyandbullybreedrescue/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_acAEcp": {
+          "type": "image_with_text",
+          "name": "Sydney Fox & Dingo rescue",
+          "settings": {
+            "image": "shopify://shop_images/2023_Sydney-Fox-and-Dingo-Rescue_678b359a-4e88-4309-ae8f-f777ec226f89.jpg",
+            "title": "Sydney Fox & Dingo rescue",
+            "heading_tag": "h3",
+            "content": "<p>Sydney Fox & Dingo rescue work tirelessly to rescue and care for a variety of animal species with a focus on foxes and dingoes.<br/><br/><a href=\"https://sfdr.org/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/SydneyFoxandDingoRescue/\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_XMHkdq": {
+          "type": "image_with_text",
+          "name": "Save the Daintree Rainforest",
+          "settings": {
+            "image": "shopify://shop_images/2021_Animal-Charities_Save-the-Daintree-Rainforest.jpg",
+            "title": "Save the Daintree Rainforest",
+            "heading_tag": "h3",
+            "content": "<p>Save the Daintree Rainforest aims to save the Daintree Rainforest from the threat of development.<br/><br/><a href=\"https://www.rainforest4.org/\" target=\"_blank\">&gt;WEBSITE&lt;<br/></a><a href=\"https://www.facebook.com/SaveTheDaintree\" target=\"_blank\">&gt;FACEBOOK&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_WeRh9q": {
+          "type": "image_with_text",
+          "name": "Save the Daintree Rainforest",
+          "settings": {
+            "image": "shopify://shop_images/2025_Animal-Charities_The_Wet_Tropics_efe0e21a-d7dd-4cb3-ae67-9f51c2229faf.jpg",
+            "title": "The Wet Tropics",
+            "heading_tag": "h3",
+            "content": "<p>The Wet Tropics was established to fulfil Australia's international obligation to protect, conserve, present and rehabilitate the Wet Tropics of Queensland World Heritage Area, and to ensure its survival for future generations.<br/><br/><a href=\"https://www.wettropics.gov.au/\" target=\"_blank\" title=\"https://www.wettropics.gov.au/\">&gt;WEBSITE&lt;</a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_heykQw",
+        "image_with_text_7Eri77",
+        "image_with_text_bpkXVU",
+        "image_with_text_b9diKY",
+        "image_with_text_wmhdzA",
+        "image_with_text_BVpVHj",
+        "image_with_text_CXW44y",
+        "image_with_text_Bt3JKQ",
+        "image_with_text_UW87V8",
+        "image_with_text_4anpNx",
+        "image_with_text_QNXwhA",
+        "image_with_text_AdNnej",
+        "image_with_text_ytdHM9",
+        "image_with_text_xxhQR7",
+        "image_with_text_CLqQEY",
+        "image_with_text_kV8hXE",
+        "image_with_text_whDUyj",
+        "image_with_text_hYwwHf",
+        "image_with_text_bgwJGe",
+        "image_with_text_Y7GBNx",
+        "image_with_text_76TE7B",
+        "image_with_text_6rTqdX",
+        "image_with_text_diNmT6",
+        "image_with_text_fBCEHz",
+        "image_with_text_EgWXW8",
+        "image_with_text_K8ynWV",
+        "image_with_text_Kzpi7b",
+        "image_with_text_rcf4tF",
+        "image_with_text_zJnw8J",
+        "image_with_text_wCqRPP",
+        "image_with_text_VEmJDF",
+        "image_with_text_khtCpX",
+        "image_with_text_8yTmRG",
+        "image_with_text_UbQdYF",
+        "image_with_text_FGJXjM",
+        "image_with_text_QeKGim",
+        "image_with_text_r4wQwW",
+        "image_with_text_BEbexP",
+        "image_with_text_acAEcp",
+        "image_with_text_XMHkdq",
+        "image_with_text_WeRh9q"
+      ],
+      "name": "t:sections.multi_column.presets.multi_column.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "About",
+        "title": "The charities",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_block_Rpxfgm",
+    "rich_text_bKWXGU",
+    "main",
+    "175472109766a45781",
+    "multi_column_HNBzyt"
+  ]
+}

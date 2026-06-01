@@ -1,0 +1,315 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "1754721278775094a6": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_medals_Lt7a7c": {
+          "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_medals_Lt7a7c"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "17632586983017b20a": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_a55cc0d_f9qcTF": {
+          "type": "ai_gen_block_a55cc0d",
+          "settings": {
+            "column_gap": 40,
+            "padding_top": 50,
+            "padding_bottom": 50,
+            "background_color": "#2a2a2a",
+            "heading_font": "roboto_condensed_n7",
+            "heading_size": 13,
+            "heading_color": "#000000",
+            "heading_transform": "uppercase",
+            "heading_letter_spacing": 10,
+            "heading_spacing": 20,
+            "link_size": 12,
+            "link_color": "#000000",
+            "link_hover_color": "#e32c2b",
+            "link_spacing": 5,
+            "accordion_padding": 15,
+            "accordion_border_color": "#ffffff",
+            "column_1_header": "Shop Beserk",
+            "column_1_link_1_text": "New Arrivals",
+            "column_1_link_1_url": "shopify://collections/new",
+            "column_1_link_2_text": "Sale & Clearance",
+            "column_1_link_2_url": "shopify://collections/sale",
+            "column_1_link_3_text": "Vegan Cosmetics",
+            "column_1_link_3_url": "shopify://collections/vegan",
+            "column_1_link_4_text": "Hair Dye & Hair Colour",
+            "column_1_link_4_url": "shopify://collections/hair-colour",
+            "column_1_link_5_text": "Beserk Gift Card",
+            "column_1_link_5_url": "shopify://products/beserk-gift-voucher",
+            "column_2_header": "SHOP BRANDS",
+            "column_2_link_1_text": "Killstar",
+            "column_2_link_1_url": "shopify://collections/killstar",
+            "column_2_link_2_text": "Manic Panic",
+            "column_2_link_2_url": "shopify://collections/manic-panic-hair",
+            "column_2_link_3_text": "Arctic Fox Hair Dye",
+            "column_2_link_3_url": "shopify://collections/arctic-fox",
+            "column_2_link_4_text": "Restyle",
+            "column_2_link_4_url": "shopify://collections/restyle",
+            "column_2_link_5_text": "Plus Size Clothing",
+            "column_2_link_5_url": "shopify://collections/sizes-plus-size",
+            "column_3_header": "SHOP SHOES",
+            "column_3_link_1_text": "Demonia",
+            "column_3_link_1_url": "shopify://collections/demonia",
+            "column_3_link_2_text": "Hot Chocolate",
+            "column_3_link_2_url": "shopify://collections/hot-chocolate",
+            "column_3_link_3_text": "Restyle",
+            "column_3_link_3_url": "shopify://collections/restyle-shoes",
+            "column_3_link_4_text": "Platform Shoes",
+            "column_3_link_4_url": "shopify://collections/platform-shoes",
+            "column_3_link_5_text": "Pleaser",
+            "column_3_link_5_url": "shopify://collections/pleaser",
+            "column_4_header": "Shop Style",
+            "column_4_link_1_text": "Gothic Clothing",
+            "column_4_link_1_url": "shopify://collections/gothic-clothing",
+            "column_4_link_2_text": "Punk Clothing",
+            "column_4_link_2_url": "shopify://collections/punk",
+            "column_4_link_3_text": "Alternative Fashion",
+            "column_4_link_3_url": "shopify://collections/all-clothing",
+            "column_4_link_4_text": "Witchy Style",
+            "column_4_link_4_url": "shopify://collections/witchy-style",
+            "column_4_link_5_text": "Medieval & Renaissance",
+            "column_4_link_5_url": "shopify://collections/medieval-renaissance-clothing"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_a55cc0d_f9qcTF"
+      ],
+      "settings": {}
+    },
+    "new_richtext_HpGbqm": {
+      "type": "new-richtext",
+      "blocks": {
+        "accordion_PdxUnY": {
+          "type": "accordion",
+          "name": "Accordion",
+          "settings": {
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/2025_Beserk-Favicon-01-resized.png",
+            "title": "Welcome to Beserk – Australia's Premier Alternative & Gothic Fashion Destination",
+            "content": "<p><strong>SHOP ALTERNATIVE & GOTHIC CLOTHING ONLINE</strong></p><p>Beserk is Australia's longest-running and most trusted online store for gothic clothing, alternative fashion, and dark luxury apparel. Since our founding, we've been the go-to destination for alternative style enthusiasts seeking premium goth clothing, punk fashion, and edgy streetwear.</p><p>Based in Brisbane, we curate an extensive collection of gothic fashion and alternative clothing from leading international brands. From complete goth outfits to statement accessories, we bring the world's best alternative fashion directly to your door across Australia and beyond.</p><p>Build your signature look from head to toe with our range of gothic boots, platform shoes, alternative dresses, band tees, fishnet stockings, chokers, and body jewelry. We also stock cult-favorite hair dyes, goth cosmetics, Korean skincare, vegan beauty products, and alternative homewares to complete your dark aesthetic lifestyle.</p><p><strong>ALTERNATIVE FASHION FOR EVERY STYLE</strong></p><p>Whether you're into gothic lolita, nu-goth, punk rock, grunge, emo fashion, or kawaii dark styles, Beserk has you covered. Our carefully curated alternative clothing collection lets you express your unique personality – from soft goth and pastel grunge to full witchy vibes and hardcore punk aesthetics.</p><p>Mix sweetness with darkness, combine kawaii cute with gothic edge, or go full alternative badass. With hundreds of products spanning alternative dresses, gothic tops, punk pants, platform boots, and statement accessories, the styling possibilities are endless.</p><p><strong>POP CULTURE, GAMING & COSPLAY ESSENTIALS</strong></p><p>Level up your wardrobe with our pop culture apparel, anime merch, gaming clothing, and geek fashion. Shop licensed band tees, horror movie merchandise, and fandom apparel that celebrates your obsessions.</p><p>Our cosplay collection features wigs, colored contact lenses, costume accessories, and character-inspired fashion perfect for conventions, photoshoots, or everyday cosplay style. Plus, explore our K-beauty range with Korean skincare products, sheet masks, and Asian beauty essentials to achieve that flawless gamer-girl glow.</p><p><strong>Why Shop Beserk?</strong> ✦ Australia's largest alternative fashion retailer<br/>✦ Curated collections from global alternative brands<br/>✦ Gothic, punk, grunge, kawaii & pop culture styles<br/>✦ Gaming apparel, anime merch & cosplay supplies<br/>✦ Korean skincare & K-beauty products<br/>✦ Fast Australian shipping<br/>✦ Expert alternative fashion curation</p><p>Tag #beserk on social media to showcase your alternative style and be featured in our community.</p>",
+            "liquid": "",
+            "page": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "accordion_PdxUnY"
+      ],
+      "name": "New Richtext",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify://shop_images/Website_Icons_Customer-Service_05_f5cd0097-8b9c-4e70-88ba-b50ae588b590.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "Award Winning Customer Service",
+            "content": "<p>Helping you is our top priority! Our 8 Customer Service Awards reflect the friendly, personal support we love to provide.</p>"
+          }
+        },
+        "icon-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify://shop_images/Website_Icons_No-Dropshipping_04.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "All items are kept in stock!",
+            "content": "<p>All our items are 100% Genuine and dispatched from our warehouse at Virginia, Queensland, Australia. We do not sell cheap copies!</p>"
+          }
+        },
+        "icon-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify://shop_images/Website_Icons_Secure_05.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "Secure payments",
+            "content": "<p>Your privacy and security are our top priority. SSL-encrypted and Google-verified.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon-2",
+        "icon-3",
+        "icon-4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "content": "<p>Welcome to Beserk!  ♥️♥️♥️<br/><br/>We hope you love our store! </p><p>We have selected the BEST items from around the world! Customer service is our #1 priority & established in 2000 we are trusted and true retailer. Our warehouse is located in Virginia, Queensland Australia. All items stocked at Beserk are 100% genuine & held in stock.</p><p>Please do not hesitate to contact us with any questions at all. ♥️♥️♥️</p>",
+            "enable_follow_on_shop": true
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "customer-service-info",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "links_CNq9fL": {
+          "type": "links",
+          "settings": {
+            "menu": "beserk-information",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "text_kzirrn": {
+          "type": "text",
+          "settings": {
+            "title": "<a href=\"/pages/contact-us\" title=\"Contact Us\">CONTACT US ★</a>",
+            "content": "<p><strong>EMAIL :</strong>  <a href=\"mailto:hello@beserk.com.au\" target=\"_blank\" title=\"mailto:hello@beserk.com.au\">hello@beserk.com.au</a></p><p><strong>PHONE / MOBILE</strong> : (07) 3857 3408 or 0478020710</p><p><strong>ADDRESS : </strong>2/58 Yarraman Place,<br/>Virginia, QLD 4014 AUSTRALIA </p><p><strong>LIVE CHAT :</strong> Click 'Help' in the bottom right corner</p><p><strong>OFFICE HOURS :</strong> Mon-Fri 8.30am - 4.30pm AEST</p><p><em>[Please Note - We do not have a retail store, click & collect orders only]</em></p>",
+            "enable_follow_on_shop": false
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Join the Beserk Mailing List! ♥️",
+            "content": "<p>Sign up to our newsletter to receive exclusive offers & new release updates.</p>",
+            "button_background": "#e32c2b",
+            "button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "links",
+        "links_CNq9fL",
+        "text_kzirrn",
+        "newsletter"
+      ],
+      "custom_css": [
+        ".text-subdued {color: #ffffff;}",
+        ".link-faded {color: #ffffff;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
+        "show_locale_selector": false
+      }
+    },
+    "new_richtext_BkcnKU": {
+      "type": "new-richtext",
+      "blocks": {
+        "rich_text_pLJrnW": {
+          "type": "rich-text",
+          "name": "t:blocks.rich_text.name",
+          "settings": {
+            "text": "<p>We acknowledge and respect the Turrbal people as the traditional owners and custodians of the land where the Beserk HQ is located. We honour their elders past, present and emerging and extend our respect to all Aboriginal and Torres Strait Islander Peoples.</p>",
+            "content_width": "sm",
+            "text_position": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "rich_text_pLJrnW"
+      ],
+      "name": "New Richtext",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_block_m8nKYD": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "subheading_wxBYjP": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_wxBYjP"
+      ],
+      "disabled": true,
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/Beserk_Logo_2025_Outline.png",
+        "content_width": "lg",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    }
+  },
+  "order": [
+    "1754721278775094a6",
+    "17632586983017b20a",
+    "text-with-icons",
+    "new_richtext_HpGbqm",
+    "footer",
+    "new_richtext_BkcnKU",
+    "image_with_text_block_m8nKYD"
+  ]
+}

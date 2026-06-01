@@ -1,0 +1,81 @@
+{%- comment -%}
+  ----------------------------------------------------------------------------------------------------------------------
+  FREE SHIPPING BAR
+  ----------------------------------------------------------------------------------------------------------------------
+
+  Renders the free shipping bar component. It is used on cart page and cart drawer to render the remaining amount before
+  being eligible for free shipping.
+{%- endcomment -%}
+
+<style>
+        free-shipping-bar.free-shipping-bar svg {
+          width: 45px;
+          height: 30px;
+          color: #ffff01;
+      }
+
+
+      free-shipping-bar.free-shipping-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        padding: 8px 15px;
+    }
+
+    .shipping-content .text-subdued {
+        color: #fff;
+        font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .free-text{
+      color: #ffff01;
+        font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+
+    @media screen and (max-width:450px){
+    free-shipping-bar.free-shipping-bar svg {
+      display: none;
+    }
+  }
+</style>
+
+{%- liquid
+  assign calculated_total_price = 0
+
+  for line_item in cart.items
+    if line_item.requires_shipping
+      assign calculated_total_price = calculated_total_price | plus: line_item.final_line_price
+    endif
+  endfor
+
+  # We have to remove the cart level discount from the calculated amount
+
+  assign total_cart_discount = 0
+
+  for discount_application in cart.cart_level_discount_applications
+    assign total_cart_discount = total_cart_discount | plus: discount_application.total_allocated_amount
+  endfor
+
+  assign calculated_total_price = calculated_total_price | minus: total_cart_discount
+-%}
+
+{%- if cart.requires_shipping -%}
+  <free-shipping-bar
+    class="free-shipping-bar"
+    threshold="{{ settings.cart_free_shipping_threshold }}"
+    total-price="{{ calculated_total_price }}"
+    reached-message="{{ 'cart.free_shipping_bar.limit_reached_html' | t | escape }}"
+    unreached-message="{{ 'cart.free_shipping_bar.limit_unreached_html' | t | escape }}"
+  >
+    {%- comment -%}The span below is the placeholder where the content will be inserted in JS{%- endcomment -%}
+    <div class="shipping-content">
+      <span class="text-subdued">&nbsp;</span><span class="free-text">free shipping</span>
+    </div>
+    {{ 'freeshipping.svg' | inline_asset_content -}}
+  </free-shipping-bar>
+{%- endif -%}

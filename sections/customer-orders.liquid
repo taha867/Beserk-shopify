@@ -1,0 +1,629 @@
+<section class="customer-orders {% unless section.settings.remove_vertical_spacing %}section-spacing{% endunless %} color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }}">
+  {% if customer %}
+    <div class="customer-orders-wrapper">
+      <h2 class="title">My Orders</h2>
+
+      {% if customer.orders_count > 0 %}
+        {% paginate customer.orders by 10 %}
+          {% case section.settings['order-layout'] %}
+            {% when 'table' %}
+              <div class="customer-orders-table-wrapper">
+                <table class="customer-orders-table">
+                  <thead>
+                    <tr>
+                      <th>Order</th>
+                      <th>Products</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                      <th>Total</th>
+                      <th>Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for order in customer.orders %}
+                      <tr>
+                        <td>#{{ order.name }}</td>
+                        <td>
+                          {% for item in order.line_items limit: 3 %}
+                            <div class="table-product-item">
+                              {% if item.image %}
+                                <img
+                                  src="{{ item.image | image_url: width: 50, height: 50, crop: 'center' }}"
+                                  alt="{{ item.title }}"
+                                  class="table-product-thumb"
+                                >
+                              {% endif %}
+                              {{ item.title }} × {{ item.quantity }}
+                            </div>
+                          {% endfor %}
+                          {% if order.line_items.size > 3 %}
+                            <a href="{{ order.customer_url }}" class="view-all-products">+ View all products</a>
+                          {% endif %}
+                        </td>
+                        <td>{{ order.created_at | date: '%b %d, %Y' }}</td>
+                        <td>{{ order.fulfillment_status_label }}</td>
+                        <td>{{ order.total_price | money }}</td>
+                        <td><a href="{{ order.customer_url }}" class="order-link">View</a></td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+
+              {% comment %}
+                <div class="customer-orders-table-wrapper">
+                  <table class="customer-orders-table">
+                    <thead>
+                      <tr>
+                        <th>Order</th>
+                        <th>Products</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for order in customer.orders %}
+                        <tr>
+                          <td>#{{ order.name }}</td>
+                          <td>
+                            {% for item in order.line_items %}
+                              {{ item.title }} × {{ item.quantity -}}
+                              <br>
+                            {% endfor %}
+                          </td>
+                          <td>{{ order.created_at | date: '%b %d, %Y' }}</td>
+                          <td>{{ order.fulfillment_status_label }}</td>
+                          <td>{{ order.total_price | money }}</td>
+                          <td><a href="{{ order.customer_url }}" class="order-link">View</a></td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              {% endcomment %}
+
+              {% comment %}
+                {% when 'cards' %}
+                  <div class="orders-list">
+                    {% for order in customer.orders %}
+                      <div class="order-card">
+                        <div class="order-header">
+                          <h3>Order #{{ order.name }}</h3>
+                          <p>Placed on {{ order.created_at | date: '%B %d, %Y' }}</p>
+                          <p>Status: {{ order.fulfillment_status_label }}</p>
+                          <p>Total: {{ order.total_price | money }}</p>
+                          <a href="{{ order.customer_url }}" class="order-link">View Order Details</a>
+                        </div>
+                        <div class="order-products">
+                          <h4>Products:</h4>
+                          <ul>
+                            {% for item in order.line_items %}
+                              <li>{{ item.title }} × {{ item.quantity }}</li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+
+                {% when 'cards-with-images' %}
+                  <div class="orders-list">
+                    {% for order in customer.orders %}
+                      <div class="order-card">
+                        <div class="order-header">
+                          <h3>Order #{{ order.name }}</h3>
+                          <p>Placed on {{ order.created_at | date: '%B %d, %Y' }}</p>
+                          <p>Status: {{ order.fulfillment_status_label }}</p>
+                          <p>Total: {{ order.total_price | money }}</p>
+                          <a href="{{ order.customer_url }}" class="order-link">View Order Details</a>
+                        </div>
+                        <div class="order-products">
+                          <h4>Products:</h4>
+                          <ul>
+                            {% for item in order.line_items %}
+                              <li class="order-product-item">
+                                {% if item.image %}
+                                  <img
+                                    src="{{ item.image | image_url: width: 60 }}"
+                                    alt="{{ item.title }}"
+                                    class="product-thumb"
+                                  >
+                                {% endif %}
+                                {{ item.title }} × {{ item.quantity }}
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+              {% endcomment %}
+            {% when 'cards' %}
+              <div class="orders-list">
+                {% for order in customer.orders %}
+                  <div class="order-card">
+                    <div class="order-card-wrapper">
+                      <div class="order-header">
+                        <div class="header-first-row">
+                          <h3>Order #{{ order.name }}</h3>
+                          <p>Total: {{ order.total_price | money }}</p>
+                        </div>
+                        <div class="header-first-row">
+                          <p>Placed on {{ order.created_at | date: '%B %d, %Y' }}</p>
+                          <p>Status: {{ order.fulfillment_status_label }}</p>
+                          <a href="{{ order.customer_url }}" class="order-link">View Order Details</a>
+                          <p>Total Items: {{ order.line_items_count }}</p>
+                        </div>
+                      </div>
+                      <div class="order-products">
+                        <h4>Products:</h4>
+                        <ul>
+                          {% for item in order.line_items limit: 3 %}
+                            <li>{{ item.title }} × {{ item.quantity }}</li>
+                          {% endfor %}
+                        </ul>
+                        {% if order.line_items.size > 3 %}
+                          <a href="{{ order.customer_url }}" class="view-all-products"> View all products</a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+
+            {% when 'cards-with-images' %}
+              <div class="orders-list">
+                {% for order in customer.orders %}
+                  <div class="order-card">
+                    <div class="order-card-wrapper">
+                      <div class="order-header">
+                        <div class="header-first-row">
+                          <h3>Order : #{{ order.name }}</h3>
+                          <p>
+                            Total: <b>{{ order.total_price | money }}</b>
+                          </p>
+                        </div>
+                        <div class="header-second-row">
+                          <div class="header-second-column-first">
+                            <p>
+                              Placed on <b>{{ order.created_at | date: '%B %d, %Y' }}</b>
+                            </p>
+                            <p>
+                              Status: <b>{{ order.fulfillment_status_label }}</b>
+                            </p>
+                          </div>
+                          <div class="header-second-column-second">
+                            <p>
+                              Total Items: <b>{{ order.line_items.size }}</b>
+                            </p>
+                            <p>
+                              Payment Status: <b>{{ order.financial_status }}</b>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="order-products">
+                        <h4>Products:</h4>
+                        <ul class="order-product-list">
+                          {% for item in order.line_items %}
+                            <li class="order-product-item {% if forloop.index > 3 %}hidden{% endif %}">
+                              <div class="item-image">
+                                {% if item.image %}
+                                  <img
+                                    src="{{ item.image | image_url: width: 60 }}"
+                                    alt="{{ item.title }}"
+                                    class="product-thumb"
+                                  >
+                                {% endif %}
+                                <span class="item-quantity">{{ item.quantity }}</span>
+                              </div>
+                              <div class="item-content">
+                                <p class="product-name">{{ item.title }}</p>
+                                <p>{{ item.price | money }}</p>
+                              </div>
+                            </li>
+                          {% endfor %}
+                        </ul>
+
+                        {% if order.line_items.size > 3 %}
+                          <div class="toggle-button">
+                            <button class="toggle-products-btn" aria-expanded="false">
+                              {%- render 'icon' with 'chevron-down', class: 'card-icon icon-chevron' -%}
+                            </button>
+                          </div>
+                        {% endif %}
+                      </div>
+
+                      <div class="card-button">
+                        <a class="button" href="{{ order.customer_url }}" class="order-link">View Order Details</a>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+          {% endcase %}
+
+          <!-- Pagination controls -->
+          {% if paginate.pages > 1 %}
+            <div class="pagination">
+              {% if paginate.previous %}
+                <a href="{{ paginate.previous.url }}" class="prev">« Previous</a>
+              {% endif %}
+
+              {% for part in paginate.parts %}
+                {% if part.is_link %}
+                  <a href="{{ part.url }}" class="page">{{ part.title }}</a>
+                {% else %}
+                  <span class="current">{{ part.title }}</span>
+                {% endif %}
+              {% endfor %}
+
+              {% if paginate.next %}
+                <a href="{{ paginate.next.url }}" class="next">Next »</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endpaginate %}
+      {% else %}
+        <p>You haven’t placed any orders yet.</p>
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="customer-login-prompt">
+      <p>You need to <a href="/account/login">log in</a> to view your orders.</p>
+    </div>
+  {% endif %}
+</section>
+
+<style>
+        .order-product-list {
+          overflow: hidden;
+          transition: max-height 0.4s ease;
+          max-height: 320px; /* default for 3 items */
+        }
+
+        .order-product-list.collapsed {
+          max-height: 320px; /* fits ~3 items */
+        }
+
+        .order-product-list.expanded {
+          max-height: 2000px; /* big enough for all items */
+        }
+
+        .toggle-products-btn {
+          background: none;
+          border: none;
+          color: #0073e6;
+          cursor: pointer;
+          font-weight: 600;
+          margin-top: 8px;
+        }
+
+        .toggle-button {
+          text-align: center;
+      }
+
+      .toggle-button {
+        display: flex;
+      margin-left: 100px;
+        padding: 10px;
+    }
+
+    .toggle-button svg {
+        background: #000000;
+        color: #ffffff;
+        /* padding: 19px 27px; */
+        width: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    svg.icon.card-icon.icon.icon-chevron-down {
+        padding: 5px;
+    }
+
+    svg.icon.card-icon.icon.icon-chevron-up {
+      padding: 5px;
+  }
+
+
+
+
+                  .customer-orders-wrapper {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    padding: 20px;
+                  }
+                  .customer-orders-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 15px;
+                  }
+                  h2.title {
+                    font-size: 36px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                .order-header h3 {
+                    font-size: 26px;
+                    color: rgb(var(--button-background));
+                }
+
+                .order-products h4 {
+                    font-size: 22px;
+                     color: rgb(var(--button-background));
+                }
+
+                .product-name{
+                  color: rgb(var(--button-background));
+                  font-weight:600;
+                }
+                  .customer-orders-table th,
+                  .customer-orders-table td {
+                    padding: 12px;
+                    border: 1px solid #e5e5e5;
+                    text-align: left;
+                    vertical-align: top;
+                  }
+                  .customer-orders-table th {
+                          font-size: 16px;
+                    background: #f9f9f9;
+                    font-weight: 600;
+                  }
+                  .orders-list {
+                    display: grid;
+                    gap: 20px;
+                        background: rgb(var(--text-color));
+                        border-radius: 8px;
+                  }
+                  .order-card {
+          border-radius: 8px;
+                    padding: 15px;
+                    background: rgb(var(--text-color));
+                   color: rgb(var(--background));
+                  }
+                  .order-card-wrapper {
+                    border: 1px solid rgb(var(--background));
+                    padding: 10px;
+                    border-radius: 8px;
+                    }
+                  .header-first-row {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      padding: 10px 0;
+                      border-bottom: 1px solid rgb(var(--background));
+                  }
+
+                  .header-second-row {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 0;
+                    border-bottom: 1px solid rgb(var(--background));
+                }
+                  .order-products ul {
+                    margin: 0;
+                    padding-left: 20px;
+                  }
+                  .order-products li {
+                    margin: 6px 0;
+                    font-size: 15px;
+                    padding: 10px 0;
+                  }
+
+                  .order-products {
+                   padding: 15px 10px;
+                }
+                .item-image {
+                display: flex;
+                justify-content: center;
+                  }
+
+                  .card-button {
+                  display: flex;
+                  justify-content: end;
+              }
+
+                span.item-quantity {
+                    background: rgb(var(--background));
+                    color: rgb(var(--text-color));
+                    padding: 0px 6px;
+              font-size: 12px;
+                    border-radius: 50%;
+                    margin-left: 20px;
+                        align-self: self-start;
+                }
+                  .order-product-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;
+                  }
+                  .product-thumb {
+                    width: 60px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                  }
+                  .order-link {
+                    display: inline-block;
+                    margin-top: 8px;
+                    color: #0066cc;
+                    text-decoration: underline;
+                  }
+                  .pagination {
+                    margin-top: 20px;
+                    text-align: center;
+                  }
+                  .pagination a, .pagination span {
+                    display: inline-block;
+                    margin: 0 4px;
+                    padding: 6px 12px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    color: #333;
+                  }
+                  .pagination .current {
+                    background: #0066cc;
+                    color: #fff;
+                    font-weight: bold;
+                  }
+                  .pagination a:hover {
+                    background: #f0f0f0;
+                  }
+
+                  .customer-orders-table-wrapper {
+                width: 100%;
+                overflow-x: auto; /* allows horizontal scroll on small screens */
+              }
+
+              .customer-orders-table {
+                width: 100%;
+                border-collapse: collapse;
+                min-width: 700px; /* keeps structure readable */
+              }
+
+              .customer-orders-table th,
+              .customer-orders-table td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+                font-size: 14px;
+              }
+
+              .customer-orders-table th {
+                background: #f5f5f5;
+              }
+
+              /* Optional: make links and products look nicer */
+              .order-link {
+                color: #0066cc;
+                text-decoration: underline;
+              }
+              .order-link:hover {
+                color: #004999;
+              }
+
+              .table-product-item {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              margin-bottom: 6px;
+            }
+
+            .table-product-thumb {
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+            }
+
+            .view-all-products {
+              display: inline-block;
+              margin-top: 4px;
+              font-size: 13px;
+              color: #0066cc;
+              text-decoration: underline;
+            }
+            .view-all-products:hover {
+              color: #004999;
+            }
+
+            @media screen and (max-width:450px){
+              p.product-name {
+                font-size: 12px;
+            }
+
+            span.money {
+                font-size: 12px;
+            }
+            .order-products ul{
+                  padding-left: 10px;
+              }
+
+              .card-button {
+                justify-content: center;
+            }
+            .toggle-button {
+            display: flex;
+            margin-left: 0px;
+                justify-content: center;
+              }
+
+              .item-content {
+              flex: 1 1 100%;
+            }
+
+            .item-image {
+                flex: 1 1 40%;
+            }
+            }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.toggle-products-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const list = btn.closest('.order-products').querySelector('.order-product-list');
+        const icon = btn.querySelector('.icon'); // assuming your snippet outputs <svg class="icon">
+
+        if (list.classList.contains('expanded')) {
+          list.classList.remove('expanded');
+          list.classList.add('collapsed');
+          btn.setAttribute('aria-expanded', 'false');
+
+          // swap to chevron-down
+          icon.outerHTML = `{%- render 'icon' with 'chevron-down', class: ' card-icon' -%}`;
+        } else {
+          list.classList.add('expanded');
+          list.classList.remove('collapsed');
+          btn.setAttribute('aria-expanded', 'true');
+
+          // swap to chevron-up
+          icon.outerHTML = `{%- render 'icon' with 'chevron-up', class: ' card-icon' -%}`;
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Customer Orders",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:global.colors.scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "order-layout",
+      "label": "Orders Layout",
+      "options": [
+        { "label": "Table", "value": "table" },
+        { "label": "Cards", "value": "cards" },
+        { "label": "Cards with Images", "value": "cards-with-images" }
+      ],
+      "default": "table"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_vertical_spacing",
+      "label": "t:global.spacing.remove_vertical_spacing",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Orders"
+    }
+  ]
+}
+{% endschema %}

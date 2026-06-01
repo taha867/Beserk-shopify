@@ -1,0 +1,165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_DJ4WVX": {
+      "type": "rich-text",
+      "blocks": {
+        "image_Hk3njJ": {
+          "type": "image",
+          "settings": {
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "subheading_8amTQp": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "MY ACCOUNT"
+          }
+        },
+        "heading_gNDgi9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "WELCOME TO BESERK...",
+            "heading_tag": "h1"
+          }
+        },
+        "customer_name_TF7CQ7": {
+          "type": "customer_name",
+          "settings": {
+            "customer_name": ""
+          }
+        },
+        "richtext_tqw77y": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "button_VbLENc": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "PROFILE",
+            "url": "shopify://pages/profile",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_bNVWhb": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "MY ORDERS",
+            "url": "shopify://pages/orders",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_kHDXiB": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "ADDRESS BOOK",
+            "url": "https://www.beserk.com.au/account/addresses",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_gEabad": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "REWARDS",
+            "url": "shopify://pages/rewards-old",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_9MJHRV": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "RETURNS",
+            "url": "shopify://pages/returns-1",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_w87pPz": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "NEW WISHLIST",
+            "url": "https://www.beserk.com.au/account?p=0#swym-list",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_wcfGYg": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "OLD WISHLIST",
+            "url": "https://www.beserk.com.au/apps/wishlist",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_hqhFBr": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "LOGOUT",
+            "url": "http://beserk.com.au/account/logout",
+            "background": "#000000",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_Hk3njJ",
+        "subheading_8amTQp",
+        "heading_gNDgi9",
+        "customer_name_TF7CQ7",
+        "richtext_tqw77y",
+        "button_VbLENc",
+        "button_bNVWhb",
+        "button_kHDXiB",
+        "button_gEabad",
+        "button_9MJHRV",
+        "button_w87pPz",
+        "button_wcfGYg",
+        "button_hqhFBr"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "main": {
+      "type": "main-customers-addresses",
+      "settings": {}
+    }
+  },
+  "order": [
+    "rich_text_DJ4WVX",
+    "main"
+  ]
+}

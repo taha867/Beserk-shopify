@@ -1,0 +1,45 @@
+<div class="account_links">
+  {% content_for 'blocks' %}
+</div>
+
+<style>
+      .account_links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:15px;
+          padding: 20px 0;
+      }
+      ul.section-block-links {
+      list-style-type: none;
+  }
+  @media screen and (max-width:768px){
+          .account_links {
+        gap:0px;
+          }
+  }
+  @media screen and (max-width:450px){
+          .account_links {
+        gap:10px;
+        flex-direction:column;
+          }
+
+  }
+</style>
+
+{% schema %}
+{
+  "name": "New-Links",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "links"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New-Links"
+    }
+  ]
+}
+{% endschema %}

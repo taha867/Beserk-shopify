@@ -1,0 +1,77 @@
+<section class="bgcolor section
+        is-width-wide template-brands">
+  <div class="container">
+    <div class="one-whole column">
+    <h1 style="text-align:center;">shop by brand</h1>
+      </div>
+    <div class="pagedivcstm page__content content container">
+     <div class="one-whole column">
+      {% capture alphabet %}#-A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-S-T-U-V-W-X-Y-Z{% endcapture %}
+            {% assign letters = alphabet | split: '-' %}
+						<div class="brands-index">
+							{% for letter in letters %}
+							{% comment %} <div class="brands-index-item" data-id="brand-{{ letter | handleize }}"><span>{{ letter }}</span></div> {% endcomment %}
+               <a href="#brand-{{ letter | handleize }}" class="brands-index-item">
+                <span>{{ letter }}</span>
+              </a>
+							{% endfor %}
+						</div>
+            <div class="brandswrapper">
+
+              {% for letter in letters %}
+              	{% assign vendor_count = 0 %}
+              
+                {% for vendor in shop.vendors %}
+                  {% assign brand = vendor | upcase %}
+                  {% assign brand_splice = brand | slice: 0 %}
+                  {% if brand_splice contains letter %}
+              		{% assign vendor_count = vendor_count | plus: 1 %}
+                  {% endif %}
+									{% if "0123456789" contains brand_splice and letter == '#' %}
+									{% assign vendor_count = vendor_count | plus: 1 %}
+									{% endif %}
+                {% endfor %}
+              
+              	{% unless vendor_count == 0 %}
+                  <div>
+                    <dt id="brand-{{ letter | handleize }}">{{letter}}</dt>
+                    <dd>
+                      <ul class="bare-list">
+                        {% for product_vendor in shop.vendors %}
+                        	{% assign brand = product_vendor %}
+                        	{% assign brand_splice = brand | slice: 0 %}
+                        	{% if brand_splice contains letter %}
+                            <li>
+                              <a href="/collections/{{ product_vendor | handleize }}">{{ product_vendor }}</a>
+                            </li>
+                        	{% endif %}
+													{% if "0123456789" contains brand_splice and letter == '#' %}
+                            <li>
+                              <a href="/collections/{{ product_vendor | handleize }}">{{ product_vendor }}</a>
+                            </li>
+													{% endif %}
+                        {% endfor %}
+                      </ul>
+                    </dd>
+                  </div>
+                {% endunless%}
+
+              {% endfor %}
+            </div>
+       </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.brands-index-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const targetId = item.getAttribute('data-id');
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+  </script>

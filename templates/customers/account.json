@@ -1,0 +1,414 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "new_richtext_UaHV3t": {
+      "type": "new-richtext",
+      "blocks": {
+        "rich_text_RWLp3K": {
+          "type": "rich-text",
+          "name": "t:blocks.rich_text.name",
+          "disabled": true,
+          "settings": {
+            "text": "<h6>WELCOME TO YOUR BESERK ACCOUNT <strong>❤️</strong></h6>",
+            "content_width": "sm",
+            "text_position": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "rich_text_RWLp3K"
+      ],
+      "name": "New Richtext",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_overlay_9VnG8E": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_THdDpt": {
+          "type": "heading",
+          "settings": {
+            "text": "WELCOME TO YOUR BESERK ACCOUNT <strong>❤️</strong>",
+            "heading_tag": "h4"
+          }
+        },
+        "customer_name_8KfDyP": {
+          "type": "customer_name",
+          "disabled": true,
+          "settings": {}
+        },
+        "richtext_kFiKzU": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<h4>BESERK ACCOUNT <strong>❤️</strong></h4>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_THdDpt",
+        "customer_name_8KfDyP",
+        "richtext_kFiKzU"
+      ],
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "image_size": "xs",
+        "image": "shopify://shop_images/Desktop-Image-2500px-x-400px_65094b2f-deec-405e-9b6e-f712b6b7800b.jpg",
+        "mobile_image": "shopify://shop_images/Mobile-Image-1100px-x-1500px-4_1.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "xs",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#ffb4b4",
+        "overlay_opacity": 65
+      }
+    },
+    "custom_liquid_nWjMFx": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<h3>Hello <span class=\"cx-name\">{{ customer.first_name }}</span></h5> <h5>We hope you are having a lovely day!</h5>",
+        "text_alignment": "center"
+      }
+    },
+    "1754024602fbb4e803": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_points_on_account_page_n8deG8": {
+          "type": "shopify://apps/smile-io/blocks/smile-points-on-account-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#ffffff",
+            "secondary_colour": "#000000",
+            "preview_scenario": "can_afford_reward",
+            "show_icon": false,
+            "show_points_label": false,
+            "cannot_afford_reward_body_text": "<p>♥️♥️ <strong>BESERK REWARD POINTS </strong>♥️♥️</p><p>POINTS BALANCE : <strong>[points_balance]<br/><br/></strong></p><p>Earn more to redeem for Discounts on orders, Free Gifts & more!  </p><p>♥️♥️♥️</p>",
+            "can_afford_reward_body_text": "<p><strong>BESERK REWARD POINTS </strong>♥️♥️♥️<br/></p><p>POINTS BALANCE : <strong>[points_balance]</strong></p><p>Redeem for Discounts & Free Gifts & more!  </p><p>♥️♥️♥️</p>",
+            "ways_to_earn_button_text": "VIEW WAYS TO EARN",
+            "ways_to_redeem_button_text": "VIEW WAYS TO REDEEM"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_points_on_account_page_n8deG8"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "176457757836593c2c": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_5ded796_JBMc9E": {
+          "type": "ai_gen_block_5ded796",
+          "settings": {
+            "show_heading": true,
+            "heading": "My Account",
+            "subtitle": "Manage your orders, addresses and account details",
+            "heading_size": 30,
+            "subtitle_size": 14,
+            "heading_transform": "uppercase",
+            "heading_letter_spacing": 18,
+            "spacing_below_heading": 24,
+            "show_orders": true,
+            "orders_title": "Order History",
+            "orders_description": "❤️ View and track your Beserk orders",
+            "show_addresses": true,
+            "addresses_title": "Addresses",
+            "addresses_description": "❤️ Manage your saved addresses",
+            "show_details": true,
+            "details_title": "Account Details",
+            "details_description": "❤️ Update your information",
+            "show_wishlist": true,
+            "wishlist_url": "https://www.beserk.com.au/account?p=0#swym-list",
+            "wishlist_title": "Wishlist",
+            "wishlist_description": "❤️ View your favourite items",
+            "show_custom_link_1": true,
+            "custom_link_1_url": "",
+            "custom_link_1_title": "Rewards",
+            "custom_link_1_description": "❤️ Check your loyalty points",
+            "show_custom_link_2": false,
+            "custom_link_2_url": "",
+            "custom_link_2_title": "Support",
+            "custom_link_2_description": "Get help with your order",
+            "show_logout": true,
+            "logout_title": "Log Out",
+            "logout_description": "Sign out of your account",
+            "max_width": 1200,
+            "min_card_width": 280,
+            "grid_gap": 20,
+            "padding_vertical": 40,
+            "padding_horizontal": 20,
+            "card_padding": 24,
+            "card_border_radius": 0,
+            "card_border_width": 1,
+            "icon_size": 32,
+            "card_title_size": 16,
+            "card_title_transform": "uppercase",
+            "card_title_letter_spacing": 18,
+            "card_description_size": 13,
+            "background_color": "#ffffff",
+            "heading_color": "#1c1c1c",
+            "text_color": "#1c1c1c",
+            "border_color": "#efefef",
+            "border_width": 1,
+            "card_background": "#ffffff",
+            "card_hover_background": "#f9f9f9",
+            "card_border_color": "#e0e0e0",
+            "card_hover_border": "#1c1c1c",
+            "card_title_color": "#1c1c1c",
+            "card_title_hover_color": "#e32c2b",
+            "icon_color": "#1c1c1c",
+            "icon_hover_color": "#e32c2b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_5ded796_JBMc9E"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_78VYKm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hzB79D": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "WELCOME TO BESERK...",
+            "heading_tag": "h4"
+          }
+        },
+        "button_PY66Ef": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "solid",
+            "text": "PROFILE",
+            "url": "shopify://pages/profile",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_dDf4EC": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "WISHLIST",
+            "url": "https://www.beserk.com.au/account?p=0#swym-list",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_zhdLnM": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "solid",
+            "text": "ADDRESS BOOK",
+            "url": "https://www.beserk.com.au/account/addresses",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_ykVqVf": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "REWARDS",
+            "url": "shopify://pages/rewards",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_aMfTxp": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "RETURNS",
+            "url": "shopify://pages/beserk-returns",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_pxEF9j": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "solid",
+            "text": "LOGOUT",
+            "url": "http://beserk.com.au/account/logout",
+            "background": "#000000",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hzB79D",
+        "button_PY66Ef",
+        "button_dDf4EC",
+        "button_zhdLnM",
+        "button_ykVqVf",
+        "button_aMfTxp",
+        "button_pxEF9j"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "main": {
+      "type": "main-customers-account",
+      "blocks": {
+        "liquid_BRrtW9": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
+        "liquid_UCzmUQ": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
+        "orders": {
+          "type": "orders",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "liquid_BRrtW9",
+        "liquid_UCzmUQ",
+        "orders"
+      ],
+      "settings": {}
+    },
+    "apps_4Kjkzz": {
+      "type": "apps",
+      "blocks": {
+        "wishlist_plus_engage_myaccount_wishlisteditems_gxPGJk": {
+          "type": "shopify://apps/wishlist-plus/blocks/engage-myaccount-wishlisteditems/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {
+            "swym_engage_wishlist_items_background_color": "#000000",
+            "swym_engage_wishlist_items_text_color": "#ffffff",
+            "swym_engage_wishlist_items_background_color_secondary": "#e7e7e7",
+            "swym_engage_wishlist_items_highlight_color": "#808080",
+            "swym_engage_wishlist_items_title": 18,
+            "swym_engage_wishlist_items_per_row_desktop": 8,
+            "swym_engage_wishlist_items_per_row_tablet": 4,
+            "swym_engage_wishlist_items_per_row_mobile": 2,
+            "swym_engage_wishlist_items_nav_background_color": "#ff0201",
+            "swym_engage_wishlist_items_nave_arrow_color": "#ffffff",
+            "swym_engage_Wishlist_items_show_title": true,
+            "swym_engage_Wishlist_items_show_price": false,
+            "swym_engage_Wishlist_items_show_variant": false,
+            "swym_engage_wishlist_items_show_vendor": false,
+            "swym_engage_wishlist_items_font_size": 11,
+            "swym_engage_wishlist_items_compare_price_color": "#ee2e2e",
+            "swym_engage_Wishlist_items_show_add_to_cart_button": true,
+            "swym_engage_Wishlist_items_show_view_product_button": true,
+            "swym_engage_wishlist_items_button_type": "solid",
+            "swym_engage_wishlist_items_button_width": "fit-content",
+            "swym_engage_wishlist_items_button_align": "center",
+            "swym_engage_wishlist_items_button_border_radious": 0,
+            "swym_engage_wishlist_items_button_background_color": "#ee2e2e",
+            "swym_engage_wishlist_items_button_text_color": "#ffffff",
+            "swym_engage_wishlist_show_product_updates": false
+          }
+        }
+      },
+      "block_order": [
+        "wishlist_plus_engage_myaccount_wishlisteditems_gxPGJk"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "1754131781226e54b6": {
+      "type": "apps",
+      "blocks": {
+        "wishlist_plus_engage_myaccount_recently_viewed_online_7CVcQw": {
+          "type": "shopify://apps/wishlist-plus/blocks/engage-myaccount-recently-viewed-online/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {
+            "swym_themeapp_container_background_color": "rgba(0,0,0,0)",
+            "swym_themeapp_container_text_color": "#000000",
+            "swym_themeapp_container_title_font_size": 18,
+            "swym_themeapp_container_items_per_row_desktop": 9,
+            "swym_themeapp_container_items_per_row_tablet": 5,
+            "swym_themeapp_container_items_per_row_mobile": 2,
+            "swym_themeapp_container_nav_background_color": "#ffffff",
+            "swym_themeapp_container_nave_arrow_color": "#000000",
+            "swym_themeapp_container_items_show_title": true,
+            "swym_themeapp_container_items_show_price": false,
+            "swym_themeapp_container_items_show_variant": false,
+            "swym_themeapp_container_items_show_vendor": false,
+            "swym_themeapp_container_items_font_size": 12,
+            "swym_themeapp_container_items_compare_price_color": "#ee2e2e",
+            "swym_themeapp_container_items_show_add_to_cart_button": true,
+            "swym_themeapp_container_items_show_view_product_button": true,
+            "swym_themeapp_container_items_button_type": "solid",
+            "swym_themeapp_container_items_button_width": "fit-content",
+            "swym_themeapp_container_items_button_align": "center",
+            "swym_themeapp_container_items_button_border_radious": 0,
+            "swym_themeapp_container_items_button_background_color": "#ff0201",
+            "swym_themeapp_container_items_button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "wishlist_plus_engage_myaccount_recently_viewed_online_7CVcQw"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "new_richtext_UaHV3t",
+    "image_with_text_overlay_9VnG8E",
+    "custom_liquid_nWjMFx",
+    "1754024602fbb4e803",
+    "176457757836593c2c",
+    "rich_text_78VYKm",
+    "main",
+    "apps_4Kjkzz",
+    "1754131781226e54b6"
+  ]
+}

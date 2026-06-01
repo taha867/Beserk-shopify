@@ -1,0 +1,112 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "custom_css": [
+        ".cart-recap [type=\"submit\"] {margin-block-start: 1rem; font-size: 18px !important; font-weight: 900 !important;}",
+        "textarea#input--template--17215161499782__main--note::placeholder {font-size: 14px !important; font-family: \"Roboto\";}",
+        ".h-stack.justify-start.gap-2 {width: 100%; display: flex; justify-content: center; align-items: center;}",
+        "p.text-subdued.text-sm {width: 100% !important; text-align: center; text-transform: uppercase; font-weight: bold;}",
+        ".h-stack.justify-start.gap-2 span {font-weight: bold; text-transform: uppercase;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "subheading": "<p><strong>Need help?  </strong>Contact us: <a href=\"mailto:orders@beserk.com.au\"><span style=\"text-decoration:underline\">orders@beserk.com.au</span></a>  or 0738573408 or<a href=\"https://www.beserk.com.au/cart#click-drigger\"> <span style=\"text-decoration:underline\">LIVE CHAT</span></a></p>",
+        "show_cart_note": true,
+        "show_order_weight": true,
+        "show_shipping_text": true,
+        "show_accelerated_buttons": true,
+        "show_shipping_estimator": true
+      }
+    },
+    "text_with_icons_CGVaTw": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_xc97Wi": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Website_Icons_Delivery_08.png",
+            "icon_width": 52,
+            "mobile_icon_width": 52,
+            "title": "FREE SHIPPING",
+            "content": "<p>Spend $129+ for Free Shipping Australia Wide. Same-day dispatch if you order before 2pm.</p>"
+          }
+        },
+        "item_wrVPwV": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "custom_icon": "shopify://shop_images/Website_Icons_Customer-Service_07_8362b5a4-ea2e-4090-af2e-a59d9544bd26.png",
+            "icon_width": 52,
+            "mobile_icon_width": 52,
+            "title": "Customer service",
+            "content": "<p>We’re always happy to help! Email, call, or use live chat anytime. <br/><a href=\"/pages/contact-us\" title=\"Contact Us\">Contact Us Here!</a></p>"
+          }
+        },
+        "item_WLPwYE": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "custom_icon": "shopify://shop_images/Website_Icons_Secure_05_5dd6dde8-6e62-4635-84dc-d3fdeb888bbb.png",
+            "icon_width": 52,
+            "mobile_icon_width": 52,
+            "title": "Secure payment",
+            "content": "<p>Your privacy and security are our top priority. SSL-encrypted and Google-verified.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_xc97Wi",
+        "item_wrVPwV",
+        "item_WLPwYE"
+      ],
+      "name": "t:sections.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "stack_on_mobile": true,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "175353454559f9e3f1": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_filter_recommendation_ssr_taKcgY": {
+          "type": "shopify://apps/boost-ai-search-filter/blocks/recommendation-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "disabled": true,
+          "settings": {
+            "widgetId": "",
+            "additional_classes": "",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "boost_ai_search_filter_recommendation_ssr_taKcgY"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_with_icons_CGVaTw",
+    "175353454559f9e3f1"
+  ]
+}

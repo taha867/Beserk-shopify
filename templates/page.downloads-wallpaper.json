@@ -1,0 +1,511 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_block_Vy6Ngf": {
+      "type": "image-with-text-block",
+      "name": "HEADER",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/Downloads_Header_Desktop_01.jpg",
+        "mobile_image": "shopify://shop_images/Downloads_Header_Mobile_01.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_W9CCpK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PEQFfz": {
+          "type": "heading",
+          "settings": {
+            "text": "BESERK DOWNLOADS",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_wbjRtm": {
+          "type": "subheading",
+          "settings": {
+            "text": "DOWNLOAD DESKTOP AND MOBILE WALLPAPERS + COLOURING SHEETS!"
+          }
+        },
+        "richtext_7WGgEc": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Wallpapers available in desktop and mobile sizes. Click the links to download.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PEQFfz",
+        "subheading_wbjRtm",
+        "richtext_7WGgEc"
+      ],
+      "name": "TITLE + INFORMATION",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": false,
+        "page_width": "lg"
+      }
+    },
+    "multi_column_R6XkPN": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_YDQCLX": {
+          "type": "image_with_text",
+          "name": "DARK ALICORN RED",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Dark_Alicorn_Red.jpg",
+            "title": "<strong>Dark alicorn red</strong>",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Dark-Alicorn-Red.jpg?v=1767588057\" target=\"_blank\" title=\"Dark Alicorn Red Mobile Wallpaper\"><strong>MOBILE</strong></a><strong>  | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Dark-Alicorn-Red.jpg?v=1767588057\" target=\"_blank\" title=\"Dark Alicorn Red Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_hfzkxz": {
+          "type": "image_with_text",
+          "name": "DARK ALICORN Purple",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Dark_Alicorn_Purple.jpg",
+            "title": "<strong>Dark alicorn purple</strong>",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Dark-Alicorn-Purple.jpg?v=1767588057\" target=\"_blank\" title=\"Dark Alicorn Purple Mobile Wallpaper\"><strong>MOBILE</strong></a><strong>  | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Dark-Alicorn-Purple.jpg?v=1767588057\" target=\"_blank\" title=\"Dark Alicorn Purple Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_fwe7qH": {
+          "type": "image_with_text",
+          "name": "Horror Weapons",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Horror_Weapons.png",
+            "title": "<strong>Horror Weapons</strong>",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Horror-Weapons.jpg?v=1748999414\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Horror-Weapons.jpg?v=1748999414\"><strong>MOBILE</strong></a><strong>  | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Horror-Weapons.jpg?v=1749001177\" target=\"_blank\" title=\"Horror Weapons Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_UCyxqP": {
+          "type": "image_with_text",
+          "name": "Skeletal Kitty",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Skelly_Cat.png",
+            "title": "Skeletal Kitty",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Skeletal-Kitty.jpg?v=1748999410\" target=\"_blank\" title=\"Skeletal Kitty Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Skeletal-Kitty.jpg?v=1749001169\" target=\"_blank\" title=\"Skeletal Kitty Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_ijzhTw": {
+          "type": "image_with_text",
+          "name": "Mothman",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Mothman.png",
+            "title": "Mothman",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Mothman_01.jpg?v=1748999412\" target=\"_blank\" title=\"Mothman Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Mothman.jpg?v=1749001172\" target=\"_blank\" title=\"Mothman Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_N9aqJ4": {
+          "type": "image_with_text",
+          "name": "True Crime",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_True_Crime.png",
+            "title": "True Crime",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_True-Crime.jpg?v=1748999408\" target=\"_blank\" title=\"True Crime Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_True-Crime.jpg?v=1749001161\" target=\"_blank\" title=\"True Crime Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_ne7LKd": {
+          "type": "image_with_text",
+          "name": "Zombie Neko",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Zombie_Neko.png",
+            "title": "Zombie Neko",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Zombie-Neko.jpg?v=1748999400\" target=\"_blank\" title=\"Zombie Neko Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Zombie-Neko.jpg?v=1749001156\" target=\"_blank\" title=\"Zombie Neko Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_PrmnQw": {
+          "type": "image_with_text",
+          "name": "Vengeful Prey Green",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Vengeful_Prey_Green.png",
+            "title": "Vengeful Prey Green",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Vengeful-Prey-Green.jpg?v=1751927938\" target=\"_blank\" title=\"Vengeful Prey Green Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Vengeful-Prey-Green.jpg?v=1751927937\" target=\"_blank\" title=\"Vengeful Prey Green Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_DzHyeQ": {
+          "type": "image_with_text",
+          "name": "Grim Venom",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Grim_Venom.png",
+            "title": "Grim Venom",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Grim-Venom.jpg?v=1751928604\" target=\"_blank\" title=\"Grim Venom Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Grim-Venom.jpg?v=1751928604\" target=\"_blank\" title=\"Grim Venom Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_KVb7Aj": {
+          "type": "image_with_text",
+          "name": "Lifetaker",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Lifetaker.png",
+            "title": "Lifetaker",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Lifetaker.jpg?v=1751928604\" target=\"_blank\" title=\"Lifetaker Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Lifetaker.jpg?v=1751928604\" target=\"_blank\" title=\"Lifetaker Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_XGMjCk": {
+          "type": "image_with_text",
+          "name": "Hell Hath No Fury",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Hell_Hath_No_Fury.png",
+            "title": "Hell Hath No Fury",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Hell-Hath-No-Fury.jpg?v=1751928599\" target=\"_blank\" title=\"Hell Hath No Fury Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Hell-Hath-No-Fury.jpg?v=1751928599\" target=\"_blank\" title=\"Hell Hath No Fury Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Tjh6wP": {
+          "type": "image_with_text",
+          "name": "Bleakwood Summons Purple",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Bleakwood_Summons.png",
+            "title": "Bleakwood Summons Purple",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Mobile_Bleakwood-Summons.jpg?v=1751929103\" target=\"_blank\" title=\"Bleakwood Summons Purple Mobile Wallpaper\"><strong>MOBILE</strong></a><strong> | </strong><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Wallpaper_Desktop_Bleakwood-Summons.jpg?v=1751929103\" target=\"_blank\" title=\"Bleakwood Summons Purple Desktop Wallpaper\"><strong>DESKTOP</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_YDQCLX",
+        "image_with_text_hfzkxz",
+        "image_with_text_fwe7qH",
+        "image_with_text_UCyxqP",
+        "image_with_text_ijzhTw",
+        "image_with_text_N9aqJ4",
+        "image_with_text_ne7LKd",
+        "image_with_text_PrmnQw",
+        "image_with_text_DzHyeQ",
+        "image_with_text_KVb7Aj",
+        "image_with_text_XGMjCk",
+        "image_with_text_Tjh6wP"
+      ],
+      "name": "WALLPAPERS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "sm",
+        "subheading": "Desktop and Mobile",
+        "title": "WALLPAPERS",
+        "content": ""
+      }
+    },
+    "multi_column_rWcwnM": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_kKWXyT": {
+          "type": "image_with_text",
+          "name": "Halloween 2025",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Christmas_2025.jpg",
+            "title": "Christnas 2025",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Christmas_2025.pdf?v=1767584796\" target=\"_blank\" title=\"Christmas 2025 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_yfhH3P": {
+          "type": "image_with_text",
+          "name": "Halloween 2025",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Halloween_2025.jpg",
+            "title": "Halloween 2025",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Halloween_2025.pdf?v=1762313835\" target=\"_blank\" title=\"Halloween 2025 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_KdeADN": {
+          "type": "image_with_text",
+          "name": "Halloween 2024",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Halloween_2024.png",
+            "title": "Halloween 2024",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Halloween_2024.pdf?v=1748999920\" target=\"_blank\" title=\"Halloween 2024 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_FX4yAT": {
+          "type": "image_with_text",
+          "name": "Halloween 2023",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Halloween_2023.png",
+            "title": "Halloween 2023",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Halloween_2023.pdf?v=1748999920\" target=\"_blank\" title=\"Halloween 2023 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_xMLiHK": {
+          "type": "image_with_text",
+          "name": "Easter 2023",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Easter_2023.png",
+            "title": "Easter 2023",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Easter_2023.pdf?v=1751523955\" target=\"_blank\" title=\"Easter 2023 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_DVULeF": {
+          "type": "image_with_text",
+          "name": "Halloween 2022",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Halloween_2022.png",
+            "title": "Halloween 2022",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Halloween_2022.pdf?v=1751585033\" target=\"_blank\" title=\"Halloween 2022 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_8Lr3aU": {
+          "type": "image_with_text",
+          "name": "Christmas 2022",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Christmas_2022.png",
+            "title": "Christmas 2022",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Christmas_2022.pdf?v=1751587055\" target=\"_blank\" title=\"Christmas 2022 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_V8mXdt": {
+          "type": "image_with_text",
+          "name": "Easter 2022",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Easter_2022.png",
+            "title": "Easter 2022",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Easter_2022.pdf?v=1751587372\" target=\"_blank\" title=\"Easter 2022 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_DeEaWb": {
+          "type": "image_with_text",
+          "name": "Halloween 2021",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Halloween_2021.png",
+            "title": "Halloween 2021",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Halloween_2021.pdf?v=1751596552\" target=\"_blank\" title=\"Halloween 2021 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_f3zMYr": {
+          "type": "image_with_text",
+          "name": "Christmas 2021",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Christmas_2021.png",
+            "title": "Christmas 2021",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Christmas_2021.pdf?v=1751597534\" target=\"_blank\" title=\"Christmas 2021 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_cHnYVP": {
+          "type": "image_with_text",
+          "name": "Easter 2021",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Easter_2021.png",
+            "title": "Easter 2021",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Easter_2021.pdf?v=1751597170\" target=\"_blank\" title=\"Easter 2021 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_UzhVPU": {
+          "type": "image_with_text",
+          "name": "Halloween 2020",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Halloween_2020.png",
+            "title": "Halloween 2020",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Halloween_2020.pdf?v=1751598899\" target=\"_blank\" title=\"Halloween 2020 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Jm7YrT": {
+          "type": "image_with_text",
+          "name": "Christmas 2020",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Christmas_2020.png",
+            "title": "Christmas 2020",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Christmas_2020.pdf?v=1751598899\" target=\"_blank\" title=\"Christmas 2020 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_cVVtgJ": {
+          "type": "image_with_text",
+          "name": "Easter 2020",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Easter_2020.png",
+            "title": "Easter 2020",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Easter_2020.pdf?v=1751598899\" target=\"_blank\" title=\"Easter 2020 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_hVJ7ze": {
+          "type": "image_with_text",
+          "name": "Christmas 2019",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Christmas_2019.png",
+            "title": "Christmas 2019",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Christmas_2019.pdf?v=1751609424\" target=\"_blank\" title=\"Christmas 2019 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_gxJzEx": {
+          "type": "image_with_text",
+          "name": "Halloween 2018",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Halloween_2018_1.png",
+            "title": "Halloween 2018",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Halloween_2018_01.pdf?v=1751609424\" target=\"_blank\" title=\"Halloween 2018 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_TAxtDr": {
+          "type": "image_with_text",
+          "name": "Halloween 2018",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Halloween_2018_2.png",
+            "title": "Halloween 2018",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Halloween_2018_02.pdf?v=1751609424\" target=\"_blank\" title=\"Halloween 2018 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Etmh79": {
+          "type": "image_with_text",
+          "name": "Christmas 2018",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Christmas_2018.png",
+            "title": "Christmas 2018",
+            "heading_tag": "h3",
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Christmas_2018.pdf?v=1751609424\" target=\"_blank\" title=\"Christmas 2018 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_kKWXyT",
+        "image_with_text_yfhH3P",
+        "image_with_text_KdeADN",
+        "image_with_text_FX4yAT",
+        "image_with_text_xMLiHK",
+        "image_with_text_DVULeF",
+        "image_with_text_8Lr3aU",
+        "image_with_text_V8mXdt",
+        "image_with_text_DeEaWb",
+        "image_with_text_f3zMYr",
+        "image_with_text_cHnYVP",
+        "image_with_text_UzhVPU",
+        "image_with_text_Jm7YrT",
+        "image_with_text_cVVtgJ",
+        "image_with_text_hVJ7ze",
+        "image_with_text_gxJzEx",
+        "image_with_text_TAxtDr",
+        "image_with_text_Etmh79"
+      ],
+      "name": "COLOURING IN SHEETS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 4,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "sm",
+        "subheading": "<strong>previous colouring in competitions</strong>",
+        "title": "<strong>Colouring in Sheets</strong>",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_block_Vy6Ngf",
+    "rich_text_W9CCpK",
+    "main",
+    "multi_column_R6XkPN",
+    "multi_column_rWcwnM"
+  ]
+}

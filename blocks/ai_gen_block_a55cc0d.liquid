@@ -1,0 +1,660 @@
+{% doc %}
+  @prompt
+    a section that has 4 columns of 5 links each with a header text. make it so you can make it smaller on mobile so it does not take up lots of space on the page, make the background a dark grey and the text & links white
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-link-columns-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_top }}px 0 {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-link-columns-container-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-link-columns-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: {{ block.settings.column_gap }}px;
+  }
+
+  .ai-link-column-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-link-column-header-{{ ai_gen_id }} {
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 {{ block.settings.heading_spacing }}px;
+    text-transform: {{ block.settings.heading_transform }};
+    letter-spacing: {{ block.settings.heading_letter_spacing }}%;
+  }
+
+  .ai-link-list-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.link_spacing }}px;
+  }
+
+  .ai-link-item-{{ ai_gen_id }} a {
+    color: {{ block.settings.link_color }};
+    text-decoration: none;
+    font-size: {{ block.settings.link_size }}px;
+    transition: color 0.2s ease;
+    display: block;
+  }
+
+  .ai-link-item-{{ ai_gen_id }} a:hover {
+    color: {{ block.settings.link_hover_color }};
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-link-columns-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat(2, 1fr);
+      gap: {{ block.settings.column_gap | times: 0.75 }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-link-columns-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_top | times: 0.75 }}px 0 {{ block.settings.padding_bottom | times: 0.75 }}px;
+    }
+
+    .ai-link-columns-grid-{{ ai_gen_id }} {
+      display: block;
+    }
+
+    .ai-link-column-{{ ai_gen_id }} {
+      border-bottom: 1px solid {{ block.settings.accordion_border_color }};
+    }
+
+    .ai-link-column-header-{{ ai_gen_id }} {
+      cursor: pointer;
+      padding: {{ block.settings.accordion_padding }}px 0;
+      margin: 0;
+      position: relative;
+      user-select: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .ai-link-column-toggle-{{ ai_gen_id }} {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .ai-link-column-toggle-{{ ai_gen_id }}::before,
+    .ai-link-column-toggle-{{ ai_gen_id }}::after {
+      content: '';
+      position: absolute;
+      background-color: {{ block.settings.heading_color }};
+      transition: transform 0.3s ease;
+    }
+
+    .ai-link-column-toggle-{{ ai_gen_id }}::before {
+      width: 12px;
+      height: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ai-link-column-toggle-{{ ai_gen_id }}::after {
+      width: 2px;
+      height: 12px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ai-link-column-{{ ai_gen_id }}.active .ai-link-column-toggle-{{ ai_gen_id }}::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .ai-link-list-{{ ai_gen_id }} {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .ai-link-column-{{ ai_gen_id }}.active .ai-link-list-{{ ai_gen_id }} {
+      max-height: 500px;
+      padding-bottom: {{ block.settings.accordion_padding }}px;
+    }
+  }
+{% endstyle %}
+
+<link-columns-{{ ai_gen_id }} class="ai-link-columns-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-link-columns-container-{{ ai_gen_id }}">
+    <div class="ai-link-columns-grid-{{ ai_gen_id }}">
+      {% for i in (1..4) %}
+        {% liquid
+          assign header_key = 'column_' | append: i | append: '_header'
+          assign header = block.settings[header_key]
+        %}
+        
+        <div class="ai-link-column-{{ ai_gen_id }}" data-column="{{ i }}">
+          <div class="ai-link-column-header-{{ ai_gen_id }}">
+            <span>{{ header }}</span>
+            <span class="ai-link-column-toggle-{{ ai_gen_id }}"></span>
+          </div>
+          <ul class="ai-link-list-{{ ai_gen_id }}">
+            {% for j in (1..5) %}
+              {% liquid
+                assign link_text_key = 'column_' | append: i | append: '_link_' | append: j | append: '_text'
+                assign link_url_key = 'column_' | append: i | append: '_link_' | append: j | append: '_url'
+                assign link_text = block.settings[link_text_key]
+                assign link_url = block.settings[link_url_key]
+              %}
+              
+              {% if link_text != blank %}
+                <li class="ai-link-item-{{ ai_gen_id }}">
+                  <a href="{{ link_url }}">{{ link_text }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</link-columns-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class LinkColumns{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.isMobile = window.matchMedia('(max-width: 749px)');
+      }
+
+      connectedCallback() {
+        this.setupAccordion();
+        this.isMobile.addEventListener('change', this.handleResize.bind(this));
+      }
+
+      setupAccordion() {
+        if (!this.isMobile.matches) return;
+
+        const columns = this.querySelectorAll('.ai-link-column-{{ ai_gen_id }}');
+        
+        columns.forEach((column) => {
+          const header = column.querySelector('.ai-link-column-header-{{ ai_gen_id }}');
+          
+          header.addEventListener('click', () => {
+            const isActive = column.classList.contains('active');
+            
+            columns.forEach((col) => col.classList.remove('active'));
+            
+            if (!isActive) {
+              column.classList.add('active');
+            }
+          });
+        });
+      }
+
+      handleResize() {
+        const columns = this.querySelectorAll('.ai-link-column-{{ ai_gen_id }}');
+        
+        if (!this.isMobile.matches) {
+          columns.forEach((col) => col.classList.remove('active'));
+        }
+      }
+    }
+
+    customElements.define('link-columns-{{ ai_gen_id }}', LinkColumns{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Link columns",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Column gap",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#2a2a2a"
+    },
+    {
+      "type": "header",
+      "content": "Column headings"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Font",
+      "default": "roboto_condensed_n7"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "heading_transform",
+      "label": "Text transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "%",
+      "label": "Letter spacing",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Links"
+    },
+    {
+      "type": "range",
+      "id": "link_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Hover color",
+      "default": "#e32c2b"
+    },
+    {
+      "type": "range",
+      "id": "link_spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Spacing between links",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Mobile accordion"
+    },
+    {
+      "type": "range",
+      "id": "accordion_padding",
+      "min": 10,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "accordion_border_color",
+      "label": "Border color",
+      "default": "#444444"
+    },
+    {
+      "type": "header",
+      "content": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "column_1_header",
+      "label": "Header",
+      "default": "Shop"
+    },
+    {
+      "type": "text",
+      "id": "column_1_link_1_text",
+      "label": "Link 1 text",
+      "default": "New arrivals"
+    },
+    {
+      "type": "url",
+      "id": "column_1_link_1_url",
+      "label": "Link 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_1_link_2_text",
+      "label": "Link 2 text",
+      "default": "Best sellers"
+    },
+    {
+      "type": "url",
+      "id": "column_1_link_2_url",
+      "label": "Link 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_1_link_3_text",
+      "label": "Link 3 text",
+      "default": "Sale"
+    },
+    {
+      "type": "url",
+      "id": "column_1_link_3_url",
+      "label": "Link 3 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_1_link_4_text",
+      "label": "Link 4 text",
+      "default": "Gift cards"
+    },
+    {
+      "type": "url",
+      "id": "column_1_link_4_url",
+      "label": "Link 4 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_1_link_5_text",
+      "label": "Link 5 text",
+      "default": "All products"
+    },
+    {
+      "type": "url",
+      "id": "column_1_link_5_url",
+      "label": "Link 5 URL"
+    },
+    {
+      "type": "header",
+      "content": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "column_2_header",
+      "label": "Header",
+      "default": "Help"
+    },
+    {
+      "type": "text",
+      "id": "column_2_link_1_text",
+      "label": "Link 1 text",
+      "default": "Contact us"
+    },
+    {
+      "type": "url",
+      "id": "column_2_link_1_url",
+      "label": "Link 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_2_link_2_text",
+      "label": "Link 2 text",
+      "default": "Shipping info"
+    },
+    {
+      "type": "url",
+      "id": "column_2_link_2_url",
+      "label": "Link 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_2_link_3_text",
+      "label": "Link 3 text",
+      "default": "Returns"
+    },
+    {
+      "type": "url",
+      "id": "column_2_link_3_url",
+      "label": "Link 3 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_2_link_4_text",
+      "label": "Link 4 text",
+      "default": "Size guide"
+    },
+    {
+      "type": "url",
+      "id": "column_2_link_4_url",
+      "label": "Link 4 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_2_link_5_text",
+      "label": "Link 5 text",
+      "default": "FAQ"
+    },
+    {
+      "type": "url",
+      "id": "column_2_link_5_url",
+      "label": "Link 5 URL"
+    },
+    {
+      "type": "header",
+      "content": "Column 3"
+    },
+    {
+      "type": "text",
+      "id": "column_3_header",
+      "label": "Header",
+      "default": "About"
+    },
+    {
+      "type": "text",
+      "id": "column_3_link_1_text",
+      "label": "Link 1 text",
+      "default": "Our story"
+    },
+    {
+      "type": "url",
+      "id": "column_3_link_1_url",
+      "label": "Link 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_3_link_2_text",
+      "label": "Link 2 text",
+      "default": "Careers"
+    },
+    {
+      "type": "url",
+      "id": "column_3_link_2_url",
+      "label": "Link 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_3_link_3_text",
+      "label": "Link 3 text",
+      "default": "Sustainability"
+    },
+    {
+      "type": "url",
+      "id": "column_3_link_3_url",
+      "label": "Link 3 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_3_link_4_text",
+      "label": "Link 4 text",
+      "default": "Press"
+    },
+    {
+      "type": "url",
+      "id": "column_3_link_4_url",
+      "label": "Link 4 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_3_link_5_text",
+      "label": "Link 5 text",
+      "default": "Blog"
+    },
+    {
+      "type": "url",
+      "id": "column_3_link_5_url",
+      "label": "Link 5 URL"
+    },
+    {
+      "type": "header",
+      "content": "Column 4"
+    },
+    {
+      "type": "text",
+      "id": "column_4_header",
+      "label": "Header",
+      "default": "Legal"
+    },
+    {
+      "type": "text",
+      "id": "column_4_link_1_text",
+      "label": "Link 1 text",
+      "default": "Privacy policy"
+    },
+    {
+      "type": "url",
+      "id": "column_4_link_1_url",
+      "label": "Link 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_4_link_2_text",
+      "label": "Link 2 text",
+      "default": "Terms of service"
+    },
+    {
+      "type": "url",
+      "id": "column_4_link_2_url",
+      "label": "Link 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_4_link_3_text",
+      "label": "Link 3 text",
+      "default": "Refund policy"
+    },
+    {
+      "type": "url",
+      "id": "column_4_link_3_url",
+      "label": "Link 3 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_4_link_4_text",
+      "label": "Link 4 text",
+      "default": "Accessibility"
+    },
+    {
+      "type": "url",
+      "id": "column_4_link_4_url",
+      "label": "Link 4 URL"
+    },
+    {
+      "type": "text",
+      "id": "column_4_link_5_text",
+      "label": "Link 5 text",
+      "default": "Cookie policy"
+    },
+    {
+      "type": "url",
+      "id": "column_4_link_5_url",
+      "label": "Link 5 URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Link columns"
+    }
+  ]
+}
+{% endschema %}

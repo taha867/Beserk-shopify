@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-customers-register",
+      "blocks": {
+        "fields": {
+          "type": "fields",
+          "settings": {
+            "show_marketing_consent": false
+          }
+        }
+      },
+      "block_order": [
+        "fields"
+      ],
+      "settings": {}
+    },
+    "175413118769c53b70": {
+      "type": "apps",
+      "blocks": {
+        "shop_shop_login_button_app_block_YtfCaE": {
+          "type": "shopify://apps/shop/blocks/shop-login-button-app-block/7cab7c4a-1dfc-4b7e-8e53-31f104f2fa4e",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "shop_shop_login_button_app_block_YtfCaE"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "1754131243c2475fbe": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_earning_rule_highlight_CAz8Qb": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-earning-rule-highlight/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "disabled": true,
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "Earn points for every order placed",
+            "description_text": "The more you spend, the more you save.",
+            "button_text": "Ways to earn"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_earning_rule_highlight_CAz8Qb"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "175413126528df0811": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_how_it_works_Admw8M": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-how-it-works/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "disabled": true,
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "How it works",
+            "step1_heading_text": "Join",
+            "step1_description_text": "Sign up or login to start earning straight away.",
+            "step2_heading_text": "Earn",
+            "step2_description_text": "Earn points for every dollar spent.",
+            "step3_heading_text": "Redeem",
+            "step3_description_text": "Redeem points for discounts on your next purchase."
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_how_it_works_Admw8M"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "1754131279eaec6d7b": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_landing_page_header_Lezxq6": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-header/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "disabled": true,
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "Welcome to our rewards page",
+            "description_text": "Earn reward points on every purchase. Redeem for discounts on future purchases.",
+            "join_button_text": "Join now",
+            "login_button_text": "Log in",
+            "is_previewing_logged_in_state": false,
+            "discover_button_text": "Discover the loyalty program"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_landing_page_header_Lezxq6"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "175413118769c53b70",
+    "1754131243c2475fbe",
+    "175413126528df0811",
+    "1754131279eaec6d7b"
+  ]
+}

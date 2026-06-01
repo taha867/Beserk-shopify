@@ -1,0 +1,596 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "rich_text_y7QzUy": {
+      "type": "rich-text",
+      "blocks": {
+        "image_76iM4K": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ENVIRONMENT-AND-SOCIAL-HEADER.png",
+            "width_mode": "full_width",
+            "max_width": 1000,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "image_76iM4K"
+      ],
+      "name": "Header",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "faq_APU4CY": {
+      "type": "faq",
+      "blocks": {
+        "question_eUaMJX": {
+          "type": "question",
+          "name": "POSTAGE BAGS",
+          "settings": {
+            "question": "POSTAGE BAGS",
+            "answer": "<p>The Beserk Postage bags are made from 80% Recycled plastic.<br/></p>"
+          }
+        },
+        "question_npAekJ": {
+          "type": "question",
+          "name": "RECYCLE & REUSE",
+          "settings": {
+            "question": "RECYCLE & REUSE",
+            "answer": "<p>Beserk will always reuse and recycle all clean packing materials from incoming supplier orders, including boxes, bubble wrap, foam, and paper infills. We use these in our outgoing orders, so if you receive a box that has already been used, please understand that we are trying to reuse and recycle as much as we can.</p>"
+          }
+        },
+        "question_MibzW9": {
+          "type": "question",
+          "name": "BUBBLE WRAP",
+          "settings": {
+            "question": "BUBBLE WRAP",
+            "answer": "<p>We use a 100% biodegradable bubble wrap.</p>"
+          }
+        },
+        "question_TbKYAx": {
+          "type": "question",
+          "name": "SHREDDING",
+          "settings": {
+            "question": "SHREDDING",
+            "answer": "<p>We include shredding paper in all our orders to protect breakable items using recycled paper from old promotional material and magazines.</p>"
+          }
+        },
+        "question_wYkgRx": {
+          "type": "question",
+          "name": "INVOICES",
+          "settings": {
+            "question": "INVOICES",
+            "answer": "<p>We do not send an invoice with our outgoing orders to save paper, and when paper is used in the office we only use recycled paper.</p>"
+          }
+        },
+        "question_kptiER": {
+          "type": "question",
+          "name": "PLASTIC BAGS",
+          "settings": {
+            "question": "PLASTIC BAGS",
+            "answer": "<p>We receive clothing and stock in plastic bags, but we do not use any plastic bags in the office that are not recycled.</p>"
+          }
+        },
+        "question_GMnykD": {
+          "type": "question",
+          "name": "ELECTRICITY",
+          "settings": {
+            "question": "ELECTRICITY",
+            "answer": "<p>We have chosen to go Carbon Neutral with our AGL Electricity account. This helps to fund carbon offset projects in Australia and around the world. Projects such as forestation, revegetation and other initiatives, that will make a real difference on our journey towards a sustainable tomorrow.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_eUaMJX",
+        "question_npAekJ",
+        "question_MibzW9",
+        "question_TbKYAx",
+        "question_wYkgRx",
+        "question_kptiER",
+        "question_GMnykD"
+      ],
+      "disabled": true,
+      "name": "Environment Info",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "show_categories": false,
+        "subheading": "",
+        "title": "HOW BESERK IS MAKING AN ENVIRONMENTAL DIFFERENCE",
+        "content": ""
+      }
+    },
+    "image_with_text_4UYf6N": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Wa3CJc": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>RECYCLE & REUSE</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_z8jEJn": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Beserk will always reuse and recycle all clean packing materials from incoming supplier orders, including boxes, bubble wrap, foam, and paper infills. We use these in our outgoing orders, so if you receive a box that has already been used, please understand that we are trying to reuse and recycle as much as we can.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wa3CJc",
+        "richtext_z8jEJn"
+      ],
+      "name": "RECYCLE & REUSE",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Social-Responsibility-Images_Recycle.png",
+        "mobile_image": "shopify://shop_images/Social-Responsibility-Images_Recycle.png",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_fiqDy7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dVXyEf": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>POSTAGE BAGS</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_gJiPcj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The Beserk Postage bags are made from 80% Recycled plastic.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dVXyEf",
+        "richtext_gJiPcj"
+      ],
+      "name": "Postage Bags",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Social-Responsibility-Images_Plastic-Bag.png",
+        "mobile_image": "shopify://shop_images/Social-Responsibility-Images_Plastic-Bag.png",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_ztJCew": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Yhmbjp": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>BUBBLE WRAP</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_G7P3e8": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>At Beserk, we will always use a 100% biodegradable bubble wrap.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Yhmbjp",
+        "richtext_G7P3e8"
+      ],
+      "name": "BUBBLE WRAP",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Social-Responsibility-Images_-Bubble-Wrap.png",
+        "mobile_image": "shopify://shop_images/Social-Responsibility-Images_-Bubble-Wrap.png",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_MUt3w3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bxrQtz": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>SHREDDING</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_gVCKnF": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We include shredding paper in all our orders to protect breakable items using recycled paper from old promotional material and magazines.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bxrQtz",
+        "richtext_gVCKnF"
+      ],
+      "name": "SHREDDING",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Social-Responsibility-Images_Shredding.png",
+        "mobile_image": "shopify://shop_images/Social-Responsibility-Images_Shredding.png",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_aTbaKK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ki3eJm": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>INVOICES</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_WehMrG": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>At Beserk, we do not send an invoice with our outgoing orders to save paper, and when paper is used in the office we only use recycled paper.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ki3eJm",
+        "richtext_WehMrG"
+      ],
+      "name": "INVOICES",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Social-Responsibility-Images_Invoice.png",
+        "mobile_image": "shopify://shop_images/Social-Responsibility-Images_Invoice.png",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_J4Wc6A": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LP3ERk": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>PLASTIC BAGS</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_bkThte": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We receive clothing and stock in plastic bags, but we do not use any plastic bags in the office that are not recycled.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LP3ERk",
+        "richtext_bkThte"
+      ],
+      "name": "PLASTIC BAGS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Social-Responsibility-Images_Plastic-Bag-3.png",
+        "mobile_image": "shopify://shop_images/Social-Responsibility-Images_Plastic-Bag-3.png",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_7xQGjG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_icg3zK": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>ELECTRICITY</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_KTBaUc": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We have chosen to go Carbon Neutral with our AGL Electricity account. This helps to fund carbon offset projects in Australia and around the world. Projects such as forestation, revegetation and other initiatives, that will make a real difference on our journey towards a sustainable tomorrow.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_icg3zK",
+        "richtext_KTBaUc"
+      ],
+      "name": "ELECTRICITY",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Social-Responsibility-Images_Electricity.png",
+        "mobile_image": "shopify://shop_images/Social-Responsibility-Images_Electricity.png",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_eBfffg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tqCPLa": {
+          "type": "heading",
+          "settings": {
+            "text": "CARBON NEUTRAL",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_V9ndcR": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Beserk has proudly been a Carbon Neural Partner since 2017 to help reduce our impact on the planet. :) To offset our carbon emissions, we purchase tree credits that are then used to plant trees around Australia and restore the natural landscape creating a positive impact on climate change.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tqCPLa",
+        "richtext_V9ndcR"
+      ],
+      "name": "Carbon Neutral",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Carbon_Neutral_Logo_480x480_2ac46115-9b97-426c-8b2c-402ea81292f0.png",
+        "mobile_image": "shopify://shop_images/Carbon_Neutral_Logo_480x480_2ac46115-9b97-426c-8b2c-402ea81292f0.png",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_zrKj6q": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nx7qME": {
+          "type": "heading",
+          "settings": {
+            "text": "SOCIAL IMPACT & RESPONSIBILITIES",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nx7qME"
+      ],
+      "name": "Social Header",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_3pG8G9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HLLYhT": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>Acknowledgement of Country</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_MY7LeJ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We acknowledge and respect the Turrbal people as the traditional owners and custodians of the land where the Beserk HQ is located. We honour their elders past, present and emerging and extend our respect to all Aboriginal and Torres Strait Islander Peoples.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HLLYhT",
+        "richtext_MY7LeJ"
+      ],
+      "name": "Acknowledgement Of Country",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Aboriginal-Flag_961bbed0-cc21-4438-a3e7-4dadeb820f3f.png",
+        "mobile_image": "shopify://shop_images/Aboriginal-Flag_961bbed0-cc21-4438-a3e7-4dadeb820f3f.png",
+        "reveal_on_scroll": false,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_KezFBe": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HmeATU": {
+          "type": "heading",
+          "settings": {
+            "text": "WELCOME HERE",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_nqEQC3": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Beserk is a proud member of the <a href=\"https://www.welcomehere.org.au/\" target=\"_blank\" title=\"Welcome Here Program\">Welcome Here</a> Project, where LGBTIQ diversity is welcomed and celebrated and to make all people feel safe at Beserk.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HmeATU",
+        "richtext_nqEQC3"
+      ],
+      "name": "Welcome Here",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Welcome-Here-Logo_8a91756b-17b8-482e-af12-63db486be50b.png",
+        "mobile_image": "shopify://shop_images/Welcome-Here-Logo_8a91756b-17b8-482e-af12-63db486be50b.png",
+        "reveal_on_scroll": false,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_eLcf4j": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hBVUUk": {
+          "type": "heading",
+          "settings": {
+            "text": "CHARITIES",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_wGhBDU": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We love animals and want to help preserve all the beautiful animals on our planet & we regularly donate to different charities around the world. You can find some of our favourite animal charities <a href=\"/pages/animal-charities\" target=\"_blank\" title=\"Animal Charities\">HERE</a>!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hBVUUk",
+        "richtext_wGhBDU"
+      ],
+      "name": "Charities",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Animal-Charities_14a16ba4-6a56-4764-ab44-9308c71c7d75.png",
+        "mobile_image": "shopify://shop_images/Animal-Charities_14a16ba4-6a56-4764-ab44-9308c71c7d75.png",
+        "reveal_on_scroll": false,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_gKgWtK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tyWT4D": {
+          "type": "heading",
+          "settings": {
+            "text": "Equal opportunities",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_LQjeAg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We are an equal opportunity employer!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tyWT4D",
+        "richtext_LQjeAg"
+      ],
+      "name": "Equal Opportunities",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Equal-Opportunities_a390127c-0b06-40a7-bb3f-8b6cd21c4502.png",
+        "mobile_image": "shopify://shop_images/Equal-Opportunities_a390127c-0b06-40a7-bb3f-8b6cd21c4502.png",
+        "reveal_on_scroll": false,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_6nymxK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_axaMd8": {
+          "type": "heading",
+          "settings": {
+            "text": "We will keep working towards improving our systems to become as environmentally friendly and good to the planet as we can be, and we will always strive to be better",
+            "heading_tag": "h4"
+          }
+        },
+        "heading_DhHpqp": {
+          "type": "heading",
+          "settings": {
+            "text": "LOVE, Beserk XX",
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_axaMd8",
+        "heading_DhHpqp"
+      ],
+      "name": "Footer Paragraph",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_y7QzUy",
+    "faq_APU4CY",
+    "image_with_text_4UYf6N",
+    "image_with_text_eBfffg",
+    "image_with_text_fiqDy7",
+    "image_with_text_ztJCew",
+    "image_with_text_MUt3w3",
+    "image_with_text_aTbaKK",
+    "image_with_text_J4Wc6A",
+    "image_with_text_7xQGjG",
+    "rich_text_zrKj6q",
+    "image_with_text_3pG8G9",
+    "image_with_text_KezFBe",
+    "image_with_text_eLcf4j",
+    "image_with_text_gKgWtK",
+    "rich_text_6nymxK"
+  ]
+}

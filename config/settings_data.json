@@ -1,0 +1,572 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "icon_stroke_width": 2,
+    "section_vertical_spacing": "md",
+    "modal_color_scheme": "scheme-2",
+    "product_rating_color": "#e32c2b",
+    "product_on_sale_accent": "#e32c2b",
+    "product_sold_out_badge_background": "#efefef",
+    "product_custom_badge_background": "#1c1c1c",
+    "success_color": "#ff0000",
+    "warning_color": "#ed8a00",
+    "error_color": "#cb2b2b",
+    "heading_font": "roboto_condensed_n7",
+    "heading_letter_spacing": 18,
+    "text_font": "roboto_n4",
+    "text_font_size_desktop": 14,
+    "button_letter_spacing": 18,
+    "currency_code_enabled": true,
+    "stagger_products_apparition": false,
+    "stagger_blog_posts_apparition": false,
+    "stagger_menu_apparition": false,
+    "product_image_aspect_ratio": "portrait_crop",
+    "show_vendor": true,
+    "product_title_max_lines": 4,
+    "product_card_text_font": "heading",
+    "product_color_display": "swatch",
+    "show_product_rating_if_empty": false,
+    "show_quick_buy": true,
+    "show_sold_out_badge": true,
+    "discount_mode": "saving",
+    "cart_icon": "shopping_bag_sharp",
+    "cart_show_free_shipping_bar": true,
+    "cart_free_shipping_threshold": "129",
+    "social_facebook": "https://www.facebook.com/beserkclothing",
+    "social_twitter": "https://x.com/BeserkClothing",
+    "social_pinterest": "https://au.pinterest.com/beserk/",
+    "social_threads": "https://www.threads.com/@beserk",
+    "social_instagram": "https://www.instagram.com/beserk/",
+    "social_tumblr": "https://beserkclothing.tumblr.com/",
+    "social_youtube": "https://www.youtube.com/channel/UCmmb7z-eqbTEm-y9zEhLxww",
+    "social_tiktok": "https://www.tiktok.com/@beserkclothing",
+    "social_linkedin": "https://au.linkedin.com/company/beserk",
+    "social_snapchat": "https://www.snapchat.com/add/beserkchat",
+    "favicon": "shopify://shop_images/beserk-favicon-14.png",
+    "sections": {
+      "main-gift-card": {
+        "type": "main-gift-card",
+        "settings": {
+          "color_scheme": "scheme-1",
+          "image": "shopify://shop_images/nd8gmjcrsxih29qa9yij50rdqc9f.jpg",
+          "show_qr_code": true,
+          "how-to-use-heading": "Instructions",
+          "how-to-use-text": "<p><strong>Congratulations! <br/>You have received a Beserk Gift Card! </strong></p><p>Instructions :</p><p>1. Copy the code above</p><p>2. Add the items you would like to purchase to cart and click on checkout </p><p>3. Add the gift card code to the checkout page to receive your discount.</p><p>Please contact us if you have any issues at all. :) </p><p>Happy Shopping!<br/>Beserk xx</p>"
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "10576504925779971753": {
+        "type": "shopify://apps/youpay-cart-sharing/blocks/youpay-cart-settings/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+        "disabled": true,
+        "settings": {
+          "cart-button-status": false,
+          "cart-position": "after-checkout-button",
+          "button-text-long": "Get it paid for you with",
+          "button-text-medium": "Get it paid for with",
+          "button-text-short": "Get it paid",
+          "theme": "blue",
+          "button-colour": "#000000",
+          "button-background-colour": "rgba(0,0,0,0)",
+          "button-height": 52,
+          "border-radius": 0,
+          "margin-top": 10,
+          "margin-bottom": 10,
+          "width": 100,
+          "alignment": "center"
+        }
+      },
+      "12120936241911852800": {
+        "type": "shopify://apps/judge-me-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": true,
+        "settings": {
+          "position": "right"
+        }
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "8776485610325655785": {
+        "type": "shopify://apps/hiko-social-login/blocks/hiko-auth/3832d7e1-5bcd-4b72-91da-236b57feef8f",
+        "disabled": false,
+        "settings": {
+          "social_font": "enable"
+        }
+      },
+      "6593136046357153830": {
+        "type": "shopify://apps/youpay-cart-sharing/blocks/youpay-flyout-settings/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+        "disabled": false,
+        "settings": {
+          "flyout-button-status": true,
+          "flyout-position": "after-checkout-button",
+          "button-text-long": "Get it paid for you with",
+          "button-text-medium": "Get it paid for with",
+          "button-text-short": "Get it paid",
+          "theme": "blue",
+          "button-colour": "#000000",
+          "button-background-colour": "rgba(0,0,0,0)",
+          "button-height": 52,
+          "border-radius": 0,
+          "margin-top": 10,
+          "margin-bottom": 10,
+          "width": 100,
+          "alignment": "center"
+        }
+      },
+      "7420477900589326039": {
+        "type": "shopify://apps/youpay-cart-sharing/blocks/youpay-product-settings/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+        "disabled": false,
+        "settings": {
+          "product-callout-status": false,
+          "product-button-status": false,
+          "button-text-long": "Get it paid for you with",
+          "button-text-medium": "Get it paid for with",
+          "button-text-short": "Get it paid",
+          "theme": "blue",
+          "button-colour": "#000000",
+          "button-background-colour": "rgba(0,0,0,0)",
+          "button-height": 52,
+          "border-radius": 0,
+          "margin-top": 10,
+          "margin-bottom": 10,
+          "width": 100,
+          "alignment": "center",
+          "callout-theme": "badge",
+          "modal-theme": "dark",
+          "modal-icon": "shirt"
+        }
+      },
+      "3902840701207322667": {
+        "type": "shopify://apps/youpay-cart-sharing/blocks/youpay-vintage-settings/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+        "disabled": true,
+        "settings": {
+          "product-callout-status": true,
+          "product-button-status": true,
+          "flyout-button-status": true,
+          "flyout-position": "after-checkout-button",
+          "cart-button-status": true,
+          "cart-position": "after-checkout-button",
+          "button-text-long": "Get it paid for you with",
+          "button-text-medium": "Get it paid for with",
+          "button-text-short": "Get it paid",
+          "theme": "blue",
+          "button-colour": "#000000",
+          "button-height": 52,
+          "border-radius": 0,
+          "margin-top": 10,
+          "margin-bottom": 10,
+          "callout-theme": "blue",
+          "modal-theme": "dark",
+          "modal-icon": "shirt"
+        }
+      },
+      "15181020662106344915": {
+        "type": "shopify://apps/judge-me-reviews/blocks/popup_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": true,
+        "settings": {}
+      },
+      "6174324309569838175": {
+        "type": "shopify://apps/smile-io/blocks/smile-shopify-app/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "disabled": false,
+        "settings": {}
+      },
+      "15734677551373749047": {
+        "type": "shopify://apps/flits/blocks/flits/d5eeb0f1-bc12-4372-af4d-40ca0d3ad847",
+        "disabled": true,
+        "settings": {}
+      },
+      "1967102994182284862": {
+        "type": "shopify://apps/paypal-pay-later-messaging/blocks/messaging/7f4cb7b9-066b-479a-a35c-56c0fddabee5",
+        "disabled": false,
+        "settings": {
+          "advanced_settings": false,
+          "product_locator": "",
+          "cart_locator": "",
+          "cart_drawer_locator": ""
+        }
+      },
+      "12526071353035850722": {
+        "type": "shopify://apps/amp-back-in-stock/blocks/app-embed/bfa6a8c4-24e2-411a-9396-e35031b33f34",
+        "disabled": false,
+        "settings": {}
+      },
+      "9624546937244602370": {
+        "type": "shopify://apps/redirect-hero/blocks/app/303f77a4-ad21-4d11-82f8-47eb94136aff",
+        "disabled": false,
+        "settings": {}
+      },
+      "14327677521557774844": {
+        "type": "shopify://apps/simprosys-google-shopping-feed/blocks/core_settings_block/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
+        "disabled": false,
+        "settings": {}
+      },
+      "8159273284873997660": {
+        "type": "shopify://apps/redirect-hero/blocks/live-redirect/303f77a4-ad21-4d11-82f8-47eb94136aff",
+        "disabled": false,
+        "settings": {}
+      },
+      "6610233760104865948": {
+        "type": "shopify://apps/pushowl-brevo/blocks/pushowl-app-embed-3d2ff2b5/fa20c3ba-38bf-43e0-ba5c-431f6ae07d95",
+        "disabled": false,
+        "settings": {}
+      },
+      "7194384644902525832": {
+        "type": "shopify://apps/fokkio-automatic-gift/blocks/widget/866ae171-054c-4fa5-8677-5f391a13902b",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "button_color": "#ff0000",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#000000",
+          "button_icon": "chat_bubble",
+          "button_text": "no_text",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": "We are Online ~ Mon-Fri 8:30am-4pm AEST. \nor leave a message anytime & we'll reply when we reopen. 🙂 Beserk xx"
+        }
+      },
+      "5946647744298494267": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": false,
+        "settings": {
+          "storefront_layout_enabled": true,
+          "storefront_layout_primary_bg_color": "#000000",
+          "storefront_layout_primary_text_color": "#e32c2b",
+          "storefront_layout_secondary_bg_color": "#ffffff",
+          "storefront_layout_secondary_text_color": "#e32c2b",
+          "storefront_layout_ui_border_radius": 10,
+          "storefront_layout_notification_position": "center",
+          "storefront_layout_action_popup_position": "center",
+          "storefront_layout_drawer_position": "left",
+          "storefront_layout_as_section_page": ""
+        }
+      },
+      "10274264662263595587": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-collections-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": false,
+        "settings": {
+          "swym_collections_icon_type": "heart",
+          "swym_collections_icon_thickness": 1.7,
+          "swym_collections_position": "top-right",
+          "swym_collections_vertical_offset": 0,
+          "swym_collections_horizontal_offset": 0,
+          "swym_collections_button_size": 25,
+          "swym_collections_icon_color": "#000000",
+          "swym_collections_product_link_selector": "-",
+          "swym_collections_product_tile_selector": "-",
+          "enable_variant_selector": false,
+          "swym_add_to_wishlist_title_color": "#333333",
+          "swym_variant_selector_font_size_1": 14,
+          "swym_variant_selector_popup_bg_color": "#ffffff",
+          "swym_variant_selector_section_heading_color": "#000000",
+          "swym_variant_selector_section_heading_font_size_2": 12,
+          "swym_variant_selector_choose_create_text": "Choose or Create new Wishlist",
+          "swym_variant_selector_wishlist_btn_bg_color": "#292929",
+          "swym_variant_selector_wishlist_btn_color": "#ffffff",
+          "swym_variant_selector_product_detail_font_color": "#ffffff",
+          "swym_variant_selector_create_list_placeholder_text": "Enter wishlist name",
+          "swym_variant_selector_create_list_title": "Name Your Wishlist"
+        }
+      },
+      "16662536352595574465": {
+        "type": "shopify://apps/product-filters-search/blocks/autocomplete/95672d06-1c4e-4e1b-9368-e84ce1ad6886",
+        "disabled": true,
+        "settings": {
+          "path": "/pages/search-results",
+          "new_jquery": false
+        }
+      },
+      "16422382648059844097": {
+        "type": "shopify://apps/boost-ai-search-filter/blocks/instant-search-app-embedded/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": true,
+        "settings": {}
+      },
+      "3678330922655817062": {
+        "type": "shopify://apps/boost-ai-search-filter/blocks/boost-sd-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": false,
+        "settings": {
+          "templateId": "xQ-rxK2ER-",
+          "productGridSelector": ""
+        }
+      }
+    },
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text_color": "#1c1c1c",
+          "primary_button_background": "#e32c2b",
+          "primary_button_text_color": "#ffffff",
+          "circle_button_background": "#ffffff",
+          "circle_button_icon": "#e32c2b"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#1c1c1c",
+          "background_gradient": "",
+          "text_color": "#ffffff",
+          "primary_button_background": "#e32c2b",
+          "primary_button_text_color": "#ffffff",
+          "circle_button_background": "#ffffff",
+          "circle_button_icon": "#e32c2b"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#e32c2b",
+          "background_gradient": "",
+          "text_color": "#ffffff",
+          "primary_button_background": "#ffffff",
+          "primary_button_text_color": "#1c1c1c",
+          "circle_button_background": "#ffffff",
+          "circle_button_icon": "#1c1c1c"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "rgba(0,0,0,0)",
+          "background_gradient": "",
+          "text_color": "#ffffff",
+          "primary_button_background": "#ffffff",
+          "primary_button_text_color": "#1c1c1c",
+          "circle_button_background": "#ffffff",
+          "circle_button_icon": "#1c1c1c"
+        }
+      },
+      "scheme-44ec0a98-468a-406c-af3a-5b9446ede365": {
+        "settings": {
+          "background": "#409e26",
+          "background_gradient": "",
+          "text_color": "#ffffff",
+          "primary_button_background": "#409e26",
+          "primary_button_text_color": "#ffffff",
+          "circle_button_background": "#ffffff",
+          "circle_button_icon": "#409e26"
+        }
+      },
+      "scheme-4bfee214-718a-4811-aef7-a72897246310": {
+        "settings": {
+          "background": "#e36c2b",
+          "background_gradient": "",
+          "text_color": "#ffffff",
+          "primary_button_background": "#e36c2b",
+          "primary_button_text_color": "#ffffff",
+          "circle_button_background": "#ffffff",
+          "circle_button_icon": "#e36c2b"
+        }
+      },
+      "scheme-f0534960-5bc6-4ae7-a5ad-5198be4e0adb": {
+        "settings": {
+          "background": "#d7346f",
+          "background_gradient": "",
+          "text_color": "#ffffff",
+          "primary_button_background": "#d7346f",
+          "primary_button_text_color": "#ffffff",
+          "circle_button_background": "#d7346f",
+          "circle_button_icon": "#ffffff"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Prestige": {
+      "section_vertical_spacing": "md",
+      "heading_font": "instrument_sans_n4",
+      "heading_letter_spacing": 18,
+      "text_font": "nunito_n4",
+      "text_font_size_desktop": 14,
+      "button_letter_spacing": 18,
+      "color_schemes": {
+        "scheme-1": {
+          "settings": {
+            "background": "#efefef",
+            "text_color": "#1c1c1c",
+            "primary_button_background": "#1c1c1c",
+            "primary_button_text_color": "#ffffff",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#ffffff",
+            "text_color": "#1c1c1c",
+            "primary_button_background": "#1c1c1c",
+            "primary_button_text_color": "#ffffff",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        },
+        "scheme-3": {
+          "settings": {
+            "background": "#1c1c1c",
+            "text_color": "#ffffff",
+            "primary_button_background": "#ffffff",
+            "primary_button_text_color": "#1c1c1c",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        },
+        "scheme-4": {
+          "settings": {
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#ffffff",
+            "primary_button_background": "#ffffff",
+            "primary_button_text_color": "#1c1c1c",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        }
+      },
+      "success_color": "#307a07",
+      "warning_color": "#ed8a00",
+      "error_color": "#cb2b2b",
+      "product_rating_color": "#1c1c1c",
+      "product_on_sale_accent": "#e32c2b",
+      "product_sold_out_badge_background": "#efefef",
+      "product_custom_badge_background": "#1c1c1c"
+    },
+    "Couture": {
+      "section_vertical_spacing": "md",
+      "heading_font": "jost_n4",
+      "heading_letter_spacing": 18,
+      "text_font": "poppins_n4",
+      "text_font_size_desktop": 14,
+      "button_letter_spacing": 18,
+      "color_schemes": {
+        "scheme-1": {
+          "settings": {
+            "background": "#ffffff",
+            "text_color": "#5c5c5c",
+            "primary_button_background": "#5c5c5c",
+            "primary_button_text_color": "#ffffff",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "primary_button_background": "#5c5c5c",
+            "primary_button_text_color": "#ffffff",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#5c5c5c"
+          }
+        },
+        "scheme-3": {
+          "settings": {
+            "background": "#1c1c1c",
+            "text_color": "#ffffff",
+            "primary_button_background": "#ffffff",
+            "primary_button_text_color": "#1c1c1c",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        },
+        "scheme-4": {
+          "settings": {
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#ffffff",
+            "primary_button_background": "#ffffff",
+            "primary_button_text_color": "#1c1c1c",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        }
+      },
+      "success_color": "#307a07",
+      "warning_color": "#ed8a00",
+      "error_color": "#cb2b2b",
+      "product_rating_color": "#1c1c1c",
+      "product_on_sale_accent": "#e32c2b",
+      "product_sold_out_badge_background": "#efefef",
+      "product_custom_badge_background": "#1c1c1c"
+    },
+    "Vogue": {
+      "section_vertical_spacing": "xs",
+      "heading_font": "jost_n4",
+      "heading_letter_spacing": 18,
+      "text_font": "jost_n4",
+      "text_font_size_desktop": 14,
+      "button_letter_spacing": 18,
+      "color_schemes": {
+        "scheme-1": {
+          "settings": {
+            "background": "#ffffff",
+            "text_color": "#303030",
+            "primary_button_background": "#f5db8b",
+            "primary_button_text_color": "#303030",
+            "circle_button_background": "#1c1c1c",
+            "circle_button_icon": "#f5db8b"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#ffffff",
+            "text_color": "#303030",
+            "primary_button_background": "#f5db8b",
+            "primary_button_text_color": "#303030",
+            "circle_button_background": "#1c1c1c",
+            "circle_button_icon": "#f5db8b"
+          }
+        },
+        "scheme-3": {
+          "settings": {
+            "background": "#1c1c1c",
+            "text_color": "#ffffff",
+            "primary_button_background": "#ffffff",
+            "primary_button_text_color": "#1c1c1c",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        },
+        "scheme-4": {
+          "settings": {
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#ffffff",
+            "primary_button_background": "#ffffff",
+            "primary_button_text_color": "#1c1c1c",
+            "circle_button_background": "#ffffff",
+            "circle_button_icon": "#1c1c1c"
+          }
+        }
+      },
+      "success_color": "#307a07",
+      "warning_color": "#ed8a00",
+      "error_color": "#cb2b2b",
+      "product_rating_color": "#1c1c1c",
+      "product_on_sale_accent": "#e32c2b",
+      "product_sold_out_badge_background": "#efefef",
+      "product_custom_badge_background": "#1c1c1c"
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".swym-heart:hover {background: #ff0000 !important;}",
+      ".swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {color: white !important;}"
+    ]
+  }
+}

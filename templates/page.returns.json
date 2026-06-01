@@ -1,0 +1,185 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "image_with_text_block_gwxt3i": {
+      "type": "image-with-text-block",
+      "name": "HEADER",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "mobile_image": "shopify://shop_images/Returns_Header_Mobile_03.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_Ha4aDj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qDhRN3": {
+          "type": "heading",
+          "settings": {
+            "text": "30 day return guarantee",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_j87jAW": {
+          "type": "subheading",
+          "settings": {
+            "text": "You can return your item for a <strong>REFUND, </strong> <strong>STORE CREDIT </strong>or<strong> EXCHANGE*</strong>"
+          }
+        },
+        "image_mbb89c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Header-Icons_Returns_a31d06f0-d6c3-4e0f-a82e-9ec43ca20fd4.png",
+            "width_mode": "custom",
+            "max_width": 490,
+            "mobile_max_width": 150
+          }
+        },
+        "heading_e4g8iV": {
+          "type": "heading",
+          "settings": {
+            "text": "What you can return",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_cBJfQ8": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>If there is something you're not satisfied with in your order you can make a return or exchange within 30 days! Our customer service team is happy to help in any way we can. We can offer either a refund, exchange or store credit depending on your case. Please read the following information before you make your return.</p><h4><strong>RETURN EXCLUSIONS</strong></h4><p>We cannot accept final sale Items, underwear, bodysuits, wigs, swimwear, contact lenses, face masks, hosiery, jewellery, cosmetics and opened hair dye, due to Australian health & hygiene regulations. Please note we follow all ACCC requirements & refunds/exchanges will be given on all faulty items not already stated in the description. Gift cards & YouPay Orders cannot be returned and are not redeemable for cash. <br/><br/><strong>Exchanges are only available in person. </strong>You can make an exchange if your item meets the above criteria and if you are able to return the item in person to our warehouse in Virginia QLD.</p><h4><strong>FAULTY ITEMS</strong></h4><p>Please <strong>DO NOT </strong>submit it through our Returns process, but instead email us directly at: <strong>orders@beserk.com.au</strong> with a photo of the item so we can arrange a solution for you right away. This also applies to faults on FINAL SALE Items.<br/><br/><strong>Please see the full Terms And Conditions below.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qDhRN3",
+        "subheading_j87jAW",
+        "image_mbb89c",
+        "heading_e4g8iV",
+        "richtext_cBJfQ8"
+      ],
+      "name": "TITLE + INFORMATION",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "tabs_GNUpay": {
+      "type": "tabs",
+      "blocks": {
+        "tab_iaNgrp": {
+          "type": "tab",
+          "name": "Australian return",
+          "settings": {
+            "title": "Australian return",
+            "content": "<h3>AUSTRALIAN RETURN</h3><p>For returns within Australia, we suggest using our Return Label service. For a Flat Rate of $10.95 you can return anything from around Australia, fully tracked. Simply click <a href=\"https://return.auspost.com.au/BESERK\" target=\"_blank\" title=\"Returns Portal\"><strong>HERE</strong></a>, enter your order details and make a payment. This will then generate your return label that can be printed in the post office or at home.<br/><br/>Download and print our Return Form <a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/BESERK_RETURNS_FORM_2026.pdf?v=1769061212\" target=\"_blank\" title=\"Beserk Return Form 2026\"><strong>HERE</strong></a> or if you don't have a printer, please include a note with the following details:<br/><br/><strong>FULL NAME<br/>REASON FOR RETURN<br/>ORDER NUMBER</strong> [IF AVAILABLE]<br/><strong>CONTACT </strong>[PHONE NUMBER and EMAIL]<strong><br/>REFUND TYPE </strong>[STORE CREDIT or REFUND]</p><p>Please include clear instructions with your return. <strong>Any returns received without instructions will be processed as a store credit</strong>.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_pwMFKf": {
+          "type": "tab",
+          "name": "International return",
+          "settings": {
+            "title": "International return",
+            "content": "<h3>INTERNATIONAL RETURN</h3><p>Returns from outside of Australia can be made by going to your local post office and sending the product(s) back to us. Please ship it to our address and include notes about your return.</p><h4>BESERK ADDRESS</h4><p><strong>BESERK RETURNS<br/>2/58 Yarraman Place,<br/>Virginia QLD 4014 AUSTRALIA</strong></p><p>Download and print our Return Form <a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/BESERK_RETURNS_FORM_2026.pdf?v=1769061212\" target=\"_blank\" title=\"Beserk Return Form 2026\"><strong>HERE</strong></a> or if you don't have a printer, please include a note with the following details:<br/><br/><strong>FULL NAME<br/>REASON FOR RETURN<br/>ORDER NUMBER</strong> [IF AVAILABLE]<br/><strong>CONTACT </strong>[PHONE NUMBER and EMAIL]<strong><br/>REFUND TYPE </strong>[STORE CREDIT or REFUND]</p><p>Please include clear instructions with your return. <strong>Any returns received without instructions will be processed as a store credit</strong>.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_qfVUWn": {
+          "type": "tab",
+          "name": "INSTANT REFUND",
+          "settings": {
+            "title": "INSTANT REFUND",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
+            "page": "refundid-returns",
+            "open_on_mobile": false
+          }
+        },
+        "tab_xifAV7": {
+          "type": "tab",
+          "name": "WAREHOUSE RETURNS AND EXCHANGES",
+          "settings": {
+            "title": "WAREHOUSE RETURNS AND EXCHANGES",
+            "content": "<h3>WAREHOUSE RETURNS AND EXCHANGES</h3><p>If you'd like to return or exchange your item for a different size, simply drop by the Beserk Warehouse:<br/><strong><br/>2/58 Yarraman Place,<br/>Virginia QLD 4014 AUSTRALIA</strong></p><p>Please have your order number ready and let our friendly customer service team know what size you'd like to swap for! Feel free to <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\"><strong>CONTACT US</strong></a> beforehand if you'd like us to put the size aside for you so it doesn't sell out. </p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_iaNgrp",
+        "tab_pwMFKf",
+        "tab_qfVUWn",
+        "tab_xifAV7"
+      ],
+      "name": "SUBMITTING YOUR RETURNS",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "subheading": "different return and exchange methods",
+        "title": "SUBMITTING YOUR RETURN",
+        "text_alignment": "center"
+      }
+    },
+    "rich_text_pj3p8L": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WLwGLr": {
+          "type": "heading",
+          "settings": {
+            "text": "TERMS AND CONDITIONS",
+            "heading_tag": "h1"
+          }
+        },
+        "page_LBgpEN": {
+          "type": "page",
+          "settings": {
+            "page": "return-terms-and-conditions"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WLwGLr",
+        "page_LBgpEN"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_block_gwxt3i",
+    "rich_text_Ha4aDj",
+    "tabs_GNUpay",
+    "rich_text_pj3p8L"
+  ]
+}

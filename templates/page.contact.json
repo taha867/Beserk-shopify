@@ -1,0 +1,90 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_block_iYWR3B": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "subheading_y388rp": {
+          "type": "subheading",
+          "settings": {
+            "text": "CONTACT US"
+          }
+        },
+        "richtext_YPK44Q": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our friendly Customer Service Team<br/>are always happy to help! <br/>♥️<br/>We are online Monday to Friday 8.30am to 4.30pm via Email, Live Chat or Phone.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_y388rp",
+        "richtext_YPK44Q"
+      ],
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "xs",
+        "image": "shopify://shop_images/Desktop-6_f58a59fc-e24b-4030-8311-d167591b11c0.jpg",
+        "mobile_image": "shopify://shop_images/Mobile-5_d4e635af-1ec4-4010-ae13-3d0f30e08c80.jpg",
+        "content_width": "md",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "md"
+      }
+    },
+    "contact-form": {
+      "type": "contact",
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "",
+        "content": "<p><strong>EMAIL : </strong> Order / Product Enquiries :  <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a> <br/><strong>or </strong> Brand Ambassadors, Events, Press : <a href=\"mailto:team@beserk.com.au\">team@beserk.com.au</a></p><p><strong>PHONE :</strong>   (07) 3857 3408<strong><br/>MOBILE [TEXT or CALL] : </strong>   0478020710</p><p><strong>LIVE CHAT :   </strong>Click the '<a href=\"https://www.beserk.com.au/pages/contact-us#open-widget\" title=\"https://www.beserk.com.au/pages/contact-us#open-widget\">Live Chat</a>' Icon in the bottom right corner of our site to instantly chat with one of our staff. Online during Office Hours or leave a message after hours and we will get back to you ASAP.</p><p><strong>OFFICE OPENING HOURS :</strong>  Monday to Friday - 8.30am to 4.30pm AEST</p><p><strong>WAREHOUSE ADDRESS :</strong>   2/58 Yarraman Place, Virginia, Queensland 4014 AUSTRALIA <br/><em><strong>PLEASE NOTE :</strong></em><em>  We do not have a shopfront, this address is for Click & Collect orders only.</em> </p><p><strong>CLICK & COLLECT :  </strong>Select 'Click & Collect' during checkout & your order will be ready within an hour. </p><p><strong>DIRECTIONS : </strong><a href=\"https://maps.app.goo.gl/F3cQoee7YdJ8DDxT9\" target=\"_blank\" title=\"https://maps.app.goo.gl/F3cQoee7YdJ8DDxT9\">GOOGLE MAPS</a></p><h2>CONTACT US :</h2>"
+      }
+    },
+    "175826971809d36b7b": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_YT4XNP": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 2080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_YT4XNP"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "image_with_text_block_iYWR3B",
+    "main",
+    "contact-form",
+    "175826971809d36b7b"
+  ]
+}

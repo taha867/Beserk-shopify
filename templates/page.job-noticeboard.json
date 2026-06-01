@@ -1,0 +1,113 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "blocks_M6Newk": {
+      "type": "_blocks",
+      "blocks": {
+        "image_GLdTLx": {
+          "type": "image",
+          "name": "t:blocks.image.name",
+          "settings": {
+            "image": "shopify://shop_images/JOB-NOTICEBOARD-HEADER.png",
+            "mobile_image": "shopify://shop_images/JOB-NOTICEBOARD-HEADER.png",
+            "alignment": "center",
+            "width_mode": "custom",
+            "max_width": 700,
+            "mobile_max_width": 330
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_GLdTLx"
+      ],
+      "name": "Header",
+      "settings": {}
+    },
+    "rich_text_MdJiPr": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_ejN4U7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5><em>Sorry we do not currently have any positions available</em></h5>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_ejN4U7"
+      ],
+      "name": "NO JOBS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "tabs_wNKdEM": {
+      "type": "tabs",
+      "blocks": {
+        "tab_cDULJC": {
+          "type": "tab",
+          "name": "General Manager",
+          "disabled": true,
+          "settings": {
+            "title": "🖤 GENERAL MANAGER",
+            "content": "<h2>🖤 GENERAL MANAGER WANTED<br/></h2><p>Email your resume + a cover letter outlining your relevant experience to: <a href=\"mailto:jobs@beserk.com.au\"><strong>jobs@beserk.com.au</strong></a></p><p><em>(Please email only — do not call the office)</em></p><p>We are looking for an experienced <strong>General Manager</strong> to lead our team and drive operational excellence!</p><p><strong>📍 Location:</strong> Virginia, Brisbane QLD<br/><strong>📋 Type:</strong> Full-Time, Permanent</p><h3>About the Role</h3><p>The GM is responsible for driving operational excellence, efficiency and profitability across all areas of our long-standing alternative online retail business. You'll lead a passionate team and work closely with the Director to shape the future of Beserk.</p><h3>Key Responsibilities:</h3><ul><li>Develop and implement operational strategies, policies, and procedures</li><li>Oversee operations including supply chain, logistics, and quality control</li><li>Monitor KPIs to assess operational efficiency and identify improvements</li><li>Provide strong leadership — recruit, train, mentor and develop the team</li><li>Collaborate with executives on strategic planning</li><li>Manage operational budget and control expenses</li><li>Identify process improvements and implement best practices</li><li>Ensure compliance with industry regulations and standards</li><li>Drive innovation through emerging technologies (including AI)</li><li>Champion a customer-centric approach across all operations</li></ul><h3>E-Commerce Leadership:</h3><ul><li>Oversee digital marketing, SEO/SEM strategies and social media</li><li>Manage our Shopify platform and optimise the customer experience</li><li>Analyse data to drive business decisions and boost performance</li><li>Coordinate inventory management and forecasting</li><li>Lead omni-channel retailing initiatives</li></ul><h3>You Should Have:</h3><ul><li>Proven track record in operations leadership (retail/e-commerce preferred)</li><li>Technical proficiency with e-commerce platforms (Shopify experience required)</li><li>Strong analytical, problem-solving, and decision-making skills</li><li>Excellent communication and interpersonal abilities</li><li>Experience driving change and implementing process improvements</li><li>Strong background in staff performance management and HR</li><li>Data analytics skills — comfortable with KPIs and performance metrics</li><li>Strategic thinking with strong business acumen</li></ul><h3>Perks:</h3><ul><li>Lead a passionate team in a fun, inclusive environment</li><li>Staff discounts on all your fave alt brands</li><li>Be part of Australia's largest & longest running alternative retail store</li><li>Free onsite parking</li></ul><p><strong>We're an LGBTI+ safe space and equal opportunity employer.</strong> Coloured hair, tattoos and piercings? Totally welcome here. 🖤<br/><br/></p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_YLfbzk": {
+          "type": "tab",
+          "name": "Social Media /Graphic Design Assistant",
+          "disabled": true,
+          "settings": {
+            "title": "🖤 SOCIAL MEDIA / GRAPHIC DESIGN ASSISTANT",
+            "content": "<h2><strong>🖤 SOCIAL MEDIA / GRAPHIC DESIGN ASSISTANT WANTED </strong></h2><p>Email your design portfolio, resume + a cover letter outlining your relevant experience to: <a href=\"mailto:jobs@beserk.com.au\"><strong>jobs@beserk.com.au</strong></a></p><p><em>(Please email only — do not call the office)</em></p><p>We are looking for a Social Media / Design Assistant to join our team!</p><p>📍 Location: Virginia, Brisbane QLD<br/>🕐 Hours: 8:30am – 4:30pm, 3 days a week (to start)<br/>📋 Type: Permanent, Part-Time (Opportunity to grow into Full-Time for the right candidate)</p><h3><strong><br/>About the Role</strong></h3><p>This is a hybrid position split between social media and graphic design duties within our Marketing Team. You'll help our senior graphic design & social media team create marketing assets, photo & video content - while also assisting with social media copywriting and scheduling.</p><p><br/></p><h3><strong>You'll be:</strong></h3><ul><li>Assisting with copy-writing and scheduling for social media (across various channels)</li><li>Helping to manage our amazing Beserk community via Facebook group & social media pages</li><li>Assisting in creating graphics for social media, email & digital marketing assets</li><li>Photographing & editing product images</li><li>Filming & editing videos</li><li>Support senior designers with project execution and revisions</li><li>Organizing and managing design assets and files<br/><br/></li></ul><h3><strong>We're looking for someone who:</strong></h3><ul><li>Is comfortable using Instagram, TikTok & Facebook (Meta Business Suite preferred)</li><li>Has experience in a previous graphic design, marketing or social media role (preferred</li><li>Has experience with the Adobe Suite (particularly Photoshop) and video editing tools</li><li>Has a Graphic Design qualification (required)</li><li>Stays up to date with the latest social media & design trends and tools</li><li>Has exceptional written communication and team-work skills</li><li>Can efficiently manage time and prioritise tasks in a fast-paced environment </li><li>Is positive, reliable and motivated</li><li>A passion for alternative fashion, pop culture and all things Beserk is highly regarded</li></ul><p><br/></p><h3><strong>Perks:</strong></h3><ul><li>Fun, inclusive team</li><li>Staff discounts on all your fave alt brands</li><li>No working weekends!</li><li>Free on street parking<br/><br/></li></ul><p>We're an LGBTI+ safe space and equal opportunity employer. Coloured hair, tattoos and piercings? Totally welcome here. 🖤</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_cDULJC",
+        "tab_YLfbzk"
+      ],
+      "disabled": true,
+      "name": "JOBS",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "JOBS AVAILABLE",
+        "text_alignment": "start"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blocks_M6Newk",
+    "rich_text_MdJiPr",
+    "tabs_wNKdEM"
+  ]
+}

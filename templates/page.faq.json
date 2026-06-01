@@ -1,0 +1,691 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "faq_hiUJYL": {
+      "type": "faq",
+      "blocks": {
+        "category_jKnnQV": {
+          "type": "category",
+          "name": "Orders",
+          "settings": {
+            "title": "Category",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_89TydH": {
+          "type": "question",
+          "name": "Do you ship overseas?",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "question_BMKtXA": {
+          "type": "question",
+          "name": "How long will it take to get my orders?",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "question_jEjVXC": {
+          "type": "question",
+          "name": "Have a different question?",
+          "settings": {
+            "question": "Have a different question?",
+            "answer": "<p>You can contact us through our <a href=\"/pages/contact-us\" title=\"Contact Us\">contact page</a> or via the following:</p><p><strong>EMAIL:</strong> <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a>  </p><p><strong>TELEPHONE:</strong> 0738573408</p><p><strong>MOBILE [TEXT or CALL]: </strong>0478020710</p><p><strong>LIVE CHAT: </strong>Click the 'Live Chat' Icon in the bottom right corner of our site to instantly chat with someone from our amazing Customer Service Team! We're online during business hours or leave a message after hours and we will get back to you ASAP!</p><p>We will be happy to assist you!</p><p><br/></p>"
+          }
+        },
+        "question_Jh9cFg": {
+          "type": "question",
+          "name": "Where is Beserk located?",
+          "settings": {
+            "question": "Where is Beserk located?",
+            "answer": "<p>The Beserk HQ & Warehouse is at:</p><p>10 Lyons Terrace<br/>Windsor QLD 4030 Australia</p><p><strong>Please note: </strong>We don't have a store, our Warehouse location is available for Pick Up orders only - we don't have any change room facilities!</p>"
+          }
+        },
+        "question_HJndk8": {
+          "type": "question",
+          "name": "What are your business hours?",
+          "settings": {
+            "question": "What are your business hours?",
+            "answer": "<p>We are open 8:30am to 4:30pm Monday to Friday! We will return all phone calls, live chats & emails during these times.</p><p><strong>Please note:</strong> This excludes any Public Holidays here in Brisbane, Australia.</p>"
+          }
+        },
+        "question_LkNpAG": {
+          "type": "question",
+          "name": "Do you have a store I can visit?",
+          "settings": {
+            "question": "Do you have a store I can visit?",
+            "answer": "<p>We don't have a store, Beserk is an online shop only! But if you live local, you can always place an order for Click & Collect and it will usually be ready within 1 hour!</p><p>Need an item sooner? Let us know and we'll do our best to get it ready for you ASAP!</p><p>The Beserk HQ & Warehouse for Pick Ups is located at:</p><p>10 Lyons Terrace<br/>Windsor QLD 4030 Australia</p><p><strong>Please note:</strong> We don't have any change room facilities - sorry!</p>"
+          }
+        },
+        "question_RDGxjG": {
+          "type": "question",
+          "name": "Which payment methods can I use?",
+          "settings": {
+            "question": "Which payment methods can I use?",
+            "answer": "<p><strong>We accept the following payment methods:</strong></p><ul><li>PAYPAL</li><li>SHOPPAY</li><li>CREDIT CARD (Visa, Mastercard & AMEX)</li><li>AFTERPAY</li><li>PAYMENT ON PICKUP - Cash or Card.</li><li>YOUPAY</li><li>APPLE PAY</li><li>GOOGLE PAY</li><li>ZIP</li><li>KLARNA</li><li>SEZZLE* USA & Canada Only</li></ul><p></p><p></p>"
+          }
+        },
+        "question_PYhcUQ": {
+          "type": "question",
+          "name": "How do I use a Gift Voucher?",
+          "settings": {
+            "question": "How do I use a Gift Voucher?",
+            "answer": "<p>During checkout there is a field called 'Gift Card or Discount Code'. Simply copy your code into this field and click APPLY & the voucher amount will be deducted from the total.<br/><br/></p>"
+          }
+        },
+        "question_LUG36w": {
+          "type": "question",
+          "name": "Is your website secure?",
+          "settings": {
+            "question": "Is your website secure?",
+            "answer": "<p>Beserk is a trusted and much loved webstore with 24 years of experience in the online and alternative communities. We take our customers privacy & security very seriously!</p><p>Our customer service team knows that often for a first time buyer, it can be difficult to know who you can trust with your details so you can rest assured that the Beserk webstore is 100% safe & secure.</p><p>You can read our full <a href=\"https://www.beserk.com.au/pages/privacy-policy\" target=\"_blank\">Privacy & Security Policy HERE</a>!</p>"
+          }
+        },
+        "question_wbeUEy": {
+          "type": "question",
+          "name": "Can I use multiple discount codes?",
+          "settings": {
+            "question": "Can I use multiple discount codes?",
+            "answer": "<p>Unfortunately only one discount code can be applied to a checkout at any one time.  During sale events sadly this means rewards points redeemed for discount codes are unable to be used sorry! </p>"
+          }
+        },
+        "question_DbXz9G": {
+          "type": "question",
+          "name": "How do pre-orders work?",
+          "settings": {
+            "question": "How do pre-orders work?",
+            "answer": "<p>If an item has Preorder in the title - then we don't have currently at our Beserk Warehouse, and are either waiting for it to arrive or will special order it in for you! All the information about the estimated shipping date will be listed on the product page in the description.</p><p>Any other items purchased in the same order as a preorder item will be kept aside - and then everything will be sent together once the preorder item has arrived.<br/><br/><strong>For any Demonia or Pleaser preorders:</strong><br/>Once your order is placed we will special order these for you direct from the brand in the USA. These orders take around 12 days to arrive at the Beserk Warehouse, and will then be shipped out to you via your chosen payment method.</p><p>So please allow two weeks for your order to ship (once placed), and you'll receive a shipping confirmation email with all your tracking information as soon as it has. The shipping time will then depend on the shipping option you chose at checkout.</p><p>On the rare occasion Pleaser or Demonia do not have the shoe in stock, we will contact you ASAP!<br/><br/><strong>For all other preorders:<br/></strong>These will usually have an estimated shipping date listed in the product description to let you know when to keep an eye out for your shipping confirmation email!</p>"
+          }
+        },
+        "question_gW86jy": {
+          "type": "question",
+          "name": "Do you sell gift cards?",
+          "settings": {
+            "question": "Do you sell gift cards?",
+            "answer": "<p><strong>Yes we do! </strong>You can find our gift cards <a href=\"/products/beserk-gift-voucher\" title=\"Beserk | Gift Voucher\">HERE</a></p><p>Alternatively, use the Search Bar to search 'Gift Voucher'</p>"
+          }
+        },
+        "question_pACipB": {
+          "type": "question",
+          "name": "How do I know when an item will restock?",
+          "settings": {
+            "question": "How do I know when an item will restock?",
+            "answer": "<p>We can't always give a heads up about when products will be restocking as it's always subject to change. We do try to restock products ASAP once they sell out though! This is subject to availability with our suppliers.</p><p><strong>Want to be contacted when a product restocks? </strong>Make sure you sign up for the restock notifiction! You can sign up with your email or phone number to be notified as soon as something is available again. This also helps our team know what to restock soonest</p><p><strong>Have a specific product in mind? </strong>Send a live chat through to our helpful team!</p>"
+          }
+        },
+        "question_fbfbUt": {
+          "type": "question",
+          "name": "I need help with sizing",
+          "settings": {
+            "question": "I need help with sizing!",
+            "answer": "<p>We include size charts - and sizing advice when available - on each product to help you find your perfect size! </p><h4><strong>Top 5 Tips for Finding Your Size!:</strong></h4><ol><li><strong>Use a tape measure to measure your bust/waist/hips </strong>- Comparing your measurements to the size chart will help to give you the best idea of what size will fit! <br/><br/><strong>Aren't able to measure yourself?</strong> Lay a similar item of clothing that fits you well and measure that flat across, making sure to double it!<br/><br/></li><li><strong>Check the materials - </strong>Fabris like jersey, elastane and spandex will have some stretch to them, higher percentages will mean more stretch!</li><li><strong>Look for the fit style </strong>- Check to see if something is fitted, standard or oversized to help decide whether to size up, down or stick to your usual size! </li><li><strong>Check the brand</strong> - Brands like Punk Rave, Devil Fashion and Dark in Love tend to run small whereas brands like Hell Bunny, Foxblood and Forest Ink usually run true or large!</li><li><strong>Look at reviews</strong> - See what our wonderful customers are saying about the size and fit!</li></ol><p><strong>Still not sure?</strong> Send a live chat through to our helpful team!</p>"
+          }
+        },
+        "question_WAwGqM": {
+          "type": "question",
+          "name": "Do you restock sold-out items?",
+          "settings": {
+            "question": "Do you restock sold-out items?",
+            "answer": "<p>f you're worried about something selling out, we recommend ordering ASAP! Sadly we can't guarantee that we'll be able to restock every product that sells out but we do try our best! </p><p><strong>Products we won't restock:</strong></p><ul><li><strong>Discontinued:</strong> If a product title ends in an asterisk (*), it has been discontinued and isn't able to be restocked.</li><li><strong>Final Sale: </strong>Final Sale items are just that - Final Sale. So like discontinued products once they're gone, they're unlikely to be restocked.<br/><br/></li><li><strong>Limited Edition: </strong>We try our best to stock up on Limited Edition products and can sometimes restock, but not always.</li></ul><p><strong>Want to be first to know about a restock?</strong> Make sure you sign up for the restock notification on the product page!</p>"
+          }
+        },
+        "question_bAKnzn": {
+          "type": "question",
+          "name": "Do you offer same day dispatch?",
+          "settings": {
+            "question": "Do you offer same day dispatch?",
+            "answer": "<p>Yes! Place (and pay for) an order before 2pm AEST and it will be sent out same day 😊</p><p><strong>Please note: </strong>In busy periods such as sales, we may not be able to offer our usual same day shipping.</p>"
+          }
+        },
+        "question_Tnzz8j": {
+          "type": "question",
+          "name": "Can I change or cancel my order?",
+          "settings": {
+            "question": "Can I change or cancel my order?",
+            "answer": "<p>Please contact our team ASAP if you need to make any changes to your order! Either via live chat, phone or email at orders@beserk.com.au ❤</p><p>We aim to pack & dispatch all orders as soon as possible - so whilst we will do our best to change your order, unfortunately if you don't contact us quickly it may be too late. Please reach out to us and we will see what we can do!</p>"
+          }
+        },
+        "question_L4LNPc": {
+          "type": "question",
+          "name": "Will my order be packaged securely?",
+          "settings": {
+            "question": "Will my order be packaged securely?",
+            "answer": "<p>Yes! We take extra time and care to make sure all parcels are sent with appropriate packaging to keep them safe.</p><p>Although we take extra care to avoid damage, sometimes the Australia Post delivery drivers do not know their own strength. If you do receive your order and it has been broken during transit please contact us at <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a> with a photo of the item so we can assist you ASAP!</p>"
+          }
+        },
+        "question_BFqGYU": {
+          "type": "question",
+          "name": "How much is postage?",
+          "settings": {
+            "question": "How much is postage?",
+            "answer": "<p><strong>If you're in Australia<br/></strong>We offer FREE shipping for all orders over $99AUD or flat rate shipping of $9.95AUD for orders under $99AUD.</p><p>Express shipping starts at $11.95 and goes up depending on the size of the parcel!</p><p><strong>If you're in New Zealand</strong><br/>We offer FREE shipping for all orders over $199AUD or flat rate shipping of $19.95AUD for orders under $199AUD.</p><p>Express Shipping starts at $29.95AUD.</p><p><strong>Rest of the World</strong><br/>Regular shipping starts at $16.95AUD and express shipping starts at $26.95AU.</p><p><strong>To see more information head to our </strong><a href=\"https://www.beserk.com.au/pages/postage/\" target=\"_blank\"><strong>Postage + Delivery page here</strong></a><strong>!</strong></p>"
+          }
+        },
+        "question_Fxr8Qm": {
+          "type": "question",
+          "name": "How do I return make a return?",
+          "settings": {
+            "question": "How do I return make a return?",
+            "answer": "<p><strong>Within Australia?<br/></strong>We offer a flat rate return postage of $10.95. Simply <a href=\"https://return.auspost.com.au/BESERK\" target=\"_blank\">click here</a>, complete the form and make payment for your postage to generate a return label.<br/><br/>We also offer returns via Refundid for an instant refund! Get your Refundid return started and read <a href=\"https://www.beserk.com.au/pages/product-returns\">more information HERE</a>!</p><p><strong>Local to our Windsor Warehouse?<br/></strong>Drop by the Beserk Warehouse (Monday to Friday - 8.30am to 4.30pm) to process your return with our customer service team at:<br/><br/>10 Lyons Terrace<br/>Windsor 4030 QLD<br/><strong><br/></strong></p><p><strong>International?<br/></strong>Simply send it back to 10 Lyons Terrace, Windsor QLD 4030. Please remember to pop a note in with your return letting us know your order number so we can process it right away.<strong><br/><br/></strong></p><p><strong>Need more information? </strong>Head to our <a href=\"https://www.beserk.com.au/pages/product-returns\" target=\"_blank\">Returns Page here!</a></p>"
+          }
+        },
+        "question_teENhR": {
+          "type": "question",
+          "name": "Do you offer exchanges?",
+          "settings": {
+            "question": "Do you offer exchanges?",
+            "answer": "<p>We don't offer exchanges via post, sorry! But you can return any eligible items back to us for a full refund or store credit 🖤</p><p><br/><strong>Local to our Beserk Warehouse in WIndsor?<br/></strong>You can drop off any eligible items for an exchange or return. Start a live chat or email our team at orders@beserk.com.au with your exchange request so they can help!<strong><br/><br/></strong></p><p><strong>Need more information?</strong><br/>Head to our <a href=\"https://www.beserk.com.au/pages/product-returns\" target=\"_blank\">Returns Page here!</a></p>"
+          }
+        },
+        "question_YgWhnW": {
+          "type": "question",
+          "name": "How long do I have to return my order?",
+          "settings": {
+            "question": "How long do I have to return my order?",
+            "answer": "<p>You have 30 days (from the date of delivery) to return any eligible items back to us!</p><p><strong>Want to get your return started?</strong> <a href=\"https://www.beserk.com.au/pages/product-returns\" target=\"_blank\">Head to our Returns Page Here!</a></p>"
+          }
+        },
+        "question_yQqTaw": {
+          "type": "question",
+          "name": "Can I drop off a return at the Warehouse?",
+          "settings": {
+            "question": "Can I drop off a return at the Warehouse?",
+            "answer": "<p>Yes of course! You can visit our Warehouse to return or exchange any eligible items. We're open 8:30am-4:30pm Monday to Friday and our address is:</p><p>10 Lyons Terrace <br/>Windsor QLD 4030</p>"
+          }
+        },
+        "question_PmixNn": {
+          "type": "question",
+          "name": "How long until my return is processed?",
+          "settings": {
+            "question": "How long until my return is processed?",
+            "answer": "<p>We are just a small team but we endeavour to get returns processed ASAP - usually within 5 business days of them arriving at our warehouse. You'll receive an email as soon as we do!</p><p><strong>Been more than 5 business days?<br/></strong>Send us a chat or an email to orders@beserk.com.au so we can help!</p>"
+          }
+        },
+        "question_TiH4zT": {
+          "type": "question",
+          "name": "How can I work at Beserk?",
+          "settings": {
+            "question": "How can I work at Beserk?",
+            "answer": "<p>We currently do not have any job vacancies at the moment, sorry! But keep an eye out on our <a href=\"/pages/new-website-job-noticeboard\" target=\"_blank\" title=\"NEW WEBSITE: Job Noticeboard\">Job Noticeboard</a> as well as on Seek and <a href=\"https://www.linkedin.com/company/beserk/\" target=\"_blank\">LinkedIn </a>for the next oppourtunity to join our team!<br/><br/></p>"
+          }
+        },
+        "question_LjzxGh": {
+          "type": "question",
+          "name": "Events Calendar",
+          "settings": {
+            "question": "Events Calendar",
+            "answer": "<p>We are super active in our community - particularly in the alternative, metal music and pop culture scene! </p><p>Have a look at <a href=\"https://www.beserk.com.au/pages/calendar\" target=\"_blank\">Our Calendar HERE</a> to see what we have coming up soon!</p>"
+          }
+        },
+        "question_WUcQPr": {
+          "type": "question",
+          "name": "Environment & Social Responsibility",
+          "settings": {
+            "question": "Environment & Social Responsibility",
+            "answer": "<p><strong>Carbon Neutral<br/></strong>Beserk has proudly been a Carbon Neural Partner since 2017 to help reduce our impact on the planet. To offset our carbon emissions, we purchase tree credits that are then used to plant trees around Australia & restore the natural landscape creating a positive impact on climate change.</p><p><strong>Postage Bags<br/></strong>The Beserk Postage bags are made from 80% Recycled plastic, and the printing company are part of the 'Redcycle' network, actively working to create a recycling system in shopping centres across Australia.</p><p><strong>Recycle & Reuse<br/></strong>Beserk will always reuse & recycle all clean packing materials from incoming supplier orders, including boxes, bubble wrap, foam & paper infills. We use these in our outgoing orders, so if you receive a box that has already been used, please understand that we are trying to reuse & recycle as much as we can!</p><p><strong>Bubble Wrap<br/></strong>We use a 100% biodegradable bubble wrap.</p><p><strong>Shredding<br/></strong>We include shredding paper in all our orders to protect breakable items using recycled paper from old promotional material & magazines</p><p><strong>Invoices<br/></strong>We do not send an invoice with our outgoing orders to save paper, and when paper is used in the office we only use recycled paper.</p><p><strong>Plastic Bags<br/></strong>We receive clothing and stock in plastic bags, but we do not use any plastic bags in the office that are not recycled.</p><p><strong>Charities<br/></strong>We love animals and want to help preserve all the beautiful animals on our planet & we regularly done to different charities around the world . You can find some of our favourite animal charities <a href=\"https://www.beserk.com.au/pages/animal-charities-carbon-footprint\" target=\"_blank\" title=\"https://www.beserk.com.au/pages/animal-charities-carbon-footprint\">HERE</a></p><p><strong>Electricity<br/></strong>We have chosen to go Carbon Neutral with our AGL Electricity account. This helps to fund carbon offset projects in Australia and around the world. Projects such as forestation, revegetation and other initiatives, that will make a real difference on our journey towards a sustainable tomorrow.</p><p><strong>Acknowledgement of Country<br/></strong>We acknowledge and respect the Turrbal people as the traditional owners and custodians of the land where the Beserk HQ is located. We honour their elders past, present and emerging and extend our respect to all Aboriginal and Torres Strait Islander Peoples.</p><p><strong>Welcome Here<br/></strong>Beserk is a proud member of the <a href=\"https://www.welcomehere.org.au/\" target=\"_blank\" title=\"Welcome Here Program\">Welcome Here</a> Project, where LGBTIQ diversity is welcomed and celebrated and to make all people feel safe at Beserk. </p><p><strong>We are an equal opportunity employer<br/></strong>We will keep working towards improving our systems to become as environmentally friendly and good to the planet as we can be, and we will always strive to be better. Got any recommendations? Send us a live chat to let us know!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_jKnnQV",
+        "question_89TydH",
+        "question_BMKtXA",
+        "question_jEjVXC",
+        "question_Jh9cFg",
+        "question_HJndk8",
+        "question_LkNpAG",
+        "question_RDGxjG",
+        "question_PYhcUQ",
+        "question_LUG36w",
+        "question_wbeUEy",
+        "question_DbXz9G",
+        "question_gW86jy",
+        "question_pACipB",
+        "question_fbfbUt",
+        "question_WAwGqM",
+        "question_bAKnzn",
+        "question_Tnzz8j",
+        "question_L4LNPc",
+        "question_BFqGYU",
+        "question_Fxr8Qm",
+        "question_teENhR",
+        "question_YgWhnW",
+        "question_yQqTaw",
+        "question_PmixNn",
+        "question_TiH4zT",
+        "question_LjzxGh",
+        "question_WUcQPr"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": "<p><em>Please see our FAQ's below, but if you have any other questions don't hesitate to contact us! Our helpful team are always happy to help xx<br/><br/></em><a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\"><em><strong>Contact Us Here</strong></em></a></p>"
+      }
+    },
+    "faq_NhEdDh": {
+      "type": "faq",
+      "blocks": {
+        "category_ajc4Nz": {
+          "type": "category",
+          "name": "ORDERS",
+          "settings": {
+            "title": "ORDERS",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/Website_Icons_Cart_01.png",
+            "icon_width": 28
+          }
+        },
+        "question_AYijQm": {
+          "type": "question",
+          "name": "Can I change or cancel my order?",
+          "settings": {
+            "question": "Can I change or cancel my order?",
+            "answer": "<p>Please contact our team ASAP if you need to make any changes to your order! Either via live chat, phone or email at <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a>. ❤</p><p>We aim to pack & dispatch all orders as soon as possible - so whilst we will do our best to change your order, unfortunately if you don't contact us quickly it may be too late. Please reach out to us and we will see what we can do!</p>"
+          }
+        },
+        "question_yeATM3": {
+          "type": "question",
+          "name": "Will my order be packaged securely?",
+          "settings": {
+            "question": "Will my order be packaged securely?",
+            "answer": "<p>Yes! We take extra time and care to make sure all parcels are sent with appropriate packaging to keep them safe.</p><p>Although we take extra care to avoid damage, sometimes the Australia Post delivery drivers do not know their own strength. If you do receive your order and it has been broken during transit please contact us at <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a> with a photo of the item so we can assist you ASAP!</p>"
+          }
+        },
+        "category_hKJ3wi": {
+          "type": "category",
+          "name": "SHIPPING & DELIVERY",
+          "settings": {
+            "title": "SHIPPING & DELIVERY",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/Website_Icons_Delivery_08_281523e5-21b1-4f98-ac3f-43a09443f8ec.png",
+            "icon_width": 28
+          }
+        },
+        "question_7qpfya": {
+          "type": "question",
+          "name": "Christmas Delivery Cut Offs?",
+          "disabled": true,
+          "settings": {
+            "question": "Christmas Delivery Cut Offs?",
+            "answer": "<p>Our 2025 Christmas Cut Offs are:<br/><strong><br/>AUSTRALIA<br/></strong><em><strong>Standard Post:</strong></em><em><br/></em><strong>NT: </strong>12 December<br/><strong>WA:</strong> 17 December<br/><strong>TAS: </strong>18 December<strong><br/>NSW, ACT, VIC, SA:</strong> 19 December<br/><strong>QLD: </strong>22 December</p><p><em><strong>Express Post:</strong></em><strong><br/>NT, WA, TAS:</strong> 22 December<strong><br/>QLD, NSW, ACT, VIC, SA:</strong> 23 December<br/><br/><strong>NEW ZEALAND<br/></strong><em><strong>Standard Post: </strong></em>11 December<br/><em><strong>Express Post: </strong></em>15 December<br/><br/>For other countries please refer to our <a href=\"/pages/beserk-postage-delivery\" target=\"_blank\" title=\"Postage & Delivery\">Postage & Delivery Page. </a></p><p>For further inquiries please visit the Australia Post website or <a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\">contact us!</a><br/><strong><br/></strong></p>"
+          }
+        },
+        "question_YLYgA7": {
+          "type": "question",
+          "name": "Do you ship overseas?",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout.</p><p><strong>To see more information head to our Postage + Delivery page </strong><a href=\"/pages/beserk-postage-delivery\" title=\"Postage & Delivery\"><strong>HERE</strong></a><strong>!</strong></p>"
+          }
+        },
+        "question_HNHdbx": {
+          "type": "question",
+          "name": "How much is postage?",
+          "settings": {
+            "question": "How much is postage?",
+            "answer": "<p><strong>If you're in Australia</strong><br/><br/>We offer FREE shipping for all orders over $129AUD or flat rate shipping of $11.95 AUD for orders under $129AUD.</p><p>Express shipping starts at $12.95AUD and goes up depending on the size of the parcel!</p><p><strong>If you're in New Zealand</strong><br/><br/>We offer FREE shipping for all orders over $229AUD or flat rate shipping of $19.95AUD for orders under $229AUD.</p><p>Express Shipping starts at $29.95AUD.</p><p><strong>Rest of the World</strong><br/><br/>Regular shipping starts at $16.95AUD and express shipping starts at $26.95AUD.<br/><br/><strong>PLEASE NOTE:</strong> Costs will vary depending the weight of the parcel.</p><p><strong>To see more information head to our Postage + Delivery page </strong><a href=\"/pages/beserk-postage-delivery\" title=\"Postage & Delivery\"><strong>HERE</strong></a><strong>!</strong></p>"
+          }
+        },
+        "question_QENgDx": {
+          "type": "question",
+          "name": "How long will it take to get my orders?",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5 - 7 business days to arrive. Overseas deliveries can take anywhere from 7 - 16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "question_GNHCFb": {
+          "type": "question",
+          "name": "Do you offer same-day or express delivery?",
+          "settings": {
+            "question": "Do you offer same-day or express delivery?",
+            "answer": "<p>We aren't able to offer same day delivery however we do offer Express through Australia Post! All orders placed before 2pm are sent out the same day.</p><p><strong>Alternatively, we offer Click & Collect</strong> from our warehouse in Virginia during our opening hours - 8:30am to 4:30pm Monday to Friday</p><p>If you have a deadline, we always recommend selecting Express Post or Click & Collect to give your order the best chance of reaching you on time!  </p><p><strong>Still have questions?</strong> Send a live chat to our team, we're always happy to help!</p>"
+          }
+        },
+        "question_fVJGVN": {
+          "type": "question",
+          "name": "Do you offer same day dispatch?",
+          "settings": {
+            "question": "Do you offer same day dispatch?",
+            "answer": "<p>Yes! Place (and pay for) an order before 2pm AEST and it will be sent out same day 😊</p><p><strong>Please note: </strong>In busy periods such as sales, we may not be able to offer our usual same day shipping.</p>"
+          }
+        },
+        "question_dGYFDy": {
+          "type": "question",
+          "name": "Can I pick up my order?",
+          "settings": {
+            "question": "Can I pick up my order?",
+            "answer": "<p><strong>Yes! </strong>We offer Click & Collect from our warehouse in Virginia. </p><p>Simply select 'Pick up' at checkout and the team will aim to have your order ready within an hour! </p><p>You're welcome to collect your order anytime during our opening hours - 8:30am to 4:30pm Monday to Friday :)<br/><br/><strong>Have more questions? </strong>Send a live chat to our helpful team!</p>"
+          }
+        },
+        "category_BAg9CX": {
+          "type": "category",
+          "name": "RETURNS",
+          "settings": {
+            "title": "RETURNS",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/Website_Icons_Package_01.png",
+            "icon_width": 28
+          }
+        },
+        "question_9q4YB7": {
+          "type": "question",
+          "settings": {
+            "question": "Do you accept Returns?",
+            "answer": "<p>Yes we do! Shop with confidence as we have a <strong>BESERK 30 DAY RETURN GUARANTEE </strong>❤️</p><ul><li>You can return your order within 30 DAYS for a<strong> REFUND, STORE CREDIT</strong> or <strong>EXCHANGE</strong>*<br/>*Sale items can be exchanged for STORE CREDIT Only.</li><li>ALL items can be returned EXCEPT Final Sale products & those under Australian Health & Hygiene regulations [underwear, bodysuits, wigs, swimwear, contact lenses, face masks, hosiery, earrings, cosmetics, hair dye]</li><li>Gift Cards, Throne & YouPay Orders cannot be returned.  </li></ul><p></p><p><strong>To see more information head to our Returns page </strong><a href=\"/pages/beserk-returns\" title=\"Returns\"><strong>HERE</strong></a><strong>!</strong></p>"
+          }
+        },
+        "question_QFQwx6": {
+          "type": "question",
+          "name": "How do I return make a return?",
+          "settings": {
+            "question": "How do I return make a return?",
+            "answer": "<p><strong>Within Australia?<br/></strong>We offer a flat rate return postage of $11.95. Simply <a href=\"https://return.auspost.com.au/BESERK\" target=\"_blank\">click here</a>, complete the form and make payment for your postage to generate a return label.<br/><br/>We also offer returns via Refundid for an instant refund! Get your Refundid return started and read <a href=\"/pages/beserk-returns\" title=\"Returns\">more information HERE</a>!</p><p><strong>Local to our Virginia Warehouse?<br/></strong>Drop by the Beserk Warehouse (Monday to Friday - 8.30am to 4.30pm) to process your return with our customer service team at:</p><p><br/>2/58 Yarraman Place,<br/>Virginia, QLD, 4014<strong><br/></strong></p><p><strong>International?<br/></strong>Simply send it back to:<br/><strong>BESERK RETURNS<br/>2/58 Yarraman Place,<br/>Virginia QLD 4014 AUSTRALIA</strong></p><p>Please remember to pop a note in with your return letting us know your order number so we can process it right away.<strong><br/></strong></p><p><strong>To see more information head to our Returns page </strong><a href=\"/pages/beserk-returns\" title=\"Returns\"><strong>HERE</strong></a><strong>!</strong></p>"
+          }
+        },
+        "question_yjkVd9": {
+          "type": "question",
+          "name": "Do you offer exchanges?",
+          "settings": {
+            "question": "Do you offer exchanges?",
+            "answer": "<p>We don't offer exchanges via post, sorry! But you can return any eligible items back to us for a full refund or store credit 🖤</p><p><br/><strong>Local to our Beserk Warehouse in Virginia?<br/></strong>You can drop off any eligible items for an exchange or return. Start a live chat or email our team at orders@beserk.com.au with your exchange request so they can help!<strong><br/><br/></strong></p><p><strong>To see more information head to our Returns page </strong><a href=\"/pages/beserk-returns\" title=\"Returns\"><strong>HERE</strong></a><strong>!</strong></p>"
+          }
+        },
+        "question_nb9i8c": {
+          "type": "question",
+          "settings": {
+            "question": "I have received a Faulty item?",
+            "answer": "<p>If you are have received a faulty item, we are very sorry! </p><p>Please contact us at <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a> with more information on the fault so we can work out a solution for you.</p>"
+          }
+        },
+        "question_Epx7iE": {
+          "type": "question",
+          "name": "How long do I have to return my order?",
+          "settings": {
+            "question": "How long do I have to return my order?",
+            "answer": "<p>You have 30 days (from the date of delivery) to return any eligible items back to us!</p><p><strong>Want to get your return started?</strong> <a href=\"/pages/beserk-returns\" target=\"_blank\" title=\"Returns\"><strong>Head to our Returns Page HERE!</strong></a></p>"
+          }
+        },
+        "question_ihHcae": {
+          "type": "question",
+          "name": "Can I drop off a return at the Warehouse?",
+          "settings": {
+            "question": "Can I drop off a return at the Warehouse?",
+            "answer": "<p>Yes of course! You can visit our Warehouse to return or exchange any eligible items. We're open 8:30am to 4:30pm Monday to Friday and our address is:<br/><strong><br/>2/58 Yarraman Place,<br/>Virginia QLD 4014 AUSTRALIA</strong></p>"
+          }
+        },
+        "question_cwJUAT": {
+          "type": "question",
+          "name": "How long until my return is processed?",
+          "settings": {
+            "question": "How long until my return is processed?",
+            "answer": "<p>We are just a small team but we endeavour to get returns processed ASAP - usually within 5 business days of them arriving at our warehouse. You'll receive an email as soon as we do!</p><p><strong>Been more than 5 business days?<br/></strong>Send us a chat or an email to <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a> so we can help!</p>"
+          }
+        },
+        "question_MPcV9y": {
+          "type": "question",
+          "name": "Are any products not eligible for return?",
+          "settings": {
+            "question": "Are any products not eligible for return?",
+            "answer": "<p>Due to Australian Health and Hygiene Regulations, we're unable to accept returns on the following product types:</p><ul><li><strong>Cosmetics </strong>- makeup, skincare, nail polish, perfumes, bath bombs, hair dye, wigs, fangs, contact lenses<br/><br/></li><li><strong>Hosiery </strong>- stockings/tights, socks<br/><br/></li><li><strong>Clothing </strong>- swimwear, bodysuits, underwear<br/><br/></li><li><strong>Jewellery </strong>- earrings, body jewellery<br/><br/></li><li><strong>Final Sale products</strong></li></ul><p>Please ensure products are returned in the same condition they were received in including all tags and packaging where possible. </p><p><strong>Have further questions? </strong>Send a live chat to the team, we're always happy to help!</p>"
+          }
+        },
+        "category_QwtHrV": {
+          "type": "category",
+          "name": "ABOUT BESERK",
+          "settings": {
+            "title": "ABOUT BESERK",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/Website_Icons_Heart.png",
+            "icon_width": 24
+          }
+        },
+        "question_Uw4rKE": {
+          "type": "question",
+          "name": "What are your business hours?",
+          "settings": {
+            "question": "What are your business hours?",
+            "answer": "<p>We are open 8:30am to 4:30pm AEST Monday to Friday! </p><p>We will return all phone calls, live chats & emails during these times.</p><p><strong>Please note:</strong> This excludes any Public Holidays here in Brisbane, Australia.</p>"
+          }
+        },
+        "question_t8QWkU": {
+          "type": "question",
+          "name": "Where is Beserk located?",
+          "settings": {
+            "question": "Where is Beserk located?",
+            "answer": "<p>The Beserk HQ & Warehouse is at:<br/><strong><br/>2/58 Yarraman Place,<br/>Virginia QLD 4014 AUSTRALIA</strong></p><p><strong>Please note: </strong>We don't have a store, our Warehouse location is available for Click & Collect orders only.</p>"
+          }
+        },
+        "question_YigYj9": {
+          "type": "question",
+          "name": "How can I work at Beserk?",
+          "settings": {
+            "question": "How can I work at Beserk?",
+            "answer": "<p>Please keep an eye on our <a href=\"/pages/jobs\" target=\"_blank\" title=\"Job Noticeboard\">Job Noticeboard</a> as well as on Seek and <a href=\"https://www.linkedin.com/company/beserk/\" target=\"_blank\">LinkedIn</a> for the next opportunity to join our team!<br/><br/></p>"
+          }
+        },
+        "question_D3rGmN": {
+          "type": "question",
+          "name": "Events Calendar",
+          "settings": {
+            "question": "Events Calendar",
+            "answer": "<p>We are super active in our community - particularly in the alternative, metal music and pop culture scene! </p><p>Have a look at o<a href=\"/pages/beserk-calendar\" target=\"_blank\" title=\"Beserk Calendar\">ur Calendar HERE</a> to see what we have coming up soon!</p>"
+          }
+        },
+        "question_zV9T9C": {
+          "type": "question",
+          "name": "Environment & Social Responsibility",
+          "settings": {
+            "question": "Environment & Social Responsibility",
+            "answer": "<p><strong>Carbon Neutral<br/></strong>Beserk has proudly been a Carbon Neural Partner since 2017 to help reduce our impact on the planet. To offset our carbon emissions, we purchase tree credits that are then used to plant trees around Australia & restore the natural landscape creating a positive impact on climate change.</p><p><strong>Postage Bags<br/></strong>The Beserk Postage bags are made from 80% Recycled plastic, and the printing company are part of the 'Redcycle' network, actively working to create a recycling system in shopping centres across Australia.</p><p><strong>Recycle & Reuse<br/></strong>Beserk will always reuse & recycle all clean packing materials from incoming supplier orders, including boxes, bubble wrap, foam & paper infills. We use these in our outgoing orders, so if you receive a box that has already been used, please understand that we are trying to reuse & recycle as much as we can!</p><p><strong>Bubble Wrap<br/></strong>We use a 100% biodegradable bubble wrap.</p><p><strong>Shredding<br/></strong>We include shredding paper in all our orders to protect breakable items using recycled paper from old promotional material & magazines</p><p><strong>Invoices<br/></strong>We do not send an invoice with our outgoing orders to save paper, and when paper is used in the office we only use recycled paper.</p><p><strong>Plastic Bags<br/></strong>We receive clothing and stock in plastic bags, but we do not use any plastic bags in the office that are not recycled.</p><p><strong>Charities<br/></strong>We love animals and want to help preserve all the beautiful animals on our planet & we regularly done to different charities around the world . You can find some of our favourite animal charities <a href=\"https://www.beserk.com.au/pages/animal-charities-carbon-footprint\" target=\"_blank\" title=\"https://www.beserk.com.au/pages/animal-charities-carbon-footprint\">HERE</a></p><p><strong>Electricity<br/></strong>We have chosen to go Carbon Neutral with our AGL Electricity account. This helps to fund carbon offset projects in Australia and around the world. Projects such as forestation, revegetation and other initiatives, that will make a real difference on our journey towards a sustainable tomorrow.</p><p><strong>Acknowledgement of Country<br/></strong>We acknowledge and respect the Turrbal people as the traditional owners and custodians of the land where the Beserk HQ is located. We honour their elders past, present and emerging and extend our respect to all Aboriginal and Torres Strait Islander Peoples.</p><p><strong>Welcome Here<br/></strong>Beserk is a proud member of the <a href=\"https://www.welcomehere.org.au/\" target=\"_blank\" title=\"Welcome Here Program\">Welcome Here</a> Project, where LGBTIQ diversity is welcomed and celebrated and to make all people feel safe at Beserk. </p><p><strong>We are an equal opportunity employer<br/></strong>We will keep working towards improving our systems to become as environmentally friendly and good to the planet as we can be, and we will always strive to be better.</p><p>Got any recommendations? Send us a live chat to let us know!</p>"
+          }
+        },
+        "question_m4feXb": {
+          "type": "question",
+          "name": "Do you have a store I can visit?",
+          "settings": {
+            "question": "Do you have a store I can visit?",
+            "answer": "<p>We don't have a store, Beserk is an online shop only.</p><p>But if you live local, you can always place an order for <strong>Click & Collect</strong> and it will usually be ready within 1 hour.</p><p>Need an item sooner? Let us know and we'll do our best to get it ready for you ASAP!</p><p>The Beserk HQ & Warehouse for Pick Ups is located at:<br/><strong><br/>2/58 Yarraman Place,<br/>Virginia QLD 4014 AUSTRALIA</strong></p><p><strong>Please note:</strong> We don't have any change room facilities - sorry!</p>"
+          }
+        },
+        "category_L9ngFq": {
+          "type": "category",
+          "name": "PAYMENTS",
+          "settings": {
+            "title": "PAYMENTS",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/Website_Icons_Cross_01.png",
+            "icon_width": 24
+          }
+        },
+        "question_baHPVD": {
+          "type": "question",
+          "name": "Which payment methods can I use?",
+          "settings": {
+            "question": "Which payment methods can I use?",
+            "answer": "<p><strong>We accept the following payment methods:</strong></p><ul><li>Paypal</li><li>Shop Pay</li><li>Credit card (Visa, Mastercard & AMEX)</li><li>Afterpay</li><li>Payment on pickup - Cash or Card.</li><li>Youpay</li><li>Apple Pay</li><li>Google Pay</li><li>Zip</li><li>Klarna</li><li>Sezzle (USA & Canada Only)</li></ul><p></p><p></p>"
+          }
+        },
+        "question_kcNERj": {
+          "type": "question",
+          "name": "How do I use a Gift Voucher?",
+          "settings": {
+            "question": "How do I use a Gift Voucher?",
+            "answer": "<p>During checkout there is a field called 'Gift Card or Discount Code'. Simply copy your code into this field and click APPLY & the voucher amount will be deducted from the total.<br/><br/></p>"
+          }
+        },
+        "question_KEMLY9": {
+          "type": "question",
+          "name": "Is your website secure?",
+          "settings": {
+            "question": "Is your website secure?",
+            "answer": "<p>Beserk is a trusted and much loved webstore with 26 years of experience in the online and alternative communities. We take our customers privacy & security very seriously!</p><p>Our customer service team knows that often for a first time buyer, it can be difficult to know who you can trust with your details so you can rest assured that the Beserk webstore is 100% safe & secure.</p><p>You can read our full <a href=\"https://www.beserk.com.au/pages/privacy-policy\" target=\"_blank\">Privacy & Security Policy HERE</a>!</p>"
+          }
+        },
+        "question_FVm6xM": {
+          "type": "question",
+          "name": "Do you have any Buy Now Pay Later options?",
+          "settings": {
+            "question": "Do you have any Buy Now Pay Later options?",
+            "answer": "<p>Yes! We have a number of BNPL options available at checkout:</p><ul><li>Afterpay</li><li>Klarna</li><li>PayPal Pay in 4</li><li>Zip</li><li>Sezzle (USA & Canada Only)</li></ul><p><strong>Still have questions? </strong>Send a live chat through to our helpful team!</p>"
+          }
+        },
+        "question_iEKxxX": {
+          "type": "question",
+          "name": "Can I use multiple discount codes?",
+          "settings": {
+            "question": "Can I use multiple discount codes?",
+            "answer": "<p>Unfortunately only one discount code can be applied to a checkout at any one time.  During sale events sadly this means rewards points redeemed for discount codes are unable to be used sorry! </p>"
+          }
+        },
+        "category_8yXFfJ": {
+          "type": "category",
+          "name": "PRODUCTS & SIZING",
+          "settings": {
+            "title": "PRODUCTS & SIZING",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/Website_Icons_Product.png",
+            "icon_width": 28
+          }
+        },
+        "question_XRFkPM": {
+          "type": "question",
+          "name": "How do pre-orders work?",
+          "settings": {
+            "question": "How do pre-orders work?",
+            "answer": "<p>If an item has 'PREORDER' in the title - then we don't have currently at our Beserk Warehouse, and are either waiting for it to arrive or will special order it in for you. All the information about the estimated shipping date will be listed on the product page in the description.</p><p>Any other items purchased in the same order as a preorder item will be kept aside - and then everything will be sent together once the preorder item has arrived.<br/><br/><strong>For any Demonia or Pleaser preorders:</strong><br/>Once your order is placed we will special order these for you direct from the brand in the USA. These orders take around 12 business days to arrive at the Beserk Warehouse, and will then be shipped out to you via your shipping method.</p><p>So please allow at least two weeks for your order to ship (once placed), and you'll receive a shipping confirmation email with all your tracking information as soon as it has. The shipping time will then depend on the shipping option you chose at checkout.</p><p>On the rare occasion Pleaser or Demonia do not have the shoe in stock, we will contact you ASAP!<br/><br/><strong>For all other preorders:<br/></strong>These will usually have an estimated shipping date listed in the product description to let you know when to keep an eye out for your shipping confirmation email!</p>"
+          }
+        },
+        "question_iq8kEb": {
+          "type": "question",
+          "name": "Do you sell gift cards?",
+          "settings": {
+            "question": "Do you sell gift cards?",
+            "answer": "<p><strong>Yes we do! </strong>You can find our gift cards <a href=\"/products/beserk-gift-voucher\" title=\"Beserk | Gift Voucher\">HERE</a></p><p>Alternatively, use the Search Bar to search 'Gift Voucher'</p>"
+          }
+        },
+        "question_WqtxLP": {
+          "type": "question",
+          "name": "How do I know when an item will restock?",
+          "settings": {
+            "question": "How do I know when an item will restock?",
+            "answer": "<p>We can't always give a heads up about when products will be restocking as it's always subject to change. We do try to restock products ASAP once they sell out though! This is subject to availability with our suppliers.</p><p><strong>Want to be contacted when a product restocks? </strong>Make sure you sign up for the restock notifiction! You can sign up with your email or phone number to be notified as soon as something is available again. This also helps our team know what to restock soonest</p><p><strong>Have a specific product in mind? </strong>Send a live chat through to our helpful team!</p>"
+          }
+        },
+        "question_YRAH7a": {
+          "type": "question",
+          "name": "I need help with sizing",
+          "settings": {
+            "question": "I need help with sizing!",
+            "answer": "<p>We include size charts - and sizing advice when available - on each product to help you find your perfect size! </p><h4><strong>Top 5 Tips for Finding Your Size!:</strong></h4><ol><li><strong>Use a tape measure to measure your bust/waist/hips </strong>- Comparing your measurements to the size chart will help to give you the best idea of what size will fit! <br/><br/><strong>Aren't able to measure yourself?</strong> Lay a similar item of clothing that fits you well and measure that flat across, making sure to double it!<br/><br/></li><li><strong>Check the materials - </strong>Fabrics like jersey, elastane and spandex will have some stretch to them, higher percentages will mean more stretch!</li><li><strong>Look for the fit style </strong>- Check to see if something is fitted, standard or oversized to help decide whether to size up, down or stick to your usual size! </li><li><strong>Check the brand</strong> - Brands like Punk Rave, Devil Fashion and Dark in Love tend to run small whereas brands like Hell Bunny, Foxblood and Forest Ink usually run true or large!</li><li><strong>Look at reviews</strong> - See what our wonderful customers are saying about the size and fit!</li></ol><p><strong>Still not sure?</strong> Send a live chat through to our helpful team!</p>"
+          }
+        },
+        "question_dmYGkM": {
+          "type": "question",
+          "name": "Do you restock sold-out items?",
+          "settings": {
+            "question": "Do you restock sold-out items?",
+            "answer": "<p>If you're worried about something selling out, we recommend ordering ASAP! Sadly we can't guarantee that we'll be able to restock every product that sells out but we do try our best! </p><p><strong>Products we won't restock:</strong></p><ul><li><strong>Discontinued:</strong> If a product title ends in an asterisk (*), it has been discontinued and isn't able to be restocked.</li><li><strong>Final Sale: </strong>Final Sale items are just that - Final Sale. So like discontinued products once they're gone, they're unlikely to be restocked.<br/></li><li><strong>Limited Edition: </strong>We try our best to stock up on Limited Edition products and can sometimes restock, but not always.</li></ul><p><strong>Want to be first to know about a restock?</strong> Make sure you sign up for the restock notification on the product page!</p>"
+          }
+        },
+        "question_FKtjet": {
+          "type": "question",
+          "name": "Are hair dyes safe to use / do they contain bleach?",
+          "settings": {
+            "question": "Are hair dyes safe to use / do they contain bleach?",
+            "answer": "<p>Unless otherwise stated, none of the hair dyes we carry contain bleach as they are direct dye formulas. All hair dyes we carry are also vegan and cruelty free! </p><p><strong>Precautions:</strong> As everyone is different and skin sensitivities vary, we recommend checking the ingredients - listed in the product description - for any potential allergens and conducting a patch/strand test to make sure it's right for you!</p><p>If you're not sure, we always recommend reaching out to a hair professional familiar with fashion colours for the most tailored advice :)</p><p>If any irritation or reaction occurs, discontinue use immediately.</p><p><strong>Have more questions? </strong>Send a live chat through to the team! </p>"
+          }
+        },
+        "category_mYh3Y6": {
+          "type": "category",
+          "settings": {
+            "title": "CONTACT US",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/Website_Icons_Heart.png",
+            "icon_width": 24
+          }
+        },
+        "question_riQiar": {
+          "type": "question",
+          "name": "Have a different question?",
+          "settings": {
+            "question": "Have a different question?",
+            "answer": "<p>Please do not hesitate to contact us! 😊</p><p>You can contact us through our <a href=\"/pages/contact-us\" title=\"Contact Us\">contact page</a> or via the following:</p><p><strong>EMAIL:</strong> <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a>  </p><p><strong>PHONE:</strong> (07) 3857 3408</p><p><strong>MOBILE [TEXT or CALL]: </strong>0478020710</p><p><strong>LIVE CHAT: </strong>Click the 'Live Chat' Icon in the bottom right corner of our site to instantly chat with someone from our amazing Customer Service Team! We're online during business hours or leave a message after hours and we will get back to you ASAP!</p><p>We will be happy to assist you!</p><p><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_ajc4Nz",
+        "question_AYijQm",
+        "question_yeATM3",
+        "category_hKJ3wi",
+        "question_7qpfya",
+        "question_YLYgA7",
+        "question_HNHdbx",
+        "question_QENgDx",
+        "question_GNHCFb",
+        "question_fVJGVN",
+        "question_dGYFDy",
+        "category_BAg9CX",
+        "question_9q4YB7",
+        "question_QFQwx6",
+        "question_yjkVd9",
+        "question_nb9i8c",
+        "question_Epx7iE",
+        "question_ihHcae",
+        "question_cwJUAT",
+        "question_MPcV9y",
+        "category_QwtHrV",
+        "question_Uw4rKE",
+        "question_t8QWkU",
+        "question_YigYj9",
+        "question_D3rGmN",
+        "question_zV9T9C",
+        "question_m4feXb",
+        "category_L9ngFq",
+        "question_baHPVD",
+        "question_kcNERj",
+        "question_KEMLY9",
+        "question_FVm6xM",
+        "question_iEKxxX",
+        "category_8yXFfJ",
+        "question_XRFkPM",
+        "question_iq8kEb",
+        "question_WqtxLP",
+        "question_YRAH7a",
+        "question_dmYGkM",
+        "question_FKtjet",
+        "category_mYh3Y6",
+        "question_riQiar"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "show_categories": true,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions ❤️",
+        "content": "<p><em>Please see our FAQ's below, but if you have any other questions don't hesitate to contact us! Our helpful team are always happy to help xx<br/><br/></em><a href=\"/pages/contact-us\" target=\"_blank\" title=\"Contact Us\"><em><strong>Contact Us Here</strong></em></a></p>"
+      }
+    }
+  },
+  "order": [
+    "faq_hiUJYL",
+    "faq_NhEdDh"
+  ]
+}

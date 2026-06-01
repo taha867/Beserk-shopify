@@ -1,0 +1,454 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "rich_text_XiCdNE": {
+      "type": "rich-text",
+      "blocks": {
+        "image_rdYfV3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SHIPPING-INFO-HEADER.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "image_rdYfV3"
+      ],
+      "name": "Header",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "slideshow_h7dYFE": {
+      "type": "slideshow",
+      "blocks": {
+        "image_tY6Gpe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2026-Shipping-Banner-2200.png",
+            "mobile_image": "shopify://shop_images/2026-Shipping-Banner-1200.png",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 400,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#df0e0d",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "#ffffff",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_tY6Gpe"
+      ],
+      "disabled": true,
+      "name": "Main Scrolling Banner",
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": true,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 10,
+        "background": "#ffffff",
+        "controls_color": "#ff0000"
+      }
+    },
+    "multi_column_x7m9Q8": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_cNAGqV": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/AUS-SHIPPING_fdf223c8-a555-4879-bdfc-dd8f027ebccc.png",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Gg4NqD": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/NZ-SHIPPING_fe3dbe21-405d-4391-978d-ecc937b1505d.png",
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_cNAGqV",
+        "image_with_text_Gg4NqD"
+      ],
+      "name": "AUS/NZ Shipping Images",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "rich_text_Lfdycm": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_9epXwX": {
+          "type": "subheading",
+          "settings": {
+            "text": "IMPORTANT UPDATE"
+          }
+        },
+        "heading_VMtLb8": {
+          "type": "heading",
+          "settings": {
+            "text": "CLICK & COLLECT IS EXPECTING DELAYS",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_3VmL63": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our website will still be operating regularly and orders can still be placed; however, there will be delays in shipping out orders and Click & Collect during this time.<br/><br/>Be sure to keep an eye out on our website and socials for more info! We will keep everyone updated and rest assured that we’ll be back open as soon as we can!<br/><br/>Thank you for your patience & support!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9epXwX",
+        "heading_VMtLb8",
+        "richtext_3VmL63"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_ywiKXy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ctYz3d": {
+          "type": "heading",
+          "name": "ORDER BEFORE 2PM",
+          "settings": {
+            "text": "<strong>♥ ORDER BEFORE 2PM FOR SAME DAY DISPATCH ♥ </strong>",
+            "heading_tag": "h2"
+          }
+        },
+        "heading_JQKcyX": {
+          "type": "heading",
+          "name": "EXPRESS INFO",
+          "settings": {
+            "text": "<strong>SELECT EXPRESS TO RECEIVE YOUR ORDER FAST!</strong>",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_yWCkjC": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><em><strong>During sale periods, we cannot guarantee same day dispatch. Orders will be shipped ASAP</strong></em></p><p><strong>Please Note: </strong>We do not sell cheap copies. All items on the Beserk website are 100% genuine, officially licensed products. We are not a drop-shipping company, our items are held at our warehouse in Virginia, QLD Australia.</p>"
+          }
+        },
+        "heading_qdVQRJ": {
+          "type": "heading",
+          "name": "CLICK & COLLECT",
+          "settings": {
+            "text": "<strong>♥ CLICK & COLLECT ♥</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_xR8PQf": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Orders will be ready within one hour. Please make sure to collect during our business hours : <br/><strong>8.30am to 4.30pm - Mon-Fri -</strong> <strong>Beserk Warehouse - 2/58 Yarraman Place,<br/>Virginia, QLD 4014 Australia<br/></strong></p><p>Please note this address is for ORDER COLLECTION Only. We do not have a retail outlet.<br/><br/><br/></p>"
+          }
+        },
+        "heading_Ji8Rbb": {
+          "type": "heading",
+          "name": "TRACKING",
+          "settings": {
+            "text": "<strong>♥ FULL TRACKING & ORDER GUARANTEE ♥</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_R8tdQ7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>All orders include full tracking </strong>so you can monitor your delivery at any time. Delivery includes Full Tracking, Signature on Delivery option & Order Guarantee. </p><p>For added protection, choose <strong>Signature on Delivery</strong>— this way if your parcel is stolen, we’ll replace it at no charge. We are unable to provide credits, refunds or replacements for stolen parcels where \"Signature on Delivery\" is not selected.</p><p>Orders are collected daily at 11am & 2pm. You'll receive a tracking email between 3–4pm once your order is processed.<br/><br/>To help ensure fast delivery, add any special instructions in the comments at checkout. You can track your parcel via the link in the email or by entering the tracking number on the Australia Post website <a href=\"http://auspost.com.au/track/track.html\" target=\"_blank\" title=\"http://auspost.com.au/track/track.html\">HERE</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ctYz3d",
+        "heading_JQKcyX",
+        "richtext_yWCkjC",
+        "heading_qdVQRJ",
+        "richtext_xR8PQf",
+        "heading_Ji8Rbb",
+        "richtext_R8tdQ7"
+      ],
+      "name": "MORE INFO",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_JjdDCH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cL7b99": {
+          "type": "heading",
+          "settings": {
+            "text": "2025 CHRISTMAS DELIVERY CUT OFFS",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cL7b99"
+      ],
+      "disabled": true,
+      "name": "XMAS RATES + DELIVERY",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "full_width_richtext_pEReDF": {
+      "type": "full-width-richtext",
+      "blocks": {
+        "image_QQGmcL": {
+          "type": "image",
+          "name": "t:blocks.image.name",
+          "settings": {
+            "image": "shopify://shop_images/Christmas-Cut-Off-Dates_2025_Australia-Desktop_96de4798-32b5-4f7b-b882-6b5ac89a3e0a.jpg",
+            "mobile_image": "shopify://shop_images/Christmas-Cut-Off-Dates_2025_Australia_Mobile.jpg",
+            "alignment": "center",
+            "width_mode": "full_width",
+            "max_width": 300,
+            "mobile_max_width": 200
+          },
+          "blocks": {}
+        },
+        "image_iLAyPq": {
+          "type": "image",
+          "name": "t:blocks.image.name",
+          "settings": {
+            "image": "shopify://shop_images/Christmas-Cut-Off-Dates_2025_International-Desktop.jpg",
+            "mobile_image": "shopify://shop_images/Christmas-Cut-Off-Dates_2025_International_45b6de43-9c79-4129-907b-1e02f7651d34.jpg",
+            "alignment": "center",
+            "width_mode": "full_width",
+            "max_width": 300,
+            "mobile_max_width": 200
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_QQGmcL",
+        "image_iLAyPq"
+      ],
+      "disabled": true,
+      "name": "Sale Banner",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "content_width": "full",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "new_richtext_xyMMUj": {
+      "type": "new-richtext",
+      "blocks": {
+        "rich_text_qptEBB": {
+          "type": "rich-text",
+          "name": "t:blocks.rich_text.name",
+          "settings": {
+            "text": "<h4><strong>FOR MORE INFORMATION PLEASE SEE THE AUSTRALIA POST WEBSITE OR </strong><a href=\"/pages/contact-us\" title=\"Contact Us\"><strong>CONTACT US!</strong></a></h4>",
+            "content_width": "lg",
+            "text_position": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "rich_text_qptEBB"
+      ],
+      "name": "New Richtext",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_F7y4e9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XgE9ct": {
+          "type": "heading",
+          "settings": {
+            "text": "RATES AND DELIVERY TIMES",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XgE9ct"
+      ],
+      "name": "RATES + DELIVERY",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "returns_content_Wk39Ld": {
+      "type": "returns-content",
+      "name": "PAGE TABLES",
+      "settings": {
+        "returns-content": ""
+      }
+    },
+    "tabs_RjWint": {
+      "type": "tabs",
+      "blocks": {
+        "tab_E3A3EC": {
+          "type": "tab",
+          "settings": {
+            "title": "INTERNATIONAL CUSTOMERS",
+            "content": "<p>All import taxes, brokerage fees & duties are payable by the customer. Beserk does not cover these fees. If you are unsure of your country’s import laws, please contact your countries customs department to find the information on importing from Australia. If an international parcel is returned to us due to unpaid import taxes, duties or any other costs or reasons imposed by the destination country or if parcel is refused acceptance, Beserk will provide a store credit excluding delivery costs upon receipt of the parcel back to the Beserk warehouse.<br/><br/></p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_XxHxtq": {
+          "type": "tab",
+          "settings": {
+            "title": "USA CUSTOMERS",
+            "content": "<p>Due to ongoing changes and uncertainties surrounding U.S. import tariffs and international trade regulations, additional customs duties, import taxes, or fees may apply to your order upon arrival in the United States.<br/></p><p>These charges are determined by U.S. Customs and Border Protection and are the responsibility of the recipient. Beserk has no control over these fees and cannot predict their cost, as they vary depending on the contents of your order and local regulations.</p><p>By placing an order for delivery to the U.S., you acknowledge and accept that any such charges incurred are not included in your order total and may be billed separately by the delivery carrier or customs authority.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_E3A3EC",
+        "tab_XxHxtq"
+      ],
+      "name": "IMPORTANT INFO/ANNOUNCEMENTS",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "IMPORTANT INFORMATION",
+        "text_alignment": "start"
+      }
+    },
+    "rich_text_geeHhK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pKkJ4h": {
+          "type": "heading",
+          "settings": {
+            "text": "PLEASE NOTE",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_LDk8xN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4><strong>♥ For more information on Australia post visit their site here : More info &gt; </strong><a href=\"http://auspost.com.au/parcels-mail/delivery-areas.html\" target=\"_blank\"><strong>HERE</strong></a><strong> ♥</strong></h4><p>We cannot reimburse the shipping cost for orders that are Returned to Sender due to being unclaimed, an incorrect address or other reason that is not the result of an error on the part of Beserk or the nominated courier. Please do not hesitate to <a href=\"https://www.beserk.com.au/pages/contact-us\" target=\"_blank\">contact us</a> if you have any questions!<br/><strong>Beserk xx</strong><br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pKkJ4h",
+        "richtext_LDk8xN"
+      ],
+      "name": "PLEASE NOTE",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_XiCdNE",
+    "slideshow_h7dYFE",
+    "multi_column_x7m9Q8",
+    "rich_text_Lfdycm",
+    "rich_text_ywiKXy",
+    "rich_text_JjdDCH",
+    "full_width_richtext_pEReDF",
+    "new_richtext_xyMMUj",
+    "rich_text_F7y4e9",
+    "returns_content_Wk39Ld",
+    "tabs_RjWint",
+    "rich_text_geeHhK"
+  ]
+}

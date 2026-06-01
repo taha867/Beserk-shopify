@@ -1,0 +1,420 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "image_with_text_block_3N63Gi": {
+      "type": "image-with-text-block",
+      "name": "HEADER",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "md",
+        "image": "shopify://shop_images/Desktop-Image-2500px-x-900px_01_1b84e837-5d71-4beb-8f0e-812e4db6a048.jpg",
+        "mobile_image": "shopify://shop_images/Mobile-Image-1100px-x-900px_01_537d8f20-d71a-4a7d-945f-fdb2ae2348ba.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_CqJefV": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_fqW9A8": {
+          "type": "subheading",
+          "settings": {
+            "text": "Welcome to the Beserk Online Store ❤️"
+          }
+        },
+        "heading_9MRtxL": {
+          "type": "heading",
+          "settings": {
+            "text": "ABOUT US",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_aXjmfi": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Established in the year 2000, we are <strong>Australia's largest & longest running Alternative Online Store</strong>. Bringing you an amazing range of clothing, homewares, cosmetics, hair colour, shoes, accessories, roller derby clothing, babies gear & pop culture collectables carefully selected from unique suppliers from around the world!</p><p>Please note that ALL items on the Beserk website are <strong>officially licensed & 100% genuine</strong> and held in our warehouse in Virginia, Queensland Australia. We are not a drop-shipping company & we do not sell cheap copies.</p><p>We hope you love our store!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_fqW9A8",
+        "heading_9MRtxL",
+        "richtext_aXjmfi"
+      ],
+      "name": "TITLE + INFORMATION",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/About-us-front-office.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_amytYt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hmYRMQ": {
+          "type": "heading",
+          "settings": {
+            "text": "  <strong>EXCELLENT CUSTOMER SERVICE</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_Nj83Ta": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We are so grateful for our Beserk and local communities! Beserk was voted the Winner of the Australia Post Small Business People's Choice Award in 2016 & 2017, and a finalist in the years 2026, 2025, 2022, 2021, 2018 & 2015.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hmYRMQ",
+        "richtext_Nj83Ta"
+      ],
+      "name": "CUSTOMER SERVICE",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "logo_list_FzHGj6": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_UyA9pd": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/2015-ORIAS-LOGO-FINAL.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_zzqhg4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/2016_ORIAS_LOGO.jpg",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_EGNTME": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/2017-ORIAS-LOGO-FINAL_71b62943-01ce-41ed-b694-35f63b19351a.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_fNcbmq": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/ORIAs-Badge_Finalists_Large_77e97000-0a8a-45e3-a202-5ace8459af10.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_dW6LqA": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/POWER_RETAIL.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_a3zzJP": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/160x160-ORIAS-2021.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_EXMEVC": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/160x160-ORIAS-finalist-large-retailer-over-_1m.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_fLQzBC": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Power_Bash_Logo_2025.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        },
+        "logo_qQnehW": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/Power_Bash_Logo_2026.png",
+            "logo_width": 120,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_UyA9pd",
+        "logo_zzqhg4",
+        "logo_EGNTME",
+        "logo_fNcbmq",
+        "logo_dW6LqA",
+        "logo_a3zzJP",
+        "logo_EXMEVC",
+        "logo_fLQzBC",
+        "logo_qQnehW"
+      ],
+      "name": "AWARDS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "",
+        "stack_on_mobile": true,
+        "items_per_row": 5,
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "rich_text_xbecWn": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_UcXJky": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We hold customer happiness as our number #1 priority at Beserk. If you ever have any problem with anything purchased from us, please contact us straight away so we can rectify the issue. We will always do everything possible to make sure that you are happy with your purchase and Beserk experience. Likewise if you loved your experience with Beserk, we would love to hear about it. ❤️</p>"
+          }
+        },
+        "button_xfe4TE": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "LEAVE A Google REVIEW",
+            "url": "https://tinyurl.com/hp8p7ju",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "richtext_UcXJky",
+        "button_xfe4TE"
+      ],
+      "name": "REVIEWS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "images_with_text_scroll_cp6aQF": {
+      "type": "images-with-text-scroll",
+      "blocks": {
+        "image_with_text_d6yC8y": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Rewards_Image_01.jpg",
+            "subheading": "",
+            "title": " <strong>BESERK REWARD PROGRAM</strong>",
+            "content": "<p>Earn points to get <strong>FREE items and DISCOUNTS.</strong><br/>Create a Beserk Account today to start earning!</p>",
+            "link_text": "READ MORE",
+            "link_url": "shopify://pages/rewards",
+            "link_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_d6yC8y"
+      ],
+      "name": "REWARDS PROGRAM",
+      "settings": {
+        "color_scheme": "",
+        "image_position": "end",
+        "text_alignment": "center",
+        "heading_tag": "h3",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "text_with_icons_6TD9hf": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_Cgbjiq": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify://shop_images/Website_Icons_Delivery-03_3a9948ba-e45f-4c78-8140-4eedf4837629.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "FREE DELIVERY",
+            "content": "<p>FREE delivery Australia-wide orders over $129. Same-day dispatch if you order before 2pm! We ship Worldwide!</p>"
+          }
+        },
+        "item_E8t6kp": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "custom_icon": "shopify://shop_images/Website_Icons_Click_And_Collect_06_9375b3f3-2279-4ec1-903b-96fc4b0b9596.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "CLICK AND COLLECT",
+            "content": "<p>We’ll have your order ready to collect within 1 hour during opening hours at our Beserk Warehouse in Virginia, QLD.</p>"
+          }
+        },
+        "item_BC9CxD": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "custom_icon": "shopify://shop_images/Website_Icons_Secure_05_5dd6dde8-6e62-4635-84dc-d3fdeb888bbb.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": " <strong>100% SAFE & SECURE</strong>",
+            "content": "<p>Your privacy and security are our top priority. SSL-encrypted and Google-verified.</p>"
+          }
+        },
+        "item_Cq6pQ9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "custom_icon": "shopify://shop_images/Website_Icons_Easy_Returns_02.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "30 DAY EASY RETURNS",
+            "content": "<p>We’re here to make returns simple and stress-free so you can shop with confidence.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_Cgbjiq",
+        "item_E8t6kp",
+        "item_BC9CxD",
+        "item_Cq6pQ9"
+      ],
+      "name": "EXTRA INFORMATION",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "stack_on_mobile": true,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "rich_text_UcyBT9": {
+      "type": "rich-text",
+      "blocks": {
+        "image_8jxrLg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Website_Icons_Customer-Service_06_8863a369-9b0c-4f6f-9814-850ea6927491.png",
+            "width_mode": "custom",
+            "max_width": 100,
+            "mobile_max_width": 100
+          }
+        },
+        "heading_EaCEXC": {
+          "type": "heading",
+          "settings": {
+            "text": "phone orders",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_HiqND9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Simply call us on either <strong>(07) 3857 3408</strong> or <strong>0478020710 </strong>to place your order over the phone with one of our friendly staff. <br/><br/>The Beserk team are always happy to help! Our office hours are: 8.30am to 4.30pm Monday to Friday EST.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_8jxrLg",
+        "heading_EaCEXC",
+        "richtext_HiqND9"
+      ],
+      "name": "PHONE ORDERS",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_n6H8nR": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_tLR4pF": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our team is happy to help and assist you with all areas of your Beserk journey.</p><p>If you ever have any questions please do not hesitate to contact us. Thank you for visiting and we hope you love our store!</p>"
+          }
+        },
+        "subheading_tatLU8": {
+          "type": "subheading",
+          "settings": {
+            "text": "❤ Fleur & the Beserk Team ❤"
+          }
+        },
+        "image_TMJXBH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025_Beserk-Favicon_6ca26e0d-19af-4158-9a23-78794e7c21a4.png",
+            "width_mode": "custom",
+            "max_width": 100,
+            "mobile_max_width": 100
+          }
+        }
+      },
+      "block_order": [
+        "richtext_tLR4pF",
+        "subheading_tatLU8",
+        "image_TMJXBH"
+      ],
+      "name": "FINAL MESSAGE",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_block_3N63Gi",
+    "image_with_text_CqJefV",
+    "rich_text_amytYt",
+    "logo_list_FzHGj6",
+    "rich_text_xbecWn",
+    "images_with_text_scroll_cp6aQF",
+    "text_with_icons_6TD9hf",
+    "rich_text_UcyBT9",
+    "rich_text_n6H8nR"
+  ]
+}

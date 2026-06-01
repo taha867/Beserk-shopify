@@ -1,0 +1,22 @@
+{% if customer %}
+  {% comment %} <p class="customer_name">Welcome {{ customer.first_name }} to your beserk account.</p> {% endcomment %}
+  <p class="richtext-customer-name">{{ block.settings.customer_name }}</p>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Customer Name",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "customer_name",
+      "label": "liquid"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Name"
+    }
+  ]
+}
+{% endschema %}

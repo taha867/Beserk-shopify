@@ -1,0 +1,365 @@
+<!doctype html>
+
+<html lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0"
+    >
+    {%- render 'social-meta-tags' -%}
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 96 }}">
+      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
+    {%- endif -%}
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <link
+      rel="preload"
+      href="https://cdn.shopify.com/extensions/01997783-2fbd-7780-826c-4d1d63a3bf7a/wishlist-shopify-app-537/assets/addtowishlistbutton.css"
+      as="style"
+    >
+    <link
+      rel="preload"
+      href="https://cdn.shopify.com/extensions/01997783-2fbd-7780-826c-4d1d63a3bf7a/wishlist-shopify-app-537/assets/wishlistcollections.css"
+      as="style"
+    >
+    <link
+      rel="preload"
+      href="https://cdn.shopify.com/extensions/16229ab8-a068-445e-afd8-dfa09a9b5ff0/youpay-cart-sharing-3/assets/youpay.css"
+      as="style"
+    >
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+      rel="preload"
+      as="style"
+      media="screen"
+      href="https://www.beserk.com.au/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css"
+      crossorigin="anonymous"
+    >
+
+    <title>
+      {% if page_title == blank -%}
+        {{- shop.name -}}
+      {%- else -%}
+        {{- page_title -}}
+        {%- if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif -%}
+      {%- endif %}
+    </title>
+
+
+    {% comment %}  {% endcomment %}
+
+    <!-- Slick Slider CSS — loaded async, not render-blocking -->
+    <noscript>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
+
+    {% if template == 'cart' %}
+      <style>
+        .cart-recap .button
+        {
+          width:100% !important;
+        }
+      </style>
+    {% endif %}
+
+    <style>
+                  @media only screen and (min-width: 992px) {
+                .boost-sd-layout {
+                    max-width: 100% !important;
+                }
+            }
+            @media (min-width: 1008px) {
+              wishlist-page .wk-grid {
+              --columns: 4 !important;
+            }
+            wishlist-page .wk-page {
+            max-width: 100% !important;
+            }
+          }
+
+           .boost-sd__product-atc-wishlist .swym-button.swym-add-to-wishlist-view-product.swym-heart:after,
+      .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after{
+        color: #ff2322 !important;
+        }
+
+        .boost-sd__product-atc-wishlist .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
+       color: #ff2322 !important;
+        }
+
+        @media only screen and (min-width: 992px) {
+        .boost-sd__recommendation-bundle--style2 {
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .boost-sd__recommendation-bundle-images--style2 .boost-sd__recommendation-bundle-image-item {
+          width: 300px;
+      }
+
+      div#shopify-block-AdlZ2U09iSDJ4SXpPc__smile_io_smile_points_on_account_page_n8deG8 .slp_6480c1 {
+          justify-content: center !important;
+          gap: 20px;
+      }
+
+      .swym-wishlistplus-themeapp-container-header {
+        justify-content: center;
+        }
+
+        div#swym-engage-wishlist-body {
+            display: flex;
+            justify-content: center;
+        }
+
+      @media only screen and (min-width: 992px) {
+        div#shopify-block-AdlZ2U09iSDJ4SXpPc__smile_io_smile_points_on_account_page_n8deG8 .slp_6480c1 {
+          justify-content: center !important;
+          gap: 40px;
+      }
+
+      .boost-sd__predictive-bundle-wrapper .boost-sd__recommendation-bundle-image-wrapper{
+                height: 100%;
+        max-height: 500px;
+
+      }
+
+      .swym-engage-list-item-collage {
+          width: 300px;
+          height: auto;
+      }
+
+      .swym-engage-list-collage-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+
+
+
+
+      }
+    </style>
+
+    {% comment %}  {% endcomment %}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+
+    {%- unless settings.heading_font.system? -%}
+      <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- unless settings.text_font.system? -%}
+      <link rel="preload" href="{{ settings.text_font | font_url }}" as="font" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- render 'microdata-schema' -%}
+    {%- render 'css-variables' -%}
+    {%- render 'js-variables' -%}
+
+    {%- if request.page_type == 'gift_card' -%}
+      <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
+    {%- endif -%}
+
+    <script type="importmap">
+      {%- comment -%}On Safari 16.3 and lower, a polyfill is used to load importmap{%- endcomment -%}
+      {
+        "imports": {
+          "vendor": "{{ 'vendor.min.js' | asset_url }}",
+          "theme": "{{ 'theme.js' | asset_url }}",
+          "photoswipe": "{{ 'photoswipe.min.js' | asset_url }}"
+        }
+      }
+    </script>
+
+    <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
+    <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
+    {{ content_for_header }}
+
+    {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
+
+    <script>
+      const originalFetch = window.fetch;
+      const updateQueryParam = (url, param, value, isAppend) => {
+        // Parse the URL
+        let urlObj = new URL(url);
+        // Get the search parameters
+        let params = new URLSearchParams(urlObj.search);
+        // console.log(params.get('event_type'), url, isAppend, param, value)
+        if (isAppend) {
+          // Append the param value
+          params.append(param, value);
+        } else {
+          // Set the new parameter value
+          params.set(param, value);
+        }
+        // Update the search part of the URL
+        urlObj.search = params.toString();
+        // Return the updated URL
+        return urlObj.toString();
+      };
+      window.fetch = (url, options) => {
+        const valid = ['https://services.mybcapps.com/bc-sf-filter/filter'];
+        for (let i = 0; i < valid.length; i++) {
+          if (url.indexOf(valid[i]) !== -1) {
+            const urlParams = new URLSearchParams(url);
+            const collectParam = urlParams.get('collection_scope');
+            console.log(collectParam);
+            let updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort9');
+            if (collectParam == 410961037) {
+              updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort10');
+            }
+
+            const collectList = [
+              '412328077',
+              '423482061',
+              '412326797',
+              '412327693',
+              '423488333',
+              '412326733',
+              '91995078729',
+            ];
+            if (collectList.includes(collectParam)) {
+              updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort11');
+            }
+            const updatedSortExtraModeUrl = updateQueryParam(updatedSortExtraUrl, 'sort_first_mode', 'desc');
+            url = updatedSortExtraModeUrl;
+          }
+        }
+        return originalFetch(url, options);
+      };
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener(
+          'focusin',
+          function (e) {
+            if (e.target.classList.contains('boost-sd__search-widget-init-input')) {
+              e.stopImmediatePropagation();
+            }
+          },
+          true
+        );
+
+        const iswSearchClass = 'boost-sd__search-widget-init-input';
+
+        function focusISWInput(input) {
+          if (input) {
+            input.focus();
+            // caret fix iOS
+            const val = input.value;
+            input.value = '';
+            input.value = val;
+          }
+        }
+
+        function openISW(e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          // Dispatch init ISW
+          window.dispatchEvent(new CustomEvent('bind-search-input'));
+
+          const observer = new MutationObserver(() => {
+            const wrapper = document.querySelector('.boost-sd__search-bar-wrapper--mobile');
+            if (wrapper) {
+              wrapper.classList.remove('boost-sd__g-hide');
+            }
+
+            const iswInput = document.querySelector('#bc-instant-search .' + iswSearchClass);
+            if (iswInput) {
+              focusISWInput(iswInput);
+              observer.disconnect();
+            }
+          });
+
+          observer.observe(document.body, { childList: true, subtree: true });
+
+          const wrapperNow = document.querySelector('.boost-sd__search-bar-wrapper--mobile');
+          if (wrapperNow) {
+            wrapperNow.classList.remove('boost-sd__g-hide');
+          }
+        }
+
+        function initialISW() {
+          const mobileBtn = document.querySelector('.header-search-mobile a');
+          if (mobileBtn) {
+            mobileBtn.addEventListener('click', openISW);
+          }
+        }
+
+        initialISW();
+      });
+    </script>
+  </head>
+
+  {% liquid
+    assign features_class = ''
+
+    if settings.show_button_transition
+      assign features_class = features_class | append: 'features--button-transition '
+    endif
+
+    if settings.show_image_zoom_on_hover
+      assign features_class = features_class | append: 'features--zoom-image '
+    endif
+  %}
+
+  <body class="{{ features_class }} color-scheme color-scheme--{{ settings.default_color_scheme.id }}">
+    {%- render 'shadow-dom-templates' -%}
+
+    <loading-bar class="loading-bar" aria-hidden="true"></loading-bar>
+    <a href="#main" allow-hash-change class="skip-to-content sr-only">
+      {{- 'general.accessibility.skip_to_content' | t -}}
+    </a>
+
+    <span
+      id="header-scroll-tracker"
+      style="position: absolute; width: 1px; height: 1px; top: var(--header-scroll-tracker-offset, 10px); left: 0;"
+    >
+      {%- comment -%}
+        This allows our theme to track when the user has scrolled a given amount of pixels, without relying on a global scroll listener. This helps
+        to improve performance and reduce reflows.
+      {%- endcomment -%}
+    </span>
+
+    {%- if request.page_type != 'password' -%}
+      {%- sections 'header-group' -%}
+      {%- sections 'overlay-group' -%}
+    {%- endif -%}
+
+    <main id="main" class="anchor">
+      {{ content_for_layout }}
+
+      {%- comment -%}
+        IMPLEMENTATION NOTE: For best semantics, having the footer group outside the main would be slightly better, but
+          moving it inside the main allows to have all the sections (including sections inside the footer group) to be
+          consecutive, and hence having a cleaner margin collapsing management.
+      {%- endcomment -%}
+      {%- if request.page_type != 'password' -%}
+        {%- sections 'footer-group' -%}
+      {%- endif -%}
+    </main>
+    {% render 'swym-custom' %}
+    <!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="preload" href="{{ 'splide.min.js' | asset_url }}" as="script">
+    <script src="{{ 'splide.min.js' | asset_url }}"></script>
+  </body>
+</html>

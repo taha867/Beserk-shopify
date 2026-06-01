@@ -1,0 +1,143 @@
+{%- if section.blocks.size > 0 -%}
+  {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient
+    | default: section.settings.color_scheme.settings.background
+    | md5
+  -%}
+
+  <style>
+    .collection-description {
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* Limit to 2 lines */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    .collection-description.expanded {
+      -webkit-line-clamp: unset; /* Remove limit */
+      display: block;
+    }
+
+    .richtext-customer-name{
+      font-size:20px;
+      font-weight:700;
+      text-transform:uppercase;
+      margin: 0;
+    }
+
+    .richtext-customer-name .cx-name{
+      color: #ffff01;
+    }
+  </style>
+
+  <div class="color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% unless section.settings.remove_vertical_spacing %}section-spacing{% endunless %} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
+    <div class="container container--{{ section.settings.content_width }}">
+      <div class=" text-{{ section.settings.text_position }}">
+        <div class="block-content">
+          {% content_for 'blocks' %}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const desc = document.getElementById('collection-description');
+    const btn = document.getElementById('read-more-btn');
+
+    btn.addEventListener('click', function () {
+      desc.classList.toggle('expanded');
+      btn.textContent = desc.classList.contains('expanded')
+        ? btn.getAttribute('data-read-less')
+        : btn.getAttribute('data-read-more');
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "New Richtext",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:global.colors.scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "separate_section_with_border",
+      "label": "t:global.section.separate_section_with_border",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "content_width",
+      "label": "t:global.sizes.content_width",
+      "options": [
+        {
+          "value": "xs",
+          "label": "t:global.sizes.x_small"
+        },
+        {
+          "value": "sm",
+          "label": "t:global.sizes.small"
+        },
+        {
+          "value": "md",
+          "label": "t:global.sizes.medium"
+        },
+        {
+          "value": "lg",
+          "label": "t:global.sizes.large"
+        }
+      ],
+      "default": "sm"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "t:global.position.content_position",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:global.position.left"
+        },
+        {
+          "value": "center",
+          "label": "t:global.position.center"
+        },
+        {
+          "value": "end",
+          "label": "t:global.position.right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_vertical_spacing",
+      "label": "t:global.spacing.remove_vertical_spacing",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Richtext"
+    }
+  ]
+}
+{% endschema %}

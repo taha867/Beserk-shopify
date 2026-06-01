@@ -1,0 +1,432 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs_9DgEaF": {
+      "type": "breadcrumbs",
+      "name": "BreadCrumbs",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "badges_hxWGik": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "alignment": "center",
+            "text_color": "#ffffff",
+            "background": "#000000"
+          }
+        },
+        "judge_me_reviews_preview_badge_mpDetf": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "smile_io_smile_points_on_product_page_WQwYYP": {
+          "type": "shopify://apps/smile-io/blocks/smile-points-on-product-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#121212",
+            "secondary_colour": "#ffffff",
+            "preview_scenario": "customer_can_earn_points",
+            "should_show_icon": false,
+            "should_show_points_label": true,
+            "points_text_logged_in": "<p>❤️ EARN [points_amount] </p>",
+            "points_text_logged_out": "<p>❤️ Join Beserk to EARN [points_amount]  &gt; <a href=\"/account/register/\">SIGN UP</a> or <a href=\"/account/login/\">LOG IN</a></p>"
+          }
+        },
+        "custom_badge_UqxYCQ": {
+          "type": "custom-badge",
+          "settings": {
+            "custom-text": ""
+          }
+        },
+        "inventory_W4PCLD": {
+          "type": "inventory",
+          "settings": {
+            "show_in_stock_quantity": false,
+            "low_inventory_threshold": 10,
+            "show_progress_bar": true,
+            "progress_bar_max_value": 2
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "dropdown",
+            "swatch_selector_style": "none",
+            "variant_image_options": "show variant",
+            "size_chart_page": "copy-of-size-guide-old"
+          }
+        },
+        "preorder_me_product_button_aGkyrX": {
+          "type": "shopify://apps/preorder-me/blocks/product-button/d3a9a307-3c62-4d7b-8a5b-7ae9b6e399ce",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#cb2b2b",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": "#cb2b2b"
+          }
+        },
+        "wishlist_plus_wishlist_pdp_button_AGgBL8": {
+          "type": "shopify://apps/wishlist-plus/blocks/wishlist-pdp-button/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+          "settings": {
+            "swym_atw_button_icon": "heart",
+            "swym_atw_icon_thickness": 1.7,
+            "swym_atw_display_btn_text": false,
+            "swym_button_position": "add_to_cart_button_right",
+            "swym_atw_button_vertical_offset": 0,
+            "swym_atw_full_width": true,
+            "swym_atw_button_alignment": "right",
+            "swym_add_to_wishlist_color": "#000000",
+            "swym_added_to_wishlist_color": "#000000",
+            "swym_button_text_color": "#e32c2b",
+            "swym_atw_border_color": "#000000",
+            "swym_atw_border_thickness": 0,
+            "swym_atw_button_border_radius": 0,
+            "swym_enable_hover_customization": false,
+            "swym_hover_add_to_wishlist_color": "#000000",
+            "swym_hover_added_to_wishlist_color": "#000000",
+            "swym_hover_button_text_color": "#e32c2b",
+            "swym_hover_atw_border_color": "#000000",
+            "swym_hover_atw_border_thickness": 0,
+            "swym_hover_atw_button_border_radius": 0,
+            "swym_custom_css": ""
+          }
+        },
+        "youpay_cart_sharing_youpay_button_P4rGT7": {
+          "type": "shopify://apps/youpay-cart-sharing/blocks/youpay-button/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+          "settings": {
+            "button-text-long": "Get it paid for you with",
+            "button-text-medium": "Get it paid for with",
+            "button-text-short": "Get it paid",
+            "theme": "vanilla",
+            "button-colour": "#000000",
+            "button-background-colour": "rgba(0,0,0,0)",
+            "button-height": 32,
+            "border-radius": 0,
+            "margin-top": 10,
+            "margin-bottom": 5,
+            "width": 100,
+            "alignment": "center"
+          }
+        },
+        "afterpay_on_site_messaging_payments_messaging_3fqMVH": {
+          "type": "shopify://apps/afterpay-on-site-messaging/blocks/payments-messaging/f45a5524-d177-4475-bf59-281efd2215a8",
+          "settings": {
+            "text_align": "center",
+            "margin_top": 5,
+            "margin_bottom": 5,
+            "color": "",
+            "size": "xs",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": false,
+            "show_with": false,
+            "logo_type": "compact-badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "center",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "{{product}}"
+          }
+        },
+        "klarna_on_site_messaging_app_block_B47dXn": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-auto-size",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        },
+        "pickup_availability_3rqY4R": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "new_text_jmNEBm": {
+          "type": "new-text",
+          "settings": {
+            "new_text": "<h6>UPLOAD YOUR PHOTO TO BE FEATURED :</h6>"
+          }
+        },
+        "social_photos_instagram_ugc_product_gallery_yHqnzp": {
+          "type": "shopify://apps/social-photos-instagram-ugc/blocks/product_gallery/d967a330-599e-491a-8cf1-42a3cd34baa3",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "show_below_gallery": false
+          }
+        },
+        "accordion_7eC6fQ": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "INGREDIENTS",
+            "content": "{{ product.metafields.custom.all_ingredients | metafield_tag }}",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_kNzHjE": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "SIZE GUIDE",
+            "content": "{{ product.metafields.custom.web_sizing | metafield_tag }}",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_jc6bNM": {
+          "type": "accordion",
+          "name": "Collapsible text - PREORDER INFO",
+          "disabled": true,
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "PREORDER INFO",
+            "content": "",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_Jrykbz": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "RETURN INFO",
+            "content": "<p><strong>BESERK 30 DAY RETURN GUARANTEE </strong>❤️</p><p>We have a hassle free & easy return system.<br/>We want you to LOVE the items you get from Beserk!</p><ul><li>You can return your order within 30 DAYS for a<strong> REFUND, STORE CREDIT</strong> or <strong>EXCHANGE</strong>*<br/>*Sale items can be exchanged for STORE CREDIT Only.</li><li>ALL items can be returned EXCEPT Final Sale products & those under Australian Health & Hygiene regulations [underwear, bodysuits, wigs, swimwear, contact lenses, face masks,  hosiery, earrings, cosmetics, hair dye]</li><li>Faulty Items - please contact us at orders@beserk.com.au for a solution. </li><li>Gift Cards, Throne & YouPay Orders cannot be returned.   </li><li>To Return items, simply post them back to us, or drop by the Beserk Warehouse at Virginia, Queensland.</li></ul><p><br/><strong>Visit our RETURNS Page for more information &gt;&gt; </strong><a href=\"/pages/returns\"><strong>HERE</strong></a><strong>⭐</strong></p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_8HyN6j": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "DELIVERY + POSTAGE",
+            "content": "<p>♥️ <strong>FAST DELIVERY ~ </strong>Order before 2PM for SAME DAY DISPATCH </p><p>♥️ <strong>CLICK & COLLECT ~</strong> Your order will be ready within 1 hour from our Virginia, QLD Warehouse</p><p>♥️ <strong>ALL ORDERS SENT WITH FULL TRACKING ~ </strong>Select your delivery preference at Checkout - 'Signature on Delivery' or 'Authority to Leave' </p><h2><strong>AUSTRALIA</strong></h2><p>❤︎‬  <strong>REGULAR POST</strong><br/>ORDERS OVER $129 - <strong>FREE DELIVERY</strong><br/>UNDER $129 - $9.95</p><p>❤︎‬  <strong>EXPRESS POST<br/></strong>0 - 500GM - $12.95<br/>501GM - 1KG - $16.95<br/>1KG - 2.5KG - $19.95<br/>Over 2.5KG - Live Rates</p><h2><strong>NEW ZEALAND</strong></h2><p>❤︎‬ ORDERS OVER $229 -<strong> FREE DELIVERY<br/></strong>UNDER $199 - $19.95<br/><strong>EXPRESS - </strong>$29.95</p><h2><strong>REST OF WORLD </strong></h2><p>❤︎‬ <a href=\"/pages/beserk-postage-delivery\" title=\"Postage & Delivery\">Visit our Postage Page for International Rates</a></p><p>More info &gt;&gt; <a href=\"/pages/beserk-postage-delivery\" target=\"_blank\" title=\"Postage & Delivery\">HERE</a></p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "size_chart_3CgwDa": {
+          "type": "size_chart",
+          "settings": {
+            "size_chart_heading": "Size Chart",
+            "size_chart_subheading": "<p><strong>SIZE CONVERSION : </strong>Sizes Listed in US Sizing</p>"
+          }
+        },
+        "share_buttons_D8DhRM": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "complementary_products": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Pairs well with",
+            "products_count": 2,
+            "show_below_gallery": true,
+            "stack_products": false,
+            "show_quick_buy": true
+          }
+        },
+        "image_wKM8f4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Review_Image_04.png",
+            "image_2": "shopify://shop_images/Review_Image_Points_08.png",
+            "alignment": "center",
+            "width_mode": "full_width",
+            "max_width": 400,
+            "mobile_max_width": 300
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "badges_hxWGik",
+        "judge_me_reviews_preview_badge_mpDetf",
+        "smile_io_smile_points_on_product_page_WQwYYP",
+        "custom_badge_UqxYCQ",
+        "inventory_W4PCLD",
+        "payment_terms",
+        "variant_picker",
+        "preorder_me_product_button_aGkyrX",
+        "buy_buttons",
+        "wishlist_plus_wishlist_pdp_button_AGgBL8",
+        "youpay_cart_sharing_youpay_button_P4rGT7",
+        "afterpay_on_site_messaging_payments_messaging_3fqMVH",
+        "klarna_on_site_messaging_app_block_B47dXn",
+        "pickup_availability_3rqY4R",
+        "new_text_jmNEBm",
+        "social_photos_instagram_ugc_product_gallery_yHqnzp",
+        "description",
+        "accordion_7eC6fQ",
+        "accordion_kNzHjE",
+        "accordion_jc6bNM",
+        "accordion_Jrykbz",
+        "accordion_8HyN6j",
+        "size_chart_3CgwDa",
+        "share_buttons_D8DhRM",
+        "complementary_products",
+        "image_wKM8f4"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "container_size": "xl",
+        "product_info_size": 37,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": true,
+        "desktop_media_layout": "grid",
+        "desktop_media_grid_gap": 4,
+        "mobile_controls": "thumbnails",
+        "enable_media_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "1753521774120f85f9": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_filter_predictive_bundle_8cbz7d": {
+          "type": "shopify://apps/boost-ai-search-filter/blocks/predictive-bundle/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "boost_ai_search_filter_predictive_bundle_8cbz7d"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "175401502329a8edcb": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_KFExMt": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_KFExMt"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "1761562140d7d1bd5a": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_filter_recommendation_ssr_ykGg96": {
+          "type": "shopify://apps/boost-ai-search-filter/blocks/recommendation-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {
+            "widgetId": "productpage-864275",
+            "additional_classes": "",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "boost_ai_search_filter_recommendation_ssr_ykGg96"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "hide_product_information": true,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "YOU MIGHT LIKE...",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs_9DgEaF",
+    "main",
+    "1753521774120f85f9",
+    "175401502329a8edcb",
+    "1761562140d7d1bd5a",
+    "related-products"
+  ]
+}

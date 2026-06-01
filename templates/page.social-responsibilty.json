@@ -1,0 +1,124 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "timeline_KbAU49": {
+      "type": "timeline",
+      "blocks": {
+        "item_cqCPzV": {
+          "type": "item",
+          "settings": {
+            "label": "2000",
+            "subheading": "Subheading",
+            "title": "2000",
+            "content": "<p>Use this text to share information about what happened to your brand at a specific time.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "mobile_text_color": "#ffffff"
+          }
+        },
+        "item_VzVtWQ": {
+          "type": "item",
+          "settings": {
+            "label": "2010",
+            "subheading": "Subheading",
+            "title": "2010",
+            "content": "<p>Use this text to share information about what happened to your brand at a specific time.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "mobile_text_color": "#ffffff"
+          }
+        },
+        "item_Ga4M7M": {
+          "type": "item",
+          "settings": {
+            "label": "2020",
+            "subheading": "Subheading",
+            "title": "2020",
+            "content": "<p>Use this text to share information about what happened to your brand at a specific time.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "mobile_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "item_cqCPzV",
+        "item_VzVtWQ",
+        "item_Ga4M7M"
+      ],
+      "name": "t:sections.timeline.presets.timeline.name",
+      "settings": {
+        "color_scheme": "",
+        "item_color_scheme": "",
+        "separate_section_with_border": true
+      }
+    },
+    "image_with_text_UbYQMR": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_rBbbqF": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_UmXzJG": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_UU8zrX": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_rBbbqF",
+        "heading_UmXzJG",
+        "richtext_UU8zrX"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "175472109766a45781": {
+      "type": "_blocks",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "timeline_KbAU49",
+    "image_with_text_UbYQMR",
+    "175472109766a45781"
+  ]
+}

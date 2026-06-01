@@ -1,0 +1,35 @@
+<ul class="section-block-links">
+  <li>
+    <a
+      {% if block.settings.url %}
+        href="{{ block.settings.url }}"
+      {% endif %}
+      class="block-links"
+    >
+      {{ block.settings.links_text }}
+    </a>
+  </li>
+</ul>
+
+{% schema %}
+{
+  "name": "links",
+  "settings": [
+    {
+      "type": "text",
+      "id": "links_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "t:global.text.link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "links"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,513 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "blocks_ByXqxN": {
+      "type": "_blocks",
+      "blocks": {
+        "image_PE4EMY": {
+          "type": "image",
+          "name": "t:blocks.image.name",
+          "settings": {
+            "image": "shopify://shop_images/Beserk-Calendar-Header_e6dc9219-32e9-40b5-b150-9c85d1ade49a.jpg",
+            "mobile_image": "shopify://shop_images/Beserk-Calendar-Header_e6dc9219-32e9-40b5-b150-9c85d1ade49a.jpg",
+            "alignment": "center",
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 320
+          },
+          "blocks": {}
+        },
+        "image_4JEcjd": {
+          "type": "image",
+          "name": "t:blocks.image.name",
+          "settings": {
+            "image": "shopify://shop_images/Upcoming-Events-Header.jpg",
+            "alignment": "center",
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 500
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_PE4EMY",
+        "image_4JEcjd"
+      ],
+      "name": "HEADER + UPCOMING EVENTS",
+      "settings": {}
+    },
+    "multi_column_jcn9YC": {
+      "type": "multi-column",
+      "name": "UPCOMING EVENTS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "multi_column_HriP38": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_MPcKFb": {
+          "type": "image_with_text",
+          "name": "Dead Of Winter Festival",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Dead-of-Winter-Festival.jpg",
+            "title": "JUN 27",
+            "heading_tag": "h3",
+            "content": "<p>Dead Of Winter Festival <br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_V9bqPd": {
+          "type": "image_with_text",
+          "name": "The Brisbane Gothic & Alternative Picnic ",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Brisbane-Gothic-And-Alternative-Picnic.jpg",
+            "title": "JUL 04",
+            "heading_tag": "h3",
+            "content": "<p>The Brisbane Gothic & Alternative Picnic [QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_rhePHx": {
+          "type": "image_with_text",
+          "name": "Necrosonic Festival",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Necrosonic-Festival.jpg",
+            "title": "AUG 22",
+            "heading_tag": "h3",
+            "content": "<p>Necrosonic Festival<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_MPcKFb",
+        "image_with_text_V9bqPd",
+        "image_with_text_rhePHx"
+      ],
+      "name": "t:sections.multi_column.presets.multi_column.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "new_richtext_6RKwf7": {
+      "type": "new-richtext",
+      "blocks": {
+        "rich_text_bcMWbx": {
+          "type": "rich-text",
+          "name": "COMING SOON",
+          "settings": {
+            "text": "<h1>COMING SOON...</h1>",
+            "content_width": "sm",
+            "text_position": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "rich_text_bcMWbx"
+      ],
+      "disabled": true,
+      "name": "NO EVENT",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "blocks_mcnCG7": {
+      "type": "_blocks",
+      "blocks": {
+        "image_nkkzxU": {
+          "type": "image",
+          "name": "t:blocks.image.name",
+          "settings": {
+            "image": "shopify://shop_images/Past-Events-Header.jpg",
+            "alignment": "center",
+            "width_mode": "custom",
+            "max_width": 1000,
+            "mobile_max_width": 500
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_nkkzxU"
+      ],
+      "name": "PAST EVENTS",
+      "settings": {}
+    },
+    "multi_column_R6kUKg": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_gXFTFn": {
+          "type": "image_with_text",
+          "name": "Syd Zombie Walk",
+          "settings": {
+            "image": "shopify://shop_images/1_a9f38a0f-8683-4b73-a0b4-59147a8281bd.jpg",
+            "title": "NOV 01",
+            "heading_tag": "h3",
+            "content": "<p>Sydney Zombie Walk<br/>[NSW]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Nb7UjC": {
+          "type": "image_with_text",
+          "name": "The Witches Wardrobe Market",
+          "settings": {
+            "image": "shopify://shop_images/4_8a65df08-a65c-49e7-a5cc-a62eb54dca86.jpg",
+            "title": "OCT 31",
+            "heading_tag": "h3",
+            "content": "<p>The Witches Wardrobe<br/>Market [VIC]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_WbxTGm": {
+          "type": "image_with_text",
+          "name": "The Morgue at Roachdale",
+          "settings": {
+            "image": "shopify://shop_images/2_43dc034a-8659-42f6-8b6e-0b51a15364f4.jpg",
+            "title": "OCT 30- NOV 2",
+            "heading_tag": "h3",
+            "content": "<p>The Morgue At Rochedale<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_gegKW4": {
+          "type": "image_with_text",
+          "name": "Tropicarnage Cup",
+          "settings": {
+            "image": "shopify://shop_images/3_355b065c-6fb0-4703-b3e8-37ecd9ed7d1b.jpg",
+            "title": "OCT 4-6",
+            "heading_tag": "h3",
+            "content": "<p>Tropicarnage Cup<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_wbNBnq": {
+          "type": "image_with_text",
+          "name": "Monsterfest",
+          "settings": {
+            "image": "shopify://shop_images/5_c8e7fcb5-1431-4733-944f-fabb7eb1506f.jpg",
+            "title": "<strong>OCT 3-26</strong>",
+            "heading_tag": "h3",
+            "content": "<p>Monsterfest<br/>[AUS]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Ty7VHF": {
+          "type": "image_with_text",
+          "name": "Altimate Showdown Magandjin",
+          "settings": {
+            "image": "shopify://shop_images/6.jpg",
+            "title": "sept 19",
+            "heading_tag": "h3",
+            "content": "<p>altimate.SHOWDOWN<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_mjVFeq": {
+          "type": "image_with_text",
+          "name": "Wardrobe Challenge",
+          "settings": {
+            "image": "shopify://shop_images/7.jpg",
+            "title": "SEPT 1-28",
+            "heading_tag": "h3",
+            "content": "<p>BESERK WARDROBE CHALLENGE<br/><br/></p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_LCMtJx": {
+          "type": "image_with_text",
+          "name": "CapriCon",
+          "settings": {
+            "image": "shopify://shop_images/11_9c543f03-2ac7-4522-9d17-74599593dcb7.jpg",
+            "title": "AUG 30",
+            "heading_tag": "h3",
+            "content": "<p>CapriCon<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_A4JWPF": {
+          "type": "image_with_text",
+          "name": "Necrosonic Festival",
+          "settings": {
+            "image": "shopify://shop_images/12_ca23b319-8247-4bba-b83d-6b8eb096708d.jpg",
+            "title": "AUG 23",
+            "heading_tag": "h3",
+            "content": "<p>Necrosonic Festival<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_DxNF9J": {
+          "type": "image_with_text",
+          "name": "Mack PopCon",
+          "settings": {
+            "image": "shopify://shop_images/9.jpg",
+            "title": "<strong>AUG 02</strong>",
+            "heading_tag": "h3",
+            "content": "<p>Mack PopCon<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_PiL6t7": {
+          "type": "image_with_text",
+          "name": "The Crimson RoseMasquerade Ball ",
+          "settings": {
+            "image": "shopify://shop_images/8.jpg",
+            "title": "AUG 02",
+            "heading_tag": "h3",
+            "content": "<p>The Crimson Rose<br/>Masquerade Ball [QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_6fdark": {
+          "type": "image_with_text",
+          "name": "Share The Dignity Drive",
+          "settings": {
+            "image": "shopify://shop_images/10.jpg",
+            "title": "<strong>AUG 01-31</strong>",
+            "heading_tag": "h3",
+            "content": "<p>Share The Dignity Drive<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_XK4rma": {
+          "type": "image_with_text",
+          "name": "A Cold Day In BNE",
+          "settings": {
+            "image": "shopify://shop_images/13.jpg",
+            "title": "<strong>JULY 26</strong>",
+            "heading_tag": "h3",
+            "content": "<p>A Cold Day In BNE<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Tqy4PD": {
+          "type": "image_with_text",
+          "name": "Fang & Fury ",
+          "settings": {
+            "image": "shopify://shop_images/16.jpg",
+            "title": "<strong>JULY 25-27</strong>",
+            "heading_tag": "h3",
+            "content": "<p>Fang & Fury <br/>[NSW]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_wdgUWE": {
+          "type": "image_with_text",
+          "name": "The Tattooed Lady Beauty Pageant",
+          "settings": {
+            "image": "shopify://shop_images/14.jpg",
+            "title": "<strong>JULY 18-20</strong>",
+            "heading_tag": "h3",
+            "content": "<p>The Tattooed Lady Beauty Pageant [WA]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_jPwagG": {
+          "type": "image_with_text",
+          "name": "altimate.SHOWDOWN Naarm",
+          "settings": {
+            "image": "shopify://shop_images/15.jpg",
+            "title": "<strong>JULY 03</strong>",
+            "heading_tag": "h3",
+            "content": "<p>altimate.SHOWDOWN<br/>[VIC]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_ijY4WL": {
+          "type": "image_with_text",
+          "name": "Fly By Night Trivia",
+          "settings": {
+            "image": "shopify://shop_images/19.jpg",
+            "title": "<strong>JUNE 14</strong>",
+            "heading_tag": "h3",
+            "content": "<p>Fly By Night Trivia<br/>[VIC]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_EAQiCL": {
+          "type": "image_with_text",
+          "name": "CULT The Festival",
+          "settings": {
+            "image": "shopify://shop_images/18.jpg",
+            "title": "<strong>JUNE 14</strong>",
+            "heading_tag": "h3",
+            "content": "<p>CULT The Festival<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_XaUtTa": {
+          "type": "image_with_text",
+          "name": "Townsville Pop Fest",
+          "settings": {
+            "image": "shopify://shop_images/17.jpg",
+            "title": "<strong>JUNE 8</strong>",
+            "heading_tag": "h3",
+            "content": "<p>Townsville Pop Fest<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_X8MGHM": {
+          "type": "image_with_text",
+          "name": "Red Faces Variety Show",
+          "settings": {
+            "image": "shopify://shop_images/22.jpg",
+            "title": "<strong>MAY 24</strong>",
+            "heading_tag": "h3",
+            "content": "<p>Red Faces Variety Show<br/>[SA]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_hbNmXz": {
+          "type": "image_with_text",
+          "name": "The New Order WGD Celebration ",
+          "settings": {
+            "image": "shopify://shop_images/21.jpg",
+            "title": "<strong>MAY 24</strong>",
+            "heading_tag": "h3",
+            "content": "<p>The New Order WGD Celebration  [QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_Vy7zeT": {
+          "type": "image_with_text",
+          "name": "The RaptureResurrect Events ",
+          "settings": {
+            "image": "shopify://shop_images/24.jpg",
+            "title": "<strong>JAN 25 </strong>",
+            "heading_tag": "h3",
+            "content": "<p>The Rapture Resurrect Events [NSW]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_qUDCTn": {
+          "type": "image_with_text",
+          "name": "MX BurlesqueMasters",
+          "settings": {
+            "image": "shopify://shop_images/23.jpg",
+            "title": "<strong>JAN 18 </strong>",
+            "heading_tag": "h3",
+            "content": "<p>MX Burlesque Masters</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_gXFTFn",
+        "image_with_text_Nb7UjC",
+        "image_with_text_WbxTGm",
+        "image_with_text_gegKW4",
+        "image_with_text_wbNBnq",
+        "image_with_text_Ty7VHF",
+        "image_with_text_mjVFeq",
+        "image_with_text_LCMtJx",
+        "image_with_text_A4JWPF",
+        "image_with_text_DxNF9J",
+        "image_with_text_PiL6t7",
+        "image_with_text_6fdark",
+        "image_with_text_XK4rma",
+        "image_with_text_Tqy4PD",
+        "image_with_text_wdgUWE",
+        "image_with_text_jPwagG",
+        "image_with_text_ijY4WL",
+        "image_with_text_EAQiCL",
+        "image_with_text_XaUtTa",
+        "image_with_text_X8MGHM",
+        "image_with_text_hbNmXz",
+        "image_with_text_Vy7zeT",
+        "image_with_text_qUDCTn"
+      ],
+      "name": "t:sections.multi_column.presets.multi_column.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "columns_per_row": 5,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blocks_ByXqxN",
+    "multi_column_jcn9YC",
+    "multi_column_HriP38",
+    "new_richtext_6RKwf7",
+    "blocks_mcnCG7",
+    "multi_column_R6kUKg"
+  ]
+}

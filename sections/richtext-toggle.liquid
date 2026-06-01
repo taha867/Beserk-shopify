@@ -1,0 +1,82 @@
+{% schema %}
+{
+  "name": "Richtext with Toggle",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:global.colors.scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_vertical_spacing",
+      "label": "t:global.spacing.remove_vertical_spacing",
+      "default": false
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext_content",
+      "label": "Content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Richtext Toggle"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="richtext-toggle-section color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% unless section.settings.remove_vertical_spacing %} section-spacing{% endunless %}">
+  <div class="container container--lg">
+    {% if section.settings.heading != blank %}
+      <div class="desktop-heading h2" style="text-align:center;">
+        {{ section.settings.heading }}
+      </div>
+    {% endif %}
+
+    <div class="richtext-collapsible">
+      <button
+        class="button toggle-btn"
+        onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('open');"
+      >
+        BESERK UPDATE - CLICK TO READ
+      </button>
+      <div class="collapsible-content">
+        {{ section.settings.richtext_content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .richtext-toggle-section {
+    margin: 0;
+    text-align: center;
+  }
+
+  .richtext-collapsible {
+    margin-top: 20px;
+  }
+
+  .collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 12px;
+    background: #fff;
+    margin-top: 10px;
+    color: #000;
+  }
+
+  .collapsible-content.open {
+    max-height: 500px; /* adjust if content is large */
+    padding: 12px;
+  }
+</style>

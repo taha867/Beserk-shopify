@@ -1,0 +1,1135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image_UmHJfg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0526_Lip-Service-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0526_Lip-Service-New-01_Banner-1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 400,
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify://collections/lip-service",
+            "button_1_style": "solid",
+            "button_1_background": "#ff0000",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#cb2b2b",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(10, 234, 237, 0), rgba(0, 0, 0, 0) 100%)"
+          }
+        },
+        "image_Upjnnm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0526_Foxblood-New-01_Banner_3200_5187041a-c9b9-4ff8-8990-b32d8fda4c64.jpg",
+            "mobile_image": "shopify://shop_images/0526_Foxblood-New-01_Banner-1200_8a62cae4-6b6a-43fd-8cb3-bfb7e4312698.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 740,
+            "button_1_text": "shop now",
+            "button_1_link": "shopify://collections/foxblood",
+            "button_1_style": "solid",
+            "button_1_background": "#582e6c",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#ed8a00",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        },
+        "image_pLqq4n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/The-Lost-Boys-New-01_Banner-3200.jpg",
+            "mobile_image": "shopify://shop_images/The-Lost-Boys-New-01_Banner-1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 740,
+            "button_1_text": "shop now",
+            "button_1_link": "shopify://collections/the-lost-boys",
+            "button_1_style": "solid",
+            "button_1_background": "#cc252e",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#ed8a00",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_UmHJfg",
+        "image_Upjnnm",
+        "image_pLqq4n"
+      ],
+      "name": "Main Scrolling Banner",
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": true,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 10,
+        "background": "#000000",
+        "controls_color": "#ff0000"
+      }
+    },
+    "new_richtext_cgVFxc": {
+      "type": "new-richtext",
+      "blocks": {
+        "ai_gen_block_e12f3ea_Qk3PwV": {
+          "type": "ai_gen_block_e12f3ea",
+          "settings": {
+            "bar_height": 25,
+            "red_color": "#1c1c1c",
+            "vertical_margin": 0,
+            "stripe_position": "center",
+            "stripe_width": 100,
+            "stripe_height": 2,
+            "black_color": "#e32c2b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e12f3ea_Qk3PwV"
+      ],
+      "name": "Spacer Bar",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "collection_list_zN4zMP": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_44UcQj": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "hair-colour",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair_91eac513-a9cd-496d-a2f4-f6493bf25fb3.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP HAIR COLOUR",
+            "button_link": "shopify://collections/hair-colour",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_wjf4Le": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "band-merchandise",
+            "image": "shopify://shop_images/Front_Page_500x715_Promo_1_Band_Merch.gif",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP BAND MERCH",
+            "button_link": "shopify://collections/band-merchandise",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 4
+          }
+        },
+        "collection_8kWcYU": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "forest-ink",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Forest-Ink.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP FOREST INK",
+            "button_link": "shopify://collections/forest-ink",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_VExDMH": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "hells-blankets",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP HELLS BLANKETS",
+            "button_link": "shopify://collections/hells-blankets",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5
+          }
+        }
+      },
+      "block_order": [
+        "collection_44UcQj",
+        "collection_wjf4Le",
+        "collection_8kWcYU",
+        "collection_VExDMH"
+      ],
+      "name": "t:sections.collection_list.presets.collection_list.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_desktop": 4,
+        "stack_collections_mobile": true,
+        "collections_per_row_mobile": "2",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "recently_viewed_products_8MGfMp": {
+      "type": "recently-viewed-products",
+      "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "",
+        "hide_product_information": true,
+        "stack_products": false,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Recently viewed products",
+        "content": ""
+      }
+    },
+    "image_with_text_overlay_VEUQC6": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_UAqWiK": {
+          "type": "heading",
+          "settings": {
+            "text": "IT'S MORE FUN WHEN ITS A MYSTERY.. 🌟",
+            "heading_tag": "h4"
+          }
+        },
+        "button_GjhyxV": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "SHOP BLIND BOXES",
+            "url": "shopify://collections/blind-boxes",
+            "background": "#e32c2b",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_UAqWiK",
+        "button_GjhyxV"
+      ],
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "image_size": "auto",
+        "image": "shopify://shop_images/Blind-Boxes_Banner-2500-03.jpg",
+        "mobile_image": "shopify://shop_images/Blind-Boxes-New_Banner-1100-03.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 35
+      }
+    },
+    "collection_list_QV7y7R": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_FmnWF3": {
+          "type": "collection",
+          "name": "Collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "the-lost-boys",
+            "image": "shopify://shop_images/Collection-1_The-Lost-Boys-X-Beserk-01_8697a8d3-4e89-481e-b40c-5bb1d8751e92.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "THE LOST BOYS X BESERK",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify://collections/the-lost-boys",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        },
+        "collection_NWG7wQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "restyle",
+            "image": "shopify://shop_images/Collection-1_Restyle_03.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "restyle",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify://collections/restyle",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_qkWbTG": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "killstar",
+            "image": "shopify://shop_images/Collection-1_Killstar_03_01d87885-cdef-4824-b77c-a880653826be.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Killstar",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify://collections/killstar",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
+          }
+        },
+        "collection_8xUqcB": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "foxblood",
+            "image": "shopify://shop_images/Collection-1_Foxblood-01_1e8a75c5-2785-4671-83d9-2f7d0933d9fd.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "FOXBLOOD",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify://collections/foxblood",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_FmnWF3",
+        "collection_NWG7wQ",
+        "collection_qkWbTG",
+        "collection_8xUqcB"
+      ],
+      "name": "Collection 1",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_desktop": 4,
+        "stack_collections_mobile": true,
+        "collections_per_row_mobile": "2",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "new_richtext_4RFcPt": {
+      "type": "new-richtext",
+      "blocks": {
+        "ai_gen_block_e12f3ea_7NtbPd": {
+          "type": "ai_gen_block_e12f3ea",
+          "settings": {
+            "bar_height": 15,
+            "red_color": "#000000",
+            "vertical_margin": 0,
+            "stripe_position": "center",
+            "stripe_width": 100,
+            "stripe_height": 8,
+            "black_color": "#e32c2b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e12f3ea_7NtbPd"
+      ],
+      "name": "Spacer Bar",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Checkout-Image-6_1_707555e7-6b89-4b69-a6f5-7024a65b807f.jpg",
+        "subheading": "JOIN US!",
+        "title": "BESERK Newsletter",
+        "content": "<p>Receive Updates on new releases, sales, free giveaways & more!  ❤️</p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "logo_list_pgAaGP": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_pmGMnK": {
+          "type": "logo",
+          "name": "HELLS BLANKETS",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Hells-Blankets_e9b7bea3-49ab-4081-872b-33305358c2c1.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/hells-blankets"
+          }
+        },
+        "logo_mMtDtf": {
+          "type": "logo",
+          "name": "PASTEL PIXIE",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Pastel-Pixie_83f58b64-8495-4464-a31d-3cd0f798fa22.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/pastel-pixie"
+          }
+        },
+        "logo_NQCFmN": {
+          "type": "logo",
+          "name": "NEKO NAILS",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Neko-Nail-Cult_e774e6c3-0608-4407-bb10-fa70f4ca58ea.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/neko-nail-cult"
+          }
+        },
+        "logo_EEPbpm": {
+          "type": "logo",
+          "name": "BESERK CLOTHING",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Beserk-Clothing_20f6b2df-f500-4aed-991b-56ea1ba95a9e.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/beserk-clothing"
+          }
+        },
+        "logo_GxKt7E": {
+          "type": "logo",
+          "name": "ARCTIC FOX",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Arctic-Fox.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/arctic-fox"
+          }
+        },
+        "logo_XfkpAd": {
+          "type": "logo",
+          "name": "LUNAR TIDES",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Lunar-Tides_9fc33a12-3ad1-4326-8701-b9c05a2c4fad.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/lunar-tides"
+          }
+        },
+        "logo_bJP9qe": {
+          "type": "logo",
+          "name": "MANIC PANIC",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Manic-Panic_6aefd848-dfc9-4ac7-87d2-bcc4a97da15a.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/manic-panic-hair"
+          }
+        },
+        "logo_76zWDg": {
+          "type": "logo",
+          "name": "FOREST INK",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Killstar_e1b92682-afcc-4e27-838b-fb792430bbea.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/killstar"
+          }
+        },
+        "logo_d8tAPD": {
+          "type": "logo",
+          "name": "RESTYLE",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Restyle.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/restyle"
+          }
+        },
+        "logo_iYpBQa": {
+          "type": "logo",
+          "name": "FOXBLOOD",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Foxblood.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/foxblood"
+          }
+        },
+        "logo_WbbtGB": {
+          "type": "logo",
+          "name": "FOREST INK",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Forest-Ink_4b01c824-062e-4c26-a3a9-868792b4ef55.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/forest-ink"
+          }
+        },
+        "logo_Y3T4rG": {
+          "type": "logo",
+          "name": "PUNK RAVE",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Punk-Rave_e7584401-7555-4ba1-adb0-5b73d4270d2c.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/punk-rave"
+          }
+        },
+        "logo_dLnEtD": {
+          "type": "logo",
+          "name": "HELL BUNNY",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Hell-Bunny.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/hell-bunny"
+          }
+        },
+        "logo_QgLrXM": {
+          "type": "logo",
+          "name": "SANRIO",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Sanrio_797ab222-793b-4a68-aa4e-222aedf4634a.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/sanrio"
+          }
+        },
+        "logo_9yjbRC": {
+          "type": "logo",
+          "name": "GOTHIC GIFTS",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Gothic-Gifts.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/gothic-gifts"
+          }
+        },
+        "logo_imgfN3": {
+          "type": "logo",
+          "name": "DEMONIA",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Demonia_e4cf644c-ac9a-4eeb-842b-001c940f7775.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/demonia"
+          }
+        },
+        "logo_JTz7ea": {
+          "type": "logo",
+          "name": "HOT CHOCOLATE",
+          "settings": {
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Hot-Chocolate.jpg",
+            "logo_width": 250,
+            "link": "shopify://collections/hot-chocolate"
+          }
+        }
+      },
+      "block_order": [
+        "logo_pmGMnK",
+        "logo_mMtDtf",
+        "logo_NQCFmN",
+        "logo_EEPbpm",
+        "logo_GxKt7E",
+        "logo_XfkpAd",
+        "logo_bJP9qe",
+        "logo_76zWDg",
+        "logo_d8tAPD",
+        "logo_iYpBQa",
+        "logo_WbbtGB",
+        "logo_Y3T4rG",
+        "logo_dLnEtD",
+        "logo_QgLrXM",
+        "logo_9yjbRC",
+        "logo_imgfN3",
+        "logo_JTz7ea"
+      ],
+      "name": "t:sections.logo_list.presets.logo_list.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "",
+        "stack_on_mobile": false,
+        "items_per_row": 7,
+        "logo_item_background": "#000000",
+        "logo_item_border": "#000000"
+      }
+    },
+    "full_width_richtext_qCnUTk": {
+      "type": "full-width-richtext",
+      "blocks": {
+        "image_with_url_A4g4r3": {
+          "type": "image-with-url",
+          "name": "Image with URL",
+          "settings": {
+            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-11_15279cd9-cab8-41ac-8937-db8f5fd36c3e.jpg",
+            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-11_e577f0bb-0e24-422f-a5a2-4593d363afe9.jpg",
+            "image_link": "https://www.beserk.com.au/collections/sale",
+            "alignment": "center",
+            "width_mode": "full_width",
+            "max_width": 300,
+            "mobile_max_width": 200
+          },
+          "blocks": {}
+        },
+        "button_tVW4zk": {
+          "type": "button",
+          "name": "t:blocks.button.name",
+          "settings": {
+            "text": "SHOP SALE",
+            "url": "shopify://collections/sale",
+            "background": "#ffeb00",
+            "text_color": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_with_url_A4g4r3",
+        "button_tVW4zk"
+      ],
+      "name": "Sale Banner",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "full",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "new",
+            "products_count": 16,
+            "title": "",
+            "link_url": "https://www.beserk.com.au/collections/new?sort=published-descending",
+            "link_text": "VIEW ALL NEW >"
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ],
+      "name": "New In",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": true,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 6,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "subheading": "New items added to the Beserk site daily!"
+      }
+    },
+    "new_richtext_N9ymHm": {
+      "type": "new-richtext",
+      "blocks": {
+        "ai_gen_block_e12f3ea_R7BLbJ": {
+          "type": "ai_gen_block_e12f3ea",
+          "settings": {
+            "bar_height": 15,
+            "red_color": "#000000",
+            "vertical_margin": 0,
+            "stripe_position": "center",
+            "stripe_width": 100,
+            "stripe_height": 8,
+            "black_color": "#e32c2b"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e12f3ea_R7BLbJ"
+      ],
+      "name": "Spacer Bar",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "collection_list_nDUxLp": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_PbHcTR": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "image": "shopify://shop_images/Front-Page_Facebook-Group_02.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "JOIN NOW",
+            "button_link": "https://www.facebook.com/groups/beserk",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "collection_pYGwVj": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "image": "shopify://shop_images/Front-Page_Rewards-Image_02_a5b3bb4c-fe4d-44ca-8585-bb4b275ddb6e.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "LEARN MORE",
+            "button_link": "shopify://pages/rewards-home",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        },
+        "collection_UtmzJN": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "image": "shopify://shop_images/Front_Page_Free_Sticker_01_a1d47348-75b2-4da5-be8f-522db0cd9236.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "MORE INFO",
+            "button_link": "shopify://blogs/news/free-sticker-for-pick-up-orders",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "collection_PbHcTR",
+        "collection_pYGwVj",
+        "collection_UtmzJN"
+      ],
+      "name": "t:sections.collection_list.presets.collection_list.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "stack_collections_mobile": true,
+        "collections_per_row_mobile": "1",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "collection_list_q7NjN8": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_XAMAUw": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "hells-blankets",
+            "image": "shopify://shop_images/Collection-2_Hells-Blankets_04.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP HELLS BLANKET",
+            "button_link": "shopify://collections/hells-blankets",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_QThptf": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "the-lost-boys",
+            "image": "shopify://shop_images/Collection-2_Beserk_04.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP The Lost Boys x Beserk",
+            "button_link": "shopify://collections/the-lost-boys",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_L4r6Wb": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "gothic-gifts",
+            "image": "shopify://shop_images/Collection-2_Gothic-Gifts_01_f8dcdffa-f8d3-4044-803c-871d22276512.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP gothic gifts",
+            "button_link": "shopify://collections/gothic-gifts",
+            "button_style": "outline",
+            "overlay_color": "#ffffff",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_QHAmkE": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "sanrio",
+            "image": "shopify://shop_images/Collection-2_Pop-Culture_06.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP Sanrio",
+            "button_link": "shopify://collections/sanrio",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_YeKAjD": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "makeup-a-murder",
+            "image": "shopify://shop_images/Collection-2_Makeup-A-Murder_02.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP MAKEUP A MURDER",
+            "button_link": "shopify://collections/makeup-a-murder",
+            "button_style": "outline",
+            "overlay_color": "#1c1c1c",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_Ph3bka": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "killstar",
+            "image": "shopify://shop_images/Collection-2_Killstar-05_f569a429-15f2-4daa-baa0-738ad4882321.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "SHOP Killstar",
+            "button_link": "shopify://collections/killstar",
+            "button_style": "outline",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_XAMAUw",
+        "collection_QThptf",
+        "collection_L4r6Wb",
+        "collection_QHAmkE",
+        "collection_YeKAjD",
+        "collection_Ph3bka"
+      ],
+      "name": "Collection 2",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": true,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 6,
+        "stack_collections_mobile": true,
+        "collections_per_row_mobile": "1",
+        "subheading": "",
+        "title": "WE HAVE THE BEST RANGE OF ITEMS FROM AROUND THE WORLD!",
+        "content": ""
+      }
+    },
+    "new_richtext_r9xtfR": {
+      "type": "new-richtext",
+      "blocks": {
+        "heading_GiA3xV": {
+          "type": "heading",
+          "name": "t:blocks.heading.name",
+          "settings": {
+            "text": "tag #beserk @beserk to be featured",
+            "style": "h5",
+            "html_tag": "p"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_GiA3xV"
+      ],
+      "name": "Header Tag Beserk#",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "175503929627ff7d72": {
+      "type": "apps",
+      "blocks": {
+        "social_photos_instagram_ugc_page_gallery_9JYCCn": {
+          "type": "shopify://apps/social-photos-instagram-ugc/blocks/page-gallery/d967a330-599e-491a-8cf1-42a3cd34baa3",
+          "settings": {
+            "socialphotos-gallery-id": "4746843",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "social_photos_instagram_ugc_page_gallery_9JYCCn"
+      ],
+      "name": "UGC Gallery",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    },
+    "new_richtext_rnxETB": {
+      "type": "new-richtext",
+      "blocks": {
+        "ai_gen_block_e12f3ea_4xHV4j": {
+          "type": "ai_gen_block_e12f3ea",
+          "settings": {
+            "bar_height": 15,
+            "red_color": "#e32c2b",
+            "vertical_margin": 0,
+            "stripe_position": "center",
+            "stripe_width": 100,
+            "stripe_height": 8,
+            "black_color": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e12f3ea_4xHV4j"
+      ],
+      "name": "Spacer Bar",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "blog": "news",
+        "posts_count": 7,
+        "stack_on_mobile": false,
+        "show_category": false,
+        "show_date": false,
+        "show_excerpt": false,
+        "show_read_more": true,
+        "subheading": "",
+        "title": "BESERK BLOG",
+        "content": "<p>Updates on New Products, Competitions & Sales!</p>",
+        "button_link": "shopify://blogs/news",
+        "button_text": "VISIT THE BLOG"
+      }
+    },
+    "text_with_icons_9qqVM4": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_aWQwbH": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify://shop_images/Website_Icons_Delivery-03_3a9948ba-e45f-4c78-8140-4eedf4837629.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "FREE DELIVERY",
+            "content": "<p>FREE delivery Australia wide orders over $129. Order by 2pm for Same day dispatch! Click & Collect ready in 1 hour.<br/>We ship Worldwide<br/>❤️</p>"
+          }
+        },
+        "item_z89pxi": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "custom_icon": "shopify://shop_images/Website_Icons_Customer_Service_03.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "Customer service",
+            "content": "<p><a href=\"https://www.beserk.com.au/pages/contact-us\" title=\"https://www.beserk.com.au/pages/contact-us\">Contact us</a> ~ text, call, live chat or email. <br/>Mon-Fri 8.30am - 4.30pm AEST. We are always happy to help!  <br/>❤️</p>"
+          }
+        },
+        "item_8QD8Wj": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "custom_icon": "shopify://shop_images/Website_Icons_No-Dropshipping_06.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "<strong>NO DROP-SHIPPING</strong>",
+            "content": "<p>All our items are 100% Genuine & dispatched from our warehouse in Virginia, QLD Australia. We do not sell cheap copies! <br/>❤️</p>"
+          }
+        },
+        "item_GUDQiR": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "custom_icon": "shopify://shop_images/Website_Icons_Easy_Returns_02.png",
+            "icon_width": 64,
+            "mobile_icon_width": 64,
+            "title": "30 DAY EASY RETURNS",
+            "content": "<p>Fast & Easy Returns. We’re here to make returns simple and stress-free so you can shop with confidence.<br/>❤️</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_aWQwbH",
+        "item_z89pxi",
+        "item_8QD8Wj",
+        "item_GUDQiR"
+      ],
+      "name": "t:sections.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "stack_on_mobile": true,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "175453757944e24fb2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_3KLwYT": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 2580
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_3KLwYT"
+      ],
+      "name": "Reviews Carousel",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "new_richtext_cgVFxc",
+    "collection_list_zN4zMP",
+    "recently_viewed_products_8MGfMp",
+    "image_with_text_overlay_VEUQC6",
+    "collection_list_QV7y7R",
+    "new_richtext_4RFcPt",
+    "newsletter",
+    "logo_list_pgAaGP",
+    "full_width_richtext_qCnUTk",
+    "featured-collections",
+    "new_richtext_N9ymHm",
+    "collection_list_nDUxLp",
+    "collection_list_q7NjN8",
+    "new_richtext_r9xtfR",
+    "175503929627ff7d72",
+    "new_richtext_rnxETB",
+    "blog-posts",
+    "text_with_icons_9qqVM4",
+    "175453757944e24fb2"
+  ]
+}

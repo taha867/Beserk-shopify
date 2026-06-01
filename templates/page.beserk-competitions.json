@@ -1,0 +1,159 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "175472109766a45781": {
+      "type": "_blocks",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_hpzfeB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PBVnwT": {
+          "type": "heading",
+          "settings": {
+            "text": "BESERK COMPETITIONS",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_PgQgaX": {
+          "type": "subheading",
+          "settings": {
+            "text": "Information on our latest giveaways and competitions!"
+          }
+        },
+        "richtext_jDVgph": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We love giving back to our Beserk community! Competitions are announced regularly on our website and across our main social channels. Make sure you check back on this page or that you're following us on our socials so you never miss your chance to win.</p><p>Have fun and good luck!<strong> 🖤</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PBVnwT",
+        "subheading_PgQgaX",
+        "richtext_jDVgph"
+      ],
+      "name": "Beserk Competitions",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_h4wt7n": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tyTKtU": {
+          "type": "heading",
+          "settings": {
+            "text": "No Current Competitions",
+            "heading_tag": "h5"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tyTKtU"
+      ],
+      "disabled": true,
+      "name": "Hide If There Are Comps",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "faq_Aiyr9N": {
+      "type": "faq",
+      "blocks": {
+        "category_LQrbPt": {
+          "type": "category",
+          "settings": {
+            "title": "Current Competitions",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_C4bJcy": {
+          "type": "question",
+          "name": "The Lost Boys x Beserk Giveaway",
+          "settings": {
+            "question": "The Lost Boys x Beserk Giveaway",
+            "answer": "<p><strong>Full Terms & Conditions</strong></p><ul><li>This promotion will commence at <strong>7:00AM AEST 28.06.2026</strong> and conclude at <strong>7:00AM AEST 04.06.2026</strong>.</li><li>To be eligible, entrants must like and tag one (1) friend in the comments of the relevant post, and be following @ beserk during the promotional period.</li><li>Each eligible comment will automatically receive one (1) entry into the draw. Multiple entries are permitted per account, provided they each tag a unique account.</li><li>Competition is open for Australia & New Zealand residents only.</li><li>One (1) bonus entry will be granted for each account who shares the relevant post to their stories.</li><li>One (1) winner will be selected at random from all eligible entries during the promotion period.</li><li>The winner will be contacted via DM to their instagram account on 04.06.2026 after 7:00AM AEST.</li><li>The winner will receive a $250 AUD Beserk Gift Voucher which can only be spent on items in The Lost Boys x Beserk collection.</li><li>Prize valued at $250AUD</li><li>Prizes are not redeemable for cash or credit and cannot be exchanged/returned.</li><li>This competition is not associated with Instagram/Meta.</li></ul>"
+          }
+        },
+        "question_kpnmYJ": {
+          "type": "question",
+          "name": "Gremlins x Beserk Giveaway",
+          "disabled": true,
+          "settings": {
+            "question": "Gremlins x Beserk Giveaway",
+            "answer": "<p><strong>Full Terms & Conditions</strong></p><ul><li>This promotion will commence at <strong>1:00PM AEST 11.05.2026</strong> and conclude at <strong>11:59PM AEST 18.05.2026</strong>.</li><li>To be eligible, entrants must like and tag 2 friends in the comments of the relevant post, and be following @ Beserk during the promotional period.</li><li>Each eligible comment of 2 friends will automatically receive one (1) entry into the draw. Multiple entries are permitted, with each separate comment (of 2 accounts) counting as a separate (1) entry.</li><li>Competition is open for Australia & New Zealand residents only.</li><li>One (1) bonus entry will be granted for each account who shares the relevant post to their stories.</li><li>One (1) winner will be selected at random from all eligible entries during the promotion period.</li><li>The winner will be contacted via DM to their Instagram account on 18.05.2026 </li><li>The winner will receive one (1) Gremlins x Beserk Prize Pack featuring one (1) of each of the eight (8) items in the Gremlins x Beserk range. Total Prize valued at approximately $90 AUD - contains 3 x Tote Bags, 3 x Air Fresheners & 2 x Lanyards.</li><li>The prize will be shipped to the winner, by Beserk via Australia Post. Postage costs will be covered by Beserk.</li><li>Prizes are not redeemable for cash or credit and cannot be exchanged/returned.</li><li>Beserk reserves the right to cancel, amend, or end this promotion at any time without prior notice. Beserk also reserves the right to change or substitute the prize at its discretion without prior notice.</li><li>The winner will be selected by Beserk at its discretion.</li><li>Unsuccessful entrants will not be notified.</li></ul>"
+          }
+        },
+        "question_gaE9KR": {
+          "type": "question",
+          "name": "VIP GROUP",
+          "disabled": true,
+          "settings": {
+            "question": "BESERK VIP GROUP - 5 Days Of Giveaways",
+            "answer": "<p><strong>Join Our Beserk VIP Group for Exclusive Content + Giveaways!</strong></p><p>We are currently hosting a giveaway everyday for 5 days in our VIP group. Don't miss out!</p><p><a href=\"https://www.facebook.com/groups/beserk\" target=\"_blank\" title=\"https://www.facebook.com/groups/beserk\">JOIN HERE TO WIN</a></p><p><strong>Full Terms & Conditions</strong></p><ul><li>This promotion will commence at 7AM<strong> </strong>on 13.04.2026 and conclude at 7AM AEST on 18.04.2026. With 5 separate giveaways each happening for 24 hours, commencing at from 7am AEST on 13th, 14th, 15th, 16th and 17th of April.</li><li>To be eligible, entrants must be a part of the Beserk Facebook Group and comment as instructed on the relevant giveaway post that will be added in the group at 7am AEST each day.</li><li>Competition is open for Australia & New Zealand residents only.</li><li>Winner/s will be announced in the comments on the Giveaway post once each day has concluded, at 9am AEST the following day. They will then need to contact Beserk via email or DM to claim their prize and provide postage details.</li><li>The winners will be chosen at random from eligible entrants - each customer is only eligible to win one (1) prize. There will be at least one (1) winner each day.</li><li>Chosen winners will receive the prize via postage. Beserk will cover any postage costs as a result of this.</li><li>Prizes are not redeemable for cash or credit and cannot be exchanged/returned.</li><li>Beserk reserves the right to cancel, amend, or end this promotion at any time without prior notice. Beserk also reserves the right to change or substitute the prize at its discretion without prior notice.</li><li>The winner will be selected by Beserk at its discretion.</li><li>Unsuccessful entrants will not be notified.</li></ul>"
+          }
+        },
+        "question_8b4pJH": {
+          "type": "question",
+          "name": "The Super Mario Galaxy Movie Tickets",
+          "disabled": true,
+          "settings": {
+            "question": "The Super Mario Galaxy Movie Prize Pack + Tickets",
+            "answer": "<p>To celebrate The Super Mario Galaxy Movie releasing in cinemas on April 1st, we’re giving a lucky person the chance to win a prize pack including a double pass to see it!</p><p>To go into the draw to win - place an order on our website between 25th of March and 31st of March and put the codeword “YOSHI” into your order notes!*</p><p>Prize pack includes:</p><ul><li>A double pass to go see The Super Mario Galaxy Movie</li><li>A Mario Galaxy backpack</li><li>And a Mario Galaxy waterbottle</li></ul><p>PLUS we also have 5 extra double passes to give away too!</p><p>View the trailer here&gt;&gt; [ <a href=\"https://www.youtube.com/watch?v=2C-yiLuXXzU\">https://www.youtube.com/watch?v=2C-yiLuXXzU</a> ]</p><p>Good luck! ❤️</p><p>*Please note that this event is open to Australian residents only. Winners will be selected at random.</p><p><strong>Full Terms & Conditions</strong></p><ul><li>This promotion will commence at <strong>7:00AM AEST 25.03.2026</strong> and conclude at <strong>7:00AM AEST 31.03.2026</strong>.</li><li>To be eligible, entrants must place an order on <a href=\"http://www.beserk.com.au\">www.beserk.com.au</a> during the promotion period.</li><li>Each eligible order during the promotion period with the codeword YOSHI counts as one (1) entry into the draw. Multiple entries are permitted, with each separate eligible order counting as a separate (1) entry.</li><li>Competition is open for Australian residents only.</li><li>One (1) winner will be selected at random from all eligible entries during the promotion period to win the Prize Pack.</li><li>Five (5) additional winners will be selected at random to win double passes to see The Super Mario Galaxy Movie whilst in cinemas.</li><li>The winners will be chosen at random from eligible entrants - each customer is only eligible to win one (1) prize.</li><li>Chosen winners will receive the prize within their order - and will not otherwise be contacted. Beserk will cover any additional postage costs as result of this.</li><li>Prizes are not redeemable for cash or credit and cannot be exchanged/returned.</li><li>Beserk reserves the right to cancel, amend, or end this promotion at any time without prior notice. Beserk also reserves the right to change or substitute the prize at its discretion without prior notice.</li><li>The winner will be selected by Beserk at its discretion.</li><li>Unsuccessful entrants will not be notified.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "category_LQrbPt",
+        "question_C4bJcy",
+        "question_kpnmYJ",
+        "question_gaE9KR",
+        "question_8b4pJH"
+      ],
+      "name": "Current Competitions",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "show_categories": false,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "175472109766a45781",
+    "rich_text_hpzfeB",
+    "rich_text_h4wt7n",
+    "faq_Aiyr9N"
+  ]
+}

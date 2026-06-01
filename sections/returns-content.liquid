@@ -1,0 +1,32 @@
+<div class="return-content container container--xl">
+  {{ page.content }}
+</div>
+<style>
+.return-content p img {display: inline;}
+
+.return-content p {
+    margin: 10px 0;
+}
+
+.return-content {
+    padding: 40px 0;
+}
+
+    </style>
+{% schema %}
+{
+  "name": "Return content",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "returns-content",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Return content"
+    }
+  ]
+}
+{% endschema %}

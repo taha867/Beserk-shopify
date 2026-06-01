@@ -1,0 +1,534 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_p36khR": {
+      "type": "rich-text",
+      "blocks": {
+        "image_tWfaHd": {
+          "type": "image",
+          "settings": {
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "subheading_3BMFwm": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "MY ACCOUNT"
+          }
+        },
+        "heading_gwDMK4": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "WELCOME TO BESERK...",
+            "heading_tag": "h1"
+          }
+        },
+        "customer_name_6rRXLY": {
+          "type": "customer_name",
+          "settings": {
+            "customer_name": ""
+          }
+        },
+        "richtext_kcXAFr": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "button_8WVeDh": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "PROFILE",
+            "url": "shopify://pages/profile",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_yptdnW": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "MY ORDERS",
+            "url": "shopify://pages/orders",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_arHTr8": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "ADDRESS BOOK",
+            "url": "https://www.beserk.com.au/account/addresses",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_cmNaAf": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "REWARDS",
+            "url": "https://www.beserk.com.au/pages/copy-of-rewards",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_BhTicM": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "RETURNS",
+            "url": "https://www.beserk.com.au/pages/beserk-returns",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_xTbGfD": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "NEW WISHLIST",
+            "url": "https://www.beserk.com.au/account?p=0#swym-list",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_ffW78M": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "OLD WISHLIST",
+            "url": "https://www.beserk.com.au/apps/wishlist",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_EiH4Kd": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "LOGOUT",
+            "url": "http://beserk.com.au/account/logout",
+            "background": "#ffffff",
+            "text_color": "#1c1c1c"
+          }
+        }
+      },
+      "block_order": [
+        "image_tWfaHd",
+        "subheading_3BMFwm",
+        "heading_gwDMK4",
+        "customer_name_6rRXLY",
+        "richtext_kcXAFr",
+        "button_8WVeDh",
+        "button_yptdnW",
+        "button_arHTr8",
+        "button_cmNaAf",
+        "button_BhTicM",
+        "button_xTbGfD",
+        "button_ffW78M",
+        "button_EiH4Kd"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "content_width": "lg",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_block_Waa9gP": {
+      "type": "image-with-text-block",
+      "name": "t:sections.image_with_text_block.presets.image_with_text_block.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/Rewards_Header_Desktop_04_9076930b-e7f7-41d0-bdc3-a75012c33e75.jpg",
+        "mobile_image": "shopify://shop_images/Rewards_Header_Mobile_03_e3367f61-6b55-4e47-a799-e5b8ab5d7834.jpg",
+        "content_width": "sm",
+        "enable_parallax": false,
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_aUgVEF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9Kpejc": {
+          "type": "heading",
+          "settings": {
+            "text": "BESERK REWARDS",
+            "heading_tag": "h1"
+          }
+        },
+        "subheading_TMxiHq": {
+          "type": "subheading",
+          "settings": {
+            "text": "earn points for free items and discounts"
+          }
+        },
+        "button_bHhdXU": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Create an account",
+            "url": "https://www.beserk.com.au/account/login",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_9Kpejc",
+        "subheading_TMxiHq",
+        "button_bHhdXU"
+      ],
+      "name": "TITLE",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rewards_content_PLCAJC": {
+      "type": "rewards-content",
+      "disabled": true,
+      "name": "SMILE REWARDS",
+      "settings": {
+        "show_heading": false,
+        "heading_alignment": "left",
+        "width": "standard",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "rich_text_fD4HJe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qd4pQL": {
+          "type": "heading",
+          "settings": {
+            "text": "HOW TO REDEEM POINTS",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_hcwmLN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>You can <strong>REDEEM </strong>your points for a voucher to use against your next order or exchange them for a <strong>FREE PRODUCT</strong>.</p>"
+          }
+        },
+        "image_hhNcXF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/TOP-ICONS-2.png",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "richtext_Y6HcET": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Points will be automatically added to your reward balance after your order or action is complete. To check and redeem your points, log in and either click the icon on the bottom left or click \"Spend My Points\" above.</p>"
+          }
+        },
+        "heading_XPYLjT": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>REWARD PRODUCT OFFERS CHANGE FREQUENTLY!</strong>",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_WmMTjM": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>XX Reward Points = <strong>FREE PRODUCTS<br/></strong>50 Reward Points = <strong>$2.50 OFF VOUCHER<br/></strong>100 Reward Points = <strong>$5 OFF VOUCHER<br/></strong>200 Reward Points = <strong>$10 OFF VOUCHER</strong></p>"
+          }
+        },
+        "image_QJwP8k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024_Rewards_Koumori_c68c5b14-92dc-47f5-b0db-ece3009ddd16.jpg",
+            "width_mode": "custom",
+            "max_width": 350,
+            "mobile_max_width": 200
+          }
+        },
+        "heading_973RL8": {
+          "type": "heading",
+          "settings": {
+            "text": "HOW TO EARN POINTS",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qd4pQL",
+        "richtext_hcwmLN",
+        "image_hhNcXF",
+        "richtext_Y6HcET",
+        "heading_XPYLjT",
+        "richtext_WmMTjM",
+        "image_QJwP8k",
+        "heading_973RL8"
+      ],
+      "name": "HOW TO REDEEM POINTS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "text_with_icons_kGkaeB": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_twaigN": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/PURCHASE_ICON_922486d0-149e-4688-bf37-f11710b6b2d4.png",
+            "icon_width": 56,
+            "mobile_icon_width": 56,
+            "title": "earn on every purchase",
+            "content": "<p>1 point for every $1 spent</p>"
+          }
+        },
+        "item_Y8hVWw": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-user",
+            "custom_icon": "shopify://shop_images/SHARE-ICON.png",
+            "icon_width": 56,
+            "mobile_icon_width": 56,
+            "title": "Share socials",
+            "content": "<p>Sharing on social media</p>"
+          }
+        },
+        "item_RrkqVB": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-at-sign",
+            "custom_icon": "shopify://shop_images/NEWSLETTER-ICON.png",
+            "icon_width": 56,
+            "mobile_icon_width": 56,
+            "title": "subcribe to our newsletter",
+            "content": "<p>Sign up to our newsletter</p>"
+          }
+        },
+        "item_QMKP6G": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify://shop_images/BIRTHDAY-ICON.png",
+            "icon_width": 56,
+            "mobile_icon_width": 56,
+            "title": "Add your birthdate",
+            "content": "<p>20 points on your birthday</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_twaigN",
+        "item_Y8hVWw",
+        "item_RrkqVB",
+        "item_QMKP6G"
+      ],
+      "name": "HOW TO EARN POINTS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "stack_on_mobile": true,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "text_with_icons_iBjpRf": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_U9dqHC": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-chat",
+            "custom_icon": "shopify://shop_images/FRIEND-ICON.png",
+            "icon_width": 56,
+            "mobile_icon_width": 56,
+            "title": "Refer a friend",
+            "content": "<p>Refer a friend for 200 points + 5% off for them</p>"
+          }
+        },
+        "item_mai9KK": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-star",
+            "custom_icon": "shopify://shop_images/REVIEW-ICON.png",
+            "icon_width": 56,
+            "mobile_icon_width": 56,
+            "title": "write a review",
+            "content": "<p>10 points for all reviews</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_U9dqHC",
+        "item_mai9KK"
+      ],
+      "name": "HOW TO EARN POINTS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "stack_on_mobile": true,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "rich_text_VqVCMb": {
+      "type": "rich-text",
+      "blocks": {
+        "button_9GmLDQ": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Create an account",
+            "url": "https://www.beserk.com.au/account/login",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_9GmLDQ"
+      ],
+      "name": "BUTTON",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_Qjkxia": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wiLaGH": {
+          "type": "heading",
+          "settings": {
+            "text": "IMPORTANT INFORMATION",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_6RLnr9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>YOUR REWARD POINTS WILL EXPIRE IF YOUR ACCOUNT IS NOT ACTIVE AFTER A YEAR.</strong></p><p>Your points will expire 365 days after they were awarded if you do not make a transaction or leave a review during that time.<br/><br/>After demonstrating an active account then your points are refreshed and valid for another 365 days. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wiLaGH",
+        "richtext_6RLnr9"
+      ],
+      "name": "IMPORTANT INFORMATION",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_kR3yAH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6cidnH": {
+          "type": "heading",
+          "settings": {
+            "text": "TERMS AND CONDITIONS",
+            "heading_tag": "h1"
+          }
+        },
+        "page_mQPbxp": {
+          "type": "page",
+          "settings": {
+            "page": "rewards"
+          }
+        },
+        "image_aTNVCn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2024_Rewards_Cat_146ef824-665d-41ad-98d3-bcf1c59004f0.jpg",
+            "width_mode": "custom",
+            "max_width": 350,
+            "mobile_max_width": 200
+          }
+        }
+      },
+      "block_order": [
+        "heading_6cidnH",
+        "page_mQPbxp",
+        "image_aTNVCn"
+      ],
+      "name": "TERMS AND CONDITIONS",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "lg"
+      }
+    },
+    "175472109766a45781": {
+      "type": "_blocks",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "rich_text_p36khR",
+    "image_with_text_block_Waa9gP",
+    "rich_text_aUgVEF",
+    "rewards_content_PLCAJC",
+    "rich_text_fD4HJe",
+    "text_with_icons_kGkaeB",
+    "text_with_icons_iBjpRf",
+    "rich_text_VqVCMb",
+    "rich_text_Qjkxia",
+    "rich_text_kR3yAH",
+    "main",
+    "175472109766a45781"
+  ]
+}
