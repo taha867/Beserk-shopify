@@ -1,23 +1,32 @@
-# Team Development Workflow
+# Team Development Workflow — Beserk Shopify Theme
+
+## Overview
+
+```
+feature/xxx  →  PR review  →  staging branch  →  Shopify staging  →  test  →  main branch  →  Shopify live
+```
 
 ## Branch Structure
 
-```
-main        →  Live Shopify theme (production)
-staging     →  Staging Shopify theme (ID: 140520685702)
-feature/*   →  Developer feature branches
-```
+| Branch | Purpose | Shopify Theme |
+|--------|---------|---------------|
+| `main` | Production-ready code | Live theme (beserk.com.au) |
+| `staging` | Tested code awaiting QA | Staging theme (ID: 140520685702) |
+| `feature/*` | Individual developer features | Local dev only |
+| `fix/*` | Bug fix branches | Local dev only |
 
-## Developer Workflow (all 4 devs follow this)
+---
 
-### 1. One-time setup
+## Developer Workflow
+
+### Step 1 — One-time clone setup
 ```bash
-git clone <repo-url>
-cd shopify-project
+git clone https://github.com/taha867/Beserk-shopify.git
+cd Beserk-shopify
 git checkout staging
 ```
 
-### 2. Start a new feature
+### Step 2 — Start every new feature from staging
 Always branch off `staging`, never off `main`:
 ```bash
 git checkout staging
@@ -25,54 +34,134 @@ git pull origin staging
 git checkout -b feature/your-feature-name
 ```
 
-**Branch naming examples:**
+**Branch naming:**
 - `feature/cart-drawer-redesign`
 - `feature/product-card-badges`
 - `feature/header-mobile-fix`
 - `fix/checkout-button-color`
+- `fix/announcement-bar-typo`
 
-### 3. Make changes & push
+### Step 3 — Make your changes
+Edit the relevant Liquid/CSS/JS files:
+```
+sections/     → page sections
+snippets/     → reusable partials
+blocks/       → inline content blocks
+assets/       → theme.js and theme.css
+templates/    → page templates
+locales/      → text/translation strings
+```
+
+### Step 4 — Commit and push your branch
 ```bash
 git add sections/your-file.liquid snippets/your-file.liquid
-git commit -m "Short description of what and why"
+git commit -m "Brief description of what changed and why"
 git push origin feature/your-feature-name
 ```
 
-### 4. Open a Pull Request
-- Go to GitHub → open PR from `feature/your-feature-name` → **into `staging`**
-- Describe what changed and why
-- Add screenshots if it's a visual change
-- Request review from team lead (@m-taha)
+### Step 5 — Open a Pull Request on GitHub
+1. Go to https://github.com/taha867/Beserk-shopify
+2. Click **"Compare & pull request"** on your branch
+3. Set base branch to **`staging`** (never `main`)
+4. Fill in:
+   - **Title:** short description of the feature/fix
+   - **Description:** what changed, why, and any notes for the reviewer
+   - **Screenshots:** required for any visual changes
+5. Request review from **@taha867**
+6. Wait for approval — do not merge your own PR
 
 ---
 
 ## Team Lead Workflow (Muhammad Taha)
 
-### Review & merge to staging
-1. Review the PR on GitHub
-2. Approve and merge into `staging`
-3. Push `staging` to Shopify staging theme:
+### Step 1 — Review PR on GitHub
+- Check the code diff
+- Leave comments on anything that needs changes
+- Request changes or approve
+
+### Step 2 — Merge approved PR into staging
+- Click **"Merge pull request"** on GitHub
+- Select **"Squash and merge"** for clean history
+
+### Step 3 — Pull and push to Shopify staging
 ```bash
 git checkout staging
 git pull origin staging
 shopify theme push --store=beserk.myshopify.com --theme=140520685702
 ```
-4. Test at: https://beserk.myshopify.com/?preview_theme_id=140520685702
 
-### Deploy staging → production (when tested & approved)
+### Step 4 — Test on staging
+Preview the staging theme at:
+```
+https://beserk.myshopify.com/?preview_theme_id=140520685702
+```
+Test all affected pages. Check mobile and desktop.
+
+### Step 5 — Deploy to production (after staging is approved)
+Once all features are tested and approved on staging:
 ```bash
 git checkout main
 git merge staging
 git push origin main
 shopify theme push --store=beserk.myshopify.com
 ```
+This updates the live theme at beserk.com.au.
+
+---
+
+## Full Flow Diagram
+
+```
+Developer
+    │
+    ├─ git checkout staging
+    ├─ git pull origin staging
+    ├─ git checkout -b feature/xxx
+    ├─ make changes
+    ├─ git push origin feature/xxx
+    └─ open PR → into staging
+                    │
+              Team Lead reviews
+                    │
+              ┌─────┴─────┐
+           changes?      approved?
+              │               │
+        request fixes    merge into staging
+                              │
+                   shopify theme push (staging ID)
+                              │
+                        test on staging
+                              │
+                   ┌──────────┴──────────┐
+                 issues?            all good?
+                   │                     │
+             fix & re-test         merge staging → main
+                                         │
+                                shopify theme push (live)
+```
 
 ---
 
 ## Rules
 
-- Never push directly to `main` or `staging`
+- Never push directly to `main` or `staging` — always use a PR
 - Never open a PR into `main` — only into `staging`
-- Always pull latest `staging` before creating a new feature branch
+- Always pull latest `staging` before creating a new branch
 - One feature per branch — keep PRs small and focused
-- The team lead is the only one who pushes to Shopify (staging or live)
+- Resolve all PR review comments before merging
+- Only the team lead pushes to Shopify (staging or live)
+- Never share GitHub tokens or credentials in chat or code
+
+---
+
+## Quick Reference
+
+| Task | Command |
+|------|---------|
+| Start new feature | `git checkout -b feature/name` |
+| Save changes | `git add <files> && git commit -m "message"` |
+| Push branch | `git push origin feature/name` |
+| Update local staging | `git checkout staging && git pull origin staging` |
+| Push to Shopify staging | `shopify theme push --store=beserk.myshopify.com --theme=140520685702` |
+| Push to Shopify live | `shopify theme push --store=beserk.myshopify.com` |
+| Preview staging | `shopify theme dev --store=beserk.myshopify.com --theme=140520685702` |
