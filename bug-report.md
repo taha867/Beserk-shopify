@@ -969,3 +969,31 @@ A targeted scan of all 65 snippet files produced **155 errors** and **83 warning
 | 28 | H17 — Add `{% if customer %}` redirect guard to login template; fix "Create an account" CTA destination on rewards pages | Low | High |
 | 29 | M22 — Move Logout button out of Flits widget container on account page to match Rewards page placement | Low | Medium |
 
+---
+
+## Design Issues
+
+### D1 — Search results page: black price text on dark product cards is unreadable
+
+**Where:** Search results page (`beserk.com.au/search?q=*`) — product cards
+**Confirmed by:** Live reproduction — `beserk.com.au/search?q=dress`; screenshot provided (2026-06-02)
+**Impact:** Customers searching for products cannot read the price on dark or black product cards. The price text renders in black on a near-black background, making it completely illegible. This directly damages the purchase experience — customers cannot compare prices or make buying decisions from the search results page.
+
+**Screenshot — search results showing black price text on dark product cards:**
+
+The search results grid displays product cards where items with dark/black imagery (e.g. Hell Bunny Samara Dress, Forest Ink Rosetta Buckle Maxi Dress) render their price labels in black text. The card background and the product image are both dark, so the price text (`$119.95 AUD`, `$132.95 AUD`) has virtually no contrast and is invisible to the customer at a glance.
+
+**Root cause:** The product card price text colour is hardcoded or inherits a dark colour scheme (`color-scheme--dark` or similar CSS class) that works on light backgrounds but is not overridden for cards where the product image is dark. The Prestige theme's `product-card.liquid` applies a colour scheme class based on the section's global setting, not the individual product image — so dark images get black text on a dark background.
+
+**Specific issues observed:**
+- Price text (`$AUD`) is black on dark product card backgrounds
+- Sale price and original price strikethrough are both invisible on dark cards
+- Star rating text and review count have the same contrast problem
+- The issue affects any product with a dark or black product photo — a large portion of Beserk's catalogue given the alt/gothic niche
+
+**Fix:**
+- Change the product card price text colour to white or light on dark backgrounds — either force `color: white` on `.price` elements inside dark-background cards, or detect the dominant image colour and apply the appropriate text class
+- Quickest fix: in `snippets/product-card.liquid` or `assets/theme.css`, override the price text colour for cards inside the search results section to use a light colour (`#ffffff` or CSS variable `--color-foreground-light`) that is always visible regardless of background
+- Alternatively set the card background to always be a light/neutral colour on the search page so dark text remains readable
+
+**Priority:** 🟠 Fix soon
