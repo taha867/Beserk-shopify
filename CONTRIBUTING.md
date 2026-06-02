@@ -3,8 +3,21 @@
 ## Overview
 
 ```
-feature/xxx  →  PR review  →  staging branch  →  Shopify staging  →  test  →  main branch  →  Shopify live
+Jira task assigned  →  feature/KAN-XX branch  →  PR review  →  staging branch  →  Shopify staging  →  test  →  main branch  →  Shopify live
 ```
+
+---
+
+## Tools Used
+
+| Tool | Purpose | Link |
+|------|---------|-------|
+| **Jira** | Task tracking — all issues live here | https://mmjawaan.atlassian.net/jira/software/projects/KAN/boards/2 |
+| **GitHub** | Code repository and PR reviews | https://github.com/taha867/Beserk-shopify |
+| **Shopify Staging** | Test environment before going live | Preview ID: 140520685702 |
+| **Shopify Live** | Production store | beserk.com.au |
+
+---
 
 ## Branch Structure
 
@@ -12,8 +25,50 @@ feature/xxx  →  PR review  →  staging branch  →  Shopify staging  →  tes
 |--------|---------|---------------|
 | `main` | Production-ready code | Live theme (beserk.com.au) |
 | `staging` | Tested code awaiting QA | Staging theme (ID: 140520685702) |
-| `feature/*` | Individual developer features | Local dev only |
-| `fix/*` | Bug fix branches | Local dev only |
+| `feature/KAN-XX-*` | Individual developer features | Local dev only |
+| `fix/KAN-XX-*` | Bug fix branches | Local dev only |
+
+---
+
+## Branch Naming Convention
+
+Every branch must include the Jira ticket number so work is traceable:
+
+```
+feature/KAN-XX-short-description
+fix/KAN-XX-short-description
+```
+
+**Examples:**
+| Jira Ticket | Branch Name |
+|-------------|-------------|
+| KAN-5 (Cart drawer not opening) | `fix/KAN-5-cart-drawer-not-opening` |
+| KAN-18 (Cart quantity 340 requests) | `fix/KAN-18-cart-quantity-requests` |
+| KAN-30 (Search overlay broken) | `fix/KAN-30-search-overlay` |
+| KAN-31 (Mobile menu broken) | `fix/KAN-31-mobile-menu` |
+| KAN-10 (Linux malicious script) | `fix/KAN-10-linux-malicious-script` |
+
+**Rules:**
+- Always lowercase, words separated by hyphens
+- Keep it short — 3 to 5 words after the ticket number
+- Use `fix/` for bug fixes, `feature/` for new functionality
+
+---
+
+## Commit Message Convention
+
+Reference the Jira ticket in every commit message:
+
+```
+KAN-XX: short description of what changed and why
+```
+
+**Examples:**
+```
+KAN-5: open cart drawer after add to cart click
+KAN-30: wire search overlay open on header icon click
+KAN-18: replace full reload with fetch DOM swap on quantity change
+```
 
 ---
 
@@ -26,22 +81,21 @@ cd Beserk-shopify
 git checkout staging
 ```
 
-### Step 2 — Start every new feature from staging
+### Step 2 — Pick your Jira task
+1. Go to https://mmjawaan.atlassian.net/jira/software/projects/KAN/boards/2
+2. Find the task assigned to you
+3. Move it to **"In Progress"** on the board
+4. Note the ticket number (e.g. `KAN-30`)
+
+### Step 3 — Create your branch from staging
 Always branch off `staging`, never off `main`:
 ```bash
 git checkout staging
 git pull origin staging
-git checkout -b feature/your-feature-name
+git checkout -b fix/KAN-30-search-overlay
 ```
 
-**Branch naming:**
-- `feature/cart-drawer-redesign`
-- `feature/product-card-badges`
-- `feature/header-mobile-fix`
-- `fix/checkout-button-color`
-- `fix/announcement-bar-typo`
-
-### Step 3 — Make your changes
+### Step 4 — Make your changes
 Edit the relevant Liquid/CSS/JS files:
 ```
 sections/     → page sections
@@ -52,23 +106,24 @@ templates/    → page templates
 locales/      → text/translation strings
 ```
 
-### Step 4 — Commit and push your branch
+### Step 5 — Commit and push your branch
 ```bash
 git add sections/your-file.liquid snippets/your-file.liquid
-git commit -m "Brief description of what changed and why"
-git push origin feature/your-feature-name
+git commit -m "KAN-30: wire search overlay open on header icon click"
+git push origin fix/KAN-30-search-overlay
 ```
 
-### Step 5 — Open a Pull Request on GitHub
+### Step 6 — Open a Pull Request on GitHub
 1. Go to https://github.com/taha867/Beserk-shopify
 2. Click **"Compare & pull request"** on your branch
 3. Set base branch to **`staging`** (never `main`)
 4. Fill in:
-   - **Title:** short description of the feature/fix
-   - **Description:** what changed, why, and any notes for the reviewer
+   - **Title:** `KAN-30: fix search overlay not opening`
+   - **Description:** what changed, why, and how you tested it
    - **Screenshots:** required for any visual changes
 5. Request review from **@taha867**
-6. Wait for approval — do not merge your own PR
+6. Move the Jira ticket to **"In Review"**
+7. Wait for approval — do not merge your own PR
 
 ---
 
@@ -77,27 +132,31 @@ git push origin feature/your-feature-name
 ### Step 1 — Review PR on GitHub
 - Check the code diff
 - Leave comments on anything that needs changes
-- Request changes or approve
+- Approve or request changes
 
-### Step 2 — Merge approved PR into staging
+### Step 2 — Update Jira ticket
+- If changes requested → move ticket back to **"In Progress"**
+- If approved → move ticket to **"Done"** after merging
+
+### Step 3 — Merge approved PR into staging
 - Click **"Merge pull request"** on GitHub
 - Select **"Squash and merge"** for clean history
 
-### Step 3 — Pull and push to Shopify staging
+### Step 4 — Pull and push to Shopify staging
 ```bash
 git checkout staging
 git pull origin staging
 shopify theme push --store=beserk.myshopify.com --theme=140520685702
 ```
 
-### Step 4 — Test on staging
+### Step 5 — Test on staging
 Preview the staging theme at:
 ```
 https://beserk.myshopify.com/?preview_theme_id=140520685702
 ```
 Test all affected pages. Check mobile and desktop.
 
-### Step 5 — Deploy to production (after staging is approved)
+### Step 6 — Deploy to production (after staging is approved)
 Once all features are tested and approved on staging:
 ```bash
 git checkout main
@@ -112,33 +171,62 @@ This updates the live theme at beserk.com.au.
 ## Full Flow Diagram
 
 ```
-Developer
+Jira Board
     │
-    ├─ git checkout staging
-    ├─ git pull origin staging
-    ├─ git checkout -b feature/xxx
-    ├─ make changes
-    ├─ git push origin feature/xxx
-    └─ open PR → into staging
+    └─ Team lead assigns KAN-XX to developer
                     │
-              Team Lead reviews
+            Developer picks up task
                     │
-              ┌─────┴─────┐
-           changes?      approved?
-              │               │
-        request fixes    merge into staging
-                              │
-                   shopify theme push (staging ID)
-                              │
-                        test on staging
-                              │
-                   ┌──────────┴──────────┐
-                 issues?            all good?
-                   │                     │
-             fix & re-test         merge staging → main
-                                         │
-                                shopify theme push (live)
+            Move Jira ticket → "In Progress"
+                    │
+            git checkout staging
+            git pull origin staging
+            git checkout -b fix/KAN-XX-description
+                    │
+            make changes to theme files
+                    │
+            git commit -m "KAN-XX: what changed and why"
+            git push origin fix/KAN-XX-description
+                    │
+            Open PR on GitHub → into staging
+            Move Jira ticket → "In Review"
+                    │
+              Team Lead reviews PR
+                    │
+         ┌──────────┴──────────┐
+     changes?              approved?
+         │                     │
+   request fixes         Merge into staging
+   ticket → In Progress  ticket → Done
+                               │
+                  shopify theme push --theme=140520685702
+                               │
+                         test on staging
+                               │
+                  ┌────────────┴────────────┐
+               issues?                 all good?
+                  │                         │
+            fix & re-test           merge staging → main
+                                           │
+                                  shopify theme push (live)
+                                           │
+                                   beserk.com.au updated ✓
 ```
+
+---
+
+## Jira Ticket Status Flow
+
+```
+To Do  →  In Progress  →  In Review  →  Done
+```
+
+| Status | When to set it |
+|--------|---------------|
+| **To Do** | Task is assigned but not started |
+| **In Progress** | Developer has created their branch and is working |
+| **In Review** | PR is open on GitHub, waiting for team lead review |
+| **Done** | PR merged into staging and tested |
 
 ---
 
@@ -147,8 +235,11 @@ Developer
 - Never push directly to `main` or `staging` — always use a PR
 - Never open a PR into `main` — only into `staging`
 - Always pull latest `staging` before creating a new branch
-- One feature per branch — keep PRs small and focused
+- Every branch must include the Jira ticket number (`KAN-XX`)
+- Every commit must reference the Jira ticket (`KAN-XX: description`)
+- One Jira ticket = one branch = one PR — keep PRs small and focused
 - Resolve all PR review comments before merging
+- Update the Jira ticket status as you progress
 - Only the team lead pushes to Shopify (staging or live)
 - Never share GitHub tokens or credentials in chat or code
 
@@ -158,10 +249,10 @@ Developer
 
 | Task | Command |
 |------|---------|
-| Start new feature | `git checkout -b feature/name` |
-| Save changes | `git add <files> && git commit -m "message"` |
-| Push branch | `git push origin feature/name` |
+| Start new task | `git checkout -b fix/KAN-XX-description` |
+| Save changes | `git add <files> && git commit -m "KAN-XX: description"` |
+| Push branch | `git push origin fix/KAN-XX-description` |
 | Update local staging | `git checkout staging && git pull origin staging` |
 | Push to Shopify staging | `shopify theme push --store=beserk.myshopify.com --theme=140520685702` |
 | Push to Shopify live | `shopify theme push --store=beserk.myshopify.com` |
-| Preview staging | `shopify theme dev --store=beserk.myshopify.com --theme=140520685702` |
+| Preview staging locally | `shopify theme dev --store=beserk.myshopify.com --theme=140520685702` |
