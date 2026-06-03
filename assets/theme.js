@@ -1447,6 +1447,14 @@ changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
   lineItem?.dispatchEvent(new CustomEvent("line-item:will-change", { bubbles: true, detail: { targetQuantity } }));
   let sectionsToBundle = [];
   document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
+  let cartPageSectionElement = null, cartPageSectionId = null;
+  if (window.themeVariables.settings.pageType === "cart") {
+    cartPageSectionElement = this.closest(".shopify-section");
+    if (cartPageSectionElement) {
+      cartPageSectionId = extractSectionId(cartPageSectionElement);
+      if (!sectionsToBundle.includes(cartPageSectionId)) sectionsToBundle.push(cartPageSectionId);
+    }
+  }
   const response = await fetch(`${Shopify.routes.root}cart/change.js`, {
     method: "POST",
     headers: {
@@ -1470,24 +1478,42 @@ changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
     this.querySelector("quantity-selector")?.restoreDefaultValue();
   } else {
     const cartContent = await response.json();
-    if (window.themeVariables.settings.pageType === "cart") {
-      window.location.reload();
-    } else {
-      const lineItemAfterChange = cartContent["items"].filter((lineItem2) => lineItem2["key"] === lineKey);
-      lineItem?.dispatchEvent(new CustomEvent("line-item:change", {
-        bubbles: true,
-        detail: {
-          quantity: lineItemAfterChange.length === 0 ? 0 : lineItemAfterChange[0]["quantity"],
-          cart: cartContent
+    const lineItemAfterChange = cartContent["items"].filter((lineItem2) => lineItem2["key"] === lineKey);
+    lineItem?.dispatchEvent(new CustomEvent("line-item:change", {
+      bubbles: true,
+      detail: {
+        quantity: lineItemAfterChange.length === 0 ? 0 : lineItemAfterChange[0]["quantity"],
+        cart: cartContent
+      }
+    }));
+    document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+      bubbles: true,
+      detail: {
+        baseEvent: "line-item:change",
+        cart: cartContent
+      }
+    }));
+    if (cartPageSectionElement && cartPageSectionId && cartContent.sections?.[cartPageSectionId]) {
+      const newDoc = new DOMParser().parseFromString(cartContent.sections[cartPageSectionId], "text/html");
+      if (cartContent["item_count"] === 0) {
+        const newSection = newDoc.getElementById(`shopify-section-${cartPageSectionId}`);
+        if (newSection) cartPageSectionElement.innerHTML = newSection.innerHTML;
+      } else {
+        const oldTbody = cartPageSectionElement.querySelector(".order-summary__body");
+        const newTbody = newDoc.querySelector(".order-summary__body");
+        if (oldTbody && newTbody) oldTbody.replaceWith(newTbody);
+        const oldRecap = cartPageSectionElement.querySelector(".cart-recap");
+        const newRecap = newDoc.querySelector(".cart-recap");
+        if (oldRecap && newRecap) {
+          const priceRowSelector = ".h-stack.justify-start.gap-2, .text-subdued.text-sm";
+          const anchor = oldRecap.querySelector(".additional-checkout-buttons") || oldRecap.querySelector("noscript");
+          oldRecap.querySelectorAll(priceRowSelector).forEach((row) => row.remove());
+          Array.from(newRecap.querySelectorAll(priceRowSelector)).forEach((row) => {
+            if (anchor) oldRecap.insertBefore(row, anchor);
+            else oldRecap.appendChild(row);
+          });
         }
-      }));
-      document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
-        bubbles: true,
-        detail: {
-          baseEvent: "line-item:change",
-          cart: cartContent
-        }
-      }));
+      }
     }
   }
 };

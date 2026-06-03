@@ -314,9 +314,8 @@
 
 <script>
   const liveChatLink = document.querySelector('a[href*="#click-drigger"]');
-  liveChatLink.addEventListener('click', () => {
-    let open = document.querySelector('.mdw-float-btn');
-    open.click();
+  liveChatLink?.addEventListener('click', () => {
+    document.querySelector('.mdw-float-btn')?.click();
   });
 </script>
 
