@@ -127,6 +127,66 @@ git push origin fix/KAN-30-search-overlay
 
 ---
 
+## Team Lead — Making Your Own Code Changes
+
+If you (Muhammad Taha) make code changes yourself — fixing a bug, updating a section, or any direct edit — follow this flow instead of the developer PR flow.
+
+### Step 1 — Always start from latest staging
+```bash
+git checkout staging
+git pull origin staging
+```
+
+### Step 2 — Create your own branch (same convention)
+```bash
+git checkout -b fix/KAN-XX-short-description
+```
+Even as team lead, never edit `staging` or `main` directly — always branch off.
+
+### Step 3 — Start local dev server
+```bash
+shopify theme dev --store=beserk.myshopify.com --theme=140520685702
+```
+Open `http://127.0.0.1:9292` — your changes appear instantly on save.
+
+### Step 4 — Make and test your changes
+Edit the relevant files, verify the fix works in the browser at `127.0.0.1:9292`.
+
+### Step 5 — Commit and push
+```bash
+git add sections/your-file.liquid
+git commit -m "KAN-XX: what you changed and why"
+git push origin fix/KAN-XX-short-description
+```
+
+### Step 6 — Merge directly into staging (no PR review needed)
+Since you are the team lead, you can merge your own branch directly:
+```bash
+git checkout staging
+git merge fix/KAN-XX-short-description
+git push origin staging
+```
+
+### Step 7 — Push to Shopify staging and test
+```bash
+shopify theme push --store=beserk.myshopify.com --theme=140520685702
+```
+Preview at: `https://beserk.myshopify.com/?preview_theme_id=140520685702`
+Test the change on both desktop and mobile.
+
+### Step 8 — Deploy to production when ready
+```bash
+git checkout main
+git merge staging
+git push origin main
+shopify theme push --store=beserk.myshopify.com
+```
+
+### Step 9 — Update Jira
+Move the Jira ticket to **Done**.
+
+---
+
 ## Team Lead Workflow (Muhammad Taha)
 
 ### Step 1 — Review PR on GitHub

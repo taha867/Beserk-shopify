@@ -385,6 +385,7 @@ This creates a maintenance risk: the theme and the app have diverged filter impl
 
 ---
 
+
 ### H11 — Large blank white section renders at the top of the account page
 **File**: `sections/flits_account.liquid`; `assets/flits.css` (missing)
 **Confirmed by**: Observed live — screenshot provided by client
