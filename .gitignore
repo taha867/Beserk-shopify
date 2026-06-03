@@ -3,3 +3,7 @@ test-results/
 debugging-screenshots/
 .claude/
 *.docx
+bug-report.md
+package.json
+package-lock.json
+tests/
