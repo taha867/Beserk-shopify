@@ -3565,6 +3565,11 @@ tr[onclick]:hover {
   transition-delay: 0s;
 }
 
+line-item-quantity[aria-busy="true"] .quantity-selector__button {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
 .breadcrumb {
   display: none;
 }

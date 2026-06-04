@@ -1421,17 +1421,19 @@ if (!window.customElements.get("free-shipping-bar")) {
 
 // js/common/cart/line-item-quantity.js
 import { Delegate } from "vendor";
-var _delegate, _LineItemQuantity_instances, onQuantityChanged_fn, onChangeLinkClicked_fn, changeLineItemQuantity_fn;
+var _delegate, _abortController12, _LineItemQuantity_instances, onQuantityChanged_fn, onChangeLinkClicked_fn, changeLineItemQuantity_fn;
 var LineItemQuantity = class extends HTMLElement {
   constructor() {
     super();
     __privateAdd(this, _LineItemQuantity_instances);
     __privateAdd(this, _delegate, new Delegate(this));
+    __privateAdd(this, _abortController12, null);
     __privateGet(this, _delegate).on("change", "[data-line-key]", __privateMethod(this, _LineItemQuantity_instances, onQuantityChanged_fn).bind(this));
     __privateGet(this, _delegate).on("click", '[href*="/cart/change"]', __privateMethod(this, _LineItemQuantity_instances, onChangeLinkClicked_fn).bind(this));
   }
 };
 _delegate = new WeakMap();
+_abortController12 = new WeakMap();
 _LineItemQuantity_instances = new WeakSet();
 onQuantityChanged_fn = function(event, target) {
   __privateMethod(this, _LineItemQuantity_instances, changeLineItemQuantity_fn).call(this, target.getAttribute("data-line-key"), parseInt(target.value));
@@ -1442,6 +1444,10 @@ onChangeLinkClicked_fn = function(event, target) {
   __privateMethod(this, _LineItemQuantity_instances, changeLineItemQuantity_fn).call(this, url.searchParams.get("id"), parseInt(url.searchParams.get("quantity")));
 };
 changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
+  __privateGet(this, _abortController12)?.abort();
+  __privateSet(this, _abortController12, new AbortController());
+  const signal = __privateGet(this, _abortController12).signal;
+  this.setAttribute("aria-busy", "true");
   document.documentElement.dispatchEvent(new CustomEvent("theme:loading:start", { bubbles: true }));
   const lineItem = this.closest("line-item");
   lineItem?.dispatchEvent(new CustomEvent("line-item:will-change", { bubbles: true, detail: { targetQuantity } }));
@@ -1455,18 +1461,30 @@ changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
       if (!sectionsToBundle.includes(cartPageSectionId)) sectionsToBundle.push(cartPageSectionId);
     }
   }
-  const response = await fetch(`${Shopify.routes.root}cart/change.js`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      id: lineKey,
-      quantity: targetQuantity,
-      sections: sectionsToBundle.join(",")
-    })
-  });
+  let response;
+  try {
+    response = await fetch(`${Shopify.routes.root}cart/change.js`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        id: lineKey,
+        quantity: targetQuantity,
+        sections: sectionsToBundle.join(",")
+      }),
+      signal
+    });
+  } catch (err) {
+    if (err.name === "AbortError") {
+      document.documentElement.dispatchEvent(new CustomEvent("theme:loading:end", { bubbles: true }));
+      this.removeAttribute("aria-busy");
+      return;
+    }
+    throw err;
+  }
   document.documentElement.dispatchEvent(new CustomEvent("theme:loading:end", { bubbles: true }));
+  this.removeAttribute("aria-busy");
   if (!response.ok) {
     const responseContent = await response.json();
     this.parentElement.querySelector('[role="alert"]')?.remove();
