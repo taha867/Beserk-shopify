@@ -1478,7 +1478,7 @@ changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
     this.querySelector("quantity-selector")?.restoreDefaultValue();
   } else {
     const cartContent = await response.json();
-    const lineItemAfterChange = cartContent["items"].filter((lineItem2) => lineItem2["key"] === lineKey);
+    const lineItemAfterChange = (cartContent["items"] ?? []).filter((lineItem2) => lineItem2["key"] === lineKey);
     lineItem?.dispatchEvent(new CustomEvent("line-item:change", {
       bubbles: true,
       detail: {
@@ -1505,7 +1505,7 @@ changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
         const oldRecap = cartPageSectionElement.querySelector(".cart-recap");
         const newRecap = newDoc.querySelector(".cart-recap");
         if (oldRecap && newRecap) {
-          const priceRowSelector = ".h-stack.justify-start.gap-2, .text-subdued.text-sm";
+          const priceRowSelector = "[data-cart-price-row]";
           const anchor = oldRecap.querySelector(".additional-checkout-buttons") || oldRecap.querySelector("noscript");
           oldRecap.querySelectorAll(priceRowSelector).forEach((row) => row.remove());
           Array.from(newRecap.querySelectorAll(priceRowSelector)).forEach((row) => {
