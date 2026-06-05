@@ -3803,8 +3803,8 @@ var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
     __privateAdd(this, _detectFocusOutListener, __privateMethod(this, _MenuDisclosure_instances, detectFocusOut_fn).bind(this));
     __privateAdd(this, _detectHoverOutsideListener, __privateMethod(this, _MenuDisclosure_instances, detectHoverOutside_fn).bind(this));
     __privateAdd(this, _detectHoverListener, __privateMethod(this, _MenuDisclosure_instances, detectHover_fn).bind(this));
-    this.disclosureElement.addEventListener("mouseover", __privateGet(this, _detectHoverListener).bind(this));
-    this.disclosureElement.addEventListener("mouseout", __privateGet(this, _detectHoverListener).bind(this));
+    this.disclosureElement.addEventListener("mouseenter", __privateGet(this, _detectHoverListener).bind(this));
+    this.disclosureElement.addEventListener("mouseleave", __privateGet(this, _detectHoverListener).bind(this));
   }
   /**
    * Get the trigger mode (can be "click" or "hover"). However, for touch devices, it is always forced to click
@@ -3865,10 +3865,10 @@ detectHover_fn = function(event) {
   if (this.trigger !== "hover") {
     return;
   }
-  if (event.type === "mouseover") {
+  if (event.type === "mouseenter") {
     clearTimeout(__privateGet(this, _hoverTimer));
     this.toggle(true);
-  } else if (event.type === "mouseout") {
+  } else if (event.type === "mouseleave") {
     __privateSet(this, _hoverTimer, setTimeout(() => this.toggle(false), this.mouseOverDelayTolerance));
   }
 };

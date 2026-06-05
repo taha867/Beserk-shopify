@@ -8336,6 +8336,10 @@ button.swym-storefront-layout-grid-item-add-to-cart-button {
   background-color:red !important;
 }
 
+.boost-sd__header-title {
+  display: none !important;
+}
+
 .swym-wishlist-collections-v2-container {
     z-index: 2 !important;
 }
