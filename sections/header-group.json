@@ -51,7 +51,7 @@
           "settings": {
             "menu_item": "NEW",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu_Image_315x450_New_c2c453f4-70c9-4e63-8298-5e7cfc87df52.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_New-01_4b99960b-8cd7-4d36-b19d-330e569c7ee9.jpg",
             "image_1_heading": "New Arrivals",
             "image_1_text": "SHOP NOW",
             "image_1_link": "shopify://collections/new",
@@ -134,11 +134,11 @@
           "settings": {
             "menu_item": "SALE",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale-02_e38b2ab5-b28e-4fa2-9eb5-0a9a2e975b55.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale-02_e7686e2c-4156-4edf-a365-8e3259e98820.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "shopify://collections/sale",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_sALE-01_29e3dc96-3711-4f88-be05-20c0f31a8b44.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Sale-01_b1efdec3-acc6-4fb4-ac5a-8d5ad84b9f81.jpg",
             "image_2_heading": "",
             "image_2_text": "",
             "image_2_link": "https://www.beserk.com.au/products/beetlejuice-ghost-with-the-most-queen-double-sided-quilt-set"

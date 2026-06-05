@@ -12,6 +12,60 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_Upjnnm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0526_Killstar-New-04_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0526_Killstar-New-04_Banner-1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 740,
+            "button_1_text": "shop now",
+            "button_1_link": "shopify://collections/killstar",
+            "button_1_style": "solid",
+            "button_1_background": "#582e6c",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#ed8a00",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        },
+        "image_pLqq4n": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0626_Beserk-Mothman-Blind-Box-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0626_Beserk-Mothman-Blind-Box-New-01_Banner-1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 740,
+            "button_1_text": "shop now",
+            "button_1_link": "shopify://collections/beserk-clothing",
+            "button_1_style": "solid",
+            "button_1_background": "#cc252e",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#ed8a00",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        },
         "image_UmHJfg": {
           "type": "image",
           "settings": {
@@ -38,66 +92,12 @@
             "border_color": "",
             "gradient_overlay": "linear-gradient(180deg, rgba(10, 234, 237, 0), rgba(0, 0, 0, 0) 100%)"
           }
-        },
-        "image_Upjnnm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/0526_Foxblood-New-01_Banner_3200_5187041a-c9b9-4ff8-8990-b32d8fda4c64.jpg",
-            "mobile_image": "shopify://shop_images/0526_Foxblood-New-01_Banner-1200_8a62cae4-6b6a-43fd-8cb3-bfb7e4312698.jpg",
-            "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 740,
-            "button_1_text": "shop now",
-            "button_1_link": "shopify://collections/foxblood",
-            "button_1_style": "solid",
-            "button_1_background": "#582e6c",
-            "button_1_text_color": "#ffffff",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "solid",
-            "button_2_background": "#ed8a00",
-            "button_2_text_color": "#ffffff",
-            "background": "",
-            "background_opacity": 0,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": ""
-          }
-        },
-        "image_pLqq4n": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/The-Lost-Boys-New-01_Banner-3200.jpg",
-            "mobile_image": "shopify://shop_images/The-Lost-Boys-New-01_Banner-1200.jpg",
-            "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 740,
-            "button_1_text": "shop now",
-            "button_1_link": "shopify://collections/the-lost-boys",
-            "button_1_style": "solid",
-            "button_1_background": "#cc252e",
-            "button_1_text_color": "#ffffff",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "solid",
-            "button_2_background": "#ed8a00",
-            "button_2_text_color": "#ffffff",
-            "background": "",
-            "background_opacity": 0,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": ""
-          }
         }
       },
       "block_order": [
-        "image_UmHJfg",
         "image_Upjnnm",
-        "image_pLqq4n"
+        "image_pLqq4n",
+        "image_UmHJfg"
       ],
       "name": "Main Scrolling Banner",
       "settings": {
@@ -353,14 +353,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "foxblood",
-            "image": "shopify://shop_images/Collection-1_Foxblood-01_1e8a75c5-2785-4671-83d9-2f7d0933d9fd.jpg",
+            "collection": "beserk-clothing",
+            "image": "shopify://shop_images/Collection-1_Mothman-Blind-Box.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "FOXBLOOD",
+            "title": "MOTHMAN BLIND BOX",
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/foxblood",
+            "button_link": "shopify://collections/beserk-clothing",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -856,14 +856,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-4",
-            "collection": "sanrio",
-            "image": "shopify://shop_images/Collection-2_Pop-Culture_06.jpg",
+            "collection": "demonia",
+            "image": "shopify://shop_images/Collection-2_Demonias_02.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP Sanrio",
-            "button_link": "shopify://collections/sanrio",
+            "button_text": "SHOP demonia",
+            "button_link": "shopify://collections/demonia",
             "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 0
