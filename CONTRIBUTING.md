@@ -216,8 +216,31 @@ https://beserk.myshopify.com/?preview_theme_id=140520685702
 ```
 Test all affected pages. Check mobile and desktop.
 
-### Step 6 — Deploy to production (after staging is approved)
-Once all features are tested and approved on staging:
+### Step 6 — Sync with production before deploying
+Before pushing to production, check if anyone made direct changes on the live Shopify store (via the admin editor) that are not in git:
+```bash
+git stash
+shopify theme pull --store=beserk.myshopify.com
+git diff
+```
+Review the diff output:
+- **Content-only changes** (templates, sections, JSON files) — safe to commit and keep:
+  ```bash
+  git add templates/ sections/
+  git commit -m "Sync production content changes"
+  ```
+- **Code changes** (theme.js, theme.css) — restore your version, do not accept theirs:
+  ```bash
+  git checkout -- assets/theme.js assets/theme.css
+  ```
+
+Once reviewed, restore any stashed code:
+```bash
+git stash pop
+```
+
+### Step 7 — Deploy to production (after staging is approved)
+Once all features are tested, approved on staging, and production is synced:
 ```bash
 git checkout main
 git merge staging
