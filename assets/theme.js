@@ -3867,8 +3867,9 @@ detectHover_fn = function(event) {
   }
   if (event.type === "mouseenter") {
     clearTimeout(__privateGet(this, _hoverTimer));
-    this.toggle(true);
+    __privateSet(this, _hoverTimer, setTimeout(() => this.toggle(true), 100));
   } else if (event.type === "mouseleave") {
+    clearTimeout(__privateGet(this, _hoverTimer));
     __privateSet(this, _hoverTimer, setTimeout(() => this.toggle(false), this.mouseOverDelayTolerance));
   }
 };
