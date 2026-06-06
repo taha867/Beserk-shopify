@@ -3792,7 +3792,7 @@ if (!window.customElements.get("accordion-disclosure")) {
 }
 
 // js/common/navigation/menu-disclosure.js
-var _hoverTimer, _detectClickOutsideListener, _detectEscKeyboardListener, _detectFocusOutListener, _detectHoverOutsideListener, _detectHoverListener, _MenuDisclosure_instances, detectClickOutside_fn, detectHover_fn, detectHoverOutside_fn, detectEscKeyboard_fn, detectFocusOut_fn;
+var _hoverTimer, _detectClickOutsideListener, _detectEscKeyboardListener, _detectFocusOutListener, _detectHoverOutsideListener, _detectHoverListener, _detectScrollListener, _MenuDisclosure_instances, detectClickOutside_fn, detectHover_fn, detectHoverOutside_fn, detectEscKeyboard_fn, detectFocusOut_fn, detectScroll_fn;
 var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
   constructor() {
     super();
@@ -3803,6 +3803,7 @@ var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
     __privateAdd(this, _detectFocusOutListener, __privateMethod(this, _MenuDisclosure_instances, detectFocusOut_fn).bind(this));
     __privateAdd(this, _detectHoverOutsideListener, __privateMethod(this, _MenuDisclosure_instances, detectHoverOutside_fn).bind(this));
     __privateAdd(this, _detectHoverListener, __privateMethod(this, _MenuDisclosure_instances, detectHover_fn).bind(this));
+    __privateAdd(this, _detectScrollListener, __privateMethod(this, _MenuDisclosure_instances, detectScroll_fn).bind(this));
     this.disclosureElement.addEventListener("mouseenter", __privateGet(this, _detectHoverListener).bind(this));
     this.disclosureElement.addEventListener("mouseleave", __privateGet(this, _detectHoverListener).bind(this));
   }
@@ -3830,6 +3831,7 @@ var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
     document.addEventListener("keydown", __privateGet(this, _detectEscKeyboardListener));
     document.addEventListener("focusout", __privateGet(this, _detectFocusOutListener));
     document.addEventListener("mouseover", __privateGet(this, _detectHoverOutsideListener));
+    window.addEventListener("scroll", __privateGet(this, _detectScrollListener));
   }
   async close() {
     super.close();
@@ -3837,6 +3839,7 @@ var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
     document.removeEventListener("keydown", __privateGet(this, _detectEscKeyboardListener));
     document.removeEventListener("focusout", __privateGet(this, _detectFocusOutListener));
     document.removeEventListener("mouseover", __privateGet(this, _detectHoverOutsideListener));
+    window.removeEventListener("scroll", __privateGet(this, _detectScrollListener));
   }
 };
 _hoverTimer = new WeakMap();
@@ -3845,6 +3848,7 @@ _detectEscKeyboardListener = new WeakMap();
 _detectFocusOutListener = new WeakMap();
 _detectHoverOutsideListener = new WeakMap();
 _detectHoverListener = new WeakMap();
+_detectScrollListener = new WeakMap();
 _MenuDisclosure_instances = new WeakSet();
 /**
  * When dropdown menu is configured to open on click, we add a listener to detect click outside and automatically
@@ -3866,6 +3870,9 @@ detectHover_fn = function(event) {
     return;
   }
   if (event.type === "mouseenter") {
+    if (this.closest("x-header")?.hasAttribute("data-revealing")) {
+      return;
+    }
     clearTimeout(__privateGet(this, _hoverTimer));
     __privateSet(this, _hoverTimer, setTimeout(() => this.toggle(true), 100));
   } else if (event.type === "mouseleave") {
@@ -3905,6 +3912,9 @@ detectFocusOut_fn = function(event) {
   if (event.relatedTarget && !this.contains(event.relatedTarget)) {
     this.toggle(false);
   }
+};
+detectScroll_fn = function() {
+  this.toggle(false);
 };
 var MenuDisclosure = _MenuDisclosure;
 
@@ -4656,6 +4666,10 @@ setVisibility_fn = function(isVisible) {
     __privateSet(this, _isVisible2, isVisible);
     document.documentElement.style.setProperty("--header-is-visible", isVisible ? "1" : "0");
     this.classList.toggle("is-hidden", !isVisible);
+    if (isVisible) {
+      this.setAttribute("data-revealing", "");
+      setTimeout(() => this.removeAttribute("data-revealing"), 400);
+    }
   }
 };
 var DropdownMenuDisclosure = class extends MenuDisclosure {
