@@ -47,20 +47,16 @@
     }
 
     function updateCounter() {
-      for (var i = 1; i < counter_elem.length; i++) {
+      for (var i = 0; i < counter_elem.length; i++) {
         if (window._swat.renderWishlistCount) {
-          window._swat.renderWishlistCount(counter_elem[i], function(count, element) {
-            console.log("updateCounter - debug - renderWishlistCount", count, element); /* Can be removed after verification */
-          });
+          window._swat.renderWishlistCount(counter_elem[i]);
         }
       }
     }
 
     let removeFromWLEvent = "sw:removedfromwishlist";
     let countUpdateOnRemoval = function(e){
-      console.log("removed event encountered");
       if (customFavCount !== undefined && customFavCount > 0) {
-        console.log("counter decremented");
         customFavCount -= 1; // Decrement the count
         updateCounter();
     }
@@ -78,8 +74,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.remove-link').forEach(link => {
       link.addEventListener('click', function (event) {
-        event.preventDefault(); 
-        console.log('Remove clicked but default navigation stopped', this.href);
+        event.preventDefault();
       });
     });
   });

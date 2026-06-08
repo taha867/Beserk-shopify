@@ -21,21 +21,6 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     >
-    <link
-      rel="preload"
-      href="https://cdn.shopify.com/extensions/01997783-2fbd-7780-826c-4d1d63a3bf7a/wishlist-shopify-app-537/assets/addtowishlistbutton.css"
-      as="style"
-    >
-    <link
-      rel="preload"
-      href="https://cdn.shopify.com/extensions/01997783-2fbd-7780-826c-4d1d63a3bf7a/wishlist-shopify-app-537/assets/wishlistcollections.css"
-      as="style"
-    >
-    <link
-      rel="preload"
-      href="https://cdn.shopify.com/extensions/16229ab8-a068-445e-afd8-dfa09a9b5ff0/youpay-cart-sharing-3/assets/youpay.css"
-      as="style"
-    >
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link
@@ -218,7 +203,6 @@
           if (url.indexOf(valid[i]) !== -1) {
             const urlParams = new URLSearchParams(url);
             const collectParam = urlParams.get('collection_scope');
-            console.log(collectParam);
             let updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort9');
             if (collectParam == 410961037) {
               updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort10');
@@ -285,10 +269,12 @@
             if (iswInput) {
               focusISWInput(iswInput);
               observer.disconnect();
+              clearTimeout(observerTimeout);
             }
           });
 
           observer.observe(document.body, { childList: true, subtree: true });
+          const observerTimeout = setTimeout(() => observer.disconnect(), 5000);
 
           const wrapperNow = document.querySelector('.boost-sd__search-bar-wrapper--mobile');
           if (wrapperNow) {
@@ -357,9 +343,8 @@
     </main>
     {% render 'swym-custom' %}
     <!-- Slick Slider JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="preload" href="{{ 'splide.min.js' | asset_url }}" as="script">
-    <script src="{{ 'splide.min.js' | asset_url }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="{{ 'splide.min.js' | asset_url }}" defer></script>
   </body>
 </html>

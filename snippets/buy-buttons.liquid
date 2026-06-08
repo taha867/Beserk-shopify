@@ -413,12 +413,11 @@
       });
     });
 
-    // fallback polling after click (works for preorder buttons too)
+    // PreOrder Me doesn't fire product-form:afterAdd — give its POST time to complete
     document.addEventListener('click', (e) => {
-      const btn = e.target.closest(buttonSelector);
+      const btn = e.target.closest('.preorder-me-button');
       if (!btn) return;
-      setTimeout(refreshCart, 250);
-      setTimeout(refreshCart, 900);
+      setTimeout(refreshCart, 1000);
     });
   });
 </script>
@@ -446,8 +445,8 @@
     observer.observe(document.body, {
       childList: true,
       subtree: true,
-      attributes: true,
     });
+    setTimeout(() => observer.disconnect(), 10000);
   });
 </script>
 
