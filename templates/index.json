@@ -104,7 +104,7 @@
         "allow_transparent_header": false,
         "show_next_section_button": false,
         "media_size": "auto",
-        "show_initial_transition": true,
+        "show_initial_transition": false,
         "autoplay": true,
         "autoplay_pause_on_video": true,
         "cycle_speed": 10,
@@ -243,7 +243,7 @@
         "color_scheme": "",
         "hide_product_information": true,
         "stack_products": false,
-        "products_count": 12,
+        "products_count": 8,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "horizontal_spacing_factor": 1,
@@ -1114,7 +1114,6 @@
     "slideshow",
     "new_richtext_cgVFxc",
     "collection_list_zN4zMP",
-    "recently_viewed_products_8MGfMp",
     "image_with_text_overlay_VEUQC6",
     "collection_list_QV7y7R",
     "new_richtext_4RFcPt",
@@ -1130,6 +1129,7 @@
     "new_richtext_rnxETB",
     "blog-posts",
     "text_with_icons_9qqVM4",
-    "175453757944e24fb2"
+    "175453757944e24fb2",
+    "recently_viewed_products_8MGfMp"
   ]
 }

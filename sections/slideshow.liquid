@@ -22,6 +22,20 @@
 {%- if section.blocks.size > 0 -%}
   {%- assign carousel_id = 'carousel-' | append: section.id -%}
 
+  {%- assign first_block_key = section.block_order | first -%}
+  {%- assign first_block = section.blocks[first_block_key] -%}
+  {%- if first_block.settings.image != blank -%}
+    {%- assign lcp_img = first_block.settings.image -%}
+    <link
+      rel="preload"
+      as="image"
+      href="{{ lcp_img | image_url: width: 1600 }}"
+      imagesrcset="{{ lcp_img | image_url: width: 400 }} 400w, {{ lcp_img | image_url: width: 700 }} 700w, {{ lcp_img | image_url: width: 1000 }} 1000w, {{ lcp_img | image_url: width: 1200 }} 1200w, {{ lcp_img | image_url: width: 1600 }} 1600w, {{ lcp_img | image_url: width: 2000 }} 2000w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    >
+  {%- endif -%}
+
   <slideshow-carousel
     id="{{ carousel_id }}"
     class="slideshow"

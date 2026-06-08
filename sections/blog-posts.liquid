@@ -4,14 +4,13 @@
   ------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 <style>
-    @media screen and (min-width: 1000px) {
-    .blog-post-list {
-      --blog-post-list-items-per-row: {{section.settings.posts_count}};
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} .blog-post-list {
+      --blog-post-list-items-per-row: {{ section.settings.posts_count }};
       --blog-post-list-column-gap: 2rem;
     }
-
-    .container--xxxl{
-      max-width:100%;
+    #shopify-section-{{ section.id }} .container--xxxl {
+      max-width: 100%;
     }
   }
 </style>

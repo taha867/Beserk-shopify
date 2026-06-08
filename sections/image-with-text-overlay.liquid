@@ -14,10 +14,10 @@
       --content-over-media-content-max-width: var(--container-{{ section.settings.content_width }}-max-width);
     }
 
-    .customer_name{
-      font-size:28px;
-      font-weight:700;
-      text-transform:uppercase;
+    #shopify-section-{{ section.id }} .customer_name {
+      font-size: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
       margin: 5px 0;
     }
   </style>
@@ -53,6 +53,7 @@
             section.settings.image
             | image_url: width: section.settings.image.width
             | image_tag:
+              loading: 'lazy',
               sizes: '100vw',
               widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200'
           -}}
