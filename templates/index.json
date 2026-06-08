@@ -12,6 +12,33 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_UmHJfg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0626_Devil-Fashion-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0626_Devil-Fashion-New-01_Banner-1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 400,
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify://collections/devil-fashion",
+            "button_1_style": "solid",
+            "button_1_background": "#4f3856",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#cb2b2b",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(10, 234, 237, 0), rgba(0, 0, 0, 0) 100%)"
+          }
+        },
         "image_Upjnnm": {
           "type": "image",
           "settings": {
@@ -65,39 +92,12 @@
             "border_color": "",
             "gradient_overlay": ""
           }
-        },
-        "image_UmHJfg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/0526_Lip-Service-New-01_Banner_3200.jpg",
-            "mobile_image": "shopify://shop_images/0526_Lip-Service-New-01_Banner-1200.jpg",
-            "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 400,
-            "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify://collections/lip-service",
-            "button_1_style": "solid",
-            "button_1_background": "#ff0000",
-            "button_1_text_color": "#ffffff",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "solid",
-            "button_2_background": "#cb2b2b",
-            "button_2_text_color": "#ffffff",
-            "background": "",
-            "background_opacity": 0,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(10, 234, 237, 0), rgba(0, 0, 0, 0) 100%)"
-          }
         }
       },
       "block_order": [
+        "image_UmHJfg",
         "image_Upjnnm",
-        "image_pLqq4n",
-        "image_UmHJfg"
+        "image_pLqq4n"
       ],
       "name": "Main Scrolling Banner",
       "settings": {
@@ -337,7 +337,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "killstar",
-            "image": "shopify://shop_images/Collection-1_Killstar_03_01d87885-cdef-4824-b77c-a880653826be.jpg",
+            "image": "shopify://shop_images/Collection-1_Killstar_06.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -890,14 +890,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "killstar",
-            "image": "shopify://shop_images/Collection-2_Killstar-05_f569a429-15f2-4daa-baa0-738ad4882321.jpg",
+            "collection": "restyle",
+            "image": "shopify://shop_images/Collection-2_Restyle_02.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP Killstar",
-            "button_link": "shopify://collections/killstar",
+            "button_text": "SHOP Restyle",
+            "button_link": "shopify://collections/restyle",
             "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 0

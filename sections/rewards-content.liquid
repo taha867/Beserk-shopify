@@ -130,10 +130,13 @@
   $(window).on('load', function () {
     SweetTooth.fetchCustomer()
       .then(function (customer) {
+        // Success
+        console.log('Customer points balance is ' + customer.points_balance);
         $('#point-eq').text('$' + customer.points_balance * 0.05);
       })
       .catch(function (err) {
-        console.error('[Smile.io] fetchCustomer failed:', err);
+        // Error
+        console.log('Something went wrong');
       });
   });
 </script>

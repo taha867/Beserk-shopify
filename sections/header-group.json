@@ -55,10 +55,10 @@
             "image_1_heading": "New Arrivals",
             "image_1_text": "SHOP NOW",
             "image_1_link": "shopify://collections/new",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_New-01_6fcefbad-5397-4c4f-9aef-27ea7cbb105a.jpg",
-            "image_2_heading": "RAVE NAILZ ARE Back!",
-            "image_2_text": "Shop Now",
-            "image_2_link": "shopify://collections/rave-nailz"
+            "image_2": "shopify://shop_images/Menu-Image_315x450_New_df74c692-e6a7-41ff-8981-dbe8a5cc941c.jpg",
+            "image_2_heading": "Gothic At Heart!",
+            "image_2_text": "Shop Devil Fashion",
+            "image_2_link": "shopify://collections/devil-fashion"
           }
         },
         "mega_menu_Bb4PAa": {
@@ -134,11 +134,11 @@
           "settings": {
             "menu_item": "SALE",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale-02_e7686e2c-4156-4edf-a365-8e3259e98820.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale_a970ea27-bac9-49ab-a131-42d4ed47c165.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "shopify://collections/sale",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Sale-01_b1efdec3-acc6-4fb4-ac5a-8d5ad84b9f81.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_beetlejuice_c4476e4a-8e5b-459b-aacf-d36671ddd105.jpg",
             "image_2_heading": "",
             "image_2_text": "",
             "image_2_link": "https://www.beserk.com.au/products/beetlejuice-ghost-with-the-most-queen-double-sided-quilt-set"
