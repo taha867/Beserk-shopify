@@ -1,4 +1,17 @@
-{%- if section.blocks.size > 0 -%}
+{%- liquid
+  assign visibility = section.settings.visibility | default: 'all'
+  assign should_render = true
+  if visibility == 'logged_in' and customer == blank
+    assign should_render = false
+  elsif visibility == 'logged_out' and customer != blank
+    assign should_render = false
+  endif
+  if request.design_mode
+    assign should_render = true
+  endif
+-%}
+
+{%- if section.blocks.size > 0 and should_render -%}
   {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient
     | default: section.settings.color_scheme.settings.background
     | md5
@@ -321,6 +334,17 @@
       "id": "remove_vertical_spacing",
       "label": "t:global.spacing.remove_vertical_spacing",
       "default": false
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "Show to",
+      "default": "all",
+      "options": [
+        { "value": "all", "label": "Everyone" },
+        { "value": "logged_in", "label": "Logged-in customers only" },
+        { "value": "logged_out", "label": "Logged-out visitors only" }
+      ]
     }
   ],
   "blocks": [

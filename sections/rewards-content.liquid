@@ -111,7 +111,9 @@
 >
   <div class="container container--lg">
     <div class="pagedivcstm page__content content {% if settings.table_styles_enabled %} table is-striped is-bordered {% endif %} rewards">
-      {% include 'sweettooth-points-badge' %}
+      {% if customer %}
+        {% include 'sweettooth-points-badge' %}
+      {% endif %}
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'text-content' %}
