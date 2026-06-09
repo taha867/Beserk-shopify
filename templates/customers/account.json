@@ -207,7 +207,6 @@
         },
         "button_PY66Ef": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "style": "solid",
             "text": "PROFILE",

@@ -6,7 +6,7 @@
       <p><strong>Last Name:</strong> {{ customer.last_name }}</p>
       <p><strong>Email:</strong> {{ customer.email }}</p>
       <p><strong>Phone:</strong> {{ customer.phone | default: 'Not Provided' }}</p>
-      <button type="button" id="edit-profile-btn" class="button edit-btn">Edit</button>
+      <button type="button" id="edit-profile-btn" class="edit-btn">Edit</button>
     </div>
 
     <div class="profile-edit cp-hidden" id="profile-edit">
@@ -40,8 +40,10 @@
           <input type="tel" id="Phone" name="customer[phone]" value="{{ customer.phone }}">
         </div>
 
-        <button type="submit" class="button update-btn">Save Changes</button>
-        <button type="button" id="cancel-edit-btn" class="button cancel-btn">Cancel</button>
+        <div class="form-actions">
+          <button type="submit" class="update-btn">Save Changes</button>
+          <button type="button" id="cancel-edit-btn" class="cancel-btn">Cancel</button>
+        </div>
       {% endform %}
     </div>
   </section>
@@ -49,21 +51,93 @@
 
 <style>
   .customer-profile {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    background: #fafafa;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
-  .customer-profile h2 { margin-bottom: 15px; }
-  .customer-profile p { margin: 8px 0; }
+  .customer-profile h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+  }
+  .customer-profile p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
   .cp-hidden { display: none; }
-  .profile-edit .form-field { margin-bottom: 12px; display: flex; flex-direction: column; }
-  .profile-edit input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
-  .profile-edit button { margin-top: 10px; padding: 10px 14px; border: none; border-radius: 4px; cursor: pointer; }
-  .success-msg { margin-top: 12px; color: green; }
-  .error-msg { margin-top: 12px; color: red; }
+  .profile-edit .form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .profile-edit label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .profile-edit input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d0d0d0;
+    font-size: 0.95rem;
+    background: #fff;
+  }
+  .profile-edit input:focus {
+    outline: none;
+    border-color: #1c1c1c;
+  }
+  .profile-edit .form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+  }
+  .update-btn {
+    background: #e32c2b;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .update-btn:hover { background: #c62424; }
+  .cancel-btn {
+    background: transparent;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .cancel-btn:hover { background: #f5f5f5; }
+  .edit-btn {
+    margin-top: 1rem;
+    background: transparent;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .edit-btn:hover { background: #f5f5f5; }
+  .success-msg {
+    margin-bottom: 1rem;
+    color: #2a7a2a;
+    font-size: 0.9rem;
+  }
+  .error-msg {
+    margin-bottom: 1rem;
+    color: #e32c2b;
+    font-size: 0.9rem;
+  }
 </style>
 
 <script>
