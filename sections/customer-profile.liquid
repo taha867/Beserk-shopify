@@ -11,28 +11,25 @@
 
     <div class="profile-edit cp-hidden" id="profile-edit">
       <h2>Edit Profile</h2>
-      {% form 'customer' %}
-        {% if form.posted_successfully? %}
-          <p class="success-msg">✅ Your profile has been updated.</p>
-        {% endif %}
-
-        {% if form.errors %}
-          <p class="error-msg">{{ form.errors | default_errors }}</p>
-        {% endif %}
+      <p class="success-msg cp-hidden" id="profile-success-msg">✅ Your profile has been updated.</p>
+      <form method="post" action="{{ routes.account_url }}" accept-charset="UTF-8" class="customer-profile__form" novalidate>
+        <input type="hidden" name="form_type" value="customer">
+        <input type="hidden" name="utf8" value="✓">
+        <input type="hidden" name="_method" value="put">
 
         <div class="form-field">
           <label for="FirstName">First Name</label>
-          <input type="text" id="FirstName" name="customer[first_name]" value="{{ customer.first_name }}" required>
+          <input type="text" id="FirstName" name="customer[first_name]" value="{{ customer.first_name }}" required minlength="2" maxlength="50" pattern=".*\S.*" title="Please enter your first name">
         </div>
 
         <div class="form-field">
           <label for="LastName">Last Name</label>
-          <input type="text" id="LastName" name="customer[last_name]" value="{{ customer.last_name }}" required>
+          <input type="text" id="LastName" name="customer[last_name]" value="{{ customer.last_name }}" required minlength="2" maxlength="50" pattern=".*\S.*" title="Please enter your last name">
         </div>
 
         <div class="form-field">
           <label for="Email">Email</label>
-          <input type="email" id="Email" name="customer[email]" value="{{ customer.email }}" required>
+          <input type="email" id="Email" name="customer[email]" value="{{ customer.email }}" required maxlength="254">
         </div>
 
         <div class="form-field">
@@ -44,7 +41,7 @@
           <button type="submit" class="update-btn">Save Changes</button>
           <button type="button" id="cancel-edit-btn" class="cancel-btn">Cancel</button>
         </div>
-      {% endform %}
+      </form>
     </div>
   </section>
 {% endif %}
@@ -133,11 +130,6 @@
     color: #2a7a2a;
     font-size: 0.9rem;
   }
-  .error-msg {
-    margin-bottom: 1rem;
-    color: #e32c2b;
-    font-size: 0.9rem;
-  }
 </style>
 
 <script>
@@ -146,6 +138,18 @@
     const cancelBtn = document.getElementById('cancel-edit-btn');
     const viewBlock = document.getElementById('profile-view');
     const editBlock = document.getElementById('profile-edit');
+    const profileForm = editBlock ? editBlock.querySelector('form') : null;
+    const firstNameInput = document.getElementById('FirstName');
+    const lastNameInput = document.getElementById('LastName');
+    const emailInput = document.getElementById('Email');
+    const phoneInput = document.getElementById('Phone');
+    const successMsg = document.getElementById('profile-success-msg');
+    const successFlagKey = 'customerProfileSaved';
+
+    if (successMsg && window.sessionStorage.getItem(successFlagKey) === '1') {
+      successMsg.classList.remove('cp-hidden');
+      window.sessionStorage.removeItem(successFlagKey);
+    }
 
     if (editBtn) {
       editBtn.addEventListener('click', function () {
@@ -158,6 +162,56 @@
       cancelBtn.addEventListener('click', function () {
         editBlock.classList.add('cp-hidden');
         viewBlock.classList.remove('cp-hidden');
+      });
+    }
+
+    [firstNameInput, lastNameInput].forEach(function (input) {
+      if (!input) {
+        return;
+      }
+
+      input.addEventListener('input', function () {
+        input.setCustomValidity('');
+      });
+    });
+
+    if (emailInput) {
+      emailInput.addEventListener('input', function () {
+        emailInput.setCustomValidity('');
+      });
+    }
+
+    if (profileForm) {
+      profileForm.addEventListener('submit', function (event) {
+        if (firstNameInput) {
+          firstNameInput.value = firstNameInput.value.trim();
+          if (!firstNameInput.value) {
+            firstNameInput.setCustomValidity('Please enter your first name.');
+          }
+        }
+
+        if (lastNameInput) {
+          lastNameInput.value = lastNameInput.value.trim();
+          if (!lastNameInput.value) {
+            lastNameInput.setCustomValidity('Please enter your last name.');
+          }
+        }
+
+        if (emailInput) {
+          emailInput.value = emailInput.value.trim();
+        }
+
+        if (phoneInput) {
+          phoneInput.value = phoneInput.value.trim();
+        }
+
+        if (!profileForm.checkValidity()) {
+          event.preventDefault();
+          profileForm.reportValidity();
+          return;
+        }
+
+        window.sessionStorage.setItem(successFlagKey, '1');
       });
     }
   });
