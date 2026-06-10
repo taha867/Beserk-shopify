@@ -147,12 +147,10 @@
     SweetTooth.fetchCustomer()
       .then(function (customer) {
         // Success
-        console.log('Customer points balance is ' + customer.points_balance);
         $('#point-eq').text('$' + customer.points_balance * 0.05);
       })
       .catch(function (err) {
         // Error
-        console.log('Something went wrong');
       });
   });
 </script>
