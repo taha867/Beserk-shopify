@@ -1,9 +1,9 @@
 {%- liquid
   assign visibility = section.settings.visibility | default: 'all'
   assign should_render = true
-  if visibility == 'logged_in' and customer == blank
+  if visibility == 'logged_in' and customer == nil
     assign should_render = false
-  elsif visibility == 'logged_out' and customer != blank
+  elsif visibility == 'logged_out' and customer
     assign should_render = false
   endif
   if request.design_mode
@@ -338,12 +338,12 @@
     {
       "type": "select",
       "id": "visibility",
-      "label": "Show to",
+      "label": "t:global.visibility.label",
       "default": "all",
       "options": [
-        { "value": "all", "label": "Everyone" },
-        { "value": "logged_in", "label": "Logged-in customers only" },
-        { "value": "logged_out", "label": "Logged-out visitors only" }
+        { "value": "all", "label": "t:global.visibility.options.all" },
+        { "value": "logged_in", "label": "t:global.visibility.options.logged_in" },
+        { "value": "logged_out", "label": "t:global.visibility.options.logged_out" }
       ]
     }
   ],
