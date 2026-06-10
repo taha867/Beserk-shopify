@@ -116,7 +116,8 @@
         "separate_section_with_border": true,
         "content_width": "lg",
         "text_position": "center",
-        "remove_vertical_spacing": true
+        "remove_vertical_spacing": true,
+        "visibility": "logged_in"
       }
     },
     "image_with_text_block_eAVk96": {
@@ -159,18 +160,15 @@
           }
         }
       },
-      "block_order": [
-        "heading_bfQjhm",
-        "subheading_iaHpzd",
-        "button_LN37Vw"
-      ],
+      "block_order": ["heading_bfQjhm", "subheading_iaHpzd", "button_LN37Vw"],
       "name": "TITLE",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
         "content_width": "sm",
         "text_position": "center",
-        "remove_vertical_spacing": false
+        "remove_vertical_spacing": false,
+        "visibility": "logged_out"
       }
     },
     "rewards_content_McWR4q": {
@@ -357,10 +355,7 @@
           }
         }
       },
-      "block_order": [
-        "item_whmnAn",
-        "item_M64ndb"
-      ],
+      "block_order": ["item_whmnAn", "item_M64ndb"],
       "name": "HOW TO EARN POINTS",
       "settings": {
         "color_scheme": "",
@@ -385,16 +380,15 @@
           }
         }
       },
-      "block_order": [
-        "button_HAF3Ht"
-      ],
+      "block_order": ["button_HAF3Ht"],
       "name": "BUTTON",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
         "content_width": "sm",
         "text_position": "center",
-        "remove_vertical_spacing": false
+        "remove_vertical_spacing": false,
+        "visibility": "logged_out"
       }
     },
     "rich_text_WBip4R": {
@@ -414,10 +408,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_AFkqiA",
-        "richtext_p38yyf"
-      ],
+      "block_order": ["heading_AFkqiA", "richtext_p38yyf"],
       "name": "IMPORTANT INFORMATION",
       "settings": {
         "color_scheme": "",
@@ -453,11 +444,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_UrQiLj",
-        "page_ytfywK",
-        "image_bbRJxk"
-      ],
+      "block_order": ["heading_UrQiLj", "page_ytfywK", "image_bbRJxk"],
       "name": "TERMS AND CONDITIONS",
       "settings": {
         "color_scheme": "",

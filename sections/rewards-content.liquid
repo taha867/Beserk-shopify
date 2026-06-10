@@ -2,6 +2,20 @@
   ** Page content **
 {% endcomment %}
 
+{%- liquid
+  assign visibility = section.settings.visibility | default: 'all'
+  assign should_render = true
+  if visibility == 'logged_in' and customer == nil
+    assign should_render = false
+  elsif visibility == 'logged_out' and customer
+    assign should_render = false
+  endif
+  if request.design_mode
+    assign should_render = true
+  endif
+-%}
+
+{%- if should_render -%}
 {% assign id = section.id %}
 {% comment %}Layout{% endcomment %}
 {% assign width = section.settings.width %}
@@ -111,7 +125,9 @@
 >
   <div class="container container--lg">
     <div class="pagedivcstm page__content content {% if settings.table_styles_enabled %} table is-striped is-bordered {% endif %} rewards">
-      {% include 'sweettooth-points-badge' %}
+      {% if customer %}
+        {% render 'sweettooth-points-badge' %}
+      {% endif %}
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'text-content' %}
@@ -131,15 +147,14 @@
     SweetTooth.fetchCustomer()
       .then(function (customer) {
         // Success
-        console.log('Customer points balance is ' + customer.points_balance);
         $('#point-eq').text('$' + customer.points_balance * 0.05);
       })
       .catch(function (err) {
         // Error
-        console.log('Something went wrong');
       });
   });
 </script>
+{%- endif -%}
 {% schema %}
 {
   "name": "rewards",
@@ -165,6 +180,17 @@
           "value": "center",
           "label": "Center"
         }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "visibility",
+      "label": "t:global.visibility.label",
+      "default": "all",
+      "options": [
+        { "value": "all", "label": "t:global.visibility.options.all" },
+        { "value": "logged_in", "label": "t:global.visibility.options.logged_in" },
+        { "value": "logged_out", "label": "t:global.visibility.options.logged_out" }
       ]
     },
     {
