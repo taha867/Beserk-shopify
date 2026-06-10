@@ -22,17 +22,17 @@
 
         <div class="form-field">
           <label for="FirstName">First Name</label>
-          <input type="text" id="FirstName" name="customer[first_name]" value="{{ customer.first_name }}" required minlength="2" maxlength="50" pattern=".*\S.*" title="Please enter your first name">
+          <input type="text" id="FirstName" name="customer[first_name]" value="{{ customer.first_name }}" required>
         </div>
 
         <div class="form-field">
           <label for="LastName">Last Name</label>
-          <input type="text" id="LastName" name="customer[last_name]" value="{{ customer.last_name }}" required minlength="2" maxlength="50" pattern=".*\S.*" title="Please enter your last name">
+          <input type="text" id="LastName" name="customer[last_name]" value="{{ customer.last_name }}" required>
         </div>
 
         <div class="form-field">
           <label for="Email">Email</label>
-          <input type="email" id="Email" name="customer[email]" value="{{ customer.email }}" required maxlength="254">
+          <input type="email" id="Email" name="customer[email]" value="{{ customer.email }}" required>
         </div>
 
         <div class="form-field">
@@ -146,18 +146,6 @@
     const cancelBtn = document.getElementById('cancel-edit-btn');
     const viewBlock = document.getElementById('profile-view');
     const editBlock = document.getElementById('profile-edit');
-    const profileForm = editBlock ? editBlock.querySelector('form') : null;
-    const firstNameInput = document.getElementById('FirstName');
-    const lastNameInput = document.getElementById('LastName');
-    const emailInput = document.getElementById('Email');
-    const phoneInput = document.getElementById('Phone');
-
-    {% if form.errors %}
-      if (viewBlock && editBlock) {
-        viewBlock.classList.add('cp-hidden');
-        editBlock.classList.remove('cp-hidden');
-      }
-    {% endif %}
 
     if (editBtn) {
       editBtn.addEventListener('click', function () {
@@ -170,53 +158,6 @@
       cancelBtn.addEventListener('click', function () {
         editBlock.classList.add('cp-hidden');
         viewBlock.classList.remove('cp-hidden');
-      });
-    }
-
-    [firstNameInput, lastNameInput].forEach(function (input) {
-      if (!input) {
-        return;
-      }
-
-      input.addEventListener('input', function () {
-        input.setCustomValidity('');
-      });
-    });
-
-    if (emailInput) {
-      emailInput.addEventListener('input', function () {
-        emailInput.setCustomValidity('');
-      });
-    }
-
-    if (profileForm) {
-      profileForm.addEventListener('submit', function (event) {
-        if (firstNameInput) {
-          firstNameInput.value = firstNameInput.value.trim();
-          if (!firstNameInput.value) {
-            firstNameInput.setCustomValidity('Please enter your first name.');
-          }
-        }
-
-        if (lastNameInput) {
-          lastNameInput.value = lastNameInput.value.trim();
-          if (!lastNameInput.value) {
-            lastNameInput.setCustomValidity('Please enter your last name.');
-          }
-        }
-
-        if (emailInput) {
-          emailInput.value = emailInput.value.trim();
-        }
-
-        if (phoneInput) {
-          phoneInput.value = phoneInput.value.trim();
-        }
-
-        if (!profileForm.checkValidity()) {
-          event.preventDefault();
-          profileForm.reportValidity();
-        }
       });
     }
   });
