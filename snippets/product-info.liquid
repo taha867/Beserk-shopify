@@ -136,7 +136,7 @@
         justify-content:center;
       }
 
-      [data-block-id="AUldFaTJ0OS8wL3dlS__smile_io_smile_points_on_product_page_WQwYYP-1"] {
+      [data-block-id*="smile_io_smile_points_on_product_page"] {
         margin-block-start: 5px !important;
         margin-block-end: 5px !important;
       }
@@ -871,52 +871,40 @@
       }
     }
 
-    // Delegated click handler so we don't need to modify app-injected HTML.
-    // Targets common Smile-injected classes; expands gracefully if app updates classes.
     document.addEventListener(
       'click',
       function (ev) {
-        // Closest element matching known app wrapper or the <p> itself.
         const trigger = ev.target.closest('.slp_13efdb, .slp_13efdb p, .slp_5f0014, .slp_fcec57, .open-smile-popup');
         if (!trigger) return;
 
-        // Prevent normal navigation if the element is an <a>
-        if (ev.target.tagName === 'A' || trigger.tagName === 'A') {
-          ev.preventDefault();
-        }
-
-        // Add pointer cursor (visual cue)
         try {
           trigger.style.cursor = 'pointer';
         } catch (e) {}
 
-        // Attempt to open
         const opened = openSmilePanel();
         if (!opened) {
           console.warn('Unable to open Smile panel: SDK may be disabled and deep-links not supported on this site.');
         }
       },
-      { passive: false }
+      { passive: true }
     );
 
-    // Visual enhancement: if the element exists when script runs, make it look clickable
     function markExisting() {
       const els = document.querySelectorAll('.slp_13efdb p, .slp_13efdb, .slp_5f0014, .slp_fcec57');
+      if (!els.length) return;
       els.forEach((el) => {
         if (!el.dataset.smileMarked) {
           el.style.cursor = 'pointer';
           el.dataset.smileMarked = '1';
         }
       });
+      mo?.disconnect();
     }
 
-    // Run once now (in case element is already present) and also observe DOM for injected content
-    markExisting();
-    const mo = new MutationObserver(markExisting);
+    let mo = new MutationObserver(markExisting);
     mo.observe(document.body, { childList: true, subtree: true });
-
-    // Optional: if Smile dispatches a 'smile:ready' event, re-run (helps when SDK loads later)
-    window.addEventListener('smile:ready', markExisting, false);
+    markExisting();
+    window.addEventListener('smile:ready', () => { markExisting(); mo.disconnect(); }, { once: true });
   })();
 </script>
 {%- endif -%}
