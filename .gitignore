@@ -7,3 +7,5 @@ bug-report.md
 package.json
 package-lock.json
 tests/
+third-party-app-audit.md
+third-party-app-audit-client.md
