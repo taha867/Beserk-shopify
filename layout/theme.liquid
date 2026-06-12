@@ -23,23 +23,6 @@
     >
     <link
       rel="preload"
-      href="https://cdn.shopify.com/extensions/01997783-2fbd-7780-826c-4d1d63a3bf7a/wishlist-shopify-app-537/assets/addtowishlistbutton.css"
-      as="style"
-    >
-    <link
-      rel="preload"
-      href="https://cdn.shopify.com/extensions/01997783-2fbd-7780-826c-4d1d63a3bf7a/wishlist-shopify-app-537/assets/wishlistcollections.css"
-      as="style"
-    >
-    <link
-      rel="preload"
-      href="https://cdn.shopify.com/extensions/16229ab8-a068-445e-afd8-dfa09a9b5ff0/youpay-cart-sharing-3/assets/youpay.css"
-      as="style"
-    >
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link
-      rel="preload"
       as="style"
       media="screen"
       href="https://www.beserk.com.au/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css"
@@ -75,80 +58,75 @@
     {% endif %}
 
     <style>
-                  @media only screen and (min-width: 992px) {
-                .boost-sd-layout {
-                    max-width: 100% !important;
-                }
-            }
-            @media (min-width: 1008px) {
-              wishlist-page .wk-grid {
-              --columns: 4 !important;
-            }
-            wishlist-page .wk-page {
-            max-width: 100% !important;
-            }
-          }
+      @media screen and (min-width: 1000px) {
+        .boost-sd-layout {
+          max-width: 100% !important;
+        }
+      }
+      @media screen and (min-width: 1000px) {
+        wishlist-page .wk-grid {
+          --columns: 4 !important;
+        }
+        wishlist-page .wk-page {
+          max-width: 100% !important;
+        }
+      }
 
-           .boost-sd__product-atc-wishlist .swym-button.swym-add-to-wishlist-view-product.swym-heart:after,
-      .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after{
+      .boost-sd__product-atc-wishlist .swym-button.swym-add-to-wishlist-view-product.swym-heart:after,
+      .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
         color: #ff2322 !important;
-        }
+      }
 
-        .boost-sd__product-atc-wishlist .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
-       color: #ff2322 !important;
-        }
+      .boost-sd__product-atc-wishlist .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
+        color: #ff2322 !important;
+      }
 
-        @media only screen and (min-width: 992px) {
+      @media screen and (min-width: 1000px) {
         .boost-sd__recommendation-bundle--style2 {
-            align-items: center;
-            justify-content: center;
-          }
+          align-items: center;
+          justify-content: center;
         }
+      }
 
-        .boost-sd__recommendation-bundle-images--style2 .boost-sd__recommendation-bundle-image-item {
-          width: 300px;
+      .boost-sd__recommendation-bundle-images--style2 .boost-sd__recommendation-bundle-image-item {
+        width: 300px;
       }
 
       div#shopify-block-AdlZ2U09iSDJ4SXpPc__smile_io_smile_points_on_account_page_n8deG8 .slp_6480c1 {
-          justify-content: center !important;
-          gap: 20px;
+        justify-content: center !important;
+        gap: 20px;
       }
 
       .swym-wishlistplus-themeapp-container-header {
         justify-content: center;
-        }
+      }
 
-        div#swym-engage-wishlist-body {
-            display: flex;
-            justify-content: center;
-        }
+      div#swym-engage-wishlist-body {
+        display: flex;
+        justify-content: center;
+      }
 
-      @media only screen and (min-width: 992px) {
+      @media screen and (min-width: 1000px) {
         div#shopify-block-AdlZ2U09iSDJ4SXpPc__smile_io_smile_points_on_account_page_n8deG8 .slp_6480c1 {
           justify-content: center !important;
           gap: 40px;
-      }
+        }
 
-      .boost-sd__predictive-bundle-wrapper .boost-sd__recommendation-bundle-image-wrapper{
-                height: 100%;
-        max-height: 500px;
+        .boost-sd__predictive-bundle-wrapper .boost-sd__recommendation-bundle-image-wrapper {
+          height: 100%;
+          max-height: 500px;
+        }
 
-      }
-
-      .swym-engage-list-item-collage {
+        .swym-engage-list-item-collage {
           width: 300px;
           height: auto;
-      }
+        }
 
-      .swym-engage-list-collage-item img {
+        .swym-engage-list-collage-item img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-      }
-
-
-
-
+        }
       }
     </style>
 
@@ -158,6 +136,8 @@
 
     {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
     {%- unless settings.heading_font.system? -%}
       <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
@@ -194,51 +174,38 @@
 
     <script>
       const originalFetch = window.fetch;
+      const BOOST_FILTER_URL = 'https://services.mybcapps.com/bc-sf-filter/filter';
+      const BOOST_SORT_COLLECTIONS = [
+        '412328077',
+        '423482061',
+        '412326797',
+        '412327693',
+        '423488333',
+        '412326733',
+        '91995078729',
+      ];
       const updateQueryParam = (url, param, value, isAppend) => {
-        // Parse the URL
         let urlObj = new URL(url);
-        // Get the search parameters
         let params = new URLSearchParams(urlObj.search);
-        // console.log(params.get('event_type'), url, isAppend, param, value)
         if (isAppend) {
-          // Append the param value
           params.append(param, value);
         } else {
-          // Set the new parameter value
           params.set(param, value);
         }
-        // Update the search part of the URL
         urlObj.search = params.toString();
-        // Return the updated URL
         return urlObj.toString();
       };
       window.fetch = (url, options) => {
-        const valid = ['https://services.mybcapps.com/bc-sf-filter/filter'];
-        for (let i = 0; i < valid.length; i++) {
-          if (url.indexOf(valid[i]) !== -1) {
-            const urlParams = new URLSearchParams(url);
-            const collectParam = urlParams.get('collection_scope');
-            console.log(collectParam);
-            let updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort9');
-            if (collectParam == 410961037) {
-              updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort10');
-            }
-
-            const collectList = [
-              '412328077',
-              '423482061',
-              '412326797',
-              '412327693',
-              '423488333',
-              '412326733',
-              '91995078729',
-            ];
-            if (collectList.includes(collectParam)) {
-              updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort11');
-            }
-            const updatedSortExtraModeUrl = updateQueryParam(updatedSortExtraUrl, 'sort_first_mode', 'desc');
-            url = updatedSortExtraModeUrl;
+        if (typeof url === 'string' && url.indexOf(BOOST_FILTER_URL) !== -1) {
+          const collectParam = new URL(url).searchParams.get('collection_scope');
+          let updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort9');
+          if (collectParam == 410961037) {
+            updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort10');
           }
+          if (BOOST_SORT_COLLECTIONS.includes(collectParam)) {
+            updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort11');
+          }
+          url = updateQueryParam(updatedSortExtraUrl, 'sort_first_mode', 'desc');
         }
         return originalFetch(url, options);
       };
@@ -356,10 +323,8 @@
       {%- endif -%}
     </main>
     {% render 'swym-custom' %}
-    <!-- Slick Slider JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="preload" href="{{ 'splide.min.js' | asset_url }}" as="script">
-    <script src="{{ 'splide.min.js' | asset_url }}"></script>
+    <!-- Slick Slider JS — deferred, only used by logo-list section -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
   </body>
 </html>

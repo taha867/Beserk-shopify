@@ -1421,17 +1421,19 @@ if (!window.customElements.get("free-shipping-bar")) {
 
 // js/common/cart/line-item-quantity.js
 import { Delegate } from "vendor";
-var _delegate, _LineItemQuantity_instances, onQuantityChanged_fn, onChangeLinkClicked_fn, changeLineItemQuantity_fn;
+var _delegate, _abortController12, _LineItemQuantity_instances, onQuantityChanged_fn, onChangeLinkClicked_fn, changeLineItemQuantity_fn;
 var LineItemQuantity = class extends HTMLElement {
   constructor() {
     super();
     __privateAdd(this, _LineItemQuantity_instances);
     __privateAdd(this, _delegate, new Delegate(this));
+    __privateAdd(this, _abortController12, null);
     __privateGet(this, _delegate).on("change", "[data-line-key]", __privateMethod(this, _LineItemQuantity_instances, onQuantityChanged_fn).bind(this));
     __privateGet(this, _delegate).on("click", '[href*="/cart/change"]', __privateMethod(this, _LineItemQuantity_instances, onChangeLinkClicked_fn).bind(this));
   }
 };
 _delegate = new WeakMap();
+_abortController12 = new WeakMap();
 _LineItemQuantity_instances = new WeakSet();
 onQuantityChanged_fn = function(event, target) {
   __privateMethod(this, _LineItemQuantity_instances, changeLineItemQuantity_fn).call(this, target.getAttribute("data-line-key"), parseInt(target.value));
@@ -1442,23 +1444,47 @@ onChangeLinkClicked_fn = function(event, target) {
   __privateMethod(this, _LineItemQuantity_instances, changeLineItemQuantity_fn).call(this, url.searchParams.get("id"), parseInt(url.searchParams.get("quantity")));
 };
 changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
+  __privateGet(this, _abortController12)?.abort();
+  __privateSet(this, _abortController12, new AbortController());
+  const signal = __privateGet(this, _abortController12).signal;
+  this.setAttribute("aria-busy", "true");
   document.documentElement.dispatchEvent(new CustomEvent("theme:loading:start", { bubbles: true }));
   const lineItem = this.closest("line-item");
   lineItem?.dispatchEvent(new CustomEvent("line-item:will-change", { bubbles: true, detail: { targetQuantity } }));
   let sectionsToBundle = [];
   document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
-  const response = await fetch(`${Shopify.routes.root}cart/change.js`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      id: lineKey,
-      quantity: targetQuantity,
-      sections: sectionsToBundle.join(",")
-    })
-  });
+  let cartPageSectionElement = null, cartPageSectionId = null;
+  if (window.themeVariables.settings.pageType === "cart") {
+    cartPageSectionElement = this.closest(".shopify-section");
+    if (cartPageSectionElement) {
+      cartPageSectionId = extractSectionId(cartPageSectionElement);
+      if (!sectionsToBundle.includes(cartPageSectionId)) sectionsToBundle.push(cartPageSectionId);
+    }
+  }
+  let response;
+  try {
+    response = await fetch(`${Shopify.routes.root}cart/change.js`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        id: lineKey,
+        quantity: targetQuantity,
+        sections: sectionsToBundle.join(",")
+      }),
+      signal
+    });
+  } catch (err) {
+    if (err.name === "AbortError") {
+      document.documentElement.dispatchEvent(new CustomEvent("theme:loading:end", { bubbles: true }));
+      this.removeAttribute("aria-busy");
+      return;
+    }
+    throw err;
+  }
   document.documentElement.dispatchEvent(new CustomEvent("theme:loading:end", { bubbles: true }));
+  this.removeAttribute("aria-busy");
   if (!response.ok) {
     const responseContent = await response.json();
     this.parentElement.querySelector('[role="alert"]')?.remove();
@@ -1470,24 +1496,42 @@ changeLineItemQuantity_fn = async function(lineKey, targetQuantity) {
     this.querySelector("quantity-selector")?.restoreDefaultValue();
   } else {
     const cartContent = await response.json();
-    if (window.themeVariables.settings.pageType === "cart") {
-      window.location.reload();
-    } else {
-      const lineItemAfterChange = cartContent["items"].filter((lineItem2) => lineItem2["key"] === lineKey);
-      lineItem?.dispatchEvent(new CustomEvent("line-item:change", {
-        bubbles: true,
-        detail: {
-          quantity: lineItemAfterChange.length === 0 ? 0 : lineItemAfterChange[0]["quantity"],
-          cart: cartContent
+    const lineItemAfterChange = (cartContent["items"] ?? []).filter((lineItem2) => lineItem2["key"] === lineKey);
+    lineItem?.dispatchEvent(new CustomEvent("line-item:change", {
+      bubbles: true,
+      detail: {
+        quantity: lineItemAfterChange.length === 0 ? 0 : lineItemAfterChange[0]["quantity"],
+        cart: cartContent
+      }
+    }));
+    document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
+      bubbles: true,
+      detail: {
+        baseEvent: "line-item:change",
+        cart: cartContent
+      }
+    }));
+    if (cartPageSectionElement && cartPageSectionId && cartContent.sections?.[cartPageSectionId]) {
+      const newDoc = new DOMParser().parseFromString(cartContent.sections[cartPageSectionId], "text/html");
+      if (cartContent["item_count"] === 0) {
+        const newSection = newDoc.getElementById(`shopify-section-${cartPageSectionId}`);
+        if (newSection) cartPageSectionElement.innerHTML = newSection.innerHTML;
+      } else {
+        const oldTbody = cartPageSectionElement.querySelector(".order-summary__body");
+        const newTbody = newDoc.querySelector(".order-summary__body");
+        if (oldTbody && newTbody) oldTbody.replaceWith(newTbody);
+        const oldRecap = cartPageSectionElement.querySelector(".cart-recap");
+        const newRecap = newDoc.querySelector(".cart-recap");
+        if (oldRecap && newRecap) {
+          const priceRowSelector = "[data-cart-price-row]";
+          const anchor = oldRecap.querySelector(".additional-checkout-buttons") || oldRecap.querySelector("noscript");
+          oldRecap.querySelectorAll(priceRowSelector).forEach((row) => row.remove());
+          Array.from(newRecap.querySelectorAll(priceRowSelector)).forEach((row) => {
+            if (anchor) oldRecap.insertBefore(row, anchor);
+            else oldRecap.appendChild(row);
+          });
         }
-      }));
-      document.documentElement.dispatchEvent(new CustomEvent("cart:change", {
-        bubbles: true,
-        detail: {
-          baseEvent: "line-item:change",
-          cart: cartContent
-        }
-      }));
+      }
     }
   }
 };
@@ -3748,7 +3792,7 @@ if (!window.customElements.get("accordion-disclosure")) {
 }
 
 // js/common/navigation/menu-disclosure.js
-var _hoverTimer, _detectClickOutsideListener, _detectEscKeyboardListener, _detectFocusOutListener, _detectHoverOutsideListener, _detectHoverListener, _MenuDisclosure_instances, detectClickOutside_fn, detectHover_fn, detectHoverOutside_fn, detectEscKeyboard_fn, detectFocusOut_fn;
+var _hoverTimer, _detectClickOutsideListener, _detectEscKeyboardListener, _detectFocusOutListener, _detectHoverOutsideListener, _detectHoverListener, _detectScrollListener, _MenuDisclosure_instances, detectClickOutside_fn, detectHover_fn, detectHoverOutside_fn, detectEscKeyboard_fn, detectFocusOut_fn, detectScroll_fn;
 var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
   constructor() {
     super();
@@ -3759,8 +3803,9 @@ var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
     __privateAdd(this, _detectFocusOutListener, __privateMethod(this, _MenuDisclosure_instances, detectFocusOut_fn).bind(this));
     __privateAdd(this, _detectHoverOutsideListener, __privateMethod(this, _MenuDisclosure_instances, detectHoverOutside_fn).bind(this));
     __privateAdd(this, _detectHoverListener, __privateMethod(this, _MenuDisclosure_instances, detectHover_fn).bind(this));
-    this.disclosureElement.addEventListener("mouseover", __privateGet(this, _detectHoverListener).bind(this));
-    this.disclosureElement.addEventListener("mouseout", __privateGet(this, _detectHoverListener).bind(this));
+    __privateAdd(this, _detectScrollListener, __privateMethod(this, _MenuDisclosure_instances, detectScroll_fn).bind(this));
+    this.disclosureElement.addEventListener("mouseenter", __privateGet(this, _detectHoverListener).bind(this));
+    this.disclosureElement.addEventListener("mouseleave", __privateGet(this, _detectHoverListener).bind(this));
   }
   /**
    * Get the trigger mode (can be "click" or "hover"). However, for touch devices, it is always forced to click
@@ -3786,6 +3831,7 @@ var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
     document.addEventListener("keydown", __privateGet(this, _detectEscKeyboardListener));
     document.addEventListener("focusout", __privateGet(this, _detectFocusOutListener));
     document.addEventListener("mouseover", __privateGet(this, _detectHoverOutsideListener));
+    window.addEventListener("scroll", __privateGet(this, _detectScrollListener));
   }
   async close() {
     super.close();
@@ -3793,6 +3839,7 @@ var _MenuDisclosure = class _MenuDisclosure extends CustomDetails {
     document.removeEventListener("keydown", __privateGet(this, _detectEscKeyboardListener));
     document.removeEventListener("focusout", __privateGet(this, _detectFocusOutListener));
     document.removeEventListener("mouseover", __privateGet(this, _detectHoverOutsideListener));
+    window.removeEventListener("scroll", __privateGet(this, _detectScrollListener));
   }
 };
 _hoverTimer = new WeakMap();
@@ -3801,6 +3848,7 @@ _detectEscKeyboardListener = new WeakMap();
 _detectFocusOutListener = new WeakMap();
 _detectHoverOutsideListener = new WeakMap();
 _detectHoverListener = new WeakMap();
+_detectScrollListener = new WeakMap();
 _MenuDisclosure_instances = new WeakSet();
 /**
  * When dropdown menu is configured to open on click, we add a listener to detect click outside and automatically
@@ -3821,10 +3869,14 @@ detectHover_fn = function(event) {
   if (this.trigger !== "hover") {
     return;
   }
-  if (event.type === "mouseover") {
+  if (event.type === "mouseenter") {
+    if (this.closest("x-header")?.hasAttribute("data-revealing")) {
+      return;
+    }
     clearTimeout(__privateGet(this, _hoverTimer));
-    this.toggle(true);
-  } else if (event.type === "mouseout") {
+    __privateSet(this, _hoverTimer, setTimeout(() => this.toggle(true), 100));
+  } else if (event.type === "mouseleave") {
+    clearTimeout(__privateGet(this, _hoverTimer));
     __privateSet(this, _hoverTimer, setTimeout(() => this.toggle(false), this.mouseOverDelayTolerance));
   }
 };
@@ -3860,6 +3912,9 @@ detectFocusOut_fn = function(event) {
   if (event.relatedTarget && !this.contains(event.relatedTarget)) {
     this.toggle(false);
   }
+};
+detectScroll_fn = function() {
+  this.toggle(false);
 };
 var MenuDisclosure = _MenuDisclosure;
 
@@ -4611,6 +4666,10 @@ setVisibility_fn = function(isVisible) {
     __privateSet(this, _isVisible2, isVisible);
     document.documentElement.style.setProperty("--header-is-visible", isVisible ? "1" : "0");
     this.classList.toggle("is-hidden", !isVisible);
+    if (isVisible) {
+      this.setAttribute("data-revealing", "");
+      setTimeout(() => this.removeAttribute("data-revealing"), 400);
+    }
   }
 };
 var DropdownMenuDisclosure = class extends MenuDisclosure {

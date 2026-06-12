@@ -181,11 +181,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15734677551373749047": {
-        "type": "shopify://apps/flits/blocks/flits/d5eeb0f1-bc12-4372-af4d-40ca0d3ad847",
-        "disabled": true,
-        "settings": {}
-      },
       "1967102994182284862": {
         "type": "shopify://apps/paypal-pay-later-messaging/blocks/messaging/7f4cb7b9-066b-479a-a35c-56c0fddabee5",
         "disabled": false,
