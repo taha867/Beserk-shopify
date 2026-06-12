@@ -341,9 +341,6 @@
 {%  endcomment %}
 
   document.addEventListener('DOMContentLoaded', () => {
-    if (window.__beserkBuyButtonsInit) return;
-    window.__beserkBuyButtonsInit = true;
-
     // selector for both native ATC + Preorder Me buttons
     const buttonSelector = 'product-form form button[type="submit"], .preorder-me-button';
 
@@ -425,9 +422,6 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    if (window.__beserkPaymentBtnObserverInit) return;
-    window.__beserkPaymentBtnObserverInit = true;
-
     const observer = new MutationObserver(() => {
       const atcButton = document.querySelector('form[action*="/cart/add"] [type="submit"]');
 

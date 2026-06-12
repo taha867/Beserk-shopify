@@ -1,17 +1,4 @@
-{%- liquid
-  assign visibility = section.settings.visibility | default: 'all'
-  assign should_render = true
-  if visibility == 'logged_in' and customer == nil
-    assign should_render = false
-  elsif visibility == 'logged_out' and customer
-    assign should_render = false
-  endif
-  if request.design_mode
-    assign should_render = true
-  endif
--%}
-
-{%- if section.blocks.size > 0 and should_render -%}
+{%- if section.blocks.size > 0 -%}
   {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient
     | default: section.settings.color_scheme.settings.background
     | md5
@@ -161,109 +148,108 @@
       </div>
     </div>
   </div>
-
-
-  <style>
-    /* No line-clamp; we animate height for reliability */
-    .collection-description {
-      overflow: hidden;
-      transition: max-height 300ms ease;
-    }
-    /* Optional: nice end fade while collapsed */
-    .collection-description:not(.expanded) {
-      position: relative;
-       transition: max-height 300ms ease;
-    }
-    .collection-description:not(.expanded)::after {
-      content: "";
-      position: absolute;
-       transition: max-height 300ms ease;
-      left: 0; right: 0; bottom: 0;
-      height: 4rem;
-      pointer-events: none;
-      /* adjust the gradient bg to your theme */
-      background: linear-gradient(to bottom, rgba(255,255,255,0), var(--color-background, #fff));
-    }
-  </style>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Support multiple blocks on the page:
-      document.querySelectorAll('.collection-description-wrap').forEach(function (wrap) {
-        const desc = wrap.querySelector('.collection-description');
-        const btn = wrap.querySelector('.read-more-btn');
-
-        if (!desc || !btn) return;
-
-        // Compute collapsed height = 4 lines
-        const styles = window.getComputedStyle(desc);
-        const lineHeight = parseFloat(styles.lineHeight) || 20; // fallback
-        const collapsedLines = 4;
-        const collapsedHeight = Math.round(lineHeight * collapsedLines);
-
-        // Initialize collapsed state
-        desc.style.maxHeight = collapsedHeight + 'px';
-        desc.classList.remove('expanded'); // ensure
-
-        // Hide button if content is already short
-        // (use setTimeout to ensure images/fonts inside desc are measured)
-        const maybeHideButton = () => {
-          if (desc.scrollHeight <= collapsedHeight + 1) {
-            btn.style.display = 'none';
-          } else {
-            btn.style.display = '';
-          }
-        };
-        maybeHideButton();
-        window.addEventListener('load', maybeHideButton);
-
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-          const isExpanded = desc.classList.contains('expanded');
-
-          if (isExpanded) {
-            // --- collapse with smooth transition ---
-            const startHeight = desc.scrollHeight; // current full height
-            desc.style.maxHeight = startHeight + 'px'; // lock to current
-            requestAnimationFrame(() => {
-              desc.classList.remove('expanded');
-              desc.style.maxHeight = collapsedHeight + 'px'; // animate to collapsed
-            });
-
-            btn.textContent = btn.dataset.readMore || 'Read more';
-          } else {
-            // --- expand with smooth transition ---
-            const targetHeight = desc.scrollHeight; // full height
-            desc.classList.add('expanded');
-            desc.style.maxHeight = targetHeight + 'px';
-
-            btn.textContent = btn.dataset.readLess || 'Read less';
-          }
-        });
-
-        // If content size changes (e.g., images load), keep expanded height correct
-        const ro = new ResizeObserver(() => {
-          if (desc.classList.contains('expanded')) {
-            desc.style.maxHeight = desc.scrollHeight + 'px';
-          } else {
-            desc.style.maxHeight = collapsedHeight + 'px';
-          }
-          maybeHideButton();
-        });
-        ro.observe(desc);
-      });
-    });
-  </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const el = document.querySelector('.collection-description');
-      if (el) {
-        el.innerHTML = el.innerHTML.replace(/\/Sizing:---[\s\S]*?Sizing:---\//gi, '');
-      }
-    });
-  </script>
 {%- endif -%}
+
+<style>
+  /* No line-clamp; we animate height for reliability */
+  .collection-description {
+    overflow: hidden;
+    transition: max-height 300ms ease;
+  }
+  /* Optional: nice end fade while collapsed */
+  .collection-description:not(.expanded) {
+    position: relative;
+     transition: max-height 300ms ease;
+  }
+  .collection-description:not(.expanded)::after {
+    content: "";
+    position: absolute;
+     transition: max-height 300ms ease;
+    left: 0; right: 0; bottom: 0;
+    height: 4rem;
+    pointer-events: none;
+    /* adjust the gradient bg to your theme */
+    background: linear-gradient(to bottom, rgba(255,255,255,0), var(--color-background, #fff));
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Support multiple blocks on the page:
+    document.querySelectorAll('.collection-description-wrap').forEach(function (wrap) {
+      const desc = wrap.querySelector('.collection-description');
+      const btn = wrap.querySelector('.read-more-btn');
+
+      if (!desc || !btn) return;
+
+      // Compute collapsed height = 4 lines
+      const styles = window.getComputedStyle(desc);
+      const lineHeight = parseFloat(styles.lineHeight) || 20; // fallback
+      const collapsedLines = 4;
+      const collapsedHeight = Math.round(lineHeight * collapsedLines);
+
+      // Initialize collapsed state
+      desc.style.maxHeight = collapsedHeight + 'px';
+      desc.classList.remove('expanded'); // ensure
+
+      // Hide button if content is already short
+      // (use setTimeout to ensure images/fonts inside desc are measured)
+      const maybeHideButton = () => {
+        if (desc.scrollHeight <= collapsedHeight + 1) {
+          btn.style.display = 'none';
+        } else {
+          btn.style.display = '';
+        }
+      };
+      maybeHideButton();
+      window.addEventListener('load', maybeHideButton);
+
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        const isExpanded = desc.classList.contains('expanded');
+
+        if (isExpanded) {
+          // --- collapse with smooth transition ---
+          const startHeight = desc.scrollHeight; // current full height
+          desc.style.maxHeight = startHeight + 'px'; // lock to current
+          requestAnimationFrame(() => {
+            desc.classList.remove('expanded');
+            desc.style.maxHeight = collapsedHeight + 'px'; // animate to collapsed
+          });
+
+          btn.textContent = btn.dataset.readMore || 'Read more';
+        } else {
+          // --- expand with smooth transition ---
+          const targetHeight = desc.scrollHeight; // full height
+          desc.classList.add('expanded');
+          desc.style.maxHeight = targetHeight + 'px';
+
+          btn.textContent = btn.dataset.readLess || 'Read less';
+        }
+      });
+
+      // If content size changes (e.g., images load), keep expanded height correct
+      const ro = new ResizeObserver(() => {
+        if (desc.classList.contains('expanded')) {
+          desc.style.maxHeight = desc.scrollHeight + 'px';
+        } else {
+          desc.style.maxHeight = collapsedHeight + 'px';
+        }
+        maybeHideButton();
+      });
+      ro.observe(desc);
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const el = document.querySelector('.collection-description');
+    if (el) {
+      el.innerHTML = el.innerHTML.replace(/\/Sizing:---[\s\S]*?Sizing:---\//gi, '');
+    }
+  });
+</script>
 
 {% schema %}
 {
@@ -335,17 +321,6 @@
       "id": "remove_vertical_spacing",
       "label": "t:global.spacing.remove_vertical_spacing",
       "default": false
-    },
-    {
-      "type": "select",
-      "id": "visibility",
-      "label": "t:global.visibility.label",
-      "default": "all",
-      "options": [
-        { "value": "all", "label": "t:global.visibility.options.all" },
-        { "value": "logged_in", "label": "t:global.visibility.options.logged_in" },
-        { "value": "logged_out", "label": "t:global.visibility.options.logged_out" }
-      ]
     }
   ],
   "blocks": [

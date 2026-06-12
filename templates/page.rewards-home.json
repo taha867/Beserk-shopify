@@ -193,19 +193,23 @@
           }
         }
       },
-      "block_order": ["heading_9Kpejc", "subheading_TMxiHq", "button_bHhdXU"],
+      "block_order": [
+        "heading_9Kpejc",
+        "subheading_TMxiHq",
+        "button_bHhdXU"
+      ],
       "name": "TITLE",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
         "content_width": "sm",
         "text_position": "center",
-        "remove_vertical_spacing": false,
-        "visibility": "logged_out"
+        "remove_vertical_spacing": false
       }
     },
     "rewards_content_PLCAJC": {
       "type": "rewards-content",
+      "disabled": true,
       "name": "SMILE REWARDS",
       "settings": {
         "show_heading": false,
@@ -214,8 +218,7 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "css_class": "",
-        "custom_css": "",
-        "visibility": "logged_in"
+        "custom_css": ""
       }
     },
     "rich_text_fD4HJe": {
@@ -389,7 +392,10 @@
           }
         }
       },
-      "block_order": ["item_U9dqHC", "item_mai9KK"],
+      "block_order": [
+        "item_U9dqHC",
+        "item_mai9KK"
+      ],
       "name": "HOW TO EARN POINTS",
       "settings": {
         "color_scheme": "",
@@ -414,15 +420,16 @@
           }
         }
       },
-      "block_order": ["button_9GmLDQ"],
+      "block_order": [
+        "button_9GmLDQ"
+      ],
       "name": "BUTTON",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
         "content_width": "sm",
         "text_position": "center",
-        "remove_vertical_spacing": false,
-        "visibility": "logged_out"
+        "remove_vertical_spacing": false
       }
     },
     "rich_text_Qjkxia": {
@@ -442,7 +449,10 @@
           }
         }
       },
-      "block_order": ["heading_wiLaGH", "richtext_6RLnr9"],
+      "block_order": [
+        "heading_wiLaGH",
+        "richtext_6RLnr9"
+      ],
       "name": "IMPORTANT INFORMATION",
       "settings": {
         "color_scheme": "",
@@ -478,7 +488,11 @@
           }
         }
       },
-      "block_order": ["heading_6cidnH", "page_mQPbxp", "image_aTNVCn"],
+      "block_order": [
+        "heading_6cidnH",
+        "page_mQPbxp",
+        "image_aTNVCn"
+      ],
       "name": "TERMS AND CONDITIONS",
       "settings": {
         "color_scheme": "",

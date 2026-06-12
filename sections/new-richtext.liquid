@@ -4,6 +4,32 @@
     | md5
   -%}
 
+  <style>
+    .collection-description {
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* Limit to 2 lines */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    .collection-description.expanded {
+      -webkit-line-clamp: unset; /* Remove limit */
+      display: block;
+    }
+
+    .richtext-customer-name{
+      font-size:20px;
+      font-weight:700;
+      text-transform:uppercase;
+      margin: 0;
+    }
+
+    .richtext-customer-name .cx-name{
+      color: #ffff01;
+    }
+  </style>
+
   <div class="color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% unless section.settings.remove_vertical_spacing %}section-spacing{% endunless %} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
     <div class="container container--{{ section.settings.content_width }}">
       <div class=" text-{{ section.settings.text_position }}">
@@ -19,7 +45,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     const desc = document.getElementById('collection-description');
     const btn = document.getElementById('read-more-btn');
-    if (!desc || !btn) return;
+
     btn.addEventListener('click', function () {
       desc.classList.toggle('expanded');
       btn.textContent = desc.classList.contains('expanded')

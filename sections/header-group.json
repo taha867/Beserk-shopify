@@ -51,14 +51,14 @@
           "settings": {
             "menu_item": "NEW",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_New-01_4b99960b-8cd7-4d36-b19d-330e569c7ee9.jpg",
+            "image_1": "shopify://shop_images/Menu_Image_315x450_New_c2c453f4-70c9-4e63-8298-5e7cfc87df52.jpg",
             "image_1_heading": "New Arrivals",
             "image_1_text": "SHOP NOW",
             "image_1_link": "shopify://collections/new",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_New_df74c692-e6a7-41ff-8981-dbe8a5cc941c.jpg",
-            "image_2_heading": "Gothic At Heart!",
-            "image_2_text": "Shop Devil Fashion",
-            "image_2_link": "shopify://collections/devil-fashion"
+            "image_2": "shopify://shop_images/Menu-Image_315x450_New_f2b4d779-3c5e-4d6e-b2bc-355405125c92.jpg",
+            "image_2_heading": "Lively Ghosts Is Back!",
+            "image_2_text": "Shop Now",
+            "image_2_link": "shopify://collections/lively-ghosts"
           }
         },
         "mega_menu_Bb4PAa": {
@@ -134,11 +134,11 @@
           "settings": {
             "menu_item": "SALE",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale_a970ea27-bac9-49ab-a131-42d4ed47c165.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale-02_46ee0a72-afe0-4fb0-9b92-ffcc4a9d609e.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "shopify://collections/sale",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_beetlejuice_c4476e4a-8e5b-459b-aacf-d36671ddd105.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Sale-01_c22f7d63-b1ed-4d20-9e16-736772f6df1f.jpg",
             "image_2_heading": "",
             "image_2_text": "",
             "image_2_link": "https://www.beserk.com.au/products/beetlejuice-ghost-with-the-most-queen-double-sided-quilt-set"
@@ -367,7 +367,7 @@
         "logo_mobile_max_width": 180,
         "menu": "link-list",
         "sidebar_menu": "new-mobile",
-        "menu_open_trigger": "click",
+        "menu_open_trigger": "hover",
         "menu_text_font": "heading",
         "enable_search": true,
         "sidebar_color_scheme": "scheme-2",

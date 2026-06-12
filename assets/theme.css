@@ -3565,11 +3565,6 @@ tr[onclick]:hover {
   transition-delay: 0s;
 }
 
-line-item-quantity[aria-busy="true"] .quantity-selector__button {
-  pointer-events: none;
-  opacity: 0.4;
-}
-
 .breadcrumb {
   display: none;
 }
@@ -8382,32 +8377,4 @@ button.swym-storefront-layout-grid-item-add-to-cart-button {
   border-color: #000000 !important;
   pointer-events: none;
   opacity: 1;
-}
-
-/* ================================================
-   RICHTEXT / COLLECTION DESCRIPTION
-   ================================================ */
-
-.collection-description {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  transition: all 0.5s ease;
-}
-
-.collection-description.expanded {
-  -webkit-line-clamp: unset;
-  display: block;
-}
-
-.richtext-customer-name {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.richtext-customer-name .cx-name {
-  color: #ffff01;
 }

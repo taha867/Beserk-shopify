@@ -142,7 +142,7 @@
           "settings": {
             "style": "solid",
             "text": "LOGOUT",
-            "url": "https://beserk.com.au/account/logout",
+            "url": "http://beserk.com.au/account/logout",
             "background": "#ffffff",
             "text_color": "#1c1c1c"
           }

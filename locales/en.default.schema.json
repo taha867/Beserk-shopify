@@ -143,14 +143,6 @@
       "remove_vertical_spacing": "Remove vertical spacing",
       "remove_horizontal_spacing": "Remove horizontal spacing"
     },
-    "visibility": {
-      "label": "Show to",
-      "options": {
-        "all": "Everyone",
-        "logged_in": "Logged-in customers only",
-        "logged_out": "Logged-out visitors only"
-      }
-    },
     "localization": {
       "country_region_selector_category": "Country/region selector",
       "country_region_selector_category_info": "To add a country/region, go to your [markets settings](/admin/settings/markets).",
