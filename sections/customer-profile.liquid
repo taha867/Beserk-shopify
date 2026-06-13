@@ -1,49 +1,10 @@
 {% if customer %}
   <section class="customer-profile">
-    <div class="profile-view" id="profile-view">
-      <h2>My Profile</h2>
-      <p><strong>First Name:</strong> {{ customer.first_name }}</p>
-      <p><strong>Last Name:</strong> {{ customer.last_name }}</p>
-      <p><strong>Email:</strong> {{ customer.email }}</p>
-      <p><strong>Phone:</strong> {{ customer.phone | default: 'Not Provided' }}</p>
-      <button type="button" id="edit-profile-btn" class="button edit-btn">Edit</button>
-    </div>
-
-    <div class="profile-edit hidden" id="profile-edit">
-      <h2>Edit Profile</h2>
-      {% form 'contact' %}
-        <input type="hidden" name="contact[subject]" value="Customer profile update request">
-        <input type="hidden" name="contact[customer_id]" value="{{ customer.id }}">
-        <input type="hidden" name="contact[email]" value="{{ customer.email }}">
-
-        <div class="form-field">
-          <label for="FirstName">First Name</label>
-          <input type="text" id="FirstName" name="contact[first_name]" value="{{ customer.first_name }}">
-        </div>
-
-        <div class="form-field">
-          <label for="LastName">Last Name</label>
-          <input type="text" id="LastName" name="contact[last_name]" value="{{ customer.last_name }}">
-        </div>
-
-        <div class="form-field">
-          <label for="Email">Email</label>
-          <input type="email" id="Email" name="contact[new_email]" value="{{ customer.email }}">
-        </div>
-
-        <div class="form-field">
-          <label for="Phone">Phone</label>
-          <input type="tel" id="Phone" name="contact[phone]" value="{{ customer.phone }}">
-        </div>
-
-        <button type="submit" class="button update-btn">Send Update Request</button>
-        <button type="button" id=" cancel-edit-btn" class=" button cancel-btn">Cancel</button>
-      {% endform %}
-
-      {% if form.posted_successfully? %}
-        <p class="button success-msg">✅ Your update request has been sent to admin.</p>
-      {% endif %}
-    </div>
+    <h2>My Profile</h2>
+    <p><strong>First Name:</strong> {{ customer.first_name }}</p>
+    <p><strong>Last Name:</strong> {{ customer.last_name }}</p>
+    <p><strong>Email:</strong> {{ customer.email }}</p>
+    <p><strong>Phone:</strong> {{ customer.phone | default: 'Not Provided' }}</p>
   </section>
 {% endif %}
 
@@ -58,35 +19,7 @@
   }
   .customer-profile h2 { margin-bottom: 15px; }
   .customer-profile p { margin: 8px 0; }
-  .profile-edit .form-field { margin-bottom: 12px; display: flex; flex-direction: column; }
-  .profile-edit input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
-  .profile-edit button { margin-top: 10px; padding: 10px 14px; border: none; border-radius: 4px; cursor: pointer; }
-  .profile-edit .hidden { display: none; }
-  .profile-edit .success-msg { margin-top: 12px; color: green; }
 </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const editBtn = document.getElementById('edit-profile-btn');
-    const cancelBtn = document.getElementById('cancel-edit-btn');
-    const viewBlock = document.getElementById('profile-view');
-    const editBlock = document.getElementById('profile-edit');
-
-    if (editBtn) {
-      editBtn.addEventListener('click', function () {
-        viewBlock.classList.add('hidden');
-        editBlock.classList.remove('hidden');
-      });
-    }
-
-    if (cancelBtn) {
-      cancelBtn.addEventListener('click', function () {
-        editBlock.classList.add('hidden');
-        viewBlock.classList.remove('hidden');
-      });
-    }
-  });
-</script>
 
 {% schema %}
 {
