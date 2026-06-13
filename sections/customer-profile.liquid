@@ -1,24 +1,30 @@
 {% if customer %}
   <section class="customer-profile">
-    <h2>My Profile</h2>
-    <p><strong>First Name:</strong> {{ customer.first_name }}</p>
-    <p><strong>Last Name:</strong> {{ customer.last_name }}</p>
-    <p><strong>Email:</strong> {{ customer.email }}</p>
-    <p><strong>Phone:</strong> {{ customer.phone | default: 'Not Provided' }}</p>
+    <div class="profile-view" id="profile-view">
+      <h2>My Profile</h2>
+      <p><strong>First Name:</strong> {{ customer.first_name }}</p>
+      <p><strong>Last Name:</strong> {{ customer.last_name }}</p>
+      <p><strong>Email:</strong> {{ customer.email }}</p>
+      <p><strong>Phone:</strong> {{ customer.phone | default: 'Not Provided' }}</p>
+    </div>
   </section>
 {% endif %}
 
 <style>
   .customer-profile {
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    background: #fafafa;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
-  .customer-profile h2 { margin-bottom: 15px; }
-  .customer-profile p { margin: 8px 0; }
+  .customer-profile h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+  }
+  .customer-profile p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
 </style>
 
 {% schema %}
