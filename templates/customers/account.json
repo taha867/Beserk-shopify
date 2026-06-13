@@ -210,7 +210,7 @@
           "settings": {
             "style": "solid",
             "text": "PROFILE",
-            "url": "shopify://pages/customer-profile",
+            "url": "shopify://pages/profile",
             "background": "",
             "text_color": ""
           }
