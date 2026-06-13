@@ -207,11 +207,10 @@
         },
         "button_PY66Ef": {
           "type": "button",
-          "disabled": true,
           "settings": {
             "style": "solid",
             "text": "PROFILE",
-            "url": "shopify://pages/profile",
+            "url": "shopify://pages/customer-profile",
             "background": "",
             "text_color": ""
           }
