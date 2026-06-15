@@ -8208,7 +8208,7 @@ ul {
 }
 
 div#smile-ui-container{
-  z-index: 10 !important;
+  z-index: 1000 !important;
 }
 
 .swym-storefront-layout-tabs-view {
