@@ -173,17 +173,32 @@
         "remove_vertical_spacing": false
       }
     },
-    "rewards_content_McWR4q": {
-      "type": "rewards-content",
-      "name": "SMILE REWARDS",
+    "smile_points_rewards_XkP9mQ": {
+      "type": "apps",
+      "blocks": {
+        "smile_io_smile_points_on_account_page_rewards": {
+          "type": "shopify://apps/smile-io/blocks/smile-points-on-account-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#ffffff",
+            "secondary_colour": "#000000",
+            "preview_scenario": "can_afford_reward",
+            "show_icon": false,
+            "show_points_label": false,
+            "cannot_afford_reward_body_text": "<p>♥️♥️ <strong>BESERK REWARD POINTS </strong>♥️♥️</p><p>POINTS BALANCE : <strong>[points_balance]<br/><br/></strong></p><p>Earn more to redeem for Discounts on orders, Free Gifts & more!  </p><p>♥️♥️♥️</p>",
+            "can_afford_reward_body_text": "<p><strong>BESERK REWARD POINTS </strong>♥️♥️♥️<br/></p><p>POINTS BALANCE : <strong>[points_balance]</strong></p><p>Redeem for Discounts & Free Gifts & more!  </p><p>♥️♥️♥️</p>",
+            "ways_to_earn_button_text": "VIEW WAYS TO EARN",
+            "ways_to_redeem_button_text": "VIEW WAYS TO REDEEM"
+          }
+        }
+      },
+      "block_order": [
+        "smile_io_smile_points_on_account_page_rewards"
+      ],
       "settings": {
-        "show_heading": false,
-        "heading_alignment": "left",
-        "width": "standard",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "css_class": "",
-        "custom_css": ""
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true
       }
     },
     "rich_text_igPm8q": {
@@ -523,14 +538,13 @@
     "rich_text_nJtXrD",
     "image_with_text_block_eAVk96",
     "rich_text_YA3XKw",
-    "rewards_content_McWR4q",
+    "smile_points_rewards_XkP9mQ",
     "rich_text_igPm8q",
     "text_with_icons_JUbYez",
     "text_with_icons_LrdYit",
     "rich_text_4wepJe",
     "rich_text_WBip4R",
     "rich_text_eaJpkw",
-    "rewards_content_wyTKCQ",
     "main"
   ]
 }
