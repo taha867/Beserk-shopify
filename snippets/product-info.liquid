@@ -295,12 +295,6 @@
               {%- assign product_title = 'general.on_boarding.product_title' | t -%}
             {%- endif -%}
 
-          {% comment %} {% when "preorder-with-wishlist" %}
-            <div class="preorder-with-wishlist">
-              {% render "swymowishlist-icon" %}
-              {% render "preorder-me-widget" %} {% endcomment %}
-            {% comment %} </div> {% endcomment %}
-
             {%- if request.page_type == 'product' and context == 'main_product' -%}
               <h1 class="product-title {{ block.settings.heading_tag }}">
                 {{- product_title -}}

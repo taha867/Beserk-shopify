@@ -155,7 +155,8 @@
             "text": "Create an account",
             "url": "https://www.beserk.com.au/account/login",
             "background": "",
-            "text_color": ""
+            "text_color": "",
+            "hide_when_logged_in": true
           }
         }
       },
@@ -176,23 +177,22 @@
     "smile_points_rewards_XkP9mQ": {
       "type": "apps",
       "blocks": {
-        "smile_io_smile_points_on_account_page_rewards": {
-          "type": "shopify://apps/smile-io/blocks/smile-points-on-account-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "smile_io_smile_landing_page_header_rewards": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-header/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
           "settings": {
             "primary_colour": "#ffffff",
             "secondary_colour": "#000000",
-            "preview_scenario": "can_afford_reward",
-            "show_icon": false,
-            "show_points_label": false,
-            "cannot_afford_reward_body_text": "<p>♥️♥️ <strong>BESERK REWARD POINTS </strong>♥️♥️</p><p>POINTS BALANCE : <strong>[points_balance]<br/><br/></strong></p><p>Earn more to redeem for Discounts on orders, Free Gifts & more!  </p><p>♥️♥️♥️</p>",
-            "can_afford_reward_body_text": "<p><strong>BESERK REWARD POINTS </strong>♥️♥️♥️<br/></p><p>POINTS BALANCE : <strong>[points_balance]</strong></p><p>Redeem for Discounts & Free Gifts & more!  </p><p>♥️♥️♥️</p>",
-            "ways_to_earn_button_text": "VIEW WAYS TO EARN",
-            "ways_to_redeem_button_text": "VIEW WAYS TO REDEEM"
+            "title_text": "BESERK ARMY POINTS",
+            "description_text": "Earn reward points on every purchase. Redeem for discounts, free gifts & more!",
+            "join_button_text": "Join now",
+            "login_button_text": "Log in",
+            "is_previewing_logged_in_state": false,
+            "discover_button_text": "View my points"
           }
         }
       },
       "block_order": [
-        "smile_io_smile_points_on_account_page_rewards"
+        "smile_io_smile_landing_page_header_rewards"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -396,7 +396,8 @@
             "text": "Create an account",
             "url": "https://www.beserk.com.au/account/login",
             "background": "",
-            "text_color": ""
+            "text_color": "",
+            "hide_when_logged_in": true
           }
         }
       },
@@ -480,48 +481,6 @@
         "content_width": "sm",
         "text_position": "center",
         "remove_vertical_spacing": false
-      }
-    },
-    "rewards_content_wyTKCQ": {
-      "type": "rewards-content",
-      "blocks": {
-        "text_content_VpixBT": {
-          "type": "text-content",
-          "settings": {
-            "heading": "<h3>BESERK REWARDS</h3>",
-            "text_content": "<ul><li>RECEIVE $5 OFF YOUR FIRST ORDER - 100 BONUS Beserk Points</li><li>Earn 1 Point for every $1 Spent</li><li>Earn Points for Social Media sharing</li><li>Receive a Bonus 20 Points on your Birthday!</li><li>Receive 10 Points for All Reviews</li><li>Sign up for the Beserk Newsletter to receive 5 Bonus Points</li></ul><p></p><h2><br/></h2><h2><strong>SPEND YOUR POINTS & RECEIVE $ OFF YOUR NEXT ORDER</strong></h2><p></p><p>After you have enough points you can then REDEEM your points for a voucher to use against $$ OFF your next order. Simply click 'Spend my Points' above & select your voucher.<br/><br/></p><ul><li>?? Reward Points =<strong>FREE PRODUCTS</strong><em><strong>(Items Change Regularly!)</strong></em></li><li>50 Reward Points =<strong>$2.50 OFF VOUCHER </strong></li><li><strong>1</strong>00 Reward Points =<strong>$5 OFF VOUCHER </strong></li><li>200 Reward Points =<strong>$10 OFF VOUCHER</strong></li></ul><p><strong><br/><br/></strong></p><h2><strong>Please Note: </strong></h2><ul><li>Points never expire just as long as you make 1 transaction per year. Your points will expire 365 days after they were awarded if you do not make a transaction during that time. If you do place an order then your points are refreshed and valid for another 365 days. </li><li>Points are not redeemable for cash. </li><li>Only 1 voucher can be used per order. </li><li>Minimum order value $49. </li><li>Reward points cannot be used to purchase Gift Cards.</li><li>200 Reward Points =<strong>$10 OFF VOUCHER</strong></li></ul><p><strong><br/></strong></p>"
-          }
-        },
-        "text_content_8waX9L": {
-          "type": "text-content",
-          "settings": {
-            "heading": "",
-            "text_content": "<p></p><p>Points will be automatically added to your reward balance after your order or action is complete. Please note: Your birthdate must be added at least 1 month BEFORE your Birthday to receive the Birthday bonus points. Limits on points earned for Social media sharing apply.</p>"
-          }
-        },
-        "text_content_6XxMVx": {
-          "type": "text-content",
-          "settings": {
-            "heading": "<h3>EARN POINTS ON EVERY PURCHASE!</h3>",
-            "text_content": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_content_VpixBT",
-        "text_content_8waX9L",
-        "text_content_6XxMVx"
-      ],
-      "disabled": true,
-      "name": "rewards",
-      "settings": {
-        "show_heading": true,
-        "heading_alignment": "left",
-        "width": "wide",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "css_class": "",
-        "custom_css": ""
       }
     },
     "main": {

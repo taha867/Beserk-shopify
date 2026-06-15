@@ -126,15 +126,17 @@
 
             {%- when 'button' -%}
               {%- if block.settings.text != blank -%}
-                {% render 'button',
-                  content: block.settings.text,
-                  href: block.settings.url,
-                  size: block.settings.size,
-                  style: block.settings.style,
-                  background: block.settings.background,
-                  text_color: block.settings.text_color,
-                  block: block
-                %}
+                {%- unless block.settings.hide_when_logged_in and customer -%}
+                  {% render 'button',
+                    content: block.settings.text,
+                    href: block.settings.url,
+                    size: block.settings.size,
+                    style: block.settings.style,
+                    background: block.settings.background,
+                    text_color: block.settings.text_color,
+                    block: block
+                  %}
+                {%- endunless -%}
               {%- endif -%}
 
             {%- when 'liquid' -%}
@@ -553,6 +555,12 @@
           "type": "color",
           "id": "text_color",
           "label": "t:global.text.text"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_when_logged_in",
+          "label": "Hide when customer is logged in",
+          "default": false
         }
       ]
     },
