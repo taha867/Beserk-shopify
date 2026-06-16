@@ -113,7 +113,7 @@
           "name": "INSTANT REFUND",
           "settings": {
             "title": "INSTANT REFUND",
-            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
+            "content": "<p>To lodge an instant refund via Refundid, please visit our <a href=\"/pages/beserk-returns\">returns page</a> or contact us at <a href=\"mailto:orders@beserk.com.au\">orders@beserk.com.au</a>.</p>",
             "page": "refundid-returns",
             "open_on_mobile": false
           }
