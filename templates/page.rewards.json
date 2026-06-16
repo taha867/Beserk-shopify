@@ -177,23 +177,22 @@
     "smile_points_rewards_XkP9mQ": {
       "type": "apps",
       "blocks": {
-        "smile_io_smile_points_on_account_page_rewards": {
-          "type": "shopify://apps/smile-io/blocks/smile-points-on-account-page/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "smile_io_smile_landing_page_header_rewards": {
+          "type": "shopify://apps/smile-io/blocks/smile-landing-page-header/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
           "settings": {
             "primary_colour": "#ffffff",
             "secondary_colour": "#000000",
-            "preview_scenario": "can_afford_reward",
-            "show_icon": false,
-            "show_points_label": false,
-            "cannot_afford_reward_body_text": "<p>♥️♥️ <strong>BESERK REWARD POINTS </strong>♥️♥️</p><p>POINTS BALANCE : <strong>[points_balance]<br/><br/></strong></p><p>Earn more to redeem for Discounts on orders, Free Gifts & more!  </p><p>♥️♥️♥️</p>",
-            "can_afford_reward_body_text": "<p><strong>BESERK REWARD POINTS </strong>♥️♥️♥️<br/></p><p>POINTS BALANCE : <strong>[points_balance]</strong></p><p>Redeem for Discounts & Free Gifts & more!  </p><p>♥️♥️♥️</p>",
-            "ways_to_earn_button_text": "VIEW WAYS TO EARN",
-            "ways_to_redeem_button_text": "VIEW WAYS TO REDEEM"
+            "title_text": "BESERK ARMY POINTS",
+            "description_text": "Earn reward points on every purchase. Redeem for discounts, free gifts & more!",
+            "join_button_text": "Join now",
+            "login_button_text": "Log in",
+            "is_previewing_logged_in_state": false,
+            "discover_button_text": "View my points"
           }
         }
       },
       "block_order": [
-        "smile_io_smile_points_on_account_page_rewards"
+        "smile_io_smile_landing_page_header_rewards"
       ],
       "settings": {
         "color_scheme": "scheme-1",
