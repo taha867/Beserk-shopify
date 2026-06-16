@@ -295,12 +295,6 @@
               {%- assign product_title = 'general.on_boarding.product_title' | t -%}
             {%- endif -%}
 
-          {% comment %} {% when "preorder-with-wishlist" %}
-            <div class="preorder-with-wishlist">
-              {% render "swymowishlist-icon" %}
-              {% render "preorder-me-widget" %} {% endcomment %}
-            {% comment %} </div> {% endcomment %}
-
             {%- if request.page_type == 'product' and context == 'main_product' -%}
               <h1 class="product-title {{ block.settings.heading_tag }}">
                 {{- product_title -}}
@@ -830,51 +824,7 @@
   });
 </script>
 
-{% comment %}
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      function attachClickHandler() {
-        const pointsText = document.querySelector('.slp_13efdb p'); // ❤️ EARN 69 Army Points
-
-        if (pointsText && !pointsText.classList.contains('smile-click-added')) {
-          pointsText.classList.add('smile-click-added');
-          pointsText.style.cursor = 'pointer';
-
-          pointsText.addEventListener('click', function (e) {
-            if (window.SmileUI && typeof window.SmileUI.open === 'function') {
-              window.SmileUI.open();
-
-              // Delay to allow Smile panel to render
-              setTimeout(() => {
-                const panel = document.querySelector('#SmileUIPanelContainer');
-                if (panel) {
-                  // get trigger position
-                  const rect = pointsText.getBoundingClientRect();
-                  panel.style.position = 'absolute';
-                  panel.style.top = rect.top + window.scrollY + 'px';
-                  panel.style.left = rect.left + 'px';
-                  panel.style.right = 'auto'; // unset default
-                  panel.style.bottom = 'auto'; // unset default
-                  panel.style.zIndex = 99999;
-                }
-              }, 300);
-            } else {
-              console.warn('SmileUI not loaded yet');
-            }
-          });
-        }
-      }
-
-      attachClickHandler();
-
-      // watch for Smile injection
-      const observer = new MutationObserver(attachClickHandler);
-      observer.observe(document.body, { childList: true, subtree: true });
-
-      window.addEventListener('smile:ready', attachClickHandler);
-    });
-  </script>
-{% endcomment %}
+{%- if request.page_type == 'product' -%}
 <script>
   (function () {
     // Config: deep-link to open (see Smile docs for other deep-links)
@@ -957,3 +907,4 @@
     window.addEventListener('smile:ready', () => { markExisting(); mo.disconnect(); }, { once: true });
   })();
 </script>
+{%- endif -%}

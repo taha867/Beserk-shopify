@@ -12,7 +12,7 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_Upjnnm": {
+        "image_xTjKJ4": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/0626_Mystery-Packs-New-01_Banner_3200.gif",
@@ -21,25 +21,52 @@
             "title": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 740,
-            "button_1_text": "shop now",
+            "content_max_width": 400,
+            "button_1_text": "SHOP NOW",
             "button_1_link": "shopify://collections/mystery-packs",
             "button_1_style": "solid",
-            "button_1_background": "#e32c2b",
+            "button_1_background": "#691eae",
             "button_1_text_color": "#ffffff",
             "button_2_text": "",
             "button_2_link": "",
-            "button_2_style": "solid",
-            "button_2_background": "#ed8a00",
-            "button_2_text_color": "#ffffff",
-            "background": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "#1c1c1c",
             "background_opacity": 0,
             "text_color": "#ffffff",
             "border_color": "",
             "gradient_overlay": ""
           }
         },
-        "image_JBE7eC": {
+        "image_UmHJfg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0626_Oufer-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0626_Oufer-New-01_Banner-1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 400,
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify://collections/oufer",
+            "button_1_style": "solid",
+            "button_1_background": "#ff0000",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#cb2b2b",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(10, 234, 237, 0), rgba(0, 0, 0, 0) 100%)"
+          }
+        },
+        "image_Upjnnm": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/0626_Mary-Wyatt-New-01_Banner_3200.jpg",
@@ -52,7 +79,7 @@
             "button_1_text": "shop now",
             "button_1_link": "shopify://collections/mary-wyatt",
             "button_1_style": "solid",
-            "button_1_background": "#6d81a9",
+            "button_1_background": "#3b4762",
             "button_1_text_color": "#ffffff",
             "button_2_text": "",
             "button_2_link": "",
@@ -92,47 +119,20 @@
             "border_color": "",
             "gradient_overlay": ""
           }
-        },
-        "image_UmHJfg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/0626_Devil-Fashion-New-01_Banner_3200.jpg",
-            "mobile_image": "shopify://shop_images/0626_Devil-Fashion-New-01_Banner-1200.jpg",
-            "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 400,
-            "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify://collections/devil-fashion",
-            "button_1_style": "solid",
-            "button_1_background": "#4f3856",
-            "button_1_text_color": "#ffffff",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "solid",
-            "button_2_background": "#cb2b2b",
-            "button_2_text_color": "#ffffff",
-            "background": "",
-            "background_opacity": 0,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(10, 234, 237, 0), rgba(0, 0, 0, 0) 100%)"
-          }
         }
       },
       "block_order": [
+        "image_xTjKJ4",
+        "image_UmHJfg",
         "image_Upjnnm",
-        "image_JBE7eC",
-        "image_pLqq4n",
-        "image_UmHJfg"
+        "image_pLqq4n"
       ],
       "name": "Main Scrolling Banner",
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": false,
         "media_size": "auto",
-        "show_initial_transition": false,
+        "show_initial_transition": true,
         "autoplay": true,
         "autoplay_pause_on_video": true,
         "cycle_speed": 10,
@@ -177,7 +177,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "hair-colour",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair_b76bb70a-2b81-49fe-b181-91aeaf926c84.jpg",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair-01.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -194,7 +194,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "band-merchandise",
-            "image": "shopify://shop_images/Front_Page_500x715_Promo_1_Band.gif",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Band_20a7e413-8370-4e62-a4c7-aa46289dfeac.gif",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -210,14 +210,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "forest-ink",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Lively-Ghosts_02c980c1-3d47-41fd-97cd-9421a87c4286.jpg",
+            "collection": "mystery-packs",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Mystery-Packs_363bd453-c34c-474c-b2de-7aa3464f3e5a.gif",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP LIVELY GHOSTS",
-            "button_link": "shopify://collections/lively-ghosts",
+            "button_text": "SHOP MYSTERY PACKS",
+            "button_link": "shopify://collections/mystery-packs",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -228,7 +228,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "hells-blankets",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets_4478838d-ed07-4bba-911a-6bf4b3ef7f0a.jpg",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets_dac202d3-76fd-4d32-9dde-86fcddf421aa.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -263,6 +263,24 @@
         "content": ""
       }
     },
+    "recently_viewed_products_8MGfMp": {
+      "type": "recently-viewed-products",
+      "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "color_scheme": "",
+        "hide_product_information": true,
+        "stack_products": false,
+        "products_count": 12,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Recently viewed products",
+        "content": ""
+      }
+    },
     "image_with_text_overlay_VEUQC6": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -292,8 +310,8 @@
       "settings": {
         "color_scheme": "scheme-2",
         "image_size": "auto",
-        "image": "shopify://shop_images/Blind-Boxes_Banner-2500-05.jpg",
-        "mobile_image": "shopify://shop_images/Blind-Boxes_Banner-1100-05.jpg",
+        "image": "shopify://shop_images/Blind-Boxes_Banner-2500-06.jpg",
+        "mobile_image": "shopify://shop_images/Blind-Boxes_Banner-1100-06.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -317,7 +335,7 @@
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "Foxblood",
+            "title": "FOXBLOOD",
             "button_text": "SHOP NOW",
             "button_link": "shopify://collections/foxblood",
             "button_style": "link",
@@ -329,14 +347,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-4",
-            "collection": "devil-fashion",
-            "image": "shopify://shop_images/Collection-1_Devil-Fashion.jpg",
+            "collection": "groovy-things",
+            "image": "shopify://shop_images/Collection-1_Groovy-Things_01_2e814ca0-f104-4cb8-bad5-911e59ce2cf0.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "DEvil fashion",
+            "title": "GROOVY THINGS",
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/devil-fashion",
+            "button_link": "shopify://collections/groovy-things",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -638,8 +656,8 @@
           "type": "image-with-url",
           "name": "Image with URL",
           "settings": {
-            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-13.jpg",
-            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-13.jpg",
+            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-14.jpg",
+            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-14.jpg",
             "image_link": "https://www.beserk.com.au/collections/sale",
             "alignment": "center",
             "width_mode": "full_width",
@@ -740,7 +758,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Facebook-Group_01_566710fa-a720-4ff0-af03-28f669f38f71.jpg",
+            "image": "shopify://shop_images/Front-Page_Facebook-Group_02.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -757,7 +775,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Rewards-Image_01_1f98e30d-47b8-4a47-b31e-6ea89cb93e29.jpg",
+            "image": "shopify://shop_images/Front-Page_Rewards-Image_02_a5b3bb4c-fe4d-44ca-8585-bb4b275ddb6e.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -774,7 +792,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Enviromental-Image_01.jpg",
+            "image": "shopify://shop_images/Front-Page_Enviromental-Image_02_94f50d43-0645-4e22-a785-ed2c67130bb4.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -816,12 +834,12 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "hells-blankets",
-            "image": "shopify://shop_images/Collection-2_Hell-Blankets_03.jpg",
+            "image": "shopify://shop_images/Collection-2_Hells-Blankets_08.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP HELLS BLANKET",
+            "button_text": "SHOP HELLS BLANKETS",
             "button_link": "shopify://collections/hells-blankets",
             "button_style": "outline",
             "overlay_color": "#000000",
@@ -849,14 +867,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "gothic-gifts",
-            "image": "shopify://shop_images/Collection-2_Gothic-Gifts_01_f8dcdffa-f8d3-4044-803c-871d22276512.jpg",
+            "collection": "jellycat",
+            "image": "shopify://shop_images/Collection-2_Jellycat-01_5d09b50a-5c62-4cd9-a58f-a04b1e72e58e.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP gothic gifts",
-            "button_link": "shopify://collections/gothic-gifts",
+            "button_text": "SHOP JELLYCAT",
+            "button_link": "shopify://collections/jellycat",
             "button_style": "outline",
             "overlay_color": "#ffffff",
             "overlay_opacity": 0
@@ -872,7 +890,7 @@
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP demonia",
+            "button_text": "SHOP DEMONIA",
             "button_link": "shopify://collections/demonia",
             "button_style": "outline",
             "overlay_color": "#000000",
@@ -906,7 +924,7 @@
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP Restyle",
+            "button_text": "SHOP RESTYLE",
             "button_link": "shopify://collections/restyle",
             "button_style": "outline",
             "overlay_color": "#000000",
@@ -1118,30 +1136,13 @@
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": true
       }
-    },
-    "recently_viewed_products_8MGfMp": {
-      "type": "recently-viewed-products",
-      "name": "t:sections.recently_viewed_products.presets.recently_viewed_products.name",
-      "settings": {
-        "separate_section_with_border": true,
-        "color_scheme": "",
-        "hide_product_information": true,
-        "stack_products": false,
-        "products_count": 8,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": "",
-        "title": "Recently viewed products",
-        "content": ""
-      }
     }
   },
   "order": [
     "slideshow",
     "new_richtext_cgVFxc",
     "collection_list_zN4zMP",
+    "recently_viewed_products_8MGfMp",
     "image_with_text_overlay_VEUQC6",
     "collection_list_QV7y7R",
     "new_richtext_4RFcPt",
@@ -1157,7 +1158,6 @@
     "new_richtext_rnxETB",
     "blog-posts",
     "text_with_icons_9qqVM4",
-    "175453757944e24fb2",
-    "recently_viewed_products_8MGfMp"
+    "175453757944e24fb2"
   ]
 }

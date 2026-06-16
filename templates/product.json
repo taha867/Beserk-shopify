@@ -225,19 +225,6 @@
             "page": ""
           }
         },
-        "accordion_jc6bNM": {
-          "type": "accordion",
-          "name": "Collapsible text - PREORDER INFO",
-          "disabled": true,
-          "settings": {
-            "show_below_gallery": false,
-            "icon": "none",
-            "title": "PREORDER INFO",
-            "content": "",
-            "liquid": "",
-            "page": ""
-          }
-        },
         "accordion_Jrykbz": {
           "type": "accordion",
           "settings": {
@@ -316,7 +303,6 @@
         "description",
         "accordion_7eC6fQ",
         "accordion_kNzHjE",
-        "accordion_jc6bNM",
         "accordion_Jrykbz",
         "accordion_8HyN6j",
         "size_chart_3CgwDa",
