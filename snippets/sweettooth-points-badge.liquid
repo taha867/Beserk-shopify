@@ -1,0 +1,56 @@
+<style>
+    /************
+     ==========
+     Sweet Tooth Points Badge
+     ==========
+    ************/
+  .sweettooth-points-badge {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .sweettooth-loyalty-btn {
+    background-color: #000;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 5px;
+    width: 49%;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+    .sweettooth-points-badge {
+      margin-bottom: 15px;
+  }
+  .sweettooth-points-badge>p {
+      margin: 10px 0px;
+  }
+  .sweettooth-loyalty-btn a { color: #fff; display: block; }
+</style>
+
+<div class="container container--xs">
+  <div class="sweettooth-points-badge ">
+    <h3>My Reward Points</h3>
+    <p>
+      {% comment %}Current balance: {% endcomment %}
+      <span class="sweettooth-points-balance">(loading)</span> points
+    </p>
+    <div style="text-align: center;">
+      <span class="sweettooth-loyalty-btn"><a href="#" data-st-intent="st:points:rewards">Spend My Points</a></span>
+      <span class="sweettooth-loyalty-btn"><a href="#" data-st-intent="st:points:rules">Earn More Points</a></span>
+    </div>
+  </div>
+</div>

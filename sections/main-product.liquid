@@ -464,6 +464,52 @@
       }
     }
 
+    {% comment %} function hideAddToCartFallback(root) {
+      if (!root) return;
+      try {
+        root.querySelectorAll('button').forEach((b) => {
+          const txt = (b.textContent || '').trim().toLowerCase();
+          if (txt === 'add to cart' || (b.dataset && b.dataset.defaultText === 'Add to cart')) {
+            b.classList.add('keep-hidden');
+            b.style.display = 'none';
+          }
+        });
+      } catch (e) {
+        /* ignore */
+      }
+    } {% endcomment %}
+
+    {% comment %} function hideAddToCartFallback(root) {
+      if (!root) return;
+      try {
+        const preorderBtn = root.querySelector('preorder-me-button button.preorder-me-button, preorder-me-button button');
+        const preorderVisible = preorderBtn && preorderBtn.offsetParent !== null;
+
+        root.querySelectorAll('button').forEach((b) => {
+          const txt = (b.textContent || '').trim().toLowerCase();
+          const isAtc =
+            txt === 'add to cart' ||
+            (b.dataset && b.dataset.defaultText?.toLowerCase() === 'add to cart');
+
+          if (isAtc) {
+            if (preorderVisible) {
+              // hide ATC without breaking alignment
+              b.style.visibility = "hidden";
+              b.style.pointerEvents = "none";
+              b.style.position = "absolute"; // keeps it out visually but doesn’t shift layout
+            } else {
+              // restore ATC properly
+              b.style.visibility = "";
+              b.style.pointerEvents = "";
+              b.style.position = "";
+            }
+          }
+        });
+      } catch (e) {
+        console.warn("hideAddToCartFallback error", e);
+      }
+    } {% endcomment %}
+
       function hideAddToCartFallback(root) {
         if (!root) return;
         try {
@@ -515,12 +561,7 @@
         if (!wrapper) return;
 
         const preorderBtn = wrapper.querySelector('preorder-me-button button.preorder-me-button, preorder-me-button button');
-        const atcBtn =
-          wrapper.querySelector('button[data-default-text="ADD TO CART"]') ||
-          Array.from(wrapper.querySelectorAll('button')).find(
-            b => b.textContent.trim().toLowerCase() === 'add to cart'
-          ) ||
-          null;
+        const atcBtn = wrapper.querySelector('button[data-default-text="ADD TO CART"], button:contains("Add to cart")');
 
         const preorderVisible = preorderBtn && preorderBtn.offsetParent !== null;
         const atcVisible = atcBtn && atcBtn.offsetParent !== null;
@@ -567,6 +608,7 @@
       }
 
       const form =
+        document.getElementById('product-form-main-4164985192521-template--17215162384518__main') ||
         wishlistEl.closest('form') ||
         preorderEl.closest('form') ||
         document.querySelector('form.shopify-product-form');
@@ -599,7 +641,14 @@
       }
     }
 
-    function tryMove() {
+    {% comment %} function tryMove() {
+      const wishlist = document.querySelector(WISHLIST_SEL);
+      const preorder = document.querySelector(PREORDER_SEL);
+      if (!wishlist || !preorder) return false;
+      return moveIntoWrapper(wishlist, preorder);
+    } {% endcomment %}
+
+        function tryMove() {
       const wishlist = document.querySelector(WISHLIST_SEL);
       const preorderBtn = document.querySelector(PREORDER_SEL);
       const preorderWrapper = preorderBtn ? preorderBtn.closest("preorder-me-button") : null;
@@ -637,6 +686,252 @@
     }
   })();
 </script>
+{% comment %}
+  <script>
+    (function () {
+      const WISHLIST_SEL = '#swym-embed-pdp-btn-wrapper';
+      const PREORDER_SEL = 'preorder-me-button button.preorder-me-button';
+      const WRAPPER_CLASS = 'wishlist-preorder-flex';
+      const STYLE_ID = 'wishlist-preorder-styles';
+
+      function ensureStyles() {
+        if (document.getElementById(STYLE_ID)) return;
+        const css = `
+        .${WRAPPER_CLASS} {
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+
+        /* Preorder is a column: button full width, prompt below */
+        .${WRAPPER_CLASS} preorder-me-button {
+          flex: 1 1 auto;
+          display: flex !important;
+          flex-direction: column !important;
+          min-width: 0; /* allow flex shrinking */
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        /* Make the visible preorder button span the available column */
+        .${WRAPPER_CLASS} preorder-me-button > button.preorder-me-button,
+        .${WRAPPER_CLASS} preorder-me-button button {
+          width: 100% !important;
+          max-width: none !important;
+          box-sizing: border-box !important;
+        }
+
+        .${WRAPPER_CLASS} preorder-me-button p {
+          margin: 6px 0 0 0 !important;
+          text-align: center !important;
+        }
+
+        /* wishlist (heart) stays compact to the right */
+        .${WRAPPER_CLASS} #swym-embed-pdp-btn-wrapper {
+          flex: 0 0 auto;
+          display: inline-flex !important;
+          align-items: center !important;
+          margin: 0 !important;
+          width: auto !important;
+        }
+
+        /* keep originally-hidden buttons hidden */
+        .${WRAPPER_CLASS} .keep-hidden { display: none !important; }
+      `;
+        const style = document.createElement('style');
+        style.id = STYLE_ID;
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+
+      function markHiddenIfOriginallyHidden(el) {
+        if (!el) return;
+        try {
+          const cs = window.getComputedStyle(el);
+          if (cs.display === 'none' || el.style.display === 'none') {
+            el.classList.add('keep-hidden');
+            el.style.display = 'none';
+          }
+        } catch (e) {
+          /* ignore */
+        }
+      }
+
+      {% comment %} function hideAddToCartFallback(root) {
+        if (!root) return;
+        try {
+          root.querySelectorAll('button').forEach((b) => {
+            const txt = (b.textContent || '').trim().toLowerCase();
+            if (txt === 'add to cart' || (b.dataset && b.dataset.defaultText === 'Add to cart')) {
+              b.classList.add('keep-hidden');
+              b.style.display = 'none';
+            }
+          });
+        } catch (e) {
+          /* ignore */
+        }
+      } {% endcomment %}
+
+      function hideAddToCartFallback(root) {
+        if (!root) return;
+        try {
+          const preorderBtn = root.querySelector('preorder-me-button button.preorder-me-button, preorder-me-button button');
+          const preorderVisible = preorderBtn && preorderBtn.offsetParent !== null;
+
+          root.querySelectorAll('button').forEach((b) => {
+            const txt = (b.textContent || '').trim().toLowerCase();
+            const isAtc =
+              txt === 'add to cart' ||
+              (b.dataset && b.dataset.defaultText?.toLowerCase() === 'add to cart');
+
+            if (isAtc) {
+              if (preorderVisible) {
+                // hide ATC without breaking alignment
+                b.style.visibility = "hidden";
+                b.style.pointerEvents = "none";
+                b.style.position = "absolute"; // keeps it out visually but doesn’t shift layout
+              } else {
+                // restore ATC properly
+                b.style.visibility = "";
+                b.style.pointerEvents = "";
+                b.style.position = "";
+              }
+            }
+          });
+        } catch (e) {
+          console.warn("hideAddToCartFallback error", e);
+        }
+      }
+
+
+      function normalizeButtonStyles(wishlistEl, preorderEl) {
+        try {
+          if (wishlistEl) {
+            const innerBtn = wishlistEl.querySelector('button');
+            markHiddenIfOriginallyHidden(innerBtn);
+            if (innerBtn && !innerBtn.classList.contains('keep-hidden')) {
+              // only tweak padding; do NOT set width
+              innerBtn.style.padding = innerBtn.style.padding || '8px 12px';
+              innerBtn.style.boxSizing = 'border-box';
+            }
+          }
+
+          if (preorderEl) {
+            const preBtn = preorderEl.querySelector('button.preorder-me-button') || preorderEl.querySelector('button');
+            markHiddenIfOriginallyHidden(preBtn);
+            if (preBtn && !preBtn.classList.contains('keep-hidden')) {
+              // only tweak padding; don't force width here (CSS handles full-width)
+              preBtn.style.padding = preBtn.style.padding || '8px 14px';
+              preBtn.style.boxSizing = 'border-box';
+            }
+            const prompt = preorderEl.querySelector('p[id$="-prompt"], p');
+            if (prompt) {
+              prompt.style.display = 'block';
+              prompt.style.margin = '6px 0 0 0';
+              prompt.style.textAlign = 'center';
+            }
+          }
+        } catch (err) {
+          console.warn('normalizeButtonStyles error', err);
+        }
+      }
+
+      function moveIntoWrapper(wishlistEl, preorderEl) {
+        if (!wishlistEl || !preorderEl) return false;
+
+        // if wrapper already exists, ensure both children inside
+        const existing = wishlistEl.closest(`.${WRAPPER_CLASS}`) || preorderEl.closest(`.${WRAPPER_CLASS}`);
+        if (existing) {
+          if (!existing.contains(preorderEl)) existing.appendChild(preorderEl);
+          if (!existing.contains(wishlistEl)) existing.appendChild(wishlistEl);
+          normalizeButtonStyles(wishlistEl, preorderEl);
+          hideAddToCartFallback(existing);
+          return true;
+        }
+
+        const form =
+          document.getElementById('product-form-main-4164985192521-template--17215162384518__main') ||
+          wishlistEl.closest('form') ||
+          preorderEl.closest('form') ||
+          document.querySelector('form.shopify-product-form');
+
+        const wrapper = document.createElement('div');
+        wrapper.className = WRAPPER_CLASS;
+
+        try {
+          if (form) {
+            const buyButtons = form.querySelector('buy-buttons, .buy-buttons');
+            if (buyButtons && buyButtons.parentNode) {
+              buyButtons.parentNode.insertBefore(wrapper, buyButtons);
+            } else {
+              form.insertBefore(wrapper, form.firstChild);
+            }
+          } else {
+            wishlistEl.parentNode.insertBefore(wrapper, wishlistEl);
+          }
+
+          // desired order: PREORDER then wishlist heart
+          wrapper.appendChild(preorderEl);
+          wrapper.appendChild(wishlistEl);
+
+          normalizeButtonStyles(wishlistEl, preorderEl);
+          hideAddToCartFallback(wrapper);
+          return true;
+        } catch (err) {
+          console.warn('moveIntoWrapper failed', err);
+          return false;
+        }
+      }
+
+      {% comment %} function tryMove() {
+        const wishlist = document.querySelector(WISHLIST_SEL);
+        const preorder = document.querySelector(PREORDER_SEL);
+        if (!wishlist || !preorder) return false;
+        return moveIntoWrapper(wishlist, preorder);
+      } {% endcomment %}
+
+          function tryMove() {
+        const wishlist = document.querySelector(WISHLIST_SEL);
+        const preorderBtn = document.querySelector(PREORDER_SEL);
+        const preorderWrapper = preorderBtn ? preorderBtn.closest("preorder-me-button") : null;
+
+        if (!wishlist || !preorderWrapper) return false;
+        return moveIntoWrapper(wishlist, preorderWrapper);
+      }
+
+
+
+      function init() {
+        ensureStyles();
+        if (tryMove()) return;
+
+        const observer = new MutationObserver((mutations, obs) => {
+          if (tryMove()) obs.disconnect();
+        });
+        observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
+
+        // poll fallback ~10s
+        let tries = 0;
+        const poll = setInterval(() => {
+          tries++;
+          if (tryMove() || tries > 50) {
+            clearInterval(poll);
+            observer.disconnect();
+          }
+        }, 200);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init, { once: true });
+      } else {
+        init();
+      }
+    })();
+  </script>
+{% endcomment %}
+
 {% schema %}
 {
   "name": "t:sections.main_product.name",

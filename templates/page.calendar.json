@@ -86,6 +86,30 @@
             "link_text": ""
           }
         },
+        "image_with_text_tgbm3q": {
+          "type": "image_with_text",
+          "name": "Neko Nation Sydney",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Neko-Nation-Sydney.jpg",
+            "title": "JUL 11",
+            "heading_tag": "h3",
+            "content": "<p>Neko Nation Sydney<br/>[NSW]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_N3grBX": {
+          "type": "image_with_text",
+          "name": "Neko Nation Purrth",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Neko-Nation-Perth.jpg",
+            "title": "JUL 17",
+            "heading_tag": "h3",
+            "content": "<p>Neko Nation Purrth<br/>[WA]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
         "image_with_text_V9bqPd": {
           "type": "image_with_text",
           "name": "The Brisbane Gothic & Alternative Picnic ",
@@ -109,12 +133,66 @@
             "link_url": "",
             "link_text": ""
           }
+        },
+        "image_with_text_R9Etxt": {
+          "type": "image_with_text",
+          "name": "Neko Nation Melbourne",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Neko-Nation-Melbourne.jpg",
+            "title": "OCT 09",
+            "heading_tag": "h3",
+            "content": "<p>Neko Nation Melbourne<br/>[VIC]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_kJnVQH": {
+          "type": "image_with_text",
+          "name": "Sydney Zombie Walk",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Sydney-Zombie-Walk.jpg",
+            "title": "OCT 31",
+            "heading_tag": "h3",
+            "content": "<p>Sydney Zombie Walk<br/>[NSW]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_GtT6Gg": {
+          "type": "image_with_text",
+          "name": "Brisbane Oddities & Curiosities Expo",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Supanova-Brisbane.jpg",
+            "title": "Nov 06 -08",
+            "heading_tag": "h3",
+            "content": "<p>Brisbane Supanova<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_bTpcAH": {
+          "type": "image_with_text",
+          "name": "Brisbane Oddities & Curiosities Expo",
+          "settings": {
+            "image": "shopify://shop_images/Calender_1400x1400_Oddities-And-Curiosities-Brisbane.jpg",
+            "title": "Nov 14 - 15",
+            "heading_tag": "h3",
+            "content": "<p>Brisbane Oddities & Curiosities Expo<br/>[QLD]</p>",
+            "link_url": "",
+            "link_text": ""
+          }
         }
       },
       "block_order": [
         "image_with_text_MPcKFb",
+        "image_with_text_tgbm3q",
+        "image_with_text_N3grBX",
         "image_with_text_V9bqPd",
-        "image_with_text_rhePHx"
+        "image_with_text_rhePHx",
+        "image_with_text_R9Etxt",
+        "image_with_text_kJnVQH",
+        "image_with_text_GtT6Gg",
+        "image_with_text_bTpcAH"
       ],
       "name": "t:sections.multi_column.presets.multi_column.name",
       "settings": {
