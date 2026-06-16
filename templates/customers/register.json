@@ -47,7 +47,6 @@
       "blocks": {
         "smile_io_smile_landing_page_earning_rule_highlight_CAz8Qb": {
           "type": "shopify://apps/smile-io/blocks/smile-landing-page-earning-rule-highlight/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-          "disabled": false,
           "settings": {
             "primary_colour": "#333333",
             "secondary_colour": "#ffffff",
@@ -72,7 +71,6 @@
       "blocks": {
         "smile_io_smile_landing_page_how_it_works_Admw8M": {
           "type": "shopify://apps/smile-io/blocks/smile-landing-page-how-it-works/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-          "disabled": false,
           "settings": {
             "primary_colour": "#333333",
             "secondary_colour": "#ffffff",
@@ -101,7 +99,6 @@
       "blocks": {
         "smile_io_smile_landing_page_header_Lezxq6": {
           "type": "shopify://apps/smile-io/blocks/smile-landing-page-header/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
-          "disabled": false,
           "settings": {
             "primary_colour": "#333333",
             "secondary_colour": "#ffffff",
