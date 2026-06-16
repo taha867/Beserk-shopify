@@ -251,6 +251,79 @@ This updates the live theme at beserk.com.au.
 
 ---
 
+## Production Sync Workflow (Live Theme → Staging → Main → Live)
+
+The Beserk team swaps the live Shopify theme on **Tuesday, Thursday, and Sunday (Brisbane AEST)**. Each new live theme is a duplicate with updated images. Before pushing any code to production, you must pull the latest live theme so their image/content changes are never overwritten.
+
+### When to run this
+- Before any production deployment
+- When the client notifies a new theme is live (e.g. `16.06 | New Release`)
+- When you need to resync local code with a new live theme
+
+### Step 1 — Find the live theme ID
+```bash
+shopify theme list --store=beserk.myshopify.com
+```
+Look for the theme marked `[live]` and note its ID.
+
+### Step 2 — Pull the live theme
+```bash
+shopify theme pull --store=beserk.myshopify.com --theme=<LIVE_THEME_ID>
+```
+This overwrites your local files with the live theme's content (images, settings, templates).
+
+### Step 3 — Check what changed
+```bash
+git status
+```
+Modified files = differences between live theme and your local branch.
+
+### Step 4 — Commit the live theme as a new baseline
+```bash
+git add -A
+git commit -m "sync: pull live theme '<theme name>' (#<ID>)"
+```
+
+### Step 5 — Re-apply your code fixes via cherry-pick
+The live theme won't have your code fixes — cherry-pick them back on top:
+```bash
+git cherry-pick <commit-hash>   # repeat for each fix commit
+```
+If there are conflicts, resolve them by keeping your code fix in code files and the live theme version in content/template files.
+
+### Step 6 — Merge staging into main
+```bash
+git checkout main
+git merge staging
+```
+Resolve any conflicts (keep staging version for content files, keep the correct code fix for code files).
+
+### Step 7 — Push both branches to GitHub
+```bash
+git push origin staging
+git push origin main
+```
+
+### Step 8 — Push to Shopify staging and test
+```bash
+shopify theme push --store=beserk.myshopify.com --theme=140520685702
+```
+Preview and verify everything works before going live.
+
+### Step 9 — Push to live (Tuesday 12pm AEST only)
+Coordinate with Naia/Fleur before pushing. Confirm in the group chat.
+```bash
+shopify theme push --store=beserk.myshopify.com --theme=<LIVE_THEME_ID>
+```
+
+### ⚠️ Important rules
+- **Never push to live on weekends** — the client is not in the office
+- **Always notify the group chat before Friday 4pm AEST** if a deployment is planned
+- **Always do a fresh pull right before pushing to live** to capture any last-minute image changes the client made
+- If the live theme ID changed since your last pull, pull again from the new theme ID
+
+---
+
 ## Full Flow Diagram
 
 ```
