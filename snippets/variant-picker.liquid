@@ -26,6 +26,10 @@
   .popover__value-option {
     border-bottom: 1px solid #3D3D3D;
   }
+  .popover__value-option:has(input:focus-visible) {
+    outline: 2px solid currentColor;
+    outline-offset: -2px;
+  }
   .varient-color{
     color: rgb(var(--success-text));
   }
@@ -123,11 +127,10 @@
             <x-popover
               id="{{ popover_id }}"
               class="popover popover--bottom-start color-scheme color-scheme--dialog"
-              close-on-listbox-change
             >
-              <p class="h5" slot="header">{{ option.name }}</p>
+              <p class="h5" slot="header" id="{{ popover_id }}-label">{{ option.name }}</p>
 
-              <div class="popover__value-list">
+              <div class="popover__value-list" role="radiogroup" aria-labelledby="{{ popover_id }}-label">
                 {%- assign param_name = form_id | append: '-option' | append: option.position -%}
 
                 {%- for option_value in option.values -%}

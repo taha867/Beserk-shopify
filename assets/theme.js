@@ -3322,6 +3322,69 @@ var _VariantPicker = class _VariantPicker extends HTMLElement {
     __privateGet(this, _delegate4).on("change", `input[data-option-position][form="${this.getAttribute("form-id")}"]`, __privateMethod(this, _VariantPicker_instances, onOptionChanged_fn).bind(this));
     __privateGet(this, _delegate4).on("pointerenter", `input[data-option-position][form="${this.getAttribute("form-id")}"]:not(:checked) + label`, __privateMethod(this, _VariantPicker_instances, onOptionPreload_fn).bind(this), true);
     __privateGet(this, _delegate4).on("touchstart", `input[data-option-position][form="${this.getAttribute("form-id")}"]:not(:checked) + label`, __privateMethod(this, _VariantPicker_instances, onOptionPreload_fn).bind(this), true);
+    // A11y: when a variant-picker popover opens, move focus to the currently-selected
+    // radio so keyboard / screen-reader users can immediately navigate with arrow keys.
+    // Registered once globally because dialog:after-show is dispatched non-bubbling
+    // (Popover, ~line 1861) AND on mobile the popover is re-parented to document.body
+    // (Popover.shouldAppendToBody) — a per-instance listener on <variant-picker> would
+    // miss it. Capture phase reaches the target regardless of bubbling.
+    if (!_VariantPicker._a11yFocusListenerInstalled) {
+      _VariantPicker._a11yFocusListenerInstalled = true;
+      document.addEventListener("dialog:after-show", (event) => {
+        const popover = event.target;
+        if (!popover || typeof popover.matches !== "function") return;
+        if (!popover.matches('x-popover[id^="popover-variant-dropdown-"]')) return;
+        const group = popover.querySelector('[role="radiogroup"]');
+        if (!group) return;
+        const radio = group.querySelector('input[type="radio"]:checked') || group.querySelector('input[type="radio"]:not(:disabled)');
+        radio && radio.focus({ preventScroll: true });
+      }, { capture: true });
+    }
+    // A11y: close the variant popover on click-driven selection (replaces the removed
+    // close-on-listbox-change attribute, which also fired on arrow-key navigation).
+    __privateGet(this, _delegate4).on("click", `x-popover[id^="popover-variant-dropdown-"] .popover__value-option`, (event) => {
+      const popover = event.target.closest("x-popover");
+      popover && popover.hide && popover.hide();
+    });
+    // A11y: keyboard handling inside variant dropdown popovers.
+    // - Arrow / Home / End move focus between options WITHOUT committing the change
+    //   (overrides native radiogroup auto-select so the dropdown behaves like a
+    //    browse-then-confirm combobox).
+    // - Enter commits the focused option (programmatic click fires change → variant
+    //   update) and closes the popover.
+    // Delegated on document.body so it works on mobile where the popover is appended
+    // to body (see Popover.shouldAppendToBody).
+    __privateGet(this, _delegate4).on("keydown", `x-popover[id^="popover-variant-dropdown-"] input[type="radio"][data-option-position]`, (event) => {
+      const navigationKeys = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Home", "End"];
+      if (navigationKeys.includes(event.key)) {
+        event.preventDefault();
+        const popover = event.target.closest("x-popover");
+        if (!popover) return;
+        const radios = Array.from(popover.querySelectorAll('input[type="radio"][data-option-position]')).filter((radio) => !radio.disabled);
+        if (radios.length === 0) return;
+        const currentIndex = radios.indexOf(event.target);
+        let nextIndex;
+        if (event.key === "Home") {
+          nextIndex = 0;
+        } else if (event.key === "End") {
+          nextIndex = radios.length - 1;
+        } else if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+          nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % radios.length;
+        } else {
+          nextIndex = currentIndex < 0 ? radios.length - 1 : (currentIndex - 1 + radios.length) % radios.length;
+        }
+        radios[nextIndex].focus({ preventScroll: true });
+        return;
+      }
+      if (event.key === "Enter") {
+        event.preventDefault();
+        if (!event.target.checked) {
+          event.target.click();
+        }
+        const popover = event.target.closest("x-popover");
+        popover && popover.hide && popover.hide();
+      }
+    });
     __privateGet(this, _intersectionObserver2).observe(this);
   }
   disconnectedCallback() {
