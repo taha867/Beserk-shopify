@@ -83,86 +83,6 @@
           "settings": {
             "content": ""
           }
-        },
-        "button_aWFtzf": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "PROFILE",
-            "url": "shopify://pages/profile",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "button_h647hq": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "MY ORDERS",
-            "url": "shopify://pages/orders",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "button_YV7UQT": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "ADDRESS BOOK",
-            "url": "https://www.beserk.com.au/account/addresses",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "button_QjkLND": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "REWARDS",
-            "url": "shopify://pages/rewards-old",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "button_VcFEtP": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "RETURNS",
-            "url": "shopify://pages/returns-1",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "button_4MWCC4": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "NEW WISHLIST",
-            "url": "https://www.beserk.com.au/account?p=0#swym-list",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "button_mrDqCb": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "OLD WISHLIST",
-            "url": "https://www.beserk.com.au/apps/wishlist",
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "button_Bc77mF": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "LOGOUT",
-            "url": "http://beserk.com.au/account/logout",
-            "background": "#ffffff",
-            "text_color": "#1c1c1c"
-          }
         }
       },
       "block_order": [
@@ -170,16 +90,9 @@
         "subheading_4qhNBE",
         "heading_UKh3Ch",
         "customer_name_zeH3cP",
-        "richtext_gwNePW",
-        "button_aWFtzf",
-        "button_h647hq",
-        "button_YV7UQT",
-        "button_QjkLND",
-        "button_VcFEtP",
-        "button_4MWCC4",
-        "button_mrDqCb",
-        "button_Bc77mF"
+        "richtext_gwNePW"
       ],
+      "disabled": true,
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "scheme-2",
