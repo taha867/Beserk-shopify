@@ -426,6 +426,27 @@
             {% endcomment %}
           </a>
         </li>
+
+        {%- if shop.customer_accounts_enabled and customer -%}
+          <li class="header__logout-link sm-max:hidden">
+            <a href="{{ routes.account_logout_url }}" data-no-instant>
+              <span class="sr-only">{{ 'customer.account.logout' | t }}</span>
+
+              {%- if section.settings.show_icons -%}
+                {%- render 'icon' with 'logout', class: 'header__nav-icon' -%}
+              {%- else -%}
+                <span class="md:hidden">{%- render 'icon' with 'logout', class: 'header__nav-icon' -%}</span>
+
+                <span
+                  class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden"
+                  aria-hidden="true"
+                >
+                  {{- 'customer.account.logout' | t -}}
+                </span>
+              {%- endif -%}
+            </a>
+          </li>
+        {%- endif -%}
       </ul>
     </nav>
 

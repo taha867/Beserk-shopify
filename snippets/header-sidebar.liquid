@@ -120,6 +120,7 @@
               {{- 'header.general.login' | t -}}
             {%- endif -%}
           </a>
+
         {%- endif -%}
 
         {%- if show_country_selector or show_locale_selector -%}
@@ -146,6 +147,14 @@
               -%}
             {%- endif -%}
           </div>
+        {%- endif -%}
+
+        {%- if shop.customer_accounts_enabled and customer -%}
+          <a href="{{ routes.account_logout_url }}" class="text-with-icon smallcaps sm:hidden" data-no-instant>
+            {%- render 'icon' with 'logout', width: 20 -%}
+
+            {{- 'customer.account.logout' | t -}}
+          </a>
         {%- endif -%}
       </div>
     {%- endif -%}
