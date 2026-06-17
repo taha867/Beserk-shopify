@@ -65,26 +65,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "10576504925779971753": {
-        "type": "shopify://apps/youpay-cart-sharing/blocks/youpay-cart-settings/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
-        "disabled": true,
-        "settings": {
-          "cart-button-status": false,
-          "cart-position": "after-checkout-button",
-          "button-text-long": "Get it paid for you with",
-          "button-text-medium": "Get it paid for with",
-          "button-text-short": "Get it paid",
-          "theme": "blue",
-          "button-colour": "#000000",
-          "button-background-colour": "rgba(0,0,0,0)",
-          "button-height": 52,
-          "border-radius": 0,
-          "margin-top": 10,
-          "margin-bottom": 10,
-          "width": 100,
-          "alignment": "center"
-        }
-      },
       "12120936241911852800": {
         "type": "shopify://apps/judge-me-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": true,
@@ -126,7 +106,7 @@
       },
       "7420477900589326039": {
         "type": "shopify://apps/youpay-cart-sharing/blocks/youpay-product-settings/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "product-callout-status": false,
           "product-button-status": false,
@@ -143,30 +123,6 @@
           "width": 100,
           "alignment": "center",
           "callout-theme": "badge",
-          "modal-theme": "dark",
-          "modal-icon": "shirt"
-        }
-      },
-      "3902840701207322667": {
-        "type": "shopify://apps/youpay-cart-sharing/blocks/youpay-vintage-settings/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
-        "disabled": true,
-        "settings": {
-          "product-callout-status": true,
-          "product-button-status": true,
-          "flyout-button-status": true,
-          "flyout-position": "after-checkout-button",
-          "cart-button-status": true,
-          "cart-position": "after-checkout-button",
-          "button-text-long": "Get it paid for you with",
-          "button-text-medium": "Get it paid for with",
-          "button-text-short": "Get it paid",
-          "theme": "blue",
-          "button-colour": "#000000",
-          "button-height": 52,
-          "border-radius": 0,
-          "margin-top": 10,
-          "margin-bottom": 10,
-          "callout-theme": "blue",
           "modal-theme": "dark",
           "modal-icon": "shirt"
         }
@@ -237,7 +193,7 @@
           "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
-          "greeting_message": "We are Online ~ Mon-Fri 8:30am-4pm AEST. \nor leave a message anytime & we'll reply when we reopen. 🙂 Beserk xx"
+          "greeting_message": "We are Online ~ Mon-Fri 8:30am-4pm AEST. \nor leave a message anytime & we'll reply when we reopen. \ud83d\ude42 Beserk xx"
         }
       },
       "5946647744298494267": {

@@ -327,5 +327,15 @@
     <!-- Slick Slider JS — deferred, only used by logo-list section -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    {%- if customer -%}
+      <script>
+        var _learnq = _learnq || [];
+        _learnq.push(['identify', {
+          '$email': {{ customer.email | json }},
+          '$first_name': {{ customer.first_name | json }},
+          '$last_name': {{ customer.last_name | json }}
+        }]);
+      </script>
+    {%- endif -%}
   </body>
 </html>
