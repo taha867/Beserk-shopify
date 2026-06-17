@@ -26,7 +26,7 @@
   .popover__value-option {
     border-bottom: 1px solid #3D3D3D;
   }
-  .popover__value-option:has(input:focus-visible) {
+  x-popover[id^="popover-variant-dropdown-"] .popover__value-option:has(input:focus-visible) {
     outline: 2px solid currentColor;
     outline-offset: -2px;
   }
@@ -116,6 +116,19 @@
         {%- assign name = 'option' | append: option.position -%}
 
         {%- if resolved_option_selector_style == 'dropdown' -%}
+          {%- liquid
+            # When a combined-product link is present, the option list mixes <a> with radios
+            # so it isn't a pure radiogroup; skip the role to avoid mismatched ARIA semantics.
+            assign has_combined_product_option = false
+            if is_main_product
+              for v in option.values
+                if v.product_url != blank
+                  assign has_combined_product_option = true
+                  break
+                endif
+              endfor
+            endif
+          -%}
           <div class="relative mobile-dropdown">
             {%- capture popover_id -%}popover-variant-dropdown-{{ section.id }}-{{ product.id }}-{{ option.position }}{%- endcapture -%}
 
@@ -130,7 +143,7 @@
             >
               <p class="h5" slot="header" id="{{ popover_id }}-label">{{ option.name }}</p>
 
-              <div class="popover__value-list" role="radiogroup" aria-labelledby="{{ popover_id }}-label">
+              <div class="popover__value-list"{% unless has_combined_product_option %} role="radiogroup" aria-labelledby="{{ popover_id }}-label"{% endunless %}>
                 {%- assign param_name = form_id | append: '-option' | append: option.position -%}
 
                 {%- for option_value in option.values -%}

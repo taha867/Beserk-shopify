@@ -3327,18 +3327,25 @@ var _VariantPicker = class _VariantPicker extends HTMLElement {
     // Registered once globally because dialog:after-show is dispatched non-bubbling
     // (Popover, ~line 1861) AND on mobile the popover is re-parented to document.body
     // (Popover.shouldAppendToBody) — a per-instance listener on <variant-picker> would
-    // miss it. Capture phase reaches the target regardless of bubbling.
-    if (!_VariantPicker._a11yFocusListenerInstalled) {
-      _VariantPicker._a11yFocusListenerInstalled = true;
+    // miss it. Capture phase reaches the target regardless of bubbling. The listener
+    // is ref-counted across instances and aborted in disconnectedCallback when the
+    // last <variant-picker> leaves the DOM.
+    _VariantPicker._a11yInstanceCount = (_VariantPicker._a11yInstanceCount || 0) + 1;
+    if (!_VariantPicker._a11yAbortController) {
+      _VariantPicker._a11yAbortController = new AbortController();
       document.addEventListener("dialog:after-show", (event) => {
         const popover = event.target;
         if (!popover || typeof popover.matches !== "function") return;
         if (!popover.matches('x-popover[id^="popover-variant-dropdown-"]')) return;
-        const group = popover.querySelector('[role="radiogroup"]');
-        if (!group) return;
-        const radio = group.querySelector('input[type="radio"]:checked') || group.querySelector('input[type="radio"]:not(:disabled)');
-        radio && radio.focus({ preventScroll: true });
-      }, { capture: true });
+        // Cache the enabled radios on the popover for fast access from the keydown
+        // handler — the option list cannot change while the popover is open, so the
+        // array is stable until next open. Combined-product anchor options are
+        // excluded by the [data-option-position] filter (anchors don't carry it).
+        const radios = Array.from(popover.querySelectorAll('input[type="radio"][data-option-position]')).filter((r) => !r.disabled);
+        popover._variantPickerRadios = radios;
+        const selected = radios.find((r) => r.checked) || radios.find((r) => !r.disabled);
+        selected && selected.focus({ preventScroll: true });
+      }, { capture: true, signal: _VariantPicker._a11yAbortController.signal });
     }
     // A11y: close the variant popover on click-driven selection (replaces the removed
     // close-on-listbox-change attribute, which also fired on arrow-key navigation).
@@ -3360,7 +3367,7 @@ var _VariantPicker = class _VariantPicker extends HTMLElement {
         event.preventDefault();
         const popover = event.target.closest("x-popover");
         if (!popover) return;
-        const radios = Array.from(popover.querySelectorAll('input[type="radio"][data-option-position]')).filter((radio) => !radio.disabled);
+        const radios = popover._variantPickerRadios || Array.from(popover.querySelectorAll('input[type="radio"][data-option-position]')).filter((r) => !r.disabled);
         if (radios.length === 0) return;
         const currentIndex = radios.indexOf(event.target);
         let nextIndex;
@@ -3378,11 +3385,10 @@ var _VariantPicker = class _VariantPicker extends HTMLElement {
       }
       if (event.key === "Enter") {
         event.preventDefault();
-        if (!event.target.checked) {
-          event.target.click();
-        }
-        const popover = event.target.closest("x-popover");
-        popover && popover.hide && popover.hide();
+        // .click() always dispatches a click event (even on already-checked radios),
+        // which bubbles to the click delegate above and hides the popover. No need
+        // to call popover.hide() explicitly or branch on the checked state.
+        event.target.click();
       }
     });
     __privateGet(this, _intersectionObserver2).observe(this);
@@ -3390,6 +3396,13 @@ var _VariantPicker = class _VariantPicker extends HTMLElement {
   disconnectedCallback() {
     __privateGet(this, _delegate4).off();
     __privateGet(this, _intersectionObserver2).unobserve(this);
+    // A11y: tear down the shared dialog:after-show listener when the last
+    // <variant-picker> leaves the DOM (see connectedCallback for setup).
+    _VariantPicker._a11yInstanceCount = Math.max(0, (_VariantPicker._a11yInstanceCount || 0) - 1);
+    if (_VariantPicker._a11yInstanceCount === 0 && _VariantPicker._a11yAbortController) {
+      _VariantPicker._a11yAbortController.abort();
+      _VariantPicker._a11yAbortController = null;
+    }
   }
   get selectedVariant() {
     return __privateGet(this, _selectedVariant);
