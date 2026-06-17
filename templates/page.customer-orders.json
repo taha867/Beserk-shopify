@@ -92,7 +92,6 @@
         "customer_name_zeH3cP",
         "richtext_gwNePW"
       ],
-      "disabled": true,
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "scheme-2",
@@ -115,7 +114,6 @@
   "order": [
     "main",
     "new_richtext_aFAKh9",
-    "rich_text_nTQyxm",
     "customer_orders_tFXmjq"
   ]
 }
