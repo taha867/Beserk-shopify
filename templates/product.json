@@ -389,30 +389,12 @@
         "remove_horizontal_spacing": false
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "separate_section_with_border": true,
-        "hide_product_information": true,
-        "stack_products": false,
-        "recommendations_count": 10,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": "",
-        "title": "YOU MIGHT LIKE...",
-        "content": ""
-      }
-    }
   },
   "order": [
     "breadcrumbs_9DgEaF",
     "main",
     "1753521774120f85f9",
     "175401502329a8edcb",
-    "1761562140d7d1bd5a",
-    "related-products"
+    "1761562140d7d1bd5a"
   ]
 }

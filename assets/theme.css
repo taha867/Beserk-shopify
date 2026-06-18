@@ -2229,7 +2229,7 @@ model-media model-viewer, model-media .shopify-model-viewer-ui {
 .product-card__quick-add-button {
   background: rgb(var(--circle-button-background));
   color: rgb(var(--circle-button-text-color));
-  z-index: 1;
+  z-index: 3;
   padding: .625rem;
   position: absolute;
   inset-block-end: .5rem;

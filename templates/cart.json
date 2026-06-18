@@ -80,33 +80,9 @@
         "text_alignment": "center"
       }
     },
-    "175353454559f9e3f1": {
-      "type": "apps",
-      "blocks": {
-        "boost_ai_search_filter_recommendation_ssr_taKcgY": {
-          "type": "shopify://apps/boost-ai-search-filter/blocks/recommendation-ssr/7fc998ae-a150-4367-bab8-505d8a4503f7",
-          "disabled": true,
-          "settings": {
-            "widgetId": "",
-            "additional_classes": "",
-            "custom_css": ""
-          }
-        }
-      },
-      "block_order": [
-        "boost_ai_search_filter_recommendation_ssr_taKcgY"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
-      }
-    }
   },
   "order": [
     "main",
-    "text_with_icons_CGVaTw",
-    "175353454559f9e3f1"
+    "text_with_icons_CGVaTw"
   ]
 }

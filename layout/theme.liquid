@@ -59,26 +59,12 @@
 
     <style>
       @media screen and (min-width: 1000px) {
-        .boost-sd-layout {
-          max-width: 100% !important;
-        }
-      }
-      @media screen and (min-width: 1000px) {
         wishlist-page .wk-grid {
           --columns: 4 !important;
         }
         wishlist-page .wk-page {
           max-width: 100% !important;
         }
-      }
-
-      .boost-sd__product-atc-wishlist .swym-button.swym-add-to-wishlist-view-product.swym-heart:after,
-      .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
-        color: #ff2322 !important;
-      }
-
-      .boost-sd__product-atc-wishlist .swym-button.swym-add-to-wishlist-view-product.swym-heart.swym-added:after {
-        color: #ff2322 !important;
       }
 
       @media screen and (min-width: 1000px) {
@@ -212,6 +198,12 @@
       };
     </script>
 
+    {% comment %}
+      Search architecture:
+      Desktop uses the native Shopify predictive-search web component (/search/suggest).
+      The Boost instant-search-app-embedded embed is intentionally disabled in settings_data.json.
+      Mobile search is powered by Boost AI Search, initialised below via a click intercept on .header-search-mobile a.
+    {% endcomment %}
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener(
