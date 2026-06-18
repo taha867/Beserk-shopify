@@ -8336,6 +8336,23 @@ button.swym-storefront-layout-grid-item-add-to-cart-button {
   background-color:red !important;
 }
 
+/* Boost AI Search — product page widgets */
+.boost-sd__recommendation-bundle-images--style2 .boost-sd__recommendation-bundle-image-item {
+  width: 300px;
+}
+
+@media screen and (min-width: 1000px) {
+  .boost-sd__recommendation-bundle--style2 {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boost-sd__predictive-bundle-wrapper .boost-sd__recommendation-bundle-image-wrapper {
+    height: 100%;
+    max-height: 500px;
+  }
+}
+
 .swym-wishlist-collections-v2-container {
     z-index: 2 !important;
 }
