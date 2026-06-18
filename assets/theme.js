@@ -3322,11 +3322,87 @@ var _VariantPicker = class _VariantPicker extends HTMLElement {
     __privateGet(this, _delegate4).on("change", `input[data-option-position][form="${this.getAttribute("form-id")}"]`, __privateMethod(this, _VariantPicker_instances, onOptionChanged_fn).bind(this));
     __privateGet(this, _delegate4).on("pointerenter", `input[data-option-position][form="${this.getAttribute("form-id")}"]:not(:checked) + label`, __privateMethod(this, _VariantPicker_instances, onOptionPreload_fn).bind(this), true);
     __privateGet(this, _delegate4).on("touchstart", `input[data-option-position][form="${this.getAttribute("form-id")}"]:not(:checked) + label`, __privateMethod(this, _VariantPicker_instances, onOptionPreload_fn).bind(this), true);
+    // A11y: when a variant-picker popover opens, move focus to the currently-selected
+    // radio so keyboard / screen-reader users can immediately navigate with arrow keys.
+    // Registered once globally because dialog:after-show is dispatched non-bubbling
+    // (Popover, ~line 1861) AND on mobile the popover is re-parented to document.body
+    // (Popover.shouldAppendToBody) — a per-instance listener on <variant-picker> would
+    // miss it. Capture phase reaches the target regardless of bubbling. The listener
+    // is ref-counted across instances and aborted in disconnectedCallback when the
+    // last <variant-picker> leaves the DOM.
+    _VariantPicker._a11yInstanceCount = (_VariantPicker._a11yInstanceCount || 0) + 1;
+    if (!_VariantPicker._a11yAbortController) {
+      _VariantPicker._a11yAbortController = new AbortController();
+      document.addEventListener("dialog:after-show", (event) => {
+        const popover = event.target;
+        if (!popover || typeof popover.matches !== "function") return;
+        if (!popover.matches('x-popover[id^="popover-variant-dropdown-"]')) return;
+        // Cache the enabled radios on the popover for fast access from the keydown
+        // handler — the option list cannot change while the popover is open, so the
+        // array is stable until next open. Combined-product anchor options are
+        // excluded by the [data-option-position] filter (anchors don't carry it).
+        const radios = Array.from(popover.querySelectorAll('input[type="radio"][data-option-position]')).filter((r) => !r.disabled);
+        popover._variantPickerRadios = radios;
+        const selected = radios.find((r) => r.checked) || radios.find((r) => !r.disabled);
+        selected && selected.focus({ preventScroll: true });
+      }, { capture: true, signal: _VariantPicker._a11yAbortController.signal });
+    }
+    // A11y: close the variant popover on click-driven selection (replaces the removed
+    // close-on-listbox-change attribute, which also fired on arrow-key navigation).
+    __privateGet(this, _delegate4).on("click", `x-popover[id^="popover-variant-dropdown-"] .popover__value-option`, (event) => {
+      const popover = event.target.closest("x-popover");
+      popover && popover.hide && popover.hide();
+    });
+    // A11y: keyboard handling inside variant dropdown popovers.
+    // - Arrow / Home / End move focus between options WITHOUT committing the change
+    //   (overrides native radiogroup auto-select so the dropdown behaves like a
+    //    browse-then-confirm combobox).
+    // - Enter commits the focused option (programmatic click fires change → variant
+    //   update) and closes the popover.
+    // Delegated on document.body so it works on mobile where the popover is appended
+    // to body (see Popover.shouldAppendToBody).
+    __privateGet(this, _delegate4).on("keydown", `x-popover[id^="popover-variant-dropdown-"] input[type="radio"][data-option-position]`, (event) => {
+      const navigationKeys = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Home", "End"];
+      if (navigationKeys.includes(event.key)) {
+        event.preventDefault();
+        const popover = event.target.closest("x-popover");
+        if (!popover) return;
+        const radios = popover._variantPickerRadios || Array.from(popover.querySelectorAll('input[type="radio"][data-option-position]')).filter((r) => !r.disabled);
+        if (radios.length === 0) return;
+        const currentIndex = radios.indexOf(event.target);
+        let nextIndex;
+        if (event.key === "Home") {
+          nextIndex = 0;
+        } else if (event.key === "End") {
+          nextIndex = radios.length - 1;
+        } else if (event.key === "ArrowDown" || event.key === "ArrowRight") {
+          nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % radios.length;
+        } else {
+          nextIndex = currentIndex < 0 ? radios.length - 1 : (currentIndex - 1 + radios.length) % radios.length;
+        }
+        radios[nextIndex].focus({ preventScroll: true });
+        return;
+      }
+      if (event.key === "Enter") {
+        event.preventDefault();
+        // .click() always dispatches a click event (even on already-checked radios),
+        // which bubbles to the click delegate above and hides the popover. No need
+        // to call popover.hide() explicitly or branch on the checked state.
+        event.target.click();
+      }
+    });
     __privateGet(this, _intersectionObserver2).observe(this);
   }
   disconnectedCallback() {
     __privateGet(this, _delegate4).off();
     __privateGet(this, _intersectionObserver2).unobserve(this);
+    // A11y: tear down the shared dialog:after-show listener when the last
+    // <variant-picker> leaves the DOM (see connectedCallback for setup).
+    _VariantPicker._a11yInstanceCount = Math.max(0, (_VariantPicker._a11yInstanceCount || 0) - 1);
+    if (_VariantPicker._a11yInstanceCount === 0 && _VariantPicker._a11yAbortController) {
+      _VariantPicker._a11yAbortController.abort();
+      _VariantPicker._a11yAbortController = null;
+    }
   }
   get selectedVariant() {
     return __privateGet(this, _selectedVariant);
