@@ -25,7 +25,7 @@
       rel="preload"
       as="style"
       media="screen"
-      href="https://www.beserk.com.au/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css"
+      href="/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css"
       crossorigin="anonymous"
     >
 
@@ -169,15 +169,20 @@
       };
       window.fetch = (url, options) => {
         if (typeof url === 'string' && url.indexOf(BOOST_FILTER_URL) !== -1) {
-          const collectParam = new URL(url).searchParams.get('collection_scope');
-          let updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort9');
-          if (collectParam == 410961037) {
-            updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort10');
+          try {
+            const collectParam = new URL(url).searchParams.get('collection_scope');
+            let updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort9');
+            if (collectParam == 410961037) {
+              updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort10');
+            }
+            if (BOOST_SORT_COLLECTIONS.includes(collectParam)) {
+              updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort11');
+            }
+            url = updateQueryParam(updatedSortExtraUrl, 'sort_first_mode', 'desc');
+          } catch (err) {
+            // If URL parsing/rewriting ever fails, fall back to the original request
+            // untouched so the fetch patch can never break a Boost filter call.
           }
-          if (BOOST_SORT_COLLECTIONS.includes(collectParam)) {
-            updatedSortExtraUrl = updateQueryParam(url, 'sort_first', 'extra-sort11');
-          }
-          url = updateQueryParam(updatedSortExtraUrl, 'sort_first_mode', 'desc');
         }
         return originalFetch(url, options);
       };

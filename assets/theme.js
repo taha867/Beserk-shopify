@@ -2728,7 +2728,7 @@ onSubmit_fn = async function(event) {
   let sectionsToBundle = [];
   document.documentElement.dispatchEvent(new CustomEvent("cart:prepare-bundled-sections", { bubbles: true, detail: { sections: sectionsToBundle } }));
   const formData = new FormData(__privateGet(this, _ProductForm_instances, form_get2));
-  formData.set("sections", sectionsToBundle.join(","));
+  formData.delete("sections");
   formData.set("sections_url", `${Shopify.routes.root}variants/${__privateGet(this, _ProductForm_instances, form_get2).id.value}`);
   const response = await fetch(`${Shopify.routes.root}cart/add.js`, {
     body: formData,
@@ -2747,8 +2747,8 @@ onSubmit_fn = async function(event) {
     if (window.themeVariables.settings.cartType === "page" || window.themeVariables.settings.pageType === "cart") {
       return window.location.href = `${Shopify.routes.root}cart`;
     }
-    const cartContent = await (await fetch(`${Shopify.routes.root}cart.js`)).json();
-    cartContent["sections"] = responseJson["sections"];
+    const sectionParam = sectionsToBundle.length ? `?sections=${sectionsToBundle.join(",")}` : "";
+    const cartContent = await (await fetch(`${Shopify.routes.root}cart.js${sectionParam}`)).json();
     __privateGet(this, _ProductForm_instances, form_get2).dispatchEvent(new CustomEvent("variant:add", {
       bubbles: true,
       detail: {
