@@ -330,6 +330,9 @@
       window.addEventListener('load', () => {
         document.documentElement.classList.add('beserk-3p-loaded');
       }, { once: true });
+      // Safety net: if the load event never fires (e.g. a script error or
+      // a stalled resource), still reveal the launcher so it isn't hidden forever.
+      setTimeout(() => document.documentElement.classList.add('beserk-3p-loaded'), 5000);
     </script>
   </body>
 </html>
