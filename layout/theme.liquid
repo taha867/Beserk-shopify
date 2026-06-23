@@ -110,6 +110,10 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://services.mybcapps.com" crossorigin>
     <link rel="dns-prefetch" href="https://services.mybcapps.com">
+    <link rel="preconnect" href="https://cdn.judge.me" crossorigin>
+    <link rel="preconnect" href="https://widget.smile.io" crossorigin>
+    <link rel="preconnect" href="https://js.klarna.com" crossorigin>
+    <link rel="preconnect" href="https://static.afterpay.com" crossorigin>
 
     {%- unless settings.heading_font.system? -%}
       <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
@@ -319,5 +323,16 @@
         }]);
       </script>
     {%- endif -%}
+
+    <script>
+      // Mark page as loaded so deferred-visual third-party widgets (e.g. Smile.io launcher)
+      // can fade in after the main content has rendered.
+      window.addEventListener('load', () => {
+        document.documentElement.classList.add('beserk-3p-loaded');
+      }, { once: true });
+      // Safety net: if the load event never fires (e.g. a script error or
+      // a stalled resource), still reveal the launcher so it isn't hidden forever.
+      setTimeout(() => document.documentElement.classList.add('beserk-3p-loaded'), 5000);
+    </script>
   </body>
 </html>

@@ -18,22 +18,6 @@
   * variant_image_options: a list of option names for which to use the variant image selector mode
   * size_chart_page: the page to use for the size chart
 {%- endcomment -%}
-<style>
-    x-popover#popover-variant-dropdown-template--17137371316358__main-7429195497606-1 {
-      z-index: 999;
-  }
-
-  .popover__value-option {
-    border-bottom: 1px solid #3D3D3D;
-  }
-  x-popover[id^="popover-variant-dropdown-"] .popover__value-option:has(input:focus-visible) {
-    outline: 2px solid currentColor;
-    outline-offset: -2px;
-  }
-  .varient-color{
-    color: rgb(var(--success-text));
-  }
-</style>
 {%- liquid
   assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ','
   assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ','
