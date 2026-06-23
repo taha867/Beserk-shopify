@@ -8428,3 +8428,207 @@ button.swym-storefront-layout-grid-item-add-to-cart-button {
 .richtext-customer-name .cx-name {
   color: #ffff01;
 }
+
+/* ---------------------------------------------------------------------------
+ * Product page — moved from inline <style> blocks (perf cleanup)
+ * Source files: snippets/buy-buttons.liquid, snippets/variant-picker.liquid,
+ *               sections/main-product.liquid
+ * --------------------------------------------------------------------------- */
+
+/* buy-buttons: ATC loader */
+.button__loader {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.button__loader span {
+  width: 15px;
+  height: 15px;
+  background: currentColor;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+.button__loader span:nth-child(1) { animation-delay: -0.32s; }
+.button__loader span:nth-child(2) { animation-delay: -0.16s; }
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+
+/* variant-picker: popover + swatch */
+x-popover#popover-variant-dropdown-template--17137371316358__main-7429195497606-1 {
+  z-index: 999;
+}
+.popover__value-option {
+  border-bottom: 1px solid #3D3D3D;
+}
+x-popover[id^="popover-variant-dropdown-"] .popover__value-option:has(input:focus-visible) {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
+.varient-color {
+  color: rgb(var(--success-text));
+}
+
+/* main-product: size chart + collapsible */
+.size-chart-collapsible-content {
+  border-top: 1px solid #ddd;
+}
+.collapsible-toggle {
+  width: 100%;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 1.2rem 0.6rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  word-spacing: 1.2px !important;
+  font-weight: 600;
+  background: #000000;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collapsible-toggle span {
+  letter-spacing: 2px !important;
+}
+.collapsible-panel {
+  padding: 1rem 0;
+}
+.size-chart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.size-chart th,
+.size-chart td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.size-chart th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+.size-chart-collapsible .icon-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  color: #ffffffbf;
+}
+.size-chart-collapsible .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 10px;
+  height: 10px;
+}
+.size-chart-collapsible .icon-plus {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.size-chart-collapsible .icon-minus {
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+.collapsible-toggle[aria-expanded="true"] .icon-plus {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+.collapsible-toggle[aria-expanded="true"] .icon-minus {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* main-product: misc third-party + layout helpers */
+p#AY2piODdlVEo4b1BER__preorder_me_product_button_aGkyrX-prompt {
+  font-family: 'Roboto Condensed';
+  text-transform: uppercase;
+}
+.wishlist-preorder-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.wishlist-preorder-flex preorder-me-button {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.wishlist-preorder-flex preorder-me-button button {
+  margin: 0 !important;
+}
+.wishlist-preorder-flex preorder-me-button > button.preorder-me-button {
+  width: 100% !important;
+}
+.wishlist-preorder-flex preorder-me-button p {
+  margin: 6px 0 0 0 !important;
+  text-align: center !important;
+}
+.wishlist-preorder-flex #swym-embed-pdp-btn-wrapper {
+  flex: 0 0 auto;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.shopify-section--main-product .new-section-spacing {
+  padding-block-start: 0;
+}
+[data-default-text="ADD TO CART"] {
+  order: 1;
+}
+
+/* main-product: pickup availability */
+.product-info__block-item:has(.pickup-availability) {
+  margin-bottom: 30px !important;
+}
+button.slpht-upload {
+  letter-spacing: 1.5px;
+  color: #aaaaaa !important;
+}
+.pickup-availability .text-success {
+  color: rgb(var(--success-text));
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .afterpay-paragraph {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 749px) {
+  #placement-AV3FrdEMzcWdsY0x1W__afterpay_on_site_messaging_payments_messaging_3fqMVH {
+    text-align: center !important;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .slp_fcec57 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* Defer Smile.io rewards launcher visibility until after the load event,
+ * so it doesn't pop in while the main content is still rendering. */
+[class*="smile-launcher"],
+.smile-ui-container {
+  opacity: 0;
+}
+.beserk-3p-loaded [class*="smile-launcher"],
+.beserk-3p-loaded .smile-ui-container {
+  opacity: 1;
+  transition: opacity 200ms ease;
+}

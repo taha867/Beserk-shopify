@@ -19,32 +19,6 @@
   * form_id: if specified, define the form ID linked to this input
 {%- endcomment -%}
 
-<style>
-  .button__loader {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .button__loader span {
-    width: 15px;
-    height: 15px;
-    background: currentColor;
-    border-radius: 50%;
-    display: inline-block;
-    animation: bounce 1.4s infinite ease-in-out both;
-  }
-
-  .button__loader span:nth-child(1) { animation-delay: -0.32s; }
-  .button__loader span:nth-child(2) { animation-delay: -0.16s; }
-
-  @keyframes bounce {
-    0%, 80%, 100% { transform: scale(0); }
-    40% { transform: scale(1); }
-  }
-</style>
-
 {%- if product != blank -%}
   {%- liquid
     assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first
@@ -204,142 +178,7 @@
   </buy-buttons>
 {%- endif -%}
 
-{% comment %}
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // 1) cache each button's original label + disabled state
-      document.querySelectorAll('product-form form button[type="submit"]').forEach((btn) => {
-        btn.dataset.defaultText = (btn.innerText || btn.textContent || '').trim();
-        btn.dataset.defaultDisabled = btn.disabled ? 'true' : 'false';
-      });
-
-      // helper: mark In Cart
-      const markInCart = (btn) => {
-        if (!btn) return;
-        btn.textContent = 'In Cart';
-        btn.disabled = true; // only our state
-        btn.classList.add('is-in-cart');
-      };
-
-      // helper: revert only if we changed it before
-      const revertIfWeChanged = (btn) => {
-        if (!btn) return;
-        if (btn.classList.contains('is-in-cart')) {
-          btn.classList.remove('is-in-cart');
-          // restore original label/state the theme set (e.g., "Add to cart" or "Sold out")
-          if (btn.dataset.defaultText) btn.textContent = btn.dataset.defaultText;
-          btn.disabled = btn.dataset.defaultDisabled === 'true';
-        }
-        // If we didn't change it, do nothing (lets theme handle stock/labels)
-      };
-
-      // update all product-form buttons based on cart contents
-      const updateAtcButtons = (cart) => {
-        document.querySelectorAll('product-form').forEach((pf) => {
-          const form = pf.querySelector('form');
-          if (!form) return;
-          const variantId = form.querySelector("input[name='id']")?.value;
-          const btn = form.querySelector("button[type='submit']");
-          if (!btn || !variantId) return;
-
-          const inCart = Array.isArray(cart?.items) && cart.items.some((i) => String(i.id) === String(variantId));
-          if (inCart) {
-            markInCart(btn);
-          } else {
-            // DON'T force "Add to cart" — just revert if we previously set "In Cart"
-            revertIfWeChanged(btn);
-          }
-        });
-      };
-
-      const refreshCart = () => {
-        fetch('/cart.js')
-          .then((r) => r.json())
-          .then(updateAtcButtons)
-          .catch(() => {});
-      };
-
-      // initial load
-      refreshCart();
-
-      // listen for common theme events; if none fire, we still have initial load state
-      document.addEventListener('product-form:afterAdd', refreshCart);
-      ['cart:updated', 'cart:change'].forEach((ev) => {
-        document.addEventListener(ev, (e) => {
-          if (e?.detail?.cart) updateAtcButtons(e.detail.cart);
-          else refreshCart();
-        });
-      });
-
-      // tiny fallback: after clicking any ATC, poll cart briefly to catch updates in themes with no events
-      document.addEventListener('click', (e) => {
-        const btn = e.target.closest('product-form form button[type="submit"]');
-        if (!btn) return;
-        setTimeout(refreshCart, 250);
-        setTimeout(refreshCart, 900);
-      });
-    });
-  </script>
-{% endcomment %}
-
 <script>
-  {% comment %} This is commented out because there are duplicate add to cart events if it stays in the theme.
-  document.addEventListener('DOMContentLoaded', function () {
-    const forms = document.querySelectorAll("form[action*='/cart/add']");
-
-    forms.forEach((form) => {
-      const button = form.querySelector("button[type='submit']");
-      if (!button) return;
-
-      // Inject loader + wrap text
-      if (!button.querySelector('.button__loader')) {
-        const textSpan = document.createElement('span');
-        textSpan.classList.add('button__text');
-        textSpan.innerHTML = button.innerHTML;
-
-        const loaderSpan = document.createElement('span');
-        loaderSpan.classList.add('button__loader');
-        loaderSpan.innerHTML = '<span></span><span></span><span></span>';
-
-        button.innerHTML = '';
-        button.appendChild(textSpan);
-        button.appendChild(loaderSpan);
-      }
-
-      form.addEventListener('submit', function (e) {
-        const textEl = button.querySelector('.button__text');
-        const loaderEl = button.querySelector('.button__loader');
-
-        if (textEl && loaderEl) {
-          e.preventDefault();
-
-          // Show loader instead of text
-          textEl.style.display = 'none';
-          loaderEl.style.display = 'flex';
-          button.disabled = true;
-
-          // AJAX add to cart
-          fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { 'X-Requested-With': 'XMLHttpRequest' },
-          })
-            .then((res) => res.json())
-            .then(() => {
-              // Restore text
-              loaderEl.style.display = 'none';
-              textEl.style.display = 'inline';
-              button.disabled = false;
-
-              // Trigger cart drawer update
-              document.dispatchEvent(new CustomEvent('cart:updated'));
-            });
-        }
-      });
-    });
-  });
-{%  endcomment %}
-
   document.addEventListener('DOMContentLoaded', () => {
     if (window.__beserkBuyButtonsInit) return;
     window.__beserkBuyButtonsInit = true;
@@ -414,11 +253,12 @@
     });
 
     // fallback polling after click (works for preorder buttons too)
+    let refreshTimers = [];
     document.addEventListener('click', (e) => {
       const btn = e.target.closest(buttonSelector);
       if (!btn) return;
-      setTimeout(refreshCart, 250);
-      setTimeout(refreshCart, 900);
+      refreshTimers.forEach(clearTimeout);
+      refreshTimers = [setTimeout(refreshCart, 250), setTimeout(refreshCart, 900)];
     });
   });
 </script>
@@ -428,25 +268,27 @@
     if (window.__beserkPaymentBtnObserverInit) return;
     window.__beserkPaymentBtnObserverInit = true;
 
-    const observer = new MutationObserver(() => {
-      const atcButton = document.querySelector('form[action*="/cart/add"] [type="submit"]');
+    const form = document.querySelector('form[action*="/cart/add"]');
+    if (!form) return;
 
-      // Only force-show checkout if Add to Cart exists and is enabled
-      if (atcButton && !atcButton.disabled) {
-        document.querySelectorAll('.shopify-payment-button').forEach((el) => {
-          el.style.display = 'block'; // show if in stock
-        });
-      } else {
-        document.querySelectorAll('.shopify-payment-button').forEach((el) => {
-          el.style.display = 'none'; // hide if out of stock
-        });
-      }
-    });
+    const syncPaymentButtons = () => {
+      const atcButton = form.querySelector('[type="submit"]');
+      const show = atcButton && !atcButton.disabled;
+      form.querySelectorAll('.shopify-payment-button').forEach((el) => {
+        el.style.display = show ? 'block' : 'none';
+      });
+    };
 
-    observer.observe(document.body, {
+    syncPaymentButtons();
+
+    // Scoped to the cart form (not document.body) and filtered to disabled-attribute
+    // changes — avoids firing on every third-party DOM mutation on the page.
+    const observer = new MutationObserver(syncPaymentButtons);
+    observer.observe(form, {
       childList: true,
       subtree: true,
       attributes: true,
+      attributeFilter: ['disabled'],
     });
   });
 </script>
