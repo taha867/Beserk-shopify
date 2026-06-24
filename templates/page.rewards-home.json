@@ -107,16 +107,6 @@
             "text_color": ""
           }
         },
-        "button_ffW78M": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "OLD WISHLIST",
-            "url": "https://www.beserk.com.au/apps/wishlist",
-            "background": "",
-            "text_color": ""
-          }
-        },
         "button_EiH4Kd": {
           "type": "button",
           "settings": {
@@ -140,7 +130,6 @@
         "button_cmNaAf",
         "button_BhTicM",
         "button_xTbGfD",
-        "button_ffW78M",
         "button_EiH4Kd"
       ],
       "disabled": true,

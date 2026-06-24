@@ -116,16 +116,6 @@
             "text_color": ""
           }
         },
-        "button_TjeFzp": {
-          "type": "button",
-          "settings": {
-            "style": "solid",
-            "text": "OLD WISHLIST",
-            "url": "https://www.beserk.com.au/apps/wishlist",
-            "background": "",
-            "text_color": ""
-          }
-        },
         "button_GCgfnz": {
           "type": "button",
           "settings": {
@@ -149,7 +139,6 @@
         "button_ECG7xK",
         "button_cyFBxN",
         "button_Qdi3bm",
-        "button_TjeFzp",
         "button_GCgfnz"
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",

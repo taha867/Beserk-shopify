@@ -71,13 +71,7 @@
     window.SwymCallbacks = [];
   }
   window.SwymCallbacks.push(renderWishlistCounter);
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.remove-link').forEach(link => {
-      link.addEventListener('click', function (event) {
-        event.preventDefault();
-      });
-    });
-  });
+
 function onSwymLoadCallback(swat) {
     swat.evtLayer.addEventListener(swat.JSEvents.UIAddedToCart, function() {
        document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
@@ -93,8 +87,5 @@ function onSwymLoadCallback(swat) {
     });
 }
 
-if (!window.SwymCallbacks) {
-    window.SwymCallbacks = [];
-}
 window.SwymCallbacks.push(onSwymLoadCallback);
 </script>
