@@ -19,7 +19,7 @@
           "name": "PROMO/SALE",
           "disabled": true,
           "settings": {
-            "text": "HAPPY INTERNATIONAL NAIL DAY! 💅<strong> </strong>FREE GIFT WITH ALL ORDERS OVER $150! ✨"
+            "text": "✨ EOFY SALE! ✨ GET 13% OFF WITH CODE 'EOFY26' 💥"
           }
         },
         "message_Jr8KdV": {
@@ -51,14 +51,14 @@
           "settings": {
             "menu_item": "NEW",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_New-01_30c029ff-afe0-4e69-8a4c-06390545ccd7.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_New_09ac9ce3-50e4-49e8-8cd8-7b10b27fd925.jpg",
             "image_1_heading": "New Arrivals",
             "image_1_text": "SHOP NOW",
             "image_1_link": "shopify://collections/new",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_New-01_88dc05be-5240-4001-af5e-61c11ee2887f.jpg",
-            "image_2_heading": "NEW oufer",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_New-01_52c41fab-942e-4db2-b0a9-a2adbcb13689.jpg",
+            "image_2_heading": "All New Lively Ghosts",
             "image_2_text": "Shop Now",
-            "image_2_link": "shopify://collections/oufer"
+            "image_2_link": "shopify://collections/lively-ghosts"
           }
         },
         "mega_menu_Bb4PAa": {
@@ -134,11 +134,11 @@
           "settings": {
             "menu_item": "SALE",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale-02_cb7502ac-f5bf-4d05-9813-274b9b1d3683.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale_3213d615-d95f-445a-b450-49f452624ae1.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "shopify://collections/sale",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Sale-01_25a6f6b9-a6a4-4d44-85d3-cb85b0f20201.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Beetlejuice_42a54c44-ed4c-432a-aabb-17d360ef8621.jpg",
             "image_2_heading": "",
             "image_2_text": "",
             "image_2_link": "https://www.beserk.com.au/products/beetlejuice-ghost-with-the-most-queen-double-sided-quilt-set"
@@ -150,14 +150,14 @@
           "settings": {
             "menu_item": "CLOTHING",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Clothing-01_6b4969d6-a2fc-4d2c-85c4-e66488acacb2.jpg",
-            "image_1_heading": "Academia Dreams With Killstar",
-            "image_1_text": "shop Killstar",
-            "image_1_link": "shopify://collections/killstar",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Clothing-02_9b40c33c-6cdd-405c-b200-81521c179fc1.jpg",
-            "image_2_heading": "Mary Wyatt Is Back!",
-            "image_2_text": "SHOP Mary Wyatt",
-            "image_2_link": "shopify://collections/mary-wyatt"
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Clothing-01_2728e813-04ad-459a-84a1-389db276ce3e.jpg",
+            "image_1_heading": "Slay With Mary Wyatt",
+            "image_1_text": "Shop Now",
+            "image_1_link": "shopify://collections/mary-wyatt",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Clothing-02_a0e78a7e-4353-456e-aac3-7f5447097682.jpg",
+            "image_2_heading": "Browse New Arrivals",
+            "image_2_text": "SHOP NEW",
+            "image_2_link": "shopify://collections/all-clothing"
           }
         },
         "mega_menu_KmYXJE": {
@@ -166,11 +166,11 @@
           "settings": {
             "menu_item": "BAND MERCH",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Band-02_53d2ebec-99bd-4bb7-b968-92d9b3ed94c9.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Band-02_82f4fa7a-e97c-4806-b22f-04fae0364053.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "shopify://collections/band-merchandise",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Band-01_df3c9fd0-9a1b-46c1-be91-ea5390fead41.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Band-01_f35284fe-2b15-4ded-89ca-0d61c9b4746d.jpg",
             "image_2_heading": "",
             "image_2_text": "",
             "image_2_link": "shopify://collections/band-merchandise"
@@ -182,11 +182,11 @@
           "settings": {
             "menu_item": "SHOES",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Shoes-02_352a1835-0606-46ba-b6d6-3ccdca6354b6.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Shoes-01_c6fcf220-1440-4048-bdf3-0e43cd6201cd.jpg",
             "image_1_heading": "DEMONIA Classics",
             "image_1_text": "",
             "image_1_link": "shopify://collections/demonia",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Shoes-01_11346168-95f4-4ada-a3e8-2e01eebecc2b.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Shoes-02_a2357319-0fcd-409b-9502-8bbb5c389b0f.jpg",
             "image_2_heading": "SHOES IN STOCK",
             "image_2_text": "",
             "image_2_link": "shopify://collections/shoes-in-stock"
@@ -198,11 +198,11 @@
           "settings": {
             "menu_item": "HAIR DYE",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Hair-02_118e00ca-2ac5-44c8-b84c-58d99e1de3fe.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Hair-02_33001954-da5b-4871-bdc4-4758502fc8a6.jpg",
             "image_1_heading": "SHOP Lunar Tides",
             "image_1_text": "",
             "image_1_link": "shopify://collections/lunar-tides",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Hair-01_39aa3838-fa28-465e-8a07-9ea71c763225.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Hair-01_1b84a5eb-e83a-4b5d-9b9b-5aef00f7b947.jpg",
             "image_2_heading": "find your new look",
             "image_2_text": "",
             "image_2_link": "shopify://collections/hair-colour"
@@ -214,11 +214,11 @@
           "settings": {
             "menu_item": "COSMETICS",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Cosmetics-01_08e21d99-e249-476d-acc2-ad81eb6c530e.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Cosmetics-01_be90f6c6-fea1-46e5-bb4b-80eee9292a6c.jpg",
             "image_1_heading": "shop Makeup A Murder",
             "image_1_text": "",
             "image_1_link": "shopify://collections/makeup-a-murder",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Cosmetics-02_8b9bd741-c76b-46aa-afe3-38baeb072f8b.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Cosmetics-02_8315c642-b47e-4055-8d5d-454acf3076d6.jpg",
             "image_2_heading": "NAIL ESSENTIALS",
             "image_2_text": "",
             "image_2_link": "shopify://collections/nails"
@@ -230,14 +230,14 @@
           "settings": {
             "menu_item": "ACCESSORIES",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Accessories-02_04fb946d-d307-4bbf-b618-7c021cbd71fa.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Accessories-02_2e8a6c19-a109-4166-b215-7f32158f08b0.jpg",
             "image_1_heading": "JUST ARRIVED",
             "image_1_text": "",
             "image_1_link": "shopify://collections/accessories",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Accessories-01_a7d5bd0f-c99f-4cc9-8378-9e92e5a10e4a.jpg",
-            "image_2_heading": "it's in the details",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Accessories-01_56610c44-be79-4935-844b-affdeae86810.jpg",
+            "image_2_heading": "find the perfect bag",
             "image_2_text": "",
-            "image_2_link": "shopify://collections/jewellery"
+            "image_2_link": "shopify://collections/handbags-backpacks-and-wallets"
           }
         },
         "mega_menu_BVj8zT": {
@@ -246,11 +246,11 @@
           "settings": {
             "menu_item": "HOMEWARES",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Home-02_45e69acc-1eeb-418c-8a6e-f44a94cb7ab7.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Home-01_d66680af-28b7-4bb2-a382-cd55c21a8d6a.jpg",
             "image_1_heading": "Homewares Favourites",
             "image_1_text": "",
             "image_1_link": "shopify://collections/all-homewares",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Home-01_6057c67c-5c43-4211-ab97-e48d6f345c7b.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Home-02_776065d1-677e-4b9a-84e2-0ae67bd5f628.jpg",
             "image_2_heading": "SHOP HELLS BLANKETS",
             "image_2_text": "",
             "image_2_link": "shopify://collections/hells-blankets"
@@ -262,14 +262,14 @@
           "settings": {
             "menu_item": "POP CULTURE",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Pop-Culture-02_7eade5a6-f122-420c-ba11-a42db9b4413f.jpg",
-            "image_1_heading": "JUST LANDED",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Pop-Culture-02_ba0ec9df-1180-4d36-b780-f12a7f1e405c.jpg",
+            "image_1_heading": "Our Mothman Blind Box!",
             "image_1_text": "",
-            "image_1_link": "shopify://collections/popculture",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Pop-Culture-01_875dee5c-dabe-4cbb-b74a-d1142837e304.jpg",
-            "image_2_heading": "Cuddle companions",
+            "image_1_link": "shopify://products/mothman-plush-keychain-blind-box",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Pop-Culture-01_748f2d16-2830-4735-abdb-26bbfe01cc0c.jpg",
+            "image_2_heading": "Gremlins X Beserk",
             "image_2_text": "",
-            "image_2_link": "https://www.beserk.com.au/collections/plush-toys?brand=Beserk+Clothing"
+            "image_2_link": "shopify://collections/gremlins"
           }
         },
         "mega_menu_bPgUbq": {
@@ -278,11 +278,11 @@
           "settings": {
             "menu_item": "GIFTS",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Gifts-02_dba2d266-941d-4e40-9b2b-822f12d93791.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Gift-01_8a1cf708-6afe-45ee-829b-c1767570798f.jpg",
             "image_1_heading": "GIFTS UNDER $50",
             "image_1_text": "",
             "image_1_link": "shopify://collections/gifts-under-50",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Gift-01_4f19307c-1b21-44cd-9a49-bf737e94dfde.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Gift-02_65ac2647-8c8c-4359-b654-a85a1c3bf4ce.jpg",
             "image_2_heading": "Alternative gifts",
             "image_2_text": "",
             "image_2_link": "shopify://collections/gifts"
@@ -294,7 +294,7 @@
           "settings": {
             "menu_item": "SHOP BY ❤️",
             "images_position": "left",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Style-01_7b99bbd3-b5f6-41e9-ace5-e6f9861110a4.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Style-01_fff5d8f5-c968-4779-afe7-f1d6a3a647ce.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",

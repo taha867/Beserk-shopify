@@ -193,7 +193,7 @@
           "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
-          "greeting_message": "We are Online ~ Mon-Fri 8:30am-4pm AEST. \nor leave a message anytime & we'll reply when we reopen. \ud83d\ude42 Beserk xx"
+          "greeting_message": "We are Online ~ Mon-Fri 8:30am-4pm AEST. \nor leave a message anytime & we'll reply when we reopen. 🙂 Beserk xx"
         }
       },
       "5946647744298494267": {
@@ -336,6 +336,17 @@
           "primary_button_background": "#d7346f",
           "primary_button_text_color": "#ffffff",
           "circle_button_background": "#d7346f",
+          "circle_button_icon": "#ffffff"
+        }
+      },
+      "scheme-ae00b732-b8a9-4ea0-8b74-c1afccb1df8d": {
+        "settings": {
+          "background": "#FFFB00",
+          "background_gradient": "",
+          "text_color": "#000000",
+          "primary_button_background": "#FFFB00",
+          "primary_button_text_color": "#000000",
+          "circle_button_background": "#FFFB00",
           "circle_button_icon": "#ffffff"
         }
       }

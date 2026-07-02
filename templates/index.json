@@ -12,27 +12,27 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_xTjKJ4": {
+        "image_pLqq4n": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/0626_Mystery-Packs-New-01_Banner_3200.gif",
-            "mobile_image": "shopify://shop_images/0626_Mystery-Packs-New-01_Banner-1200.gif",
+            "image": "shopify://shop_images/0626_Killstar-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0626_Killstar-01_Banner-1200.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 400,
-            "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify://collections/mystery-packs",
+            "content_max_width": 740,
+            "button_1_text": "shop now",
+            "button_1_link": "shopify://collections/killstar",
             "button_1_style": "solid",
-            "button_1_background": "#691eae",
+            "button_1_background": "#307392",
             "button_1_text_color": "#ffffff",
             "button_2_text": "",
             "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "#1c1c1c",
+            "button_2_style": "solid",
+            "button_2_background": "#ed8a00",
+            "button_2_text_color": "#ffffff",
+            "background": "",
             "background_opacity": 0,
             "text_color": "#ffffff",
             "border_color": "",
@@ -42,15 +42,15 @@
         "image_UmHJfg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/0626_Oufer-New-01_Banner_3200.jpg",
-            "mobile_image": "shopify://shop_images/0626_Oufer-New-01_Banner-1200.jpg",
+            "image": "shopify://shop_images/0626_Beserk-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0626_Beserk-01_Banner-1200.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
             "content_max_width": 400,
             "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify://collections/oufer",
+            "button_1_link": "shopify://collections/beserk-clothing",
             "button_1_style": "solid",
             "button_1_background": "#ff0000",
             "button_1_text_color": "#ffffff",
@@ -69,44 +69,17 @@
         "image_Upjnnm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/0626_Mary-Wyatt-New-01_Banner_3200.jpg",
-            "mobile_image": "shopify://shop_images/0626_Mary-Wyatt-New-01_Banner-1200.jpg",
+            "image": "shopify://shop_images/0626_Lively-Ghosts-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0626_Lively-Ghosts-01_Banner-1200.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
             "content_max_width": 740,
             "button_1_text": "shop now",
-            "button_1_link": "shopify://collections/mary-wyatt",
+            "button_1_link": "shopify://collections/lively-ghosts",
             "button_1_style": "solid",
-            "button_1_background": "#3b4762",
-            "button_1_text_color": "#ffffff",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "solid",
-            "button_2_background": "#ed8a00",
-            "button_2_text_color": "#ffffff",
-            "background": "",
-            "background_opacity": 0,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": ""
-          }
-        },
-        "image_pLqq4n": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/0626_Foxblood-New-01_Banner_3200.jpg",
-            "mobile_image": "shopify://shop_images/0626_Foxblood-New-01_Banner-1200.jpg",
-            "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 740,
-            "button_1_text": "shop now",
-            "button_1_link": "shopify://collections/foxblood",
-            "button_1_style": "solid",
-            "button_1_background": "#cc252e",
+            "button_1_background": "#3b6240",
             "button_1_text_color": "#ffffff",
             "button_2_text": "",
             "button_2_link": "",
@@ -122,10 +95,9 @@
         }
       },
       "block_order": [
-        "image_xTjKJ4",
+        "image_pLqq4n",
         "image_UmHJfg",
-        "image_Upjnnm",
-        "image_pLqq4n"
+        "image_Upjnnm"
       ],
       "name": "Main Scrolling Banner",
       "settings": {
@@ -140,10 +112,10 @@
         "controls_color": "#ff0000"
       }
     },
-    "new_richtext_cgVFxc": {
+    "new_richtext_EGxVDA": {
       "type": "new-richtext",
       "blocks": {
-        "ai_gen_block_e12f3ea_Qk3PwV": {
+        "ai_gen_block_e12f3ea_V7i9cg": {
           "type": "ai_gen_block_e12f3ea",
           "settings": {
             "bar_height": 25,
@@ -158,7 +130,7 @@
         }
       },
       "block_order": [
-        "ai_gen_block_e12f3ea_Qk3PwV"
+        "ai_gen_block_e12f3ea_V7i9cg"
       ],
       "name": "Spacer Bar",
       "settings": {
@@ -169,15 +141,15 @@
         "remove_vertical_spacing": true
       }
     },
-    "collection_list_zN4zMP": {
+    "collection_list_zUCa8L": {
       "type": "collection-list",
       "blocks": {
-        "collection_44UcQj": {
+        "collection_Nwyyk8": {
           "type": "collection",
           "settings": {
             "color_scheme": "",
             "collection": "hair-colour",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair-01.jpg",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair_b21429a0-62d6-43a0-bc67-bb798e1ae5e6.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -189,12 +161,12 @@
             "overlay_opacity": 0
           }
         },
-        "collection_wjf4Le": {
+        "collection_K7PT9i": {
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "band-merchandise",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Band_20a7e413-8370-4e62-a4c7-aa46289dfeac.gif",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Band_3a437340-8130-4b5a-88b9-56c79a011a4b.gif",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -206,29 +178,29 @@
             "overlay_opacity": 4
           }
         },
-        "collection_8kWcYU": {
+        "collection_dj9HY9": {
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "mystery-packs",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Mystery-Packs_363bd453-c34c-474c-b2de-7aa3464f3e5a.gif",
+            "collection": "lip-service",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Lip-Service.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP MYSTERY PACKS",
-            "button_link": "shopify://collections/mystery-packs",
+            "button_text": "SHOP LIP SERVICE",
+            "button_link": "shopify://collections/lip-service",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
         },
-        "collection_VExDMH": {
+        "collection_9cLPmH": {
           "type": "collection",
           "settings": {
             "color_scheme": "",
             "collection": "hells-blankets",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets_dac202d3-76fd-4d32-9dde-86fcddf421aa.jpg",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets_290056f8-a879-4f7a-82e7-c7ec7127ae03.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -242,10 +214,10 @@
         }
       },
       "block_order": [
-        "collection_44UcQj",
-        "collection_wjf4Le",
-        "collection_8kWcYU",
-        "collection_VExDMH"
+        "collection_Nwyyk8",
+        "collection_K7PT9i",
+        "collection_dj9HY9",
+        "collection_9cLPmH"
       ],
       "name": "t:sections.collection_list.presets.collection_list.name",
       "settings": {
@@ -287,16 +259,22 @@
         "heading_UAqWiK": {
           "type": "heading",
           "settings": {
-            "text": "IT'S MORE FUN WHEN ITS A MYSTERY.. 🌟",
+            "text": "50% OFF HELLS BLANKETS",
             "heading_tag": "h4"
+          }
+        },
+        "subheading_49PyF6": {
+          "type": "subheading",
+          "settings": {
+            "text": "FINAL SALE ON SELECTED ITEMS*"
           }
         },
         "button_GjhyxV": {
           "type": "button",
           "settings": {
             "style": "solid",
-            "text": "SHOP BLIND BOXES",
-            "url": "shopify://collections/blind-boxes",
+            "text": "SHOP NOW",
+            "url": "https://www.beserk.com.au/collections/hells-blankets?sale=25%3A50",
             "background": "#e32c2b",
             "text_color": "#ffffff"
           }
@@ -304,14 +282,15 @@
       },
       "block_order": [
         "heading_UAqWiK",
+        "subheading_49PyF6",
         "button_GjhyxV"
       ],
       "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
       "settings": {
         "color_scheme": "scheme-2",
         "image_size": "auto",
-        "image": "shopify://shop_images/Blind-Boxes_Banner-2500-06.jpg",
-        "mobile_image": "shopify://shop_images/Blind-Boxes_Banner-1100-06.jpg",
+        "image": "shopify://shop_images/Hells-Blankets-Sale_Banner-2500_e75a89c3-a758-4ff9-ba22-e8bd0f103895.jpg",
+        "mobile_image": "shopify://shop_images/Hells-Blankets-Sale_Banner-1100.jpg",
         "allow_transparent_header": false,
         "reveal_on_scroll": true,
         "remove_vertical_spacing": true,
@@ -325,36 +304,35 @@
     "collection_list_QV7y7R": {
       "type": "collection-list",
       "blocks": {
-        "collection_FmnWF3": {
+        "collection_8xUqcB": {
           "type": "collection",
-          "name": "Collection",
           "settings": {
             "color_scheme": "",
-            "collection": "foxblood",
-            "image": "shopify://shop_images/Collection-1_Foxblood-03.jpg",
+            "collection": "beserk-clothing",
+            "image": "shopify://shop_images/Collection-1_Beserk_04.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "FOXBLOOD",
+            "title": "Beserk",
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/foxblood",
+            "button_link": "shopify://collections/beserk-clothing",
             "button_style": "link",
             "overlay_color": "#000000",
-            "overlay_opacity": 25
+            "overlay_opacity": 30
           }
         },
         "collection_NWG7wQ": {
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-4",
-            "collection": "groovy-things",
-            "image": "shopify://shop_images/Collection-1_Groovy-Things_01_2e814ca0-f104-4cb8-bad5-911e59ce2cf0.jpg",
+            "collection": "hell-bunny",
+            "image": "shopify://shop_images/Collection-1_Hell-Bunny.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "GROOVY THINGS",
+            "title": "hell bunny",
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/groovy-things",
+            "button_link": "shopify://collections/hell-bunny",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -364,42 +342,43 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "killstar",
-            "image": "shopify://shop_images/Collection-1_Killstar_06.jpg",
+            "collection": "lively-ghosts",
+            "image": "shopify://shop_images/Collection-1_Lively-Ghosts_01.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "Killstar",
+            "title": "Lively Ghosts",
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/killstar",
+            "button_link": "shopify://collections/lively-ghosts",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 15
           }
         },
-        "collection_8xUqcB": {
+        "collection_FmnWF3": {
           "type": "collection",
+          "name": "Collection",
           "settings": {
             "color_scheme": "",
-            "collection": "beserk-clothing",
-            "image": "shopify://shop_images/Collection-1_Mothman-Blind-Box.jpg",
+            "collection": "devil-fashion",
+            "image": "shopify://shop_images/Collection-1_Devil_Fashion_01.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "MOTHMAN BLIND BOX",
+            "title": "devil fashion",
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/beserk-clothing",
+            "button_link": "shopify://collections/devil-fashion",
             "button_style": "link",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 25
           }
         }
       },
       "block_order": [
-        "collection_FmnWF3",
+        "collection_8xUqcB",
         "collection_NWG7wQ",
         "collection_qkWbTG",
-        "collection_8xUqcB"
+        "collection_FmnWF3"
       ],
       "name": "Collection 1",
       "settings": {
@@ -468,7 +447,7 @@
           "type": "logo",
           "name": "HELLS BLANKETS",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Hells-Blankets_e9b7bea3-49ab-4081-872b-33305358c2c1.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Hells-Blankets_fb8d2c53-bc8c-4ccd-839e-a6ad199e09ed.jpg",
             "logo_width": 250,
             "link": "shopify://collections/hells-blankets"
           }
@@ -477,7 +456,7 @@
           "type": "logo",
           "name": "PASTEL PIXIE",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Pastel-Pixie_83f58b64-8495-4464-a31d-3cd0f798fa22.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Pastel-Pixie_06c90e93-ea00-46c2-ba5e-8880182c7ec5.jpg",
             "logo_width": 250,
             "link": "shopify://collections/pastel-pixie"
           }
@@ -486,7 +465,7 @@
           "type": "logo",
           "name": "NEKO NAILS",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Neko-Nail-Cult_e774e6c3-0608-4407-bb10-fa70f4ca58ea.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Neko-Nail.jpg",
             "logo_width": 250,
             "link": "shopify://collections/neko-nail-cult"
           }
@@ -495,7 +474,7 @@
           "type": "logo",
           "name": "BESERK CLOTHING",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Beserk-Clothing_20f6b2df-f500-4aed-991b-56ea1ba95a9e.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Beserk.jpg",
             "logo_width": 250,
             "link": "shopify://collections/beserk-clothing"
           }
@@ -504,7 +483,7 @@
           "type": "logo",
           "name": "ARCTIC FOX",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Arctic-Fox.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Arctic-Fox_915502f0-0c97-4078-96e8-39d6ad0232ad.jpg",
             "logo_width": 250,
             "link": "shopify://collections/arctic-fox"
           }
@@ -513,7 +492,7 @@
           "type": "logo",
           "name": "LUNAR TIDES",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Lunar-Tides_9fc33a12-3ad1-4326-8701-b9c05a2c4fad.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Lunar-Tides_36be60da-f609-429a-a5da-08bf2c58fe4f.jpg",
             "logo_width": 250,
             "link": "shopify://collections/lunar-tides"
           }
@@ -522,7 +501,7 @@
           "type": "logo",
           "name": "MANIC PANIC",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Manic-Panic_6aefd848-dfc9-4ac7-87d2-bcc4a97da15a.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Manic-Panic_3aa7aafd-3865-4a03-8b43-076106e42e91.jpg",
             "logo_width": 250,
             "link": "shopify://collections/manic-panic-hair"
           }
@@ -531,7 +510,7 @@
           "type": "logo",
           "name": "FOREST INK",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Killstar_e1b92682-afcc-4e27-838b-fb792430bbea.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Killstar_c242ef4c-428e-498a-8ec3-6697baf4c8ee.jpg",
             "logo_width": 250,
             "link": "shopify://collections/killstar"
           }
@@ -540,7 +519,7 @@
           "type": "logo",
           "name": "RESTYLE",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Restyle.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Restyle_1d4f9800-e2aa-4de3-b09a-789d90170ab6.jpg",
             "logo_width": 250,
             "link": "shopify://collections/restyle"
           }
@@ -549,7 +528,7 @@
           "type": "logo",
           "name": "FOXBLOOD",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Foxblood.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Foxblood_fcad5dcf-36a6-4add-bdf2-adf3d5434fbf.jpg",
             "logo_width": 250,
             "link": "shopify://collections/foxblood"
           }
@@ -558,25 +537,25 @@
           "type": "logo",
           "name": "FOREST INK",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Forest-Ink_4b01c824-062e-4c26-a3a9-868792b4ef55.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Forest-Ink_a644758b-e719-4110-a66b-3acde781780e.jpg",
             "logo_width": 250,
             "link": "shopify://collections/forest-ink"
           }
         },
         "logo_Y3T4rG": {
           "type": "logo",
-          "name": "PUNK RAVE",
+          "name": "MAKEUP A MURDER",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Punk-Rave_e7584401-7555-4ba1-adb0-5b73d4270d2c.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Kiss-Of-Death.jpg",
             "logo_width": 250,
-            "link": "shopify://collections/punk-rave"
+            "link": "shopify://collections/makeup-a-murder"
           }
         },
         "logo_dLnEtD": {
           "type": "logo",
           "name": "HELL BUNNY",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Hell-Bunny.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Hell-Bunny_5acf2ab1-7a56-4366-be01-c0fdf9f99f15.jpg",
             "logo_width": 250,
             "link": "shopify://collections/hell-bunny"
           }
@@ -585,7 +564,7 @@
           "type": "logo",
           "name": "SANRIO",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Sanrio_797ab222-793b-4a68-aa4e-222aedf4634a.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Sanrio_c79af592-3473-45fe-86f4-49ed474e2cc0.jpg",
             "logo_width": 250,
             "link": "shopify://collections/sanrio"
           }
@@ -594,7 +573,7 @@
           "type": "logo",
           "name": "GOTHIC GIFTS",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Gothic-Gifts.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Gothic-Gifts_41ad927f-fdff-4285-bdd1-4d2ff40d761f.jpg",
             "logo_width": 250,
             "link": "shopify://collections/gothic-gifts"
           }
@@ -603,18 +582,18 @@
           "type": "logo",
           "name": "DEMONIA",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Demonia_e4cf644c-ac9a-4eeb-842b-001c940f7775.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Demonia_54a689ab-599f-4704-b24a-5fe93cc51b33.jpg",
             "logo_width": 250,
             "link": "shopify://collections/demonia"
           }
         },
         "logo_JTz7ea": {
           "type": "logo",
-          "name": "HOT CHOCOLATE",
+          "name": "LIP SERVICE",
           "settings": {
-            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Hot-Chocolate.jpg",
+            "logo": "shopify://shop_images/Front_Page_Brand_Logos_800x800_Lip-Service.jpg",
             "logo_width": 250,
-            "link": "shopify://collections/hot-chocolate"
+            "link": "shopify://collections/lip-service"
           }
         }
       },
@@ -656,8 +635,8 @@
           "type": "image-with-url",
           "name": "Image with URL",
           "settings": {
-            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-14.jpg",
-            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-14.jpg",
+            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-17.jpg",
+            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-17.jpg",
             "image_link": "https://www.beserk.com.au/collections/sale",
             "alignment": "center",
             "width_mode": "full_width",
@@ -758,7 +737,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Facebook-Group_02.jpg",
+            "image": "shopify://shop_images/Front-Page_Facebook-Group_01_566710fa-a720-4ff0-af03-28f669f38f71.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -775,7 +754,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Rewards-Image_02_a5b3bb4c-fe4d-44ca-8585-bb4b275ddb6e.jpg",
+            "image": "shopify://shop_images/Front-Page_Rewards-Image_01_1f98e30d-47b8-4a47-b31e-6ea89cb93e29.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -792,7 +771,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Enviromental-Image_02_94f50d43-0645-4e22-a785-ed2c67130bb4.jpg",
+            "image": "shopify://shop_images/Front-Page_Enviromental-Image_01.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -834,7 +813,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "hells-blankets",
-            "image": "shopify://shop_images/Collection-2_Hells-Blankets_08.jpg",
+            "image": "shopify://shop_images/Collection-2_Hells-Blankets_10.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
@@ -850,14 +829,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "the-lost-boys",
-            "image": "shopify://shop_images/Collection-2_Beserk_04.jpg",
+            "collection": "lethal-cosmetics",
+            "image": "shopify://shop_images/Collection-2_Lethal_02.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP The Lost Boys x Beserk",
-            "button_link": "shopify://collections/the-lost-boys",
+            "button_text": "SHOP Lethal Cosmetics",
+            "button_link": "shopify://collections/lethal-cosmetics",
             "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -901,14 +880,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "makeup-a-murder",
-            "image": "shopify://shop_images/Collection-2_Makeup-A-Murder_02.jpg",
+            "collection": "black-moon-cosmetics",
+            "image": "shopify://shop_images/Collection-2_Black-Moon-Cosmetics_02.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP MAKEUP A MURDER",
-            "button_link": "shopify://collections/makeup-a-murder",
+            "button_text": "BLACK MOON COSMETICS",
+            "button_link": "shopify://collections/black-moon-cosmetics",
             "button_style": "outline",
             "overlay_color": "#1c1c1c",
             "overlay_opacity": 0
@@ -1140,8 +1119,8 @@
   },
   "order": [
     "slideshow",
-    "new_richtext_cgVFxc",
-    "collection_list_zN4zMP",
+    "new_richtext_EGxVDA",
+    "collection_list_zUCa8L",
     "recently_viewed_products_8MGfMp",
     "image_with_text_overlay_VEUQC6",
     "collection_list_QV7y7R",
