@@ -149,7 +149,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "hair-colour",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair_b21429a0-62d6-43a0-bc67-bb798e1ae5e6.jpg",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair_95aebbb2-a1fa-40a5-9410-f206a64d5247.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -166,7 +166,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "band-merchandise",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Band_3a437340-8130-4b5a-88b9-56c79a011a4b.gif",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Band_6bcb9359-3308-4813-9dd4-7b6211fdd2b7.gif",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -182,14 +182,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "lip-service",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Lip-Service.jpg",
+            "collection": "corpse-bride",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Beserk-Clothing_45f7901a-2df4-4245-8436-8fd587ce55ed.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP LIP SERVICE",
-            "button_link": "shopify://collections/lip-service",
+            "button_text": "CORPSE BRIDE X BESERK",
+            "button_link": "shopify://collections/corpse-bride",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -200,7 +200,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "hells-blankets",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets_290056f8-a879-4f7a-82e7-c7ec7127ae03.jpg",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets_346feb27-c577-4627-b76d-76ec76dd3623.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -635,8 +635,8 @@
           "type": "image-with-url",
           "name": "Image with URL",
           "settings": {
-            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-17.jpg",
-            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-17.jpg",
+            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-18.jpg",
+            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-18.jpg",
             "image_link": "https://www.beserk.com.au/collections/sale",
             "alignment": "center",
             "width_mode": "full_width",
@@ -813,7 +813,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "hells-blankets",
-            "image": "shopify://shop_images/Collection-2_Hells-Blankets_10.jpg",
+            "image": "shopify://shop_images/Collection-2_Hells-Blankets_11.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
