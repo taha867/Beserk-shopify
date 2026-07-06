@@ -12,6 +12,33 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_Upjnnm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Corpse-Bride-New-01_Banner-3200.jpg",
+            "mobile_image": "shopify://shop_images/Corpse-Bride-New-01_Banner-1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 740,
+            "button_1_text": "shop now",
+            "button_1_link": "shopify://collections/corpse-bride",
+            "button_1_style": "solid",
+            "button_1_background": "#30639e",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#ed8a00",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        },
         "image_pLqq4n": {
           "type": "image",
           "settings": {
@@ -65,39 +92,12 @@
             "border_color": "",
             "gradient_overlay": "linear-gradient(180deg, rgba(10, 234, 237, 0), rgba(0, 0, 0, 0) 100%)"
           }
-        },
-        "image_Upjnnm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/0626_Lively-Ghosts-New-01_Banner_3200.jpg",
-            "mobile_image": "shopify://shop_images/0626_Lively-Ghosts-01_Banner-1200.jpg",
-            "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 740,
-            "button_1_text": "shop now",
-            "button_1_link": "shopify://collections/lively-ghosts",
-            "button_1_style": "solid",
-            "button_1_background": "#3b6240",
-            "button_1_text_color": "#ffffff",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "solid",
-            "button_2_background": "#ed8a00",
-            "button_2_text_color": "#ffffff",
-            "background": "",
-            "background_opacity": 0,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": ""
-          }
         }
       },
       "block_order": [
+        "image_Upjnnm",
         "image_pLqq4n",
-        "image_UmHJfg",
-        "image_Upjnnm"
+        "image_UmHJfg"
       ],
       "name": "Main Scrolling Banner",
       "settings": {
@@ -321,23 +321,6 @@
             "overlay_opacity": 30
           }
         },
-        "collection_NWG7wQ": {
-          "type": "collection",
-          "settings": {
-            "color_scheme": "scheme-4",
-            "collection": "hell-bunny",
-            "image": "shopify://shop_images/Collection-1_Hell-Bunny.jpg",
-            "expand_collection": false,
-            "content_position": "place-self-end-center text-center",
-            "subheading": "",
-            "title": "hell bunny",
-            "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/hell-bunny",
-            "button_style": "link",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "collection_qkWbTG": {
           "type": "collection",
           "settings": {
@@ -353,6 +336,23 @@
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 15
+          }
+        },
+        "collection_NWG7wQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "killstar",
+            "image": "shopify://shop_images/Collection-1_Killstar_07.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "killstar",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify://collections/killstar",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
           }
         },
         "collection_FmnWF3": {
@@ -376,8 +376,8 @@
       },
       "block_order": [
         "collection_8xUqcB",
-        "collection_NWG7wQ",
         "collection_qkWbTG",
+        "collection_NWG7wQ",
         "collection_FmnWF3"
       ],
       "name": "Collection 1",
@@ -440,10 +440,10 @@
         "overlay_opacity": 0
       }
     },
-    "logo_list_pgAaGP": {
+    "logo_list_yUqyNz": {
       "type": "logo-list",
       "blocks": {
-        "logo_pmGMnK": {
+        "logo_fFqqEj": {
           "type": "logo",
           "name": "HELLS BLANKETS",
           "settings": {
@@ -452,7 +452,7 @@
             "link": "shopify://collections/hells-blankets"
           }
         },
-        "logo_mMtDtf": {
+        "logo_kLnRp4": {
           "type": "logo",
           "name": "PASTEL PIXIE",
           "settings": {
@@ -461,7 +461,7 @@
             "link": "shopify://collections/pastel-pixie"
           }
         },
-        "logo_NQCFmN": {
+        "logo_J89CYy": {
           "type": "logo",
           "name": "NEKO NAILS",
           "settings": {
@@ -470,7 +470,7 @@
             "link": "shopify://collections/neko-nail-cult"
           }
         },
-        "logo_EEPbpm": {
+        "logo_jHryCN": {
           "type": "logo",
           "name": "BESERK CLOTHING",
           "settings": {
@@ -479,7 +479,7 @@
             "link": "shopify://collections/beserk-clothing"
           }
         },
-        "logo_GxKt7E": {
+        "logo_UU9yP6": {
           "type": "logo",
           "name": "ARCTIC FOX",
           "settings": {
@@ -488,7 +488,7 @@
             "link": "shopify://collections/arctic-fox"
           }
         },
-        "logo_XfkpAd": {
+        "logo_f3KGVE": {
           "type": "logo",
           "name": "LUNAR TIDES",
           "settings": {
@@ -497,7 +497,7 @@
             "link": "shopify://collections/lunar-tides"
           }
         },
-        "logo_bJP9qe": {
+        "logo_eGFYMg": {
           "type": "logo",
           "name": "MANIC PANIC",
           "settings": {
@@ -506,7 +506,7 @@
             "link": "shopify://collections/manic-panic-hair"
           }
         },
-        "logo_76zWDg": {
+        "logo_LnmAAi": {
           "type": "logo",
           "name": "FOREST INK",
           "settings": {
@@ -515,7 +515,7 @@
             "link": "shopify://collections/killstar"
           }
         },
-        "logo_d8tAPD": {
+        "logo_zaAgj9": {
           "type": "logo",
           "name": "RESTYLE",
           "settings": {
@@ -524,7 +524,7 @@
             "link": "shopify://collections/restyle"
           }
         },
-        "logo_iYpBQa": {
+        "logo_E7iwbH": {
           "type": "logo",
           "name": "FOXBLOOD",
           "settings": {
@@ -533,7 +533,7 @@
             "link": "shopify://collections/foxblood"
           }
         },
-        "logo_WbbtGB": {
+        "logo_idPQJF": {
           "type": "logo",
           "name": "FOREST INK",
           "settings": {
@@ -542,7 +542,7 @@
             "link": "shopify://collections/forest-ink"
           }
         },
-        "logo_Y3T4rG": {
+        "logo_zkQh8V": {
           "type": "logo",
           "name": "MAKEUP A MURDER",
           "settings": {
@@ -551,7 +551,7 @@
             "link": "shopify://collections/makeup-a-murder"
           }
         },
-        "logo_dLnEtD": {
+        "logo_3UqktA": {
           "type": "logo",
           "name": "HELL BUNNY",
           "settings": {
@@ -560,7 +560,7 @@
             "link": "shopify://collections/hell-bunny"
           }
         },
-        "logo_QgLrXM": {
+        "logo_Y9RMYa": {
           "type": "logo",
           "name": "SANRIO",
           "settings": {
@@ -569,7 +569,7 @@
             "link": "shopify://collections/sanrio"
           }
         },
-        "logo_9yjbRC": {
+        "logo_FqwjhM": {
           "type": "logo",
           "name": "GOTHIC GIFTS",
           "settings": {
@@ -578,7 +578,7 @@
             "link": "shopify://collections/gothic-gifts"
           }
         },
-        "logo_imgfN3": {
+        "logo_wbak7R": {
           "type": "logo",
           "name": "DEMONIA",
           "settings": {
@@ -587,7 +587,7 @@
             "link": "shopify://collections/demonia"
           }
         },
-        "logo_JTz7ea": {
+        "logo_G3eRAM": {
           "type": "logo",
           "name": "LIP SERVICE",
           "settings": {
@@ -598,23 +598,23 @@
         }
       },
       "block_order": [
-        "logo_pmGMnK",
-        "logo_mMtDtf",
-        "logo_NQCFmN",
-        "logo_EEPbpm",
-        "logo_GxKt7E",
-        "logo_XfkpAd",
-        "logo_bJP9qe",
-        "logo_76zWDg",
-        "logo_d8tAPD",
-        "logo_iYpBQa",
-        "logo_WbbtGB",
-        "logo_Y3T4rG",
-        "logo_dLnEtD",
-        "logo_QgLrXM",
-        "logo_9yjbRC",
-        "logo_imgfN3",
-        "logo_JTz7ea"
+        "logo_fFqqEj",
+        "logo_kLnRp4",
+        "logo_J89CYy",
+        "logo_jHryCN",
+        "logo_UU9yP6",
+        "logo_f3KGVE",
+        "logo_eGFYMg",
+        "logo_LnmAAi",
+        "logo_zaAgj9",
+        "logo_E7iwbH",
+        "logo_idPQJF",
+        "logo_zkQh8V",
+        "logo_3UqktA",
+        "logo_Y9RMYa",
+        "logo_FqwjhM",
+        "logo_wbak7R",
+        "logo_G3eRAM"
       ],
       "name": "t:sections.logo_list.presets.logo_list.name",
       "settings": {
@@ -1126,7 +1126,7 @@
     "collection_list_QV7y7R",
     "new_richtext_4RFcPt",
     "newsletter",
-    "logo_list_pgAaGP",
+    "logo_list_yUqyNz",
     "full_width_richtext_qCnUTk",
     "featured-collections",
     "new_richtext_N9ymHm",

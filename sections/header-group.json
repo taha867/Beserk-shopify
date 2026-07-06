@@ -55,10 +55,10 @@
             "image_1_heading": "New Arrivals",
             "image_1_text": "SHOP NOW",
             "image_1_link": "shopify://collections/new",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_New-01_52c41fab-942e-4db2-b0a9-a2adbcb13689.jpg",
-            "image_2_heading": "All New Lively Ghosts",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_New-01_1944b43f-0ee7-490b-aadd-1c513b2300be.jpg",
+            "image_2_heading": "CORPSE BRIDE X BESERK",
             "image_2_text": "Shop Now",
-            "image_2_link": "shopify://collections/lively-ghosts"
+            "image_2_link": "shopify://collections/corpse-bride"
           }
         },
         "mega_menu_Bb4PAa": {
@@ -134,11 +134,11 @@
           "settings": {
             "menu_item": "SALE",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale_3213d615-d95f-445a-b450-49f452624ae1.jpg",
+            "image_1": "shopify://shop_images/Menu-Image_315x450_Sale-02_e10864f2-0cec-4fe0-b5dd-a2822913aa28.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "shopify://collections/sale",
-            "image_2": "shopify://shop_images/Menu-Image_315x450_Beetlejuice_42a54c44-ed4c-432a-aabb-17d360ef8621.jpg",
+            "image_2": "shopify://shop_images/Menu-Image_315x450_Sale-01_af543f17-6074-4c88-b59d-e2f1acda7768.jpg",
             "image_2_heading": "",
             "image_2_text": "",
             "image_2_link": "https://www.beserk.com.au/products/beetlejuice-ghost-with-the-most-queen-double-sided-quilt-set"
