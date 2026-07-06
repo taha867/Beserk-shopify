@@ -2738,17 +2738,26 @@ onSubmit_fn = async function(event) {
       // Needed for Shopify to check inventory
     }
   });
-  submitButtons.forEach((submitButton) => {
-    submitButton.removeAttribute("aria-busy");
-  });
   const responseJson = await response.json();
   document.documentElement.dispatchEvent(new CustomEvent("theme:loading:end", { bubbles: true }));
   if (response.ok) {
     if (window.themeVariables.settings.cartType === "page" || window.themeVariables.settings.pageType === "cart") {
+      submitButtons.forEach((submitButton) => {
+        submitButton.removeAttribute("aria-busy");
+      });
       return window.location.href = `${Shopify.routes.root}cart`;
     }
     const sectionParam = sectionsToBundle.length ? `?sections=${sectionsToBundle.join(",")}` : "";
-    const cartContent = await (await fetch(`${Shopify.routes.root}cart.js${sectionParam}`)).json();
+    let cartContent;
+    try {
+      cartContent = await (await fetch(`${Shopify.routes.root}cart.js${sectionParam}`)).json();
+    } catch (_e) {
+      submitButtons.forEach((submitButton) => {
+        submitButton.removeAttribute("aria-busy");
+      });
+      document.dispatchEvent(new CustomEvent("cart:refresh"));
+      return;
+    }
     __privateGet(this, _ProductForm_instances, form_get2).dispatchEvent(new CustomEvent("variant:add", {
       bubbles: true,
       detail: {
@@ -2765,7 +2774,13 @@ onSubmit_fn = async function(event) {
         cart: cartContent
       }
     }));
+    submitButtons.forEach((submitButton) => {
+      submitButton.removeAttribute("aria-busy");
+    });
   } else {
+    submitButtons.forEach((submitButton) => {
+      submitButton.removeAttribute("aria-busy");
+    });
     __privateGet(this, _ProductForm_instances, form_get2).dispatchEvent(new CustomEvent("cart:error", {
       bubbles: true,
       detail: {
@@ -4353,7 +4368,12 @@ onBundleSection_fn = function(event) {
   event.detail.sections.push(__privateGet(this, _sectionId));
 };
 onCartChange_fn = async function(event) {
-  __privateMethod(this, _CartDrawer_instances, replaceContent_fn).call(this, event.detail.cart["sections"][__privateGet(this, _sectionId)]);
+  const html = event.detail.cart?.["sections"]?.[__privateGet(this, _sectionId)];
+  if (!html) {
+    __privateMethod(this, _CartDrawer_instances, refreshCart_fn).call(this);
+    return;
+  }
+  __privateMethod(this, _CartDrawer_instances, replaceContent_fn).call(this, html);
   if ((window.themeVariables.settings.cartType === "drawer" || event.detail["onSuccessDo"] === "force_open_drawer") && event.detail.baseEvent === "variant:add") {
     this.show();
   }
@@ -4374,10 +4394,20 @@ onPageShow_fn = async function(event) {
   __privateMethod(this, _CartDrawer_instances, refreshCart_fn).call(this);
 };
 refreshCart_fn = async function() {
-  __privateMethod(this, _CartDrawer_instances, replaceContent_fn).call(this, await (await fetch(`${Shopify.routes.root}?section_id=${__privateGet(this, _sectionId)}`)).text());
+  try {
+    const html = await (await fetch(`${Shopify.routes.root}?section_id=${__privateGet(this, _sectionId)}`)).text();
+    __privateMethod(this, _CartDrawer_instances, replaceContent_fn).call(this, html);
+  } catch (_e) {
+    // silent — nothing more we can do
+  }
 };
 replaceContent_fn = async function(html) {
-  const domElement = new DOMParser().parseFromString(html, "text/html"), newCartDrawer = document.createRange().createContextualFragment(domElement.getElementById(`shopify-section-${__privateGet(this, _sectionId)}`).querySelector("cart-drawer").innerHTML), itemCount = (await fetchCart)["item_count"];
+  const domElement = new DOMParser().parseFromString(html, "text/html");
+  const sectionElement = domElement.getElementById(`shopify-section-${__privateGet(this, _sectionId)}`);
+  const cartDrawerEl = sectionElement?.querySelector("cart-drawer");
+  if (!cartDrawerEl) return;
+  const newCartDrawer = document.createRange().createContextualFragment(cartDrawerEl.innerHTML);
+  const itemCount = (await fetchCart)["item_count"];
   if (itemCount === 0) {
     const controls = timeline7([
       [this.getShadowPartByName("body"), { opacity: [1, 0] }, { duration: 0.15, easing: "ease-in" }],
