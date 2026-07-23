@@ -74,6 +74,7 @@
       "block_order": [
         "heading_tyTKtU"
       ],
+      "disabled": true,
       "name": "Hide If There Are Comps",
       "settings": {
         "color_scheme": "",
@@ -94,6 +95,14 @@
             "icon_width": 16
           }
         },
+        "question_C4bJcy": {
+          "type": "question",
+          "name": "Evil Dead Burn Movie Ticket Giveaway",
+          "settings": {
+            "question": "Evil Dead Burn Movie Ticket Giveaway",
+            "answer": "<p>✨ GIVEAWAY! ✨ Win A Double Pass to Evil Dead Burn! 🔥</p><p>Just leave a comment and tag someone on <a href=\"https://www.facebook.com/beserkclothing/posts/pfbid02ZYcytjVXFxJpvjdqLMujAaXpp8WKFAPnGYN9HnH6cXVKbCJhn6AvmzUvQBGgd4JTl\" title=\"https://www.facebook.com/beserkclothing/posts/pfbid02ZYcytjVXFxJpvjdqLMujAaXpp8WKFAPnGYN9HnH6cXVKbCJhn6AvmzUvQBGgd4JTl\">this post</a> between 10am July 10 and 11.59pm July 12 AEST to go into the draw to WIN!*</p><p>Evil Dead Burn unleashes the franchise’s most savage and terrifying ride to date, blazing onto big screens with an all-new chapter of carnage and demonic mayhem. After the loss of her husband, a woman seeks solace with her in-laws in their secluded family home. As one by one they are transformed into Deadites—turning the gathering into a family reunion from hell—she comes to discover that the vows she took in life... live on even in death.</p><p>#EvilDeadBurn only in cinemas July 9th 2026. Rated R18+.</p><p>View the trailer here&gt;&gt; <a href=\"https://www.youtube.com/watch?v=qVk-tcCqcjY\" title=\"https://www.youtube.com/watch?v=qVk-tcCqcjY\">Evil Dead Burn | Official Trailer </a></p><p>Good luck! ❤️</p><p></p><p>*Please note that this event is open to 18+ Australian residents only. Winners will be selected at random.</p><p><strong>FULL TERMS & CONDITIONS:</strong></p><ul><li>This promotion will commence at <strong>10:00AM AEST 10.07.2026</strong> and conclude at <strong>11:59PM AEST 12.07.2026</strong>.</li><li>To be eligible, entrants must tag 1 friend in the comments of the relevant post.</li><li>Each eligible comment with 1 friend will automatically receive one (1) entry into the draw. Multiple entries are permitted, with each separate comment counting as a separate (1) entry.</li><li>Competition is open for Australian residents only.</li><li>Movie is rated R18+ & therefore can only be won by residents aged 18+.</li><li>The winners will be chosen at random from eligible entrants at Beserk's discretion - each customer is only eligible to win one (1) prize.</li><li>The winners will be contacted via reply to their winning comment from the official Beserk account on 13.07.2026.</li><li>Chosen winners will receive the prize via standard mail.</li><li>Unsuccessful entrants will not be notified.</li></ul>"
+          }
+        },
         "question_j8rAWe": {
           "type": "question",
           "name": "Beserk Mystery Pack - $500 Gift Voucher Giveaway",
@@ -103,7 +112,7 @@
             "answer": "<p><strong>Full Terms & Conditions</strong></p><ul><li>This promotion will commence at <strong>5:00PM AEST 12.06.2026</strong> and conclude at <strong>11:59PM AEST 26.06.2026</strong>.</li><li>To be eligible, entrants must purchase and pay for one (1) of the four (4) eligible <a href=\"/collections/mystery-packs\" title=\"MYSTERY PACKS\">Beserk Mystery Packs</a> during the promotional period. Eligible packs are: Dark & Gothic | BESERK MYSTERY PACK, Cute & Colourful | BESERK MYSTERY PACK, Magick & Mushrooms | BESERK MYSTERY PACK and Gothic Premium | BESERK MYSTERY PACK.</li><li>Each order of 1 (one) eligible Mystery Pack will automatically receive one (1) entry into the draw. Multiple entries are permitted per person/account during the promotional period.</li><li>The competition is open for Australia residents only.</li><li>One (1) winner will be selected at random from all eligible entries during the promotion period.</li><li>The winner will be contacted via email to the email address used to place their order on 01.07.26.</li><li>The winner will receive one (1) $500 AUD Beserk Gift Voucher which can be spent on any items on our website.</li><li>Prize valued at $500AUD</li><li>Prizes are not redeemable for cash or credit and cannot be exchanged/returned.</li><li>Beserk reserves the right to change or change the competition at any time.</li><li>This competition is not associated with Instagram/Meta.</li></ul>"
           }
         },
-        "question_C4bJcy": {
+        "question_ViVbLt": {
           "type": "question",
           "name": "Supergirl Movie Ticket Giveaway",
           "disabled": true,
@@ -160,15 +169,15 @@
       },
       "block_order": [
         "category_LQrbPt",
-        "question_j8rAWe",
         "question_C4bJcy",
+        "question_j8rAWe",
+        "question_ViVbLt",
         "question_H6Bjdb",
         "question_RC9Gw7",
         "question_JeNR7R",
         "question_gaE9KR",
         "question_8b4pJH"
       ],
-      "disabled": true,
       "name": "Current Competitions",
       "settings": {
         "color_scheme": "",

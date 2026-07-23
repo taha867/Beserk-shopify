@@ -9,23 +9,139 @@
  */
 {
   "sections": {
+    "scrolling_content_DVWDYd": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_Gwb3Hd": {
+          "type": "text",
+          "settings": {
+            "text": "<a href=\"/collections/winter-clothing\" title=\"WINTER CLOTHING\">40% OFF WINTER CLOTHING</a>"
+          }
+        },
+        "text_xF9XDy": {
+          "type": "text",
+          "settings": {
+            "text": "<a href=\"/collections/winter-clothing\" title=\"WINTER CLOTHING\">SHOP NOW</a>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Gwb3Hd",
+        "text_xF9XDy"
+      ],
+      "disabled": true,
+      "name": "SCROLLING BANNER WINTER SALE",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.1,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 22,
+        "text_font_size_desktop": 10,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 35,
+        "item_horizontal_spacing_desktop": 50,
+        "background": "#00fdf5",
+        "text_color": "#ffffff"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
         "image_Upjnnm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Corpse-Bride-New-01_Banner-3200.jpg",
-            "mobile_image": "shopify://shop_images/Corpse-Bride-New-01_Banner-1200.jpg",
+            "image": "shopify://shop_images/0726_Winter-Sale-01_Top-Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0726_Winter-Sale-01_Top-Banner_1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 740,
+            "button_1_text": "",
+            "button_1_link": "shopify://collections/winter-clothing",
+            "button_1_style": "solid",
+            "button_1_background": "#fe0303",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#ed8a00",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Upjnnm"
+      ],
+      "disabled": true,
+      "name": "STATIC BANNER WINTER SALE",
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "show_initial_transition": true,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 10,
+        "background": "#000000",
+        "controls_color": "#ff0000"
+      }
+    },
+    "new_richtext_hUb38C": {
+      "type": "new-richtext",
+      "blocks": {
+        "ai_gen_block_e12f3ea_gNmnVR": {
+          "type": "ai_gen_block_e12f3ea",
+          "settings": {
+            "bar_height": 10,
+            "red_color": "#000000",
+            "vertical_margin": 0,
+            "stripe_position": "center",
+            "stripe_width": 100,
+            "stripe_height": 6,
+            "black_color": "#ff0c0c"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e12f3ea_gNmnVR"
+      ],
+      "disabled": true,
+      "name": "SPACER BAR WINTER SALE",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "slideshow_eQKEMb": {
+      "type": "slideshow",
+      "blocks": {
+        "image_hCzNkQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0726_Gothic-Gifts-New-04_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0726_Gothic-Gifts-New-04_Banner-1200.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
             "content_max_width": 740,
             "button_1_text": "shop now",
-            "button_1_link": "shopify://collections/corpse-bride",
+            "button_1_link": "shopify://collections/gothic-gifts",
             "button_1_style": "solid",
-            "button_1_background": "#30639e",
+            "button_1_background": "#fe0303",
             "button_1_text_color": "#ffffff",
             "button_2_text": "",
             "button_2_link": "",
@@ -39,47 +155,20 @@
             "gradient_overlay": ""
           }
         },
-        "image_pLqq4n": {
+        "image_L479zP": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/0626_Killstar-New-01_Banner_3200.jpg",
-            "mobile_image": "shopify://shop_images/0626_Killstar-01_Banner-1200.jpg",
-            "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
-            "content_max_width": 740,
-            "button_1_text": "shop now",
-            "button_1_link": "shopify://collections/killstar",
-            "button_1_style": "solid",
-            "button_1_background": "#307392",
-            "button_1_text_color": "#ffffff",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "solid",
-            "button_2_background": "#ed8a00",
-            "button_2_text_color": "#ffffff",
-            "background": "",
-            "background_opacity": 0,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": ""
-          }
-        },
-        "image_UmHJfg": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/0626_Beserk-New-01_Banner_3200.jpg",
-            "mobile_image": "shopify://shop_images/0626_Beserk-01_Banner-1200.jpg",
+            "image": "shopify://shop_images/0726_Lip-Service-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0726_Lip-Service-New-01_Banner-1200.jpg",
             "subheading": "",
             "title": "",
             "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-center sm:text-center",
             "content_max_width": 400,
             "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify://collections/beserk-clothing",
+            "button_1_link": "shopify://collections/lip-service",
             "button_1_style": "solid",
-            "button_1_background": "#ff0000",
+            "button_1_background": "#fe0303",
             "button_1_text_color": "#ffffff",
             "button_2_text": "",
             "button_2_link": "",
@@ -92,12 +181,39 @@
             "border_color": "",
             "gradient_overlay": "linear-gradient(180deg, rgba(10, 234, 237, 0), rgba(0, 0, 0, 0) 100%)"
           }
+        },
+        "image_xCDi8L": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/0726_My-Violet-New-01_Banner_3200.jpg",
+            "mobile_image": "shopify://shop_images/0726_My-Violet-New-01_Banner-1200.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
+            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "content_max_width": 740,
+            "button_1_text": "shop now",
+            "button_1_link": "shopify://collections/my-violet",
+            "button_1_style": "solid",
+            "button_1_background": "#fe0303",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "solid",
+            "button_2_background": "#ed8a00",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
         }
       },
       "block_order": [
-        "image_Upjnnm",
-        "image_pLqq4n",
-        "image_UmHJfg"
+        "image_hCzNkQ",
+        "image_L479zP",
+        "image_xCDi8L"
       ],
       "name": "Main Scrolling Banner",
       "settings": {
@@ -141,6 +257,126 @@
         "remove_vertical_spacing": true
       }
     },
+    "image_with_text_overlay_KxWH3T": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "name": "CATEGORY BANNER WINTER SALE",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "shopify://shop_images/0626_Section-Header_EOFY-Sale.jpg",
+        "mobile_image": "shopify://shop_images/0626_Section-Header-Mobile_EOFY-Sale.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "collection_list_HkTnBp": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_DbcGKa": {
+          "type": "collection",
+          "name": "CLOTHING",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "",
+            "image": "shopify://shop_images/SALE-CATEGORY_315x450_Clothing_1be135fb-62cc-4fa4-8bbf-59ae82875d45.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "https://www.beserk.com.au/collections/shop-and-save?pf_m_%3A%3Acustom%3A%3Amain_category=Clothing",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_yk4bKi": {
+          "type": "collection",
+          "name": "COSMETICS",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "image": "shopify://shop_images/SALE-CATEGORY_315x450_Cosmetics_3c508bbd-48e1-49a3-902c-71f78a120eeb.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "https://www.beserk.com.au/collections/shop-and-save?pf_m_%3A%3Acustom%3A%3Amain_category=Cosmetics",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_BdmCXj": {
+          "type": "collection",
+          "name": "SHOES",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "image": "shopify://shop_images/SALE-CATEGORY_315x450_Shoes_0b4a0c80-ab3f-4150-b533-5185f5deb512.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "https://www.beserk.com.au/collections/shop-and-save?pf_m_%3A%3Acustom%3A%3Amain_category=Shoes",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_3ULtVP": {
+          "type": "collection",
+          "name": "SHOES",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "image": "shopify://shop_images/SALE-CATEGORY_315x450_Shoes_0b4a0c80-ab3f-4150-b533-5185f5deb512.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "https://www.beserk.com.au/collections/shop-and-save?pf_m_%3A%3Acustom%3A%3Amain_category=Shoes",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_DbcGKa",
+        "collection_yk4bKi",
+        "collection_BdmCXj",
+        "collection_3ULtVP"
+      ],
+      "disabled": true,
+      "name": "WINTER SALE CATEGORIES",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_desktop": 4,
+        "stack_collections_mobile": true,
+        "collections_per_row_mobile": "2",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
     "collection_list_zUCa8L": {
       "type": "collection-list",
       "blocks": {
@@ -149,7 +385,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "hair-colour",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair_b21429a0-62d6-43a0-bc67-bb798e1ae5e6.jpg",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hair-01_6d11f731-cc5b-4d34-8587-6cb43864b828.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -166,7 +402,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "band-merchandise",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Band_3a437340-8130-4b5a-88b9-56c79a011a4b.gif",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Band_561580ce-4c1d-4d82-8edc-e450bcad6b49.gif",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -182,14 +418,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "lip-service",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Lip-Service.jpg",
+            "collection": "my-violet",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Brand-My-Violet.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP LIP SERVICE",
-            "button_link": "shopify://collections/lip-service",
+            "button_text": "SHOP MY VIOLET",
+            "button_link": "shopify://collections/my-violet",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -200,7 +436,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "hells-blankets",
-            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets_290056f8-a879-4f7a-82e7-c7ec7127ae03.jpg",
+            "image": "shopify://shop_images/Front-Page_500x715_Promo-1_Hells-Blankets-01.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -309,11 +545,11 @@
           "settings": {
             "color_scheme": "",
             "collection": "beserk-clothing",
-            "image": "shopify://shop_images/Collection-1_Beserk_04.jpg",
+            "image": "shopify://shop_images/Collection-1_Beserk_05.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "Beserk",
+            "title": "Corpse Bride X Beserk",
             "button_text": "SHOP NOW",
             "button_link": "shopify://collections/beserk-clothing",
             "button_style": "link",
@@ -321,35 +557,18 @@
             "overlay_opacity": 30
           }
         },
-        "collection_qkWbTG": {
-          "type": "collection",
-          "settings": {
-            "color_scheme": "",
-            "collection": "lively-ghosts",
-            "image": "shopify://shop_images/Collection-1_Lively-Ghosts_01.jpg",
-            "expand_collection": false,
-            "content_position": "place-self-end-center text-center",
-            "subheading": "",
-            "title": "Lively Ghosts",
-            "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/lively-ghosts",
-            "button_style": "link",
-            "overlay_color": "#000000",
-            "overlay_opacity": 15
-          }
-        },
         "collection_NWG7wQ": {
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-4",
-            "collection": "killstar",
-            "image": "shopify://shop_images/Collection-1_Killstar_07.jpg",
+            "collection": "my-violet",
+            "image": "shopify://shop_images/Collection-1_My-Violet_01.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "killstar",
+            "title": "MY VIOLET",
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/killstar",
+            "button_link": "shopify://collections/my-violet",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 30
@@ -360,25 +579,42 @@
           "name": "Collection",
           "settings": {
             "color_scheme": "",
-            "collection": "devil-fashion",
-            "image": "shopify://shop_images/Collection-1_Devil_Fashion_01.jpg",
+            "collection": "beserk-clothing",
+            "image": "shopify://shop_images/Collection-1_Beserk_06.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
-            "title": "devil fashion",
+            "title": "BESERK GAMING MATS",
             "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/devil-fashion",
+            "button_link": "shopify://collections/beserk-clothing",
             "button_style": "link",
             "overlay_color": "#000000",
             "overlay_opacity": 25
+          }
+        },
+        "collection_qkWbTG": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "lip-service",
+            "image": "shopify://shop_images/Collection-1_Lip-Service.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Lip service",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify://collections/lip-service",
+            "button_style": "link",
+            "overlay_color": "#000000",
+            "overlay_opacity": 15
           }
         }
       },
       "block_order": [
         "collection_8xUqcB",
-        "collection_qkWbTG",
         "collection_NWG7wQ",
-        "collection_FmnWF3"
+        "collection_FmnWF3",
+        "collection_qkWbTG"
       ],
       "name": "Collection 1",
       "settings": {
@@ -635,8 +871,8 @@
           "type": "image-with-url",
           "name": "Image with URL",
           "settings": {
-            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-17.jpg",
-            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-17.jpg",
+            "image": "shopify://shop_images/Clearance-Sale-Banner-3200x1200-20.jpg",
+            "mobile_image": "shopify://shop_images/Clearance-Sale-Banner-1200x1600-20.jpg",
             "image_link": "https://www.beserk.com.au/collections/sale",
             "alignment": "center",
             "width_mode": "full_width",
@@ -737,7 +973,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Facebook-Group_01_566710fa-a720-4ff0-af03-28f669f38f71.jpg",
+            "image": "shopify://shop_images/Front-Page_Facebook-Group_02.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -754,7 +990,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Rewards-Image_01_1f98e30d-47b8-4a47-b31e-6ea89cb93e29.jpg",
+            "image": "shopify://shop_images/Front-Page_Rewards-Image_02_05dc958e-394a-43ac-892e-256185b1be8c.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -771,7 +1007,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "",
-            "image": "shopify://shop_images/Front-Page_Enviromental-Image_01.jpg",
+            "image": "shopify://shop_images/Front-Page_Enviromental-Image_02_94f50d43-0645-4e22-a785-ed2c67130bb4.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-center text-center",
             "subheading": "",
@@ -813,7 +1049,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "hells-blankets",
-            "image": "shopify://shop_images/Collection-2_Hells-Blankets_10.jpg",
+            "image": "shopify://shop_images/Collection-2_Hells-Blankets_13.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
@@ -829,14 +1065,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "lethal-cosmetics",
-            "image": "shopify://shop_images/Collection-2_Lethal_02.jpg",
+            "collection": "foxblood",
+            "image": "shopify://shop_images/Collection-2_Foxblood_02.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP Lethal Cosmetics",
-            "button_link": "shopify://collections/lethal-cosmetics",
+            "button_text": "SHOP FOXBLOOD",
+            "button_link": "shopify://collections/foxblood",
             "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -846,14 +1082,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "jellycat",
-            "image": "shopify://shop_images/Collection-2_Jellycat-01_5d09b50a-5c62-4cd9-a58f-a04b1e72e58e.jpg",
+            "collection": "hair-colour",
+            "image": "shopify://shop_images/Collection-2_Hair-Dye-01.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP JELLYCAT",
-            "button_link": "shopify://collections/jellycat",
+            "button_text": "SHOP HAIR DYE",
+            "button_link": "shopify://collections/hair-colour",
             "button_style": "outline",
             "overlay_color": "#ffffff",
             "overlay_opacity": 0
@@ -897,14 +1133,14 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "restyle",
-            "image": "shopify://shop_images/Collection-2_Restyle_02.jpg",
+            "collection": "gothic-gifts",
+            "image": "shopify://shop_images/Collection-2_Gothic-Gifts_03.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "",
             "title": "",
-            "button_text": "SHOP RESTYLE",
-            "button_link": "shopify://collections/restyle",
+            "button_text": "SHOP Gothic Gifts",
+            "button_link": "shopify://collections/gothic-gifts",
             "button_style": "outline",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -1118,8 +1354,13 @@
     }
   },
   "order": [
+    "scrolling_content_DVWDYd",
     "slideshow",
+    "new_richtext_hUb38C",
+    "slideshow_eQKEMb",
     "new_richtext_EGxVDA",
+    "image_with_text_overlay_KxWH3T",
+    "collection_list_HkTnBp",
     "collection_list_zUCa8L",
     "recently_viewed_products_8MGfMp",
     "image_with_text_overlay_VEUQC6",

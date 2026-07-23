@@ -54,6 +54,7 @@
             "secondary_colour": "#ffffff",
             "preview_scenario": "customer_can_earn_points",
             "should_show_icon": false,
+            "custom_image_height": 40,
             "should_show_points_label": true,
             "points_text_logged_in": "<p>❤️ EARN [points_amount] </p>",
             "points_text_logged_out": "<p>❤️ Join Beserk to EARN [points_amount]  &gt; <a href=\"/account/register/\">SIGN UP</a> or <a href=\"/account/login/\">LOG IN</a></p>"
@@ -61,6 +62,7 @@
         },
         "custom_badge_UqxYCQ": {
           "type": "custom-badge",
+          "disabled": true,
           "settings": {
             "custom-text": ""
           }
@@ -74,10 +76,6 @@
             "progress_bar_max_value": 2
           }
         },
-        "payment_terms": {
-          "type": "payment_terms",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -87,6 +85,10 @@
             "variant_image_options": "show variant",
             "size_chart_page": "copy-of-size-guide-old"
           }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
         },
         "preorder_me_product_button_aGkyrX": {
           "type": "shopify://apps/preorder-me/blocks/product-button/d3a9a307-3c62-4d7b-8a5b-7ae9b6e399ce",
@@ -194,7 +196,9 @@
         },
         "social_photos_instagram_ugc_product_gallery_yHqnzp": {
           "type": "shopify://apps/social-photos-instagram-ugc/blocks/product_gallery/d967a330-599e-491a-8cf1-42a3cd34baa3",
-          "settings": {}
+          "settings": {
+            "custom_css": ""
+          }
         },
         "description": {
           "type": "description",
@@ -289,8 +293,8 @@
         "smile_io_smile_points_on_product_page_WQwYYP",
         "custom_badge_UqxYCQ",
         "inventory_W4PCLD",
-        "payment_terms",
         "variant_picker",
+        "payment_terms",
         "preorder_me_product_button_aGkyrX",
         "buy_buttons",
         "wishlist_plus_wishlist_pdp_button_AGgBL8",
@@ -388,7 +392,7 @@
         "remove_vertical_spacing": true,
         "remove_horizontal_spacing": false
       }
-    },
+    }
   },
   "order": [
     "breadcrumbs_9DgEaF",
