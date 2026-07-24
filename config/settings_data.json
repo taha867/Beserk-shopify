@@ -172,29 +172,10 @@
         "disabled": false,
         "settings": {}
       },
-      "7194384644902525832": {
-        "type": "shopify://apps/fokkio-automatic-gift/blocks/widget/866ae171-054c-4fa5-8677-5f391a13902b",
-        "disabled": false,
-        "settings": {}
-      },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
-      },
-      "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
-        "settings": {
-          "button_color": "#ff0000",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#000000",
-          "button_icon": "chat_bubble",
-          "button_text": "no_text",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": "We are Online ~ Mon-Fri 8:30am-4pm AEST. \nor leave a message anytime & we'll reply when we reopen. 🙂 Beserk xx"
-        }
       },
       "5946647744298494267": {
         "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
@@ -259,6 +240,30 @@
           "templateId": "xQ-rxK2ER-",
           "productGridSelector": ""
         }
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "greeting_message": "We are Online ~ Mon-Fri 8:30am-4pm AEST. \nor leave a message anytime & we'll reply when we reopen. 🙂 Beserk xx",
+          "background_color": "#FFFFFF",
+          "font_color": "#000000",
+          "button_color": "#ff0000",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#000000",
+          "button_icon": "chat_bubble",
+          "button_text": "need_help",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "agent_inherit_fonts": true,
+          "agent_font": "system_ui_n4",
+          "agent_border_radius": 16
+        }
+      },
+      "7194384644902525832": {
+        "type": "shopify://apps/fokkio-automatic-gift/blocks/widget/866ae171-054c-4fa5-8677-5f391a13902b",
+        "disabled": true,
+        "settings": {}
       }
     },
     "color_schemes": {
@@ -341,12 +346,12 @@
       },
       "scheme-ae00b732-b8a9-4ea0-8b74-c1afccb1df8d": {
         "settings": {
-          "background": "#FFFB00",
+          "background": "#fffb00",
           "background_gradient": "",
           "text_color": "#000000",
-          "primary_button_background": "#FFFB00",
+          "primary_button_background": "#fffb00",
           "primary_button_text_color": "#000000",
-          "circle_button_background": "#FFFB00",
+          "circle_button_background": "#fffb00",
           "circle_button_icon": "#ffffff"
         }
       }

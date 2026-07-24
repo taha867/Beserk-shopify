@@ -250,10 +250,34 @@
       "blocks": {
         "image_with_text_kKWXyT": {
           "type": "image_with_text",
+          "name": "Gothic Picnic 2 2026",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Gothic_Picnic_2_2026.jpg",
+            "title": "Gothic Picnic 2026",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Gothic_Picnic_2_2026.pdf?v=1783401843\" target=\"_blank\" title=\"Gothic Picnic Colouring In Sheet 2 2026\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_X4KFK6": {
+          "type": "image_with_text",
+          "name": "Gothic Picnic 1 2026",
+          "settings": {
+            "image": "shopify://shop_images/Image_Previews_Gothic_Picnic_1_2026.jpg",
+            "title": "Gothic Picnic 2026",
+            "heading_tag": "h3",
+            "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Gothic_Picnic_1_2026.pdf?v=1783401843\" target=\"_blank\" title=\"Gothic Picnic Colouring In Sheet 1 2026\"><strong>DOWNLOAD</strong></a></h5>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_rTyrCq": {
+          "type": "image_with_text",
           "name": "Halloween 2025",
           "settings": {
             "image": "shopify://shop_images/Image_Previews_Christmas_2025.jpg",
-            "title": "Christnas 2025",
+            "title": "Christmas 2025",
             "heading_tag": "h3",
             "content": "<h5><a href=\"https://cdn.shopify.com/s/files/1/0836/9167/files/Downloadable_Art_Christmas_2025.pdf?v=1767584796\" target=\"_blank\" title=\"Christmas 2025 Colouring In Sheet\"><strong>DOWNLOAD</strong></a></h5>",
             "link_url": "",
@@ -467,6 +491,8 @@
       },
       "block_order": [
         "image_with_text_kKWXyT",
+        "image_with_text_X4KFK6",
+        "image_with_text_rTyrCq",
         "image_with_text_yfhH3P",
         "image_with_text_KdeADN",
         "image_with_text_FX4yAT",

@@ -108,12 +108,14 @@
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preconnect" href="https://services.mybcapps.com" crossorigin>
-    <link rel="dns-prefetch" href="https://services.mybcapps.com">
-    <link rel="preconnect" href="https://cdn.judge.me" crossorigin>
-    <link rel="preconnect" href="https://widget.smile.io" crossorigin>
-    <link rel="preconnect" href="https://js.klarna.com" crossorigin>
-    <link rel="preconnect" href="https://static.afterpay.com" crossorigin>
+    {%- if template == 'collection' or template == 'search' -%}
+      <link rel="preconnect" href="https://services.mybcapps.com" crossorigin>
+    {%- endif -%}
+    {%- if template == 'product' -%}
+      <link rel="preconnect" href="https://cdn.judge.me" crossorigin>
+      <link rel="preconnect" href="https://widget.smile.io" crossorigin>
+      <link rel="preconnect" href="https://static.afterpay.com" crossorigin>
+    {%- endif -%}
 
     {%- unless settings.heading_font.system? -%}
       <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin>
