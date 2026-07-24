@@ -174,16 +174,6 @@
             "product": "{{product}}"
           }
         },
-        "klarna_on_site_messaging_app_block_B47dXn": {
-          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
-          "settings": {
-            "data_key": "credit-promotion-auto-size",
-            "theme": "default",
-            "topPadding": "0",
-            "bottomPadding": "0",
-            "messagePrefix": ""
-          }
-        },
         "pickup_availability_3rqY4R": {
           "type": "pickup_availability",
           "settings": {}
@@ -300,7 +290,6 @@
         "wishlist_plus_wishlist_pdp_button_AGgBL8",
         "youpay_cart_sharing_youpay_button_P4rGT7",
         "afterpay_on_site_messaging_payments_messaging_3fqMVH",
-        "klarna_on_site_messaging_app_block_B47dXn",
         "pickup_availability_3rqY4R",
         "new_text_jmNEBm",
         "social_photos_instagram_ugc_product_gallery_yHqnzp",
