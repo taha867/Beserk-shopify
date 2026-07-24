@@ -15,12 +15,14 @@
       <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 96 }}">
       <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
     {%- endif -%}
-    <link
-      rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    >
+    {%- if template == 'page.brands' -%}
+      <link
+        rel="preload"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+      >
+    {%- endif -%}
     <link
       rel="preload"
       as="style"
@@ -41,12 +43,11 @@
 
     {% comment %}  {% endcomment %}
 
-    <!-- Slick Slider CSS — loaded async, not render-blocking -->
-    <noscript>
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </noscript>
+    {%- if template == 'page.brands' -%}
+      <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </noscript>
+    {%- endif -%}
 
     {% if template == 'cart' %}
       <style>
@@ -106,8 +107,12 @@
 
     {%- comment -%}Few prefetch to increase performance on commonly used third-parties{%- endcomment -%}
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    {%- if template == 'index' or template == 'page.about' or template == 'page.brand-ambassador-page' -%}
+      <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    {%- endif -%}
+    {%- if template == 'page.brands' -%}
+      <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    {%- endif -%}
     {%- if template == 'collection' or template == 'search' -%}
       <link rel="preconnect" href="https://services.mybcapps.com" crossorigin>
     {%- endif -%}
@@ -312,9 +317,6 @@
       {%- endif -%}
     </main>
     {% render 'swym-custom' %}
-    <!-- Slick Slider JS — deferred, only used by logo-list section -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
     {%- if customer -%}
       <script>
         var _learnq = _learnq || [];

@@ -1,6 +1,12 @@
 {%- if section.blocks.size > 0 -%}
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  </noscript>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
 
   <style>
     #shopify-section-{{ section.id }} {
@@ -125,9 +131,8 @@
       </div>
     </div>
   </div>
-{%- endif -%}
 
-<script>
+  <script>
   document.addEventListener('DOMContentLoaded', function () {
     var $logoList = $('#shopify-section-{{ section.id }} .logo-list');
 
@@ -159,6 +164,7 @@
     }
   });
 </script>
+{%- endif -%}
 
 {% schema %}
 {
